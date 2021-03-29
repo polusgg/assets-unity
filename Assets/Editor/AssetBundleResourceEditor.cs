@@ -10,20 +10,20 @@ namespace Assets.Editor {
             base.OnInspectorGUI();
 
             if (GUILayout.Button("Build")) {
-                if (!Directory.Exists("Assets/AssetBundles"))
-                	Directory.CreateDirectory("Assets/AssetBundles");
+                if (!Directory.Exists("Assets/AssetBundles/PggResources"))
+                	Directory.CreateDirectory("Assets/AssetBundles/PggResources");
 
                 AssetBundleResource resource = (AssetBundleResource) serializedObject.targetObject;
 
                 if (resource.Assets.Length == 0)
                     return;
                 
-                var jsonPath = $"Assets/AssetBundles/{resource.name}-Manifest.json";
+                var jsonPath = $"Assets/AssetBundles/PggResources/{resource.name}-Manifest.json";
                 File.WriteAllText(jsonPath, JsonUtility.ToJson(
                     new SerializableAssetBundleResource(resource)
                 ));
 
-                BuildPipeline.BuildAssetBundles("Assets/AssetBundles",
+                BuildPipeline.BuildAssetBundles("Assets/AssetBundles/PggResources",
                     new[] {
                         new AssetBundleBuild {
                             assetNames = resource.Assets.Select(AssetDatabase.GetAssetPath).Append(jsonPath).ToArray(),
@@ -35,9 +35,9 @@ namespace Assets.Editor {
             }
         }
 
-        private struct SerializableAssetBundleResource {
-            private uint BaseId;
-            private string[] Assets;
+        public struct SerializableAssetBundleResource {
+            public uint BaseId;
+            public string[] Assets;
 
             public SerializableAssetBundleResource(AssetBundleResource assetBundleResource) {
                 BaseId = assetBundleResource.BaseId;

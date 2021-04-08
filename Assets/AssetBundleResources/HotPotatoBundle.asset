@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22a37bfb451ac931abedf2cd6fc082ff, type: 3}
+  m_Name: HotPotatoBundle
+  m_EditorClassIdentifier: 
+  BaseId: 0
+  Assets:
+  - {fileID: 2800000, guid: bef9aa20236f5b567939d67a9b01f7af, type: 3}
+  - {fileID: 2800000, guid: 3075b2af9bc8aef809c1fd8f3aa7c203, type: 3}
+  - {fileID: 2800000, guid: 414209d45d524bd24b1519c164d36360, type: 3}
+  - {fileID: 2800000, guid: 0190a4ac1070c564f82e6d0ded92db76, type: 3}
+  - {fileID: 2800000, guid: 0bea52dfa1ad7eb53b9824c3cf4af32b, type: 3}
+  - {fileID: 2800000, guid: 52ccfb2626dfde70db5eccf2cbcbb906, type: 3}
+  - {fileID: 2800000, guid: 413671e46c3372fee9f5dfa9f1d630ea, type: 3}
+  - {fileID: 2800000, guid: ae0af1094197b4b41b3d47b4e514ed81, type: 3}
+  - {fileID: 2800000, guid: f5aaba5772ef8356aa24e3882c630026, type: 3}
+  - {fileID: 2800000, guid: f8191da44379ab8eb97bfe292a53a31f, type: 3}
+  - {fileID: 2800000, guid: add9c7ca10ae2b66ba83c8dab3f047fa, type: 3}
+  - {fileID: 2800000, guid: 245cea7e459ddb61880fa3ad3a13835d, type: 3}
+  - {fileID: 2800000, guid: 39a7d244b3c72acb7916511bfbbe4b5a, type: 3}
+  - {fileID: 2800000, guid: 874e26a8ba21e852492d98f398f226d3, type: 3}
+  - {fileID: 2800000, guid: 97d4eb0af8800f5f79b7e948ae21ca8a, type: 3}
+  - {fileID: 2800000, guid: a11fa9708d807d912aecad3a5f345de9, type: 3}
+  - {fileID: 2800000, guid: 3ef91a7341dae9b03949624e01a3194c, type: 3}
+  - {fileID: 7400000, guid: 12d5e9381bd33ee2a97effad89dcb04a, type: 2}
+  - {fileID: 9100000, guid: b4222d1b7a7df53d3a57c72721618ae9, type: 2}
+  - {fileID: 4550025586282311004, guid: 2da0fc41e571c733e8ec1b55c399e538, type: 3}
+  - {fileID: 8300000, guid: 1d633e302fc8907d09a91ab9e4dc66af, type: 3}
+  - {fileID: 8300000, guid: d693920e6875cdb77b33a3ce38f9af02, type: 3}

@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+CRC: 1275228291
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6dd21bac15e72616088655d8eff38b9a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c757becb0b660176c65c2902f037d768
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Mods/HotPotatoBomb/pass_sound.mp3
+- Assets/AssetBundles/PggResources/HotPotatoBundle-Manifest.json
+- Assets/Mods/HotPotatoBomb/HotPotatoBomb.prefab
+- Assets/Mods/C4/throwsound.mp3
+- Assets/Mods/HotPotatoBomb/mainimage.png
+- Assets/Mods/HotPotatoBomb/ticking_sound.mp3
+Dependencies: []

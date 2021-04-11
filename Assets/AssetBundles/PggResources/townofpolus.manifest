@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 3602733669
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ce4de63e9d3c3ff9f64232dec5113032
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7579feb4afd6aab513e2576ee96e6b63
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundles/PggResources/TownOfPolus-Manifest.json
+- Assets/Mods/TownOfPolus/Morph.png
+- Assets/Mods/TownOfPolus/Light.png
+- Assets/Mods/TownOfPolus/Sample.png
+- Assets/Mods/OfficialAssets/KillButton.png
+- Assets/Mods/TownOfPolus/Monitor.png
+- Assets/Mods/TownOfPolus/Fix.png
+- Assets/Mods/TownOfPolus/Predict.png
+- Assets/Mods/TownOfPolus/SnitchArrow.png
+- Assets/Mods/TownOfPolus/Throw.png
+- Assets/Mods/TownOfPolus/ImpostorArrow.png
+Dependencies: []

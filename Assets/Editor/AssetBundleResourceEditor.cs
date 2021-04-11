@@ -1,10 +1,13 @@
-﻿using System.IO;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using UnityEditor;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace Assets.Editor {
     [CustomEditor(typeof(AssetBundleResource))]
@@ -17,58 +20,81 @@ namespace Assets.Editor {
                     Directory.CreateDirectory("Assets/AssetBundles/PggResources");
 
                 AssetBundleResource resource = (AssetBundleResource) serializedObject.targetObject;
-
                 if (resource.Assets.Length == 0)
                     return;
 
-                var jsonPath = $"Assets/AssetBundles/PggResources/{resource.name}-Manifest.json";
-                File.WriteAllText(jsonPath, JsonUtility.ToJson(
-                    new SerializableAssetBundleResource(resource)
-                ));
+                Object[] original = resource.Assets;
 
-                SerializableForRose rose = new SerializableForRose();
-                rose.AssetBundleId = resource.BaseId;
-                rose.Assets = resource.Assets.Select(asset => {
-                    AssetDecl decl = new AssetDecl();
+                try {
+                    var jsonPath = $"Assets/AssetBundles/PggResources/{resource.name}-Manifest.json";
+                    File.WriteAllText(jsonPath, JsonUtility.ToJson(
+                        new SerializableAssetBundleResource(resource)
+                    ));
 
-                    if (asset is AudioClip) {
-                        var audio = asset as AudioClip;
-                        decl.Details = new AudioDetails {
-                            Samples = audio.samples,
-                            SampleRate = audio.samples / audio.length,
-                        };
-                        decl.Type = AssetType.Audio;
-                    } else {
-                        decl.Type = AssetType.Other;
-                    }
+                    SerializableForRose rose = new SerializableForRose();
+                    rose.AssetBundleId = resource.BaseId;
+                    rose.Assets = resource.Assets.Select(asset => {
+                        AssetDecl decl = new AssetDecl();
 
-                    decl.Name = asset.name;
-
-                    using (FileStream fs = File.OpenRead(AssetDatabase.GetAssetPath(asset))) {
-                        decl.Hash = MD5.Create().ComputeHash(fs);
-                    }
-
-                    return decl;
-                }).ToArray();
-
-                var rosePath = $"Assets/AssetBundles/PggResources/{resource.name}-Rose.json";
-                File.WriteAllText(rosePath, JsonConvert.SerializeObject(rose, new JsonSerializerSettings {
-                    ContractResolver = new DefaultContractResolver {
-                        NamingStrategy = new CamelCaseNamingStrategy(),
-                    },
-                    Formatting = Formatting.Indented
-                }));
-
-                BuildPipeline.BuildAssetBundles("Assets/AssetBundles/PggResources",
-                    new[] {
-                        new AssetBundleBuild {
-                            assetNames = resource.Assets.Select(AssetDatabase.GetAssetPath).Append(jsonPath).ToArray(),
-                            addressableNames = resource.Assets.Select(AssetDatabase.GetAssetPath).Append("Assets/AssetListing.json").ToArray(),
-                            assetBundleName = resource.name
+                        if (asset is AudioClip audio) {
+                            decl.Details = new AudioDetails {
+                                Samples = audio.samples,
+                                SampleRate = audio.samples / audio.length,
+                            };
+                            decl.Type = AssetType.Audio;
+                        } else {
+                            decl.Type = AssetType.Other;
                         }
-                    },
-                    BuildAssetBundleOptions.None, BuildTarget.StandaloneWindows
-                );
+
+                        decl.Name = AssetDatabase.GetAssetPath(asset);
+
+                        using (FileStream fs = File.OpenRead(AssetDatabase.GetAssetPath(asset))) {
+                            decl.Hash = MD5.Create().ComputeHash(fs);
+                        }
+
+                        return decl;
+                    }).ToArray();
+
+                    var rosePath = $"Assets/AssetBundles/PggResources/{resource.name}.json";
+                    File.WriteAllText(rosePath, JsonConvert.SerializeObject(rose, new JsonSerializerSettings {
+                        ContractResolver = new DefaultContractResolver {
+                            NamingStrategy = new CamelCaseNamingStrategy(),
+                        },
+                        Formatting = Formatting.Indented
+                    }));
+
+                    foreach (Object res in resource.Assets) Debug.Log(AssetDatabase.GetAssetPath(res));
+                    resource.Assets = resource.Assets.Distinct(new ObjectComparer()).ToArray();
+                    Debug.Log("after distinct");
+                    foreach (Object res in resource.Assets) Debug.Log(AssetDatabase.GetAssetPath(res));
+
+                    BuildPipeline.BuildAssetBundles("Assets/AssetBundles/PggResources",
+                        new[] {
+                            new AssetBundleBuild {
+                                assetNames = resource.Assets.Select(AssetDatabase.GetAssetPath).Append(jsonPath)
+                                    .ToArray(),
+                                addressableNames = resource.Assets.Select(AssetDatabase.GetAssetPath)
+                                    .Append("Assets/AssetListing.json").ToArray(),
+                                assetBundleName = resource.name
+                            }
+                        },
+                        BuildAssetBundleOptions.None, BuildTarget.StandaloneWindows
+                    );
+                } finally {
+                    resource.Assets = original;
+                }
+            }
+        }
+
+        public class ObjectComparer : IEqualityComparer<Object> {
+            public bool Equals(Object x, Object y) {
+                bool yes = AssetDatabase.GetAssetPath(x) == AssetDatabase.GetAssetPath(y);
+                Debug.Log($"equality check on your mom {yes}");
+                return AssetDatabase.GetAssetPath(x) == AssetDatabase.GetAssetPath(y);
+            }
+
+            public int GetHashCode(Object obj) {
+                return AssetDatabase.GetAssetPath(obj).GetHashCode();
             }
         }
 

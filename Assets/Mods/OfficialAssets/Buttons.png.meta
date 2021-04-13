@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 6a840f6c239f8794ca9be21718e9589b
-timeCreated: 1611317048
-licenseType: Free
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -98,7 +96,6 @@ TextureImporter:
       213: 21300060
     second: quit
   externalObjects: {}
-  usedFileIDs: []
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
@@ -216,7 +213,7 @@ TextureImporter:
       spriteID: 9b70931282af4d0e81624abfb6b6d30f
       internalID: 21300000
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -261,7 +258,7 @@ TextureImporter:
       spriteID: 8d1014519e894e9dbfc6e41e3f04eb75
       internalID: 21300002
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -307,7 +304,7 @@ TextureImporter:
       spriteID: 1e5231d09db044628fbc771782bbe645
       internalID: 21300004
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -341,7 +338,7 @@ TextureImporter:
       spriteID: cdd07b91bd894d439c4b50b48ce94948
       internalID: 21300006
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -375,7 +372,7 @@ TextureImporter:
       spriteID: a29a70c61d4c4f5993bb67b16a676d35
       internalID: 21300008
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -409,7 +406,7 @@ TextureImporter:
       spriteID: 02cce9ae83c8414c88095079094f1da8
       internalID: 21300010
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -443,7 +440,7 @@ TextureImporter:
       spriteID: b540f3052359424393a1e15932b3ce78
       internalID: 21300012
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -477,7 +474,7 @@ TextureImporter:
       spriteID: 4fdc83882fe5492fa6b793744d54d629
       internalID: 21300014
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -511,7 +508,7 @@ TextureImporter:
       spriteID: 9f651c3c59c1444cada27ad0a8e401b4
       internalID: 21300016
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -563,7 +560,7 @@ TextureImporter:
       spriteID: f33ed45a5813475aa735e4c501d61534
       internalID: 21300018
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -610,7 +607,7 @@ TextureImporter:
       spriteID: 03dddb5656bf4e909b947dd2b9a49e03
       internalID: 21300020
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -652,7 +649,7 @@ TextureImporter:
       spriteID: 0a8d8e314f3a47a39dd9c4132c509017
       internalID: 21300022
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -691,7 +688,7 @@ TextureImporter:
       spriteID: 841a26f0a2ba4b2ba9305be8c6fba5e2
       internalID: 21300024
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -720,7 +717,7 @@ TextureImporter:
       spriteID: e9bd98d22075442eaf31643a9b6e949c
       internalID: 21300026
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -751,7 +748,7 @@ TextureImporter:
       spriteID: 651b660b7a564be0b9845bdfd458f4b5
       internalID: 21300028
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -785,7 +782,7 @@ TextureImporter:
       spriteID: b8334925682b431ebdd25f2afc451983
       internalID: 21300030
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -818,7 +815,7 @@ TextureImporter:
       spriteID: 8d85ee81cdd6495ca00cae1dfde9bc50
       internalID: 21300032
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -862,7 +859,7 @@ TextureImporter:
       spriteID: 6d3bef3b32434a67a9cd6eab2233a5e4
       internalID: 21300034
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -896,7 +893,7 @@ TextureImporter:
       spriteID: 4cbf074e9eb14d999c97fdc157fb9be3
       internalID: 21300036
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -954,7 +951,7 @@ TextureImporter:
       spriteID: a569ff9b30664c95a86ec82c3194ded6
       internalID: 21300038
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -998,7 +995,7 @@ TextureImporter:
       spriteID: 988702de7d504527b49a5f3d8220d1f0
       internalID: 21300040
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -1032,7 +1029,7 @@ TextureImporter:
       spriteID: f1b4d350c8db4ffb8aae4e5f40cd9c26
       internalID: 21300042
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -1099,7 +1096,7 @@ TextureImporter:
       spriteID: e2afe0307f9a47c58a8eeac7c09ecc68
       internalID: 21300044
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -1133,7 +1130,7 @@ TextureImporter:
       spriteID: 408bf74931ed4130a1bbb298fa51fdb7
       internalID: 21300046
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -1175,7 +1172,7 @@ TextureImporter:
       spriteID: 909e3c0fb9e6426e90f758907c571db2
       internalID: 21300048
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -1206,7 +1203,7 @@ TextureImporter:
       spriteID: 95679c50697e4d3b996ff3c44cec43ec
       internalID: 21300050
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -1237,7 +1234,7 @@ TextureImporter:
       spriteID: f7200727b66d499581597e79b51139db
       internalID: 21300052
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -1266,7 +1263,7 @@ TextureImporter:
       spriteID: a499d7e063a745a8a26e8f551773066a
       internalID: 21300054
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -1300,7 +1297,7 @@ TextureImporter:
       spriteID: 2bab16d045dc4cb5869f3070384444c1
       internalID: 21300056
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -1368,7 +1365,7 @@ TextureImporter:
       spriteID: 26967d8d38ba41168a66b905f71394ff
       internalID: 21300058
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     - serializedVersion: 2
@@ -1440,22 +1437,22 @@ TextureImporter:
       spriteID: 6b3ba4717c0b494cb936af9cc1df4392
       internalID: 21300060
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID:
+    spriteID: 
     internalID: 0
     vertices: []
-    indices:
+    indices: 
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag:
+  spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -14,12 +14,12 @@ namespace Assets.Editor {
     public class AssetBundleResourceEditor : UnityEditor.Editor {
         public override void OnInspectorGUI() {
             base.OnInspectorGUI();
+            AssetBundleResource resource = (AssetBundleResource) serializedObject.targetObject;
 
             if (GUILayout.Button("Build")) {
                 if (!Directory.Exists("Assets/AssetBundles/PggResources"))
                     Directory.CreateDirectory("Assets/AssetBundles/PggResources");
 
-                AssetBundleResource resource = (AssetBundleResource) serializedObject.targetObject;
                 if (resource.Assets.Length == 0)
                     return;
 
@@ -48,27 +48,12 @@ namespace Assets.Editor {
 
                         decl.Name = AssetDatabase.GetAssetPath(asset);
 
-                        using (FileStream fs = File.OpenRead(AssetDatabase.GetAssetPath(asset))) {
-                            decl.Hash = MD5.Create().ComputeHash(fs);
-                        }
-
                         return decl;
                     }).ToArray();
 
-                    var rosePath = $"Assets/AssetBundles/PggResources/{resource.name}.json";
-                    File.WriteAllText(rosePath, JsonConvert.SerializeObject(rose, new JsonSerializerSettings {
-                        ContractResolver = new DefaultContractResolver {
-                            NamingStrategy = new CamelCaseNamingStrategy(),
-                        },
-                        Formatting = Formatting.Indented
-                    }));
-
-                    foreach (Object res in resource.Assets) Debug.Log(AssetDatabase.GetAssetPath(res));
                     resource.Assets = resource.Assets.Distinct(new ObjectComparer()).ToArray();
-                    Debug.Log("after distinct");
-                    foreach (Object res in resource.Assets) Debug.Log(AssetDatabase.GetAssetPath(res));
 
-                    BuildPipeline.BuildAssetBundles("Assets/AssetBundles/PggResources",
+                    AssetBundleManifest manifest = BuildPipeline.BuildAssetBundles("Assets/AssetBundles/PggResources",
                         new[] {
                             new AssetBundleBuild {
                                 assetNames = resource.Assets.Select(AssetDatabase.GetAssetPath).Append(jsonPath)
@@ -80,16 +65,38 @@ namespace Assets.Editor {
                         },
                         BuildAssetBundleOptions.None, BuildTarget.StandaloneWindows
                     );
+
+                    using (FileStream fs =
+                        File.OpenRead("Assets/AssetBundles/PggResources/" + manifest.GetAllAssetBundles()[0])) {
+                        rose.Hash = MD5.Create().ComputeHash(fs).Select(x => (int)x).ToArray();
+                    }
+
+                    var rosePath = $"Assets/AssetBundles/PggResources/{resource.name}.json";
+                    File.WriteAllText(rosePath, JsonConvert.SerializeObject(rose, new JsonSerializerSettings {
+                        ContractResolver = new DefaultContractResolver {
+                            NamingStrategy = new CamelCaseNamingStrategy(),
+                        },
+                        Formatting = Formatting.Indented,
+                        Converters = { new ByteArrayConverter() }
+                    }));
                 } finally {
                     resource.Assets = original;
                 }
             }
+
+            //funny one statement add to resource assets list
+            if (GUILayout.Button("Load all from folder"))
+                resource.Assets = Directory.GetFiles(EditorUtility.OpenFolderPanel("Asset folder", "Assets", ""))
+                    .Select(x => x.Substring(x.IndexOf("Assets/", StringComparison.Ordinal)))
+                    .Select(AssetDatabase.LoadAssetAtPath<Object>)
+                    .Concat(resource.Assets)
+                    .Where(x => x != null)
+                    .Distinct(new ObjectComparer())
+                    .ToArray();
         }
 
         public class ObjectComparer : IEqualityComparer<Object> {
             public bool Equals(Object x, Object y) {
-                bool yes = AssetDatabase.GetAssetPath(x) == AssetDatabase.GetAssetPath(y);
-                Debug.Log($"equality check on your mom {yes}");
                 return AssetDatabase.GetAssetPath(x) == AssetDatabase.GetAssetPath(y);
             }
 
@@ -101,6 +108,7 @@ namespace Assets.Editor {
         public struct SerializableAssetBundleResource {
             public uint BaseId;
             public string[] Assets;
+
             public SerializableAssetBundleResource(AssetBundleResource assetBundleResource) {
                 BaseId = assetBundleResource.BaseId;
                 Assets = assetBundleResource.Assets.Select(AssetDatabase.GetAssetPath).ToArray();
@@ -111,22 +119,51 @@ namespace Assets.Editor {
             Other = 0,
             Audio
         }
+
         public class SerializableForRose {
             public uint AssetBundleId;
+            public int[] Hash;
             public AssetDecl[] Assets;
         }
 
         public class AssetDecl {
             public AssetType Type;
             public string Name;
-            public byte[] Hash;
             public Details Details;
         }
 
-        public class Details {}
+        public class Details { }
+
         public class AudioDetails : Details {
             public int Samples;
             public float SampleRate;
+        }
+
+        public class ByteArrayConverter : JsonConverter {
+            public override object ReadJson(
+                JsonReader reader,
+                Type objectType,
+                object existingValue,
+                JsonSerializer serializer) {
+                throw new NotImplementedException();
+            }
+
+            public override void WriteJson(
+                JsonWriter writer,
+                object value,
+                JsonSerializer serializer) {
+                string base64String = Convert.ToBase64String((byte[]) value);
+
+                serializer.Serialize(writer, base64String);
+            }
+
+            public override bool CanRead {
+                get { return false; }
+            }
+
+            public override bool CanConvert(Type t) {
+                return typeof(byte[]).IsAssignableFrom(t);
+            }
         }
     }
 }

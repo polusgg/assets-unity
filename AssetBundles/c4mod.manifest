@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 1965207060
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 958991ea6419ff3d0f4314823f15d0e9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5a4f0cafa33d9ad8160273e2a48d7074
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 96
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Mods/C4/throwsound.mp3
+- Assets/Mods/C4/c4ground.png
+- Assets/Mods/C4/detonate.png
+- Assets/Mods/C4/c4ground.prefab
+- Assets/Mods/C4/explodesound.mp3
+Dependencies: []

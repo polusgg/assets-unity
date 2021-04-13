@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1802915339
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: hotpotatobomb
+      Dependencies: {}
+    Info_1:
+      Name: c4mod
+      Dependencies: {}
+    Info_2:
+      Name: toonexpolosion
+      Dependencies: {}
+    Info_3:
+      Name: bepinexresources
+      Dependencies: {}

@@ -1,0 +1,73 @@
+{
+  "assetBundleId": 0,
+  "hash": [
+    26,
+    68,
+    191,
+    230,
+    11,
+    87,
+    90,
+    40,
+    168,
+    136,
+    195,
+    52,
+    79,
+    123,
+    191,
+    98
+  ],
+  "assets": [
+    {
+      "type": 0,
+      "path": "Assets/Mods/CustomHats/bunny.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/CustomHats/carrot.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/CustomHats/cheesy.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/CustomHats/corpse.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/CustomHats/couve.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/CustomHats/dream.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/CustomHats/eye.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/CustomHats/frenchtoast.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/CustomHats/janet.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/CustomHats/jodi.png",
+      "details": null
+    }
+  ]
+}

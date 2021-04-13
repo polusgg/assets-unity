@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 168888586
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a85f2615e30e97ea48df1c69917e0b93
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c90fc19e2679e5295d10bd00f33cb4c3
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Mods/CustomHats/jodi.png
+- Assets/Mods/CustomHats/corpse.png
+- Assets/Mods/CustomHats/dream.png
+- Assets/Mods/CustomHats/eye.png
+- Assets/Mods/CustomHats/carrot.png
+- Assets/Mods/CustomHats/cheesy.png
+- Assets/Mods/CustomHats/janet.png
+- Assets/Mods/CustomHats/couve.png
+- Assets/Mods/CustomHats/bunny.png
+- Assets/Mods/CustomHats/frenchtoast.png
+Dependencies: []

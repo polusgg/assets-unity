@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 595927591
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: global
+      Dependencies: {}

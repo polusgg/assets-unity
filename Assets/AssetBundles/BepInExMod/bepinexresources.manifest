@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2930587692
+CRC: 2193468401
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: f08a3630127b0af63bb983931ee8e24f
+    Hash: 30b6682e49627f9fdb1a26af04c8db6e
   TypeTreeHash:
     serializedVersion: 2
     Hash: 860809e8a369b9e804c31b3c1326d46f
@@ -44,7 +44,7 @@ ClassTypes:
 - Class: 331
   Script: {instanceID: 0}
 Assets:
-- Assets/Mods/LoginMenu/PogusAccountMenu.prefab
 - Assets/Mods/LoginMenu/TopAccount.prefab
 - Assets/Mods/LoginMenu/Toast.prefab
+- Assets/Mods/LoginMenu/PogusAccountMenu.prefab
 Dependencies: []

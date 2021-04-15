@@ -1,0 +1,265 @@
+fileFormatVersion: 2
+guid: 029e57882bd42674bb8973d044803c01
+timeCreated: 1616614601
+licenseType: Free
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: doorLog_bar1
+  - first:
+      213: 21300002
+    second: doorLog_bar2
+  - first:
+      213: 21300004
+    second: doorLog_base
+  - first:
+      213: 21300006
+    second: doorLog_scrollBar
+  - first:
+      213: 21300008
+    second: doorLog_bar3
+  externalObjects: {}
+  usedFileIDs: []
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 12
+  maxTextureSize: 756
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: doorLog_bar1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 10
+        width: 534
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -267, y: -22.5}
+        - {x: -267, y: 22.5}
+        - {x: 260, y: 22.5}
+        - {x: 267, y: 15.5}
+        - {x: 267, y: -22.5}
+      physicsShape:
+      - - {x: -267, y: 22.5}
+        - {x: -267, y: -13.5}
+        - {x: -258, y: -18.5}
+        - {x: 266, y: -18.5}
+        - {x: 267, y: -14.5}
+        - {x: 267, y: 21.5}
+        - {x: 266, y: 22.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ed41f5d6144573a8df88a63bf87d4e
+      internalID: 21300000
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doorLog_bar2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 104
+        width: 534
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -267, y: -22.5}
+        - {x: -267, y: 22.5}
+        - {x: 267, y: 22.5}
+        - {x: 267, y: -22.5}
+      physicsShape:
+      - - {x: -267, y: 22.5}
+        - {x: -267, y: -17.5}
+        - {x: -266, y: -18.5}
+        - {x: 261, y: -18.5}
+        - {x: 267, y: -13.5}
+        - {x: 267, y: 19.5}
+        - {x: 266, y: 22.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b52d1a85fac4019b37c53dc3062bd28
+      internalID: 21300002
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doorLog_base
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 151
+        width: 604
+        height: 604
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -302, y: -302}
+        - {x: -302, y: 302}
+        - {x: 302, y: 302}
+        - {x: 302, y: -302}
+      physicsShape:
+      - - {x: -302, y: 302}
+        - {x: -302, y: -302}
+        - {x: 302, y: -302}
+        - {x: 302, y: 302}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2182da38ea79431c9f64c5277ab7fc70
+      internalID: 21300004
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doorLog_scrollBar
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 4
+        width: 26
+        height: 145
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: -72.5}
+        - {x: -13, y: 72.5}
+        - {x: 13, y: 72.5}
+        - {x: 13, y: -72.5}
+      physicsShape:
+      - - {x: -13, y: 72.5}
+        - {x: -13, y: -72.5}
+        - {x: 13, y: -72.5}
+        - {x: 13, y: 72.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 730584636c4d4715bbd430907dc52dfb
+      internalID: 21300006
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doorLog_bar3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 57
+        width: 534
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -267, y: -22.5}
+        - {x: -267, y: 22.5}
+        - {x: 267, y: 22.5}
+        - {x: 267, y: -22.5}
+      physicsShape:
+      - - {x: -267, y: 22.5}
+        - {x: -267, y: -17.5}
+        - {x: -266, y: -18.5}
+        - {x: 261, y: -18.5}
+        - {x: 267, y: -13.5}
+        - {x: 267, y: 19.5}
+        - {x: 266, y: 22.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0120de0a4f094d5aaacee41b73a2394c
+      internalID: 21300008
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID:
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag:
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

@@ -1,0 +1,452 @@
+fileFormatVersion: 2
+guid: 0bf6ff09c10fd5b4c87aa20a06068e63
+timeCreated: 1616614594
+licenseType: Free
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: panel_wifi_lidside
+  - first:
+      213: 21300002
+    second: panel_wifi_nodeOff
+  - first:
+      213: 21300004
+    second: panel_wifi_closingthing
+  - first:
+      213: 21300006
+    second: panel_wifi_nodeOn
+  - first:
+      213: 21300008
+    second: panel_wifi-lever
+  - first:
+      213: 21300010
+    second: panel_wifi_lid
+  - first:
+      213: 21300012
+    second: panel_wifi_bg
+  externalObjects: {}
+  usedFileIDs: []
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 12
+  maxTextureSize: 1216
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: panel_wifi_lidside
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 45
+        width: 132
+        height: 591
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 270.5}
+        - {x: 14, y: 295.5}
+        - {x: 66, y: 295.5}
+        - {x: 66, y: -295.5}
+        - {x: 19, y: -295.5}
+        - {x: 6, y: -289.5}
+        - {x: -28, y: -248.5}
+        - {x: -58, y: -147.5}
+        - {x: -66, y: -72.5}
+        - {x: -66, y: 81.5}
+        - {x: -59, y: 169.5}
+      physicsShape:
+      - - {x: 64, y: -176.5}
+        - {x: 66, y: -175.5}
+        - {x: 66, y: 159.5}
+        - {x: 64, y: 160.5}
+        - {x: 64, y: 211.5}
+        - {x: 66, y: 212.5}
+        - {x: 66, y: 294.5}
+        - {x: 65, y: 295.5}
+        - {x: 19, y: 295.5}
+        - {x: 13, y: 292.5}
+        - {x: -2, y: 280.5}
+        - {x: -11, y: 269.5}
+        - {x: -29, y: 233.5}
+        - {x: -39, y: 210.5}
+        - {x: -44, y: 200.5}
+        - {x: -56, y: 155.5}
+        - {x: -62, y: 119.5}
+        - {x: -66, y: 86.5}
+        - {x: -66, y: -73.49999}
+        - {x: -60, y: -124.5}
+        - {x: -55, y: -155.5}
+        - {x: -43, y: -199.5}
+        - {x: -39, y: -207.5}
+        - {x: -27, y: -236.5}
+        - {x: -9.999999, y: -269.5}
+        - {x: -1, y: -280.5}
+        - {x: 6, y: -287.5}
+        - {x: 17, y: -294.5}
+        - {x: 19, y: -295.5}
+        - {x: 66, y: -295.5}
+        - {x: 66, y: -227.5}
+        - {x: 64, y: -226.5}
+      - - {x: -66, y: 295.5}
+        - {x: -66, y: 169.5}
+        - {x: -59, y: 169.5}
+        - {x: -36, y: 223.5}
+        - {x: 4, y: 294.5}
+        - {x: 4, y: 295.5}
+      - - {x: -54, y: 228.5}
+        - {x: -54, y: 233.5}
+        - {x: -50, y: 234.5}
+        - {x: -49, y: 228.5}
+        - {x: -50, y: 227.5}
+      - - {x: -59, y: 243.5}
+        - {x: -58, y: 242.5}
+        - {x: -59, y: 240.5}
+        - {x: -58, y: 240.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2096978bfb9f4edcae3092783ccf6a59
+      internalID: 21300000
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel_wifi_nodeOff
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 562
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: -9.5}
+        - {x: -8.5, y: 9.5}
+        - {x: 8.5, y: 9.5}
+        - {x: 8.5, y: -9.5}
+      physicsShape:
+      - - {x: -8.5, y: 9.5}
+        - {x: -8.5, y: -9.5}
+        - {x: 8.5, y: -9.5}
+        - {x: 8.5, y: 9.5}
+      - - {x: -2.5, y: -2.5}
+        - {x: -2.5, y: 2.5}
+        - {x: 1.5, y: 3.5}
+        - {x: 2.5, y: -2.5}
+        - {x: 1.5, y: -3.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e385d79dd104827805bb58d448f5ab7
+      internalID: 21300002
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel_wifi_closingthing
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 583
+        width: 71
+        height: 587
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 35.5, y: -235.5}
+        - {x: -15.5, y: -288.5}
+        - {x: -21.5, y: -293.5}
+        - {x: -35.5, y: -293.5}
+        - {x: -35.5, y: 293.5}
+        - {x: -17.5, y: 293.5}
+        - {x: 35.5, y: 222.5}
+      physicsShape:
+      - - {x: -18.5, y: 293.5}
+        - {x: -33.5, y: 293.5}
+        - {x: -35.5, y: 292.5}
+        - {x: -35.5, y: -293.5}
+        - {x: -18.5, y: -293.5}
+        - {x: -14.5, y: -287.5}
+        - {x: 35.5, y: -234.5}
+        - {x: 35.5, y: 229.5}
+      - - {x: 33.5, y: -246.5}
+        - {x: 21.5, y: -254.5}
+        - {x: 3.5, y: -281.5}
+        - {x: 0.5, y: -292.5}
+        - {x: 0.5, y: -293.5}
+        - {x: 35.5, y: -293.5}
+        - {x: 35.5, y: -246.5}
+      - - {x: 26.5, y: -140.5}
+        - {x: 26.5, y: -194.5}
+      - - {x: 26.5, y: 22.5}
+        - {x: 26.5, y: -31.5}
+      - - {x: 26.5, y: 171.5}
+        - {x: 26.5, y: 117.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40431a9dc8ec4b44ba446704fcd71478
+      internalID: 21300004
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel_wifi_nodeOn
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1196
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: -9.5}
+        - {x: -8.5, y: 9.5}
+        - {x: 8.5, y: 9.5}
+        - {x: 8.5, y: -9.5}
+      physicsShape:
+      - - {x: -8.5, y: 9.5}
+        - {x: -8.5, y: -9.5}
+        - {x: 8.5, y: -9.5}
+        - {x: 8.5, y: 9.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a44251a7a44eb8991002715593c5bb
+      internalID: 21300006
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel_wifi-lever
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1170
+        width: 63
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: -22.5}
+        - {x: -31.5, y: 22.5}
+        - {x: 31.5, y: 22.5}
+        - {x: 31.5, y: -22.5}
+      physicsShape:
+      - - {x: 31.5, y: 22.5}
+        - {x: -31.5, y: 22.5}
+        - {x: -31.5, y: -22.5}
+        - {x: 31.5, y: -22.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3308c56ed2243c283ded68e211325f2
+      internalID: 21300008
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel_wifi_lid
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4
+        width: 360
+        height: 493
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -180, y: -246.5}
+        - {x: -180, y: 246.5}
+        - {x: 180, y: 246.5}
+        - {x: 180, y: -246.5}
+      physicsShape:
+      - - {x: -180, y: 246.5}
+        - {x: -180, y: -246.5}
+        - {x: 180, y: -246.5}
+        - {x: 180, y: 246.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8f3a3e11824627b853fb5d8251e2df
+      internalID: 21300010
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel_wifi_bg
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 499
+        width: 366
+        height: 716
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 58, y: 307}
+        - {x: 61, y: 358}
+        - {x: 69, y: 358}
+        - {x: 94, y: 333}
+        - {x: 71, y: 306}
+        - {x: 95, y: 284}
+        - {x: 78, y: 260}
+        - {x: 79.99999, y: 144}
+        - {x: 183, y: 136}
+        - {x: 183, y: -358}
+        - {x: -183, y: -358}
+        - {x: -183, y: 104}
+        - {x: -174, y: 136}
+        - {x: 55, y: 136}
+        - {x: 69, y: 145}
+        - {x: 69, y: 256}
+        - {x: 61, y: 264}
+        - {x: 72, y: 279}
+      - - {x: -57, y: 310}
+        - {x: -69, y: 280}
+        - {x: -68, y: 147}
+        - {x: -58, y: 136}
+        - {x: -174, y: 136}
+        - {x: -78, y: 145}
+        - {x: -78, y: 285}
+        - {x: -101, y: 308}
+      physicsShape:
+      - - {x: 165, y: 138}
+        - {x: 82, y: 145}
+        - {x: 94, y: 279}
+        - {x: 91.99999, y: 284}
+        - {x: 72.99999, y: 308}
+        - {x: 96, y: 337}
+        - {x: 69, y: 358}
+        - {x: 64, y: 358}
+        - {x: 61, y: 355}
+        - {x: 61, y: 353}
+        - {x: 58, y: 304}
+        - {x: 64, y: 263}
+        - {x: 60, y: 136}
+        - {x: -69, y: 143}
+        - {x: -62, y: 307}
+        - {x: -81, y: 312}
+        - {x: -87, y: 292}
+        - {x: -79.99999, y: 287}
+        - {x: -83, y: 142}
+        - {x: -170, y: 136}
+        - {x: -182, y: 117}
+        - {x: -183, y: 95}
+        - {x: -183, y: -322}
+        - {x: -180, y: -348}
+        - {x: -164, y: -358}
+        - {x: 169, y: -358}
+        - {x: 173, y: -357}
+        - {x: 183, y: -345}
+        - {x: 183, y: 129}
+      - - {x: -97.99999, y: 342}
+        - {x: -97.99999, y: 358}
+        - {x: -144, y: 358}
+        - {x: -157, y: 354}
+        - {x: -165, y: 358}
+        - {x: -183, y: 358}
+        - {x: -183, y: 311}
+        - {x: -181, y: 310}
+        - {x: -127, y: 310}
+        - {x: -113, y: 314}
+        - {x: -104, y: 336}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d576f6eb194b30a321904845a5522c
+      internalID: 21300012
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID:
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag:
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

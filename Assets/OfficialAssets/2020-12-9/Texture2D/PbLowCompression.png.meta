@@ -1,0 +1,880 @@
+fileFormatVersion: 2
+guid: 2d8922bde3fb8cc4ab615ab31c0ca839
+timeCreated: 1616614605
+licenseType: Free
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: waterDrip0005
+  - first:
+      213: 21300002
+    second: leak0005
+  - first:
+      213: 21300004
+    second: waterDrip0004
+  - first:
+      213: 21300006
+    second: waterDrip0010
+  - first:
+      213: 21300008
+    second: waterDrip0016
+  - first:
+      213: 21300010
+    second: waterDrip0002
+  - first:
+      213: 21300012
+    second: waterDrip0011
+  - first:
+      213: 21300014
+    second: leak0004
+  - first:
+      213: 21300016
+    second: waterDrip0014
+  - first:
+      213: 21300018
+    second: waterDrip0013
+  - first:
+      213: 21300020
+    second: waterDrip0003
+  - first:
+      213: 21300022
+    second: leak0002
+  - first:
+      213: 21300024
+    second: leak0006
+  - first:
+      213: 21300026
+    second: waterDrip0015
+  - first:
+      213: 21300028
+    second: waterDrip0007
+  - first:
+      213: 21300030
+    second: waterDrip0012
+  - first:
+      213: 21300032
+    second: waterDrip0001
+  - first:
+      213: 21300034
+    second: waterDrip0008
+  - first:
+      213: 21300036
+    second: leak0001
+  - first:
+      213: 21300038
+    second: waterDrip0006
+  - first:
+      213: 21300040
+    second: leak0003
+  - first:
+      213: 21300042
+    second: waterDrip0009
+  externalObjects: {}
+  usedFileIDs: []
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 12
+  maxTextureSize: 64
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: waterDrip0005
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 43
+        width: 6
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: -2.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: -5.000002}
+        - {x: -3, y: 5}
+        - {x: 3, y: 5}
+        - {x: 3, y: -5.000002}
+      physicsShape:
+      - - {x: -1, y: 5}
+        - {x: -3, y: 4}
+        - {x: -3, y: -3}
+        - {x: -1, y: -5.000002}
+        - {x: 1, y: -5.000002}
+        - {x: 3, y: -3}
+        - {x: 3, y: 4}
+        - {x: 2, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf9e957aab245768731ac0fd58744db
+      internalID: 21300000
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leak0005
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 6
+        width: 12
+        height: 12
+      alignment: 9
+      pivot: {x: 0.3333333, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -6}
+        - {x: -6, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: -6}
+      physicsShape:
+      - - {x: -2, y: 3}
+        - {x: -3, y: 0}
+        - {x: -1, y: -6}
+        - {x: 6, y: -6}
+        - {x: 6, y: 0}
+        - {x: 2, y: 3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d582f8654441688394bbfbb185519f
+      internalID: 21300002
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterDrip0004
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 43
+        width: 6
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: -2.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: -5.000002}
+        - {x: -3, y: 5}
+        - {x: 3, y: 5}
+        - {x: 3, y: -5.000002}
+      physicsShape:
+      - - {x: -1, y: 5}
+        - {x: -3, y: 4}
+        - {x: -3, y: -3}
+        - {x: -1, y: -5.000002}
+        - {x: 1, y: -5.000002}
+        - {x: 3, y: -3}
+        - {x: 3, y: 4}
+        - {x: 2, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe718bb6b7c431f8e50fddec2f3bd15
+      internalID: 21300004
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterDrip0010
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 43
+        width: 5
+        height: 10
+      alignment: 9
+      pivot: {x: 0.6, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: -5}
+        - {x: -2.5, y: 5}
+        - {x: 2.5, y: 5}
+        - {x: 2.5, y: -5}
+      physicsShape:
+      - - {x: -2.5, y: -3}
+        - {x: -0.5, y: -5}
+        - {x: 2.5, y: -4}
+        - {x: 2.5, y: 3}
+        - {x: 0.5, y: 5}
+        - {x: -2.5, y: 4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73608af929e54cfb9e3844b628f0a720
+      internalID: 21300006
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterDrip0016
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 55
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 4.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -4}
+        - {x: -6, y: 4}
+        - {x: 6, y: 4}
+        - {x: 6, y: -4}
+      physicsShape:
+      - - {x: 2, y: 0}
+        - {x: 5, y: 1}
+        - {x: 5, y: 4}
+        - {x: 1, y: 4}
+        - {x: 0, y: 3.000002}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86e60bd3ff24102a60ee13f3a261b02
+      internalID: 21300008
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterDrip0002
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 35
+        width: 7
+        height: 6
+      alignment: 9
+      pivot: {x: 0.5714286, y: -5.166667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.5, y: -3}
+        - {x: -3.5, y: 3}
+        - {x: 3.5, y: 3}
+        - {x: 3.5, y: -3}
+      physicsShape:
+      - - {x: -3.5, y: 3}
+        - {x: -3.5, y: -2}
+        - {x: -0.5, y: -3}
+        - {x: 1.5, y: -3}
+        - {x: 3.5, y: -1}
+        - {x: 3.5, y: 2}
+        - {x: 2.5, y: 3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34eebd65076849ab9cdb5a77c51f231a
+      internalID: 21300010
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterDrip0011
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 44
+        width: 5
+        height: 9
+      alignment: 9
+      pivot: {x: 0.6, y: 1.333333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: -4.5}
+        - {x: -2.5, y: 4.5}
+        - {x: 2.5, y: 4.5}
+        - {x: 2.5, y: -4.5}
+      physicsShape:
+      - - {x: -2.5, y: -3.5}
+        - {x: -1.5, y: -4.5}
+        - {x: 2.5, y: -4.5}
+        - {x: 2.5, y: 3.5}
+        - {x: 1.5, y: 4.5}
+        - {x: -2.5, y: 4.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8041adb078c04dbe933f7fb251373a27
+      internalID: 21300012
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leak0004
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 7
+        width: 16
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5454546}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: -5.5}
+        - {x: -8, y: 5.5}
+        - {x: 8, y: 5.5}
+        - {x: 8, y: -5.5}
+      physicsShape:
+      - - {x: -3, y: 5.5}
+        - {x: -4, y: 3.5}
+        - {x: 0, y: -2.5}
+        - {x: 4, y: -5.5}
+        - {x: 8, y: -5.5}
+        - {x: 8, y: 2.5}
+        - {x: 4, y: 5.5}
+      - - {x: -5, y: -0.5}
+        - {x: -5, y: 2.5}
+        - {x: -8, y: 3.5}
+        - {x: -8, y: -1.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba71748ec66e4172ae53c11f2813e3cc
+      internalID: 21300014
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterDrip0014
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 56
+        width: 10
+        height: 7
+      alignment: 9
+      pivot: {x: 0.5, y: 5.285714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: -3.5}
+        - {x: -5, y: 3.500002}
+        - {x: 5, y: 3.500002}
+        - {x: 5, y: -3.5}
+      physicsShape:
+      - - {x: -1, y: 3.500002}
+        - {x: -5, y: 0.5}
+        - {x: -5, y: -2.5}
+        - {x: -4, y: -3.5}
+        - {x: 5, y: -3.5}
+        - {x: 5, y: 0.5}
+        - {x: 1, y: 3.500002}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ee610d03c74e578e900c670079c115
+      internalID: 21300016
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterDrip0013
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 34
+        width: 5
+        height: 9
+      alignment: 9
+      pivot: {x: 0.6, y: 4.111111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: -4.5}
+        - {x: -2.5, y: 4.5}
+        - {x: 2.5, y: 4.5}
+        - {x: 2.5, y: -4.5}
+      physicsShape:
+      - - {x: -2.5, y: -3.5}
+        - {x: -1.5, y: -4.5}
+        - {x: 2.5, y: -4.5}
+        - {x: 2.5, y: 3.5}
+        - {x: 1.5, y: 4.5}
+        - {x: -2.5, y: 4.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0e4cc8f48e407fb627367618251917
+      internalID: 21300018
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterDrip0003
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 34
+        width: 9
+        height: 29
+      alignment: 9
+      pivot: {x: 0.6666667, y: -0.2758621}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4.5, y: 14.5}
+        - {x: 4.5, y: -14.5}
+        - {x: -4.5, y: 14.5}
+      physicsShape:
+      - - {x: -2.5, y: 14.5}
+        - {x: -2.5, y: 8.5}
+        - {x: -1.5, y: 6.5}
+        - {x: 4.5, y: 6.5}
+        - {x: 4.5, y: 14.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617ce46f10f94fafba3fd321a22ebf1b
+      internalID: 21300020
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leak0002
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 20
+        width: 15
+        height: 12
+      alignment: 9
+      pivot: {x: 0.4666667, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: -6}
+        - {x: -7.5, y: 6}
+        - {x: 7.5, y: 6}
+        - {x: 7.5, y: -6}
+      physicsShape:
+      - - {x: 0.5, y: 6}
+        - {x: -4.5, y: 2}
+        - {x: -4.5, y: 1}
+        - {x: -3.5, y: -2}
+        - {x: 3.5, y: -6}
+        - {x: 7.5, y: -6}
+        - {x: 7.5, y: 0}
+        - {x: 3.5, y: 6}
+      - - {x: -7.5, y: 2}
+        - {x: -6.5, y: 1}
+        - {x: -3.5, y: 2}
+        - {x: -3.5, y: 5}
+        - {x: -6.5, y: 6}
+        - {x: -7.5, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4edf1273734da9af5c5902705f63fc
+      internalID: 21300022
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leak0006
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 6
+        width: 12
+        height: 12
+      alignment: 9
+      pivot: {x: 0.3333333, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -6}
+        - {x: -6, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: -6}
+      physicsShape:
+      - - {x: -2, y: 3}
+        - {x: -3, y: 0}
+        - {x: -1, y: -6}
+        - {x: 6, y: -6}
+        - {x: 6, y: 0}
+        - {x: 2, y: 3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2527e71c5064062aad13851d78740e3
+      internalID: 21300024
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterDrip0015
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 55
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 4.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -4}
+        - {x: -6, y: 4}
+        - {x: 6, y: 4}
+        - {x: 6, y: -4}
+      physicsShape:
+      - - {x: -6, y: -1}
+        - {x: -4, y: -3}
+        - {x: -1, y: -2}
+        - {x: -1, y: 0}
+        - {x: -4, y: 3.000002}
+        - {x: -6, y: 3.000002}
+      - - {x: -1, y: 0}
+        - {x: 1, y: -2}
+        - {x: 4, y: -1}
+        - {x: 4, y: 2}
+        - {x: 2, y: 4}
+        - {x: -1, y: 3.000002}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b9d2b7ac694a99b7b780ff8a5d649d
+      internalID: 21300026
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterDrip0007
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 45
+        width: 5
+        height: 9
+      alignment: 9
+      pivot: {x: 0.6, y: -2.333333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: -4.5}
+        - {x: -2.5, y: 4.499998}
+        - {x: 2.5, y: 4.499998}
+        - {x: 2.5, y: -4.5}
+      physicsShape:
+      - - {x: -2.5, y: -2.500002}
+        - {x: -0.5, y: -4.5}
+        - {x: 2.5, y: -3.5}
+        - {x: 2.5, y: 3.5}
+        - {x: 1.5, y: 4.499998}
+        - {x: -2.5, y: 4.499998}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f2470518d64f5cafb7cbace8adad3e
+      internalID: 21300028
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterDrip0012
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 23
+        width: 5
+        height: 10
+      alignment: 9
+      pivot: {x: 0.6, y: 2.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: -5}
+        - {x: -2.5, y: 5}
+        - {x: 2.5, y: 5}
+        - {x: 2.5, y: -5}
+      physicsShape:
+      - - {x: -2.5, y: -3}
+        - {x: -0.5, y: -5}
+        - {x: 2.5, y: -4}
+        - {x: 2.5, y: 3}
+        - {x: 0.5, y: 5}
+        - {x: -2.5, y: 4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419ad253fd484a18bffc3eb80d5b86c6
+      internalID: 21300030
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterDrip0001
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1
+        width: 7
+        height: 4
+      alignment: 9
+      pivot: {x: 0.5714286, y: -8.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.5, y: -2}
+        - {x: -3.5, y: 2}
+        - {x: 3.5, y: 2}
+        - {x: 3.5, y: -2}
+      physicsShape:
+      - - {x: -2.5, y: 2}
+        - {x: -3.5, y: 0}
+        - {x: -1.5, y: -2}
+        - {x: 2.5, y: -2}
+        - {x: 3.5, y: -1}
+        - {x: 3.5, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8729be27419b488b84e1b4caf65475ed
+      internalID: 21300032
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterDrip0008
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 45
+        width: 5
+        height: 9
+      alignment: 9
+      pivot: {x: 0.6, y: -1.555556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: -4.5}
+        - {x: -2.5, y: 4.499998}
+        - {x: 2.5, y: 4.499998}
+        - {x: 2.5, y: -4.5}
+      physicsShape:
+      - - {x: -2.5, y: -3.500001}
+        - {x: -1.5, y: -4.5}
+        - {x: 2.5, y: -4.5}
+        - {x: 2.5, y: 3.5}
+        - {x: 1.5, y: 4.499998}
+        - {x: -2.5, y: 4.499998}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c20492fa9349fd8f0f908be909bf9c
+      internalID: 21300034
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leak0001
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 20
+        width: 15
+        height: 12
+      alignment: 9
+      pivot: {x: 0.4666667, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: -6}
+        - {x: -7.5, y: 6}
+        - {x: 7.5, y: 6}
+        - {x: 7.5, y: -6}
+      physicsShape:
+      - - {x: 0.5, y: 6}
+        - {x: -4.5, y: 2}
+        - {x: -4.5, y: 1}
+        - {x: -3.5, y: -2}
+        - {x: 3.5, y: -6}
+        - {x: 7.5, y: -6}
+        - {x: 7.5, y: 0}
+        - {x: 3.5, y: 6}
+      - - {x: -7.5, y: 2}
+        - {x: -6.5, y: 1}
+        - {x: -3.5, y: 2}
+        - {x: -3.5, y: 5}
+        - {x: -6.5, y: 6}
+        - {x: -7.5, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1c3d5244ec4d20a704a84f7ce4d95f
+      internalID: 21300036
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterDrip0006
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 43
+        width: 6
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: -2.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: -5.000002}
+        - {x: -3, y: 5}
+        - {x: 3, y: 5}
+        - {x: 3, y: -5.000002}
+      physicsShape:
+      - - {x: -1, y: 5}
+        - {x: -3, y: 4}
+        - {x: -3, y: -3}
+        - {x: -1, y: -5.000002}
+        - {x: 1, y: -5.000002}
+        - {x: 3, y: -3}
+        - {x: 3, y: 4}
+        - {x: 2, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c15b7be25f24e5c8018d180d07d7b9e
+      internalID: 21300038
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leak0003
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 7
+        width: 16
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5454546}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: -5.5}
+        - {x: -8, y: 5.5}
+        - {x: 8, y: 5.5}
+        - {x: 8, y: -5.5}
+      physicsShape:
+      - - {x: -3, y: 5.5}
+        - {x: -4, y: 3.5}
+        - {x: 0, y: -2.5}
+        - {x: 4, y: -5.5}
+        - {x: 8, y: -5.5}
+        - {x: 8, y: 2.5}
+        - {x: 4, y: 5.5}
+      - - {x: -5, y: -0.5}
+        - {x: -5, y: 2.5}
+        - {x: -8, y: 3.5}
+        - {x: -8, y: -1.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98002066199a4adbb52867a25e808579
+      internalID: 21300040
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterDrip0009
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 44
+        width: 5
+        height: 9
+      alignment: 9
+      pivot: {x: 0.6, y: -0.6666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: -4.5}
+        - {x: -2.5, y: 4.499999}
+        - {x: 2.5, y: 4.499999}
+        - {x: 2.5, y: -4.5}
+      physicsShape:
+      - - {x: -2.5, y: -2.5}
+        - {x: -0.5, y: -4.5}
+        - {x: 2.5, y: -3.5}
+        - {x: 2.5, y: 3.5}
+        - {x: 1.5, y: 4.499999}
+        - {x: -2.5, y: 4.499999}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a9e43fe7a649229e956028adc9f769
+      internalID: 21300042
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID:
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag:
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

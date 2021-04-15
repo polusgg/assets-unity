@@ -1,0 +1,3388 @@
+fileFormatVersion: 2
+guid: 57dcff999bf645649b6a40264689f559
+timeCreated: 1616614608
+licenseType: Free
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: room_security
+  - first:
+      213: 21300002
+    second: security_chair
+  - first:
+      213: 21300004
+    second: security_wire
+  - first:
+      213: 21300006
+    second: Servers-security_servers0001
+  - first:
+      213: 21300008
+    second: Servers-security_servers0002
+  - first:
+      213: 21300010
+    second: Servers-security_servers0003
+  - first:
+      213: 21300012
+    second: Servers-security_servers0004
+  - first:
+      213: 21300014
+    second: Servers-security_servers0005
+  - first:
+      213: 21300016
+    second: Servers-security_servers0006
+  - first:
+      213: 21300018
+    second: Servers-security_servers0007
+  - first:
+      213: 21300020
+    second: Servers-security_servers0008
+  - first:
+      213: 21300022
+    second: Servers-security_servers0009
+  - first:
+      213: 21300024
+    second: Servers-security_servers0010
+  - first:
+      213: 21300026
+    second: Servers-security_servers0011
+  - first:
+      213: 21300028
+    second: Servers-security_servers0012
+  - first:
+      213: 21300030
+    second: Servers-security_servers0013
+  - first:
+      213: 21300032
+    second: Servers-security_servers0014
+  - first:
+      213: 21300034
+    second: Servers-security_servers0015
+  - first:
+      213: 21300036
+    second: Servers-security_servers0016
+  - first:
+      213: 21300038
+    second: Servers-security_servers0017
+  - first:
+      213: 21300040
+    second: Servers-security_servers0018
+  - first:
+      213: 21300042
+    second: Servers-security_servers0019
+  - first:
+      213: 21300044
+    second: Servers-security_servers0020
+  - first:
+      213: 21300046
+    second: Servers-security_servers0021
+  - first:
+      213: 21300048
+    second: Servers-security_servers0022
+  - first:
+      213: 21300050
+    second: Servers-security_servers0023
+  - first:
+      213: 21300052
+    second: Servers-security_servers0024
+  - first:
+      213: 21300054
+    second: Servers-security_servers0025
+  - first:
+      213: 21300056
+    second: Servers-security_servers0026
+  - first:
+      213: 21300058
+    second: Servers-security_servers0027
+  - first:
+      213: 21300060
+    second: Servers-security_servers0028
+  - first:
+      213: 21300062
+    second: Servers-security_servers0029
+  - first:
+      213: 21300064
+    second: Servers-security_servers0030
+  - first:
+      213: 21300066
+    second: Servers-security_servers0031
+  - first:
+      213: 21300068
+    second: Servers-security_servers0032
+  - first:
+      213: 21300070
+    second: Servers-security_servers0033
+  - first:
+      213: 21300072
+    second: Servers-security_servers0034
+  - first:
+      213: 21300074
+    second: Servers-security_servers0035
+  - first:
+      213: 21300076
+    second: Servers-security_servers0036
+  - first:
+      213: 21300078
+    second: Servers-security_servers0037
+  - first:
+      213: 21300080
+    second: Servers-security_servers0038
+  - first:
+      213: 21300082
+    second: Servers-security_servers0039
+  - first:
+      213: 21300084
+    second: Servers-security_servers0040
+  - first:
+      213: 21300086
+    second: Servers-security_servers0041
+  - first:
+      213: 21300088
+    second: Servers-security_servers0042
+  - first:
+      213: 21300090
+    second: Servers-security_servers0043
+  - first:
+      213: 21300092
+    second: Servers-security_servers0044
+  - first:
+      213: 21300094
+    second: Servers-security_servers0045
+  - first:
+      213: 21300096
+    second: Servers-security_servers0046
+  - first:
+      213: 21300098
+    second: Servers-security_servers0047
+  - first:
+      213: 21300100
+    second: Servers-security_servers0048
+  - first:
+      213: 21300102
+    second: Servers-security_servers0049
+  - first:
+      213: 21300104
+    second: Servers-security_servers0050
+  - first:
+      213: 21300106
+    second: Servers-security_servers0051
+  - first:
+      213: 21300108
+    second: Servers-security_servers0052
+  - first:
+      213: 21300110
+    second: Servers-security_servers0053
+  - first:
+      213: 21300112
+    second: Servers-security_servers0054
+  - first:
+      213: 21300114
+    second: Servers-security_servers0055
+  - first:
+      213: 21300116
+    second: Servers-security_servers0056
+  - first:
+      213: 21300118
+    second: Servers-security_servers0057
+  - first:
+      213: 21300120
+    second: Servers-security_servers0058
+  - first:
+      213: 21300122
+    second: Servers-security_servers0059
+  - first:
+      213: 21300124
+    second: Servers-security_servers0060
+  - first:
+      213: 21300126
+    second: Servers-security_servers0061
+  - first:
+      213: 21300128
+    second: Servers-security_servers0062
+  - first:
+      213: 21300130
+    second: Servers-security_servers0063
+  - first:
+      213: 21300132
+    second: Servers-security_servers0064
+  - first:
+      213: 21300134
+    second: Servers-security_servers0065
+  - first:
+      213: 21300136
+    second: Servers-security_servers0066
+  - first:
+      213: 21300138
+    second: security_TVs0001
+  - first:
+      213: 21300140
+    second: security_TVs0002
+  externalObjects: {}
+  usedFileIDs: []
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 12
+  maxTextureSize: 996
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: room_security
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 531
+        width: 262
+        height: 464
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 232}
+        - {x: 66.99999, y: 232}
+        - {x: 131, y: 168}
+        - {x: 131, y: -232}
+        - {x: -109, y: -232}
+        - {x: -111, y: -131}
+        - {x: -131, y: -129}
+        - {x: -131, y: 56}
+        - {x: -111, y: 58}
+        - {x: -109, y: 152}
+      physicsShape:
+      - - {x: -32, y: 232}
+        - {x: -107, y: 174}
+        - {x: -131, y: 125}
+        - {x: -131, y: -167}
+        - {x: -122, y: -232}
+        - {x: 131, y: -232}
+        - {x: 131, y: 167}
+        - {x: 68, y: 232}
+      - - {x: -97, y: 232}
+        - {x: -131, y: 232}
+        - {x: -131, y: 182}
+        - {x: -125, y: 181}
+        - {x: -94, y: 181}
+        - {x: -89, y: 187}
+        - {x: -89, y: 216}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093dc3137d3d4283906b0a73e20ba134
+      internalID: 21300000
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: security_chair
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 945
+        width: 41
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 25}
+        - {x: 20.5, y: 25}
+        - {x: 20.5, y: -25}
+        - {x: -20.5, y: -25}
+        - {x: -20.5, y: 22}
+        - {x: -19.5, y: 24}
+      physicsShape:
+      - - {x: -20.5, y: 25}
+        - {x: -20.5, y: -3}
+        - {x: -18.5, y: -19}
+        - {x: -9.5, y: -25}
+        - {x: 14.5, y: -25}
+        - {x: 20.5, y: -22}
+        - {x: 20.5, y: 15}
+        - {x: 15.5, y: 25}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ce2cab96ef44bba4e6ab8ee7e28a34
+      internalID: 21300002
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: security_wire
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 433
+        width: 6
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: -16}
+        - {x: -3, y: 16}
+        - {x: 3, y: 16}
+        - {x: 3, y: -16}
+      physicsShape:
+      - - {x: -3, y: 16}
+        - {x: -3, y: -16}
+        - {x: 3, y: -16}
+        - {x: 3, y: 15}
+        - {x: 2, y: 16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42d0e3660444e04b0ef6235210b0f2e
+      internalID: 21300004
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0001
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 50
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de6058fa4e043c4b96e675498e1d5ca
+      internalID: 21300006
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0002
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 50
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e9d311d660411abe3e780665b9cf2a
+      internalID: 21300008
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0003
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 332
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9cf1efdaaf54528ba94082eff70135c
+      internalID: 21300010
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0004
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 332
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3dd157c954642f295129d2714f1db05
+      internalID: 21300012
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0005
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 335
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -20, y: 36.5}
+        - {x: -18, y: 36.5}
+        - {x: -16, y: 38.5}
+        - {x: -5, y: 50.5}
+        - {x: -5, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02856ea6ff94f298b4aa5e948342189
+      internalID: 21300014
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0006
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 335
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -20, y: 36.5}
+        - {x: -18, y: 36.5}
+        - {x: -16, y: 38.5}
+        - {x: -5, y: 50.5}
+        - {x: -5, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4acee1021440da8060d8ccfc13640e
+      internalID: 21300016
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0007
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 241
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c3148dc25f49259258ae2b861407c0
+      internalID: 21300018
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0008
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 238
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec34ad0dec04b38af6ad6bcc791450d
+      internalID: 21300020
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0009
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 238
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8d7e924a274497886017f0ff548960
+      internalID: 21300022
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0010
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 238
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d54b456ff24b6e884946dde9b56168
+      internalID: 21300024
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0011
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 286
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 44.5}
+        - {x: -16, y: 44.5}
+        - {x: -4, y: 49.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b030849a1bdf42c6ba89afcdf63a0b6b
+      internalID: 21300026
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0012
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 286
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 44.5}
+        - {x: -16, y: 44.5}
+        - {x: -4, y: 49.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af53a5d660a4135b2c56ec940823164
+      internalID: 21300028
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0013
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 238
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83820500f82f4816b006b5e1805bac98
+      internalID: 21300030
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0014
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 238
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84a9e382c87b4ef085888dc43cb91955
+      internalID: 21300032
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0015
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 238
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408ece5517044aec882544105a825a0d
+      internalID: 21300034
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0016
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 238
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce1c7ebe4ca464590264e55647be232
+      internalID: 21300036
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0017
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 238
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6aa5404c0db487e93baab47aa0dc00f
+      internalID: 21300038
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0018
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 276
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5723da969b491daf4b9647ec6550df
+      internalID: 21300040
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0019
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 276
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656cfb6d77e94929a0496e75ccbcd2e0
+      internalID: 21300042
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0020
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 276
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f31f5ce1d3046fb8acba837142835f0
+      internalID: 21300044
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0021
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 276
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7de693fb534c4e9e7911deccbfa59e
+      internalID: 21300046
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0022
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 426
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 13, y: -38.5}
+        - {x: 3, y: -50.5}
+        - {x: 3, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -38.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7ef8f954524f9fa1075bc2421d4cbb
+      internalID: 21300048
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0023
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 426
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 13, y: -38.5}
+        - {x: 3, y: -50.5}
+        - {x: 3, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -38.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3c55cfe89e4ac89b8d37ac5867b303
+      internalID: 21300050
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0024
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 426
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 13, y: -38.5}
+        - {x: 3, y: -50.5}
+        - {x: 3, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -38.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae422838f0243d5a4c72882fe4e6cf6
+      internalID: 21300052
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0025
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 426
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d8a2bb5d3345f79d81c3696ff66b93
+      internalID: 21300054
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0026
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 426
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1da5352b1f44cadaa9a756468ddfac7
+      internalID: 21300056
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0027
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 426
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a2165f9b6f44f88668089df035af21
+      internalID: 21300058
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0028
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 426
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36cf3edbaedb4fa7b1d456ceedc3d85e
+      internalID: 21300060
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0029
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 276
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e2c5ca9384943dfb4b46d5abec4a366
+      internalID: 21300062
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0030
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 276
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3dace8d73224aea85d2e49407544277
+      internalID: 21300064
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0031
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 276
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dfcd92afd3543f4aa1acf2811aee87b
+      internalID: 21300066
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0032
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 276
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a156997c4d4b14b088818b8d4b5c51
+      internalID: 21300068
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0033
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 98
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe8058ff6034100b7510d8e32b8f2e4
+      internalID: 21300070
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0034
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 276
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2340ebd6d85431486075baf470d010e
+      internalID: 21300072
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0035
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 276
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480d33ba62be46e2ab58b56d7f449632
+      internalID: 21300074
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0036
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 276
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09376670a64460c9330fccc9f9c0d2a
+      internalID: 21300076
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0037
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 192
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d878cd75d88a4ddfbe38ebfaf9d5f769
+      internalID: 21300078
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0038
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 192
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2368db4e8cf0445c85939c5548f169c6
+      internalID: 21300080
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0039
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 192
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b9557329bc4362ad0e87ac45a1cd39
+      internalID: 21300082
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0040
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 4
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d42b9fd003da432da8b752adc22b9ca4
+      internalID: 21300084
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0041
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 53
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d418f1096a425cb0c48749062d6a40
+      internalID: 21300086
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0042
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 53
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4800b693abc47dc9baac83b87afb181
+      internalID: 21300088
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0043
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 53
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c3e1965b594bd8bc84a242f6e8a919
+      internalID: 21300090
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0044
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 53
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7705ced5b3a463cba4a71690bd3c8d3
+      internalID: 21300092
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0045
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 53
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1b23cd98ed45868bb0beb71acc5620
+      internalID: 21300094
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0046
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 88
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a03df0f2ed45d5ae87d4ba82799652
+      internalID: 21300096
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0047
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 88
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83353b55fa247b5954ddd5aa2e8a6f1
+      internalID: 21300098
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0048
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 88
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6235e8166b8f46e38009d1731efd9033
+      internalID: 21300100
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0049
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 147
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b5f59531aa488a97289084beb923b5
+      internalID: 21300102
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0050
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 147
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d0fe7d307c49c7ba9b02c0647c198d
+      internalID: 21300104
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0051
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 147
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0f670df6614907aa3067534bcbad77
+      internalID: 21300106
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0052
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 147
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42bbd91d09b41d4a0fdfe882813ba36
+      internalID: 21300108
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0053
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 182
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6a9ba235114587984600e31fedb7ec
+      internalID: 21300110
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0054
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 182
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e189309124a641fda35da3dbe02940d8
+      internalID: 21300112
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0055
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 182
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e9fd8219d904cd98cf919213956ddd4
+      internalID: 21300114
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0056
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 182
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2804ba73ae94b5387dc5566146b695d
+      internalID: 21300116
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0057
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 144
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96df73f9a9e24f299ddf86cf985995d8
+      internalID: 21300118
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0058
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 144
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b805c321c6644e988f3d996e7b069ca
+      internalID: 21300120
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0059
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 144
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdfe74d9d2774a87a421597f48dd36b7
+      internalID: 21300122
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0060
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 144
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f13ba212e046a19e821147853b70bc
+      internalID: 21300124
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0061
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 144
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: db845a6f9a39485cb5295ee32e3ab0d5
+      internalID: 21300126
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0062
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 144
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f466a386a2d4718b99930537636040a
+      internalID: 21300128
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0063
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 144
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94056f0298d04744acf6e66f18a410c9
+      internalID: 21300130
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0064
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 144
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674eec1fa1fd4e9e9e2315507934a98d
+      internalID: 21300132
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0065
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 144
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d8148c757a48d2adb819b3e42416da
+      internalID: 21300134
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Servers-security_servers0066
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 144
+        width: 50
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.999999, y: 51.5}
+        - {x: 25, y: 51.5}
+        - {x: 25, y: -14.5}
+        - {x: -8, y: -51.5}
+        - {x: -25, y: -51.5}
+        - {x: -25, y: 28.5}
+      physicsShape:
+      - - {x: 9.999999, y: 51.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -51.5}
+        - {x: -9.999999, y: -51.5}
+        - {x: 25, y: -22.5}
+        - {x: 25, y: 50.5}
+        - {x: 24, y: 51.5}
+      - - {x: 9.999999, y: -41.5}
+        - {x: 2, y: -50.5}
+        - {x: 2, y: -51.5}
+        - {x: 25, y: -51.5}
+        - {x: 25, y: -43.5}
+        - {x: 24, y: -41.5}
+      - - {x: -25, y: 51.5}
+        - {x: -25, y: 39.5}
+        - {x: -7, y: 39.5}
+        - {x: -4, y: 50.5}
+        - {x: -4, y: 51.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54aa714b1edc41228703efb127c95cc3
+      internalID: 21300136
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: security_TVs0001
+      rect:
+        serializedVersion: 2
+        x: 3.07612
+        y: 456
+        width: 146.9239
+        height: 73
+      alignment: 9
+      pivot: {x: 0.4929347, y: 0.5136986}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39.53806, y: 36.5}
+        - {x: 36.46194, y: 36.5}
+        - {x: 68.46194, y: 4.5}
+        - {x: 73.46194, y: -22.5}
+        - {x: 34.46194, y: -36.5}
+        - {x: -49.53806, y: -35.5}
+        - {x: -75.53806, y: -20.5}
+        - {x: -67.53806, y: 8.5}
+      physicsShape:
+      - - {x: 67.46194, y: -24.5}
+        - {x: 65.46194, y: -26.5}
+        - {x: 65.46194, y: -36.5}
+        - {x: 73.46194, y: -36.5}
+        - {x: 73.46194, y: -27.5}
+        - {x: 70.46194, y: -24.5}
+      - - {x: 72.46194, y: -22.5}
+        - {x: 72.46194, y: -12.5}
+        - {x: 68.46194, y: 7.5}
+        - {x: 42.46194, y: 27.5}
+        - {x: 32.46194, y: 36.5}
+        - {x: -38.53806, y: 36.5}
+        - {x: -41.53806, y: 33.5}
+        - {x: -67.53806, y: 8.5}
+        - {x: -72.53806, y: 0.5}
+        - {x: -72.53806, y: -21.5}
+        - {x: -71.53806, y: -24.5}
+        - {x: -57.53806, y: -17.5}
+        - {x: -55.53806, y: -34.5}
+        - {x: -50.53805, y: -35.5}
+        - {x: 35.46194, y: -35.5}
+        - {x: 53.46194, y: -29.5}
+        - {x: 54.46194, y: -16.5}
+        - {x: 63.46194, y: -24.5}
+      - - {x: -50.53805, y: -23.5}
+        - {x: -50.53805, y: -11.5}
+        - {x: -46.53806, y: -9.5}
+        - {x: -40.53806, y: -3.5}
+        - {x: -40.53806, y: -1.5}
+        - {x: -41.53806, y: -7.5}
+        - {x: -42.53806, y: -8.5}
+        - {x: -49.53806, y: -24.5}
+        - {x: -49.53806, y: -25.5}
+      - - {x: 41.46194, y: -23.5}
+        - {x: 40.46194, y: -17.5}
+        - {x: 37.46194, y: -13.5}
+        - {x: 37.46194, y: -8.5}
+        - {x: 36.46194, y: -7.5}
+        - {x: 36.46194, y: 2.5}
+        - {x: 35.46194, y: 3.5}
+        - {x: 35.46194, y: 9.5}
+        - {x: 36.46194, y: 10.5}
+        - {x: 35.46194, y: 17.5}
+        - {x: 34.46194, y: 11.5}
+        - {x: 35.46194, y: 10.5}
+        - {x: 36.46194, y: -0.5}
+        - {x: 37.46194, y: -3.5}
+        - {x: 46.46194, y: -11.5}
+        - {x: 46.46194, y: -21.5}
+        - {x: 44.46194, y: -24.5}
+        - {x: 43.46194, y: -25.5}
+        - {x: 43.46194, y: -24.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745047d197df4f0a94719a8eef572623
+      internalID: 21300138
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: security_TVs0002
+      rect:
+        serializedVersion: 2
+        x: 3.07612
+        y: 381
+        width: 146.9239
+        height: 73
+      alignment: 9
+      pivot: {x: 0.4929347, y: 0.5136986}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39.53806, y: 36.5}
+        - {x: 36.46194, y: 36.5}
+        - {x: 68.46194, y: 4.5}
+        - {x: 73.46194, y: -22.5}
+        - {x: 34.46194, y: -36.5}
+        - {x: -49.53806, y: -35.5}
+        - {x: -75.53806, y: -20.5}
+        - {x: -67.53806, y: 8.5}
+      physicsShape:
+      - - {x: 62.46194, y: -27.5}
+        - {x: 56.46194, y: -35.5}
+        - {x: 56.46194, y: -36.5}
+        - {x: 73.46194, y: -36.5}
+        - {x: 73.46194, y: -27.5}
+      - - {x: 72.46194, y: -22.5}
+        - {x: 72.46194, y: -12.5}
+        - {x: 68.46194, y: 7.5}
+        - {x: 42.46194, y: 27.5}
+        - {x: 32.46194, y: 36.5}
+        - {x: -38.53806, y: 36.5}
+        - {x: -41.53806, y: 33.5}
+        - {x: -67.53806, y: 8.5}
+        - {x: -72.53806, y: 0.5}
+        - {x: -72.53806, y: -21.5}
+        - {x: -71.53806, y: -24.5}
+        - {x: -57.53806, y: -17.5}
+        - {x: -55.53806, y: -34.5}
+        - {x: -50.53805, y: -35.5}
+        - {x: 35.46194, y: -35.5}
+        - {x: 53.46194, y: -29.5}
+        - {x: 54.46194, y: -16.5}
+        - {x: 63.46194, y: -24.5}
+      - - {x: -50.53805, y: -23.5}
+        - {x: -50.53805, y: -11.5}
+        - {x: -46.53806, y: -9.5}
+        - {x: -40.53806, y: -3.5}
+        - {x: -40.53806, y: -1.5}
+        - {x: -41.53806, y: -7.5}
+        - {x: -42.53806, y: -8.5}
+        - {x: -49.53806, y: -24.5}
+        - {x: -49.53806, y: -25.5}
+      - - {x: 41.46194, y: -23.5}
+        - {x: 40.46194, y: -17.5}
+        - {x: 37.46194, y: -13.5}
+        - {x: 37.46194, y: -8.5}
+        - {x: 36.46194, y: -7.5}
+        - {x: 36.46194, y: 2.5}
+        - {x: 35.46194, y: 3.5}
+        - {x: 35.46194, y: 9.5}
+        - {x: 36.46194, y: 10.5}
+        - {x: 35.46194, y: 17.5}
+        - {x: 34.46194, y: 11.5}
+        - {x: 35.46194, y: 10.5}
+        - {x: 36.46194, y: -0.5}
+        - {x: 37.46194, y: -3.5}
+        - {x: 46.46194, y: -11.5}
+        - {x: 46.46194, y: -21.5}
+        - {x: 44.46194, y: -24.5}
+        - {x: 43.46194, y: -25.5}
+        - {x: 43.46194, y: -24.5}
+      - - {x: 65.46194, y: 36.5}
+        - {x: 65.46194, y: 18.5}
+        - {x: 69.46194, y: 12.5}
+        - {x: 73.46194, y: 12.5}
+        - {x: 73.46194, y: 36.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf811d2c1394fa7a4acbdcf8cbd12e8
+      internalID: 21300140
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID:
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag:
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

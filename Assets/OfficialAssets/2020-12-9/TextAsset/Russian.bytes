@@ -1,0 +1,321 @@
+LocalButton,Локально
+OnlineButton,Онлайн
+HowToPlayButton,Правила
+FreePlayButton,Свободный забег
+PublicHeader,Публичные комнаты
+PrivateHeader,Частная комната
+HostHeader,Создать комнату
+
+
+ExitButton,Выйти
+BackButton,Назад
+AvailableGamesLabel,Доступные игры
+CreateGameButton,Создать игру
+FindGameButton,Найти игру
+EnterCode,Ввести код
+GhostIgnoreTasks,Вы погибли. Наслаждайтесь хаосом.
+GhostDoTasks,Вы погибли. Продолжайте выполнять задания для победы.
+GhostImpostor,Вы мертвы, но всё ещё можете организовать саботаж!
+ImpostorTask,Устраивай саботаж и убей всех членов экипажа.
+FakeTasks,Фальшивые задания:
+TaskComplete,Задание выполнено!
+ExileTextSP,{0} оказался предателем.
+ExileTextSN,{0} не был предателем.
+ExileTextPP,{0} оказался одним из предателей.
+ExileTextPN,{0} не был предателем.
+NoExileSkip,Принято решение пропустить голосование.
+NoExileTie,Мы не смогли принять единого решения, голосование пропущено.
+ExileTextNonConfirm,{0} был изгнан.
+ImpostorsRemainS,{0} предатель остался.
+ImpostorsRemainP,{0} предателей осталось.
+
+
+Hallway,Холл
+Engines,Двигатели
+UpperEngine,Верхний двигатель
+Cafeteria,Столовая
+Weapons,Оружейная
+Reactor,Реактор
+Security,Охрана
+MedBay,Медпункт
+LifeSupp,O2
+Nav,Навигация
+LowerEngine,Нижний двигатель
+Electrical,Электричество
+Admin,Управление
+Storage,Хранилище
+Shields,Щиты
+Comms,Связь
+Decontamination,Обеззараживание
+Launchpad,Стартовая площадка
+LockerRoom,Раздевалка
+Laboratory,Лаборатория
+Balcony,Балкон
+Office,Офис
+Greenhouse,Теплица
+
+
+DivertPowerTo,Проведите энергию в {0}
+AcceptDivertedPower,Примите отправленную энергию
+SubmitScan,Подтвердите сканирование
+PrimeShields,Почините щиты
+FuelEngines,Заправьте двигатели
+ChartCourse,Организуйте маршрут
+StartReactor,Запустите реактор
+SwipeCard,Проведите картой
+ClearAsteroids,Раскромсайте астероиды
+DownloadData,Скачайте данные
+UploadData,Загрузите данные
+InspectSample,Исследуйте образец
+EmptyChute,Очистите отсек
+EmptyGarbage,Выбросите мусор
+AlignEngineOutput,Выровняйте мощность двигателя
+FixWiring,Почините проводку
+CalibrateDistributor,Откалибруйте передатчик
+UnlockManifolds,Разблокируйте трубопровод
+ResetReactor,Взрыв реактора через
+FixLights,Почините свет
+CleanO2Filter,Очистите кислородный фильтр
+FixComms,Саботаж коммуникационного модуля
+RestoreOxy,Утечка кислорода через
+StabilizeSteering,Стабилизируйте управление
+
+
+AssembleArtifact,Соберите артефакт
+SortSamples,Рассортируйте образцы
+MeasureWeather,Измерьте погоду
+EnterIdCode,Введите ID-код
+BuyBeverage,Купите попить
+ProcessData,Перенесите данные
+
+
+NumImpostorsS,Обнаружен [FF1919FF]1 предатель[] среди нас
+NumImpostorsP,Обнаружено [FF1919FF]{0} предателей[] среди нас
+
+
+Crewmate,Член экипажа
+Impostor,Предатель
+Victory,Победа
+Defeat,Поражение
+CrewmatesDisconnected,Большинство членов экипажа\nотключились
+ImpostorDisconnected,Предатель покинул игру
+
+PickAnomaly,Выберите аномалию
+WaterPlantsGetCan,Лейка найдена!
+AuthOfficeOkay,Офис в порядке
+AuthCommsOkay,Коммуникации в порядке
+AuthOfficeActive,Офис активен
+AuthCommsActive,Коммуникации активны
+AuthOfficeNotActive,Офис НЕАКТИВЕН
+AuthCommsNotActive,Коммуникации НЕАКТИВНЫ
+SecLogEntry,{0} прошёл {1} датчик
+LogNorth,Север
+LogSouthEast,Юго-восток
+LogSouthWest,Юго-запад
+
+EnterName,Введите имя
+
+SwipeCardPleaseInsert,Вставьте карту
+SwipeCardPleaseSwipe,Проведите
+SwipeCardBadRead,Не удалось считать
+SwipeCardTooFast,Слишком быстро!
+SwipeCardTooSlow,Слишком медленно!
+SwipeCardAccepted,Доступ разрешён.
+
+ReactorHoldToStop,Удержите для охлаждения
+ReactorWaiting,Ожидаем второго человека
+ReactorNominal,Реактор стабилизирован
+
+MeetingWhoIsTitle,Кто же предатель?
+MeetingVotingBegins,Голосование через: {0}с
+MeetingVotingEnds,До конца голосования {0}с
+MeetingVotingResults,Результаты голосования
+MeetingProceeds,Итоги через: {0}с
+MeetingHasVoted,{0} проголосовал. Осталось {1}.
+
+HowToPlayText1,Among Us - это игра о командной работе и предательстве.\n\nИгроки получают роль члена экипажа или предателя.
+HowToPlayText2,От 4 до 10 игроков могут играть онлайн или по WiFi.
+HowToPlayText41,Создав игру, ты можешь настроить игру самостоятельно.
+HowToPlayText42,Для начала реши, с кем играть!\n\nХотите играть с друзьями - нажмите "Закрытая комната" и поделитесь кодом комнаты.\n\nЕсли хотите играть с людьми со всего мира - режим "онлайн" для вас.
+HowToPlayText43,"О-о! Я хочу бегать как ненормальный, или чтобы предателей было трое!" Отлично, создатель комнаты может сам выбирать настройки комнаты! 
+HowToPlayText44,Если кто-то ведёт себя неприлично, вышвырните игрока из комнаты, или вообще забаньте. Власть в ваших руках.
+HowToPlayTextMap,Личная карта поможет вам в ориентировании на корабле.
+HowToPlayTextCrew1,Цель игры: заполнить шкалу заданий, или распознать предателей.
+HowToPlayTextCrew2,Выполняй задания и шкала заполнится.
+HowToPlayTextCrew3,Устраняй саботажи.
+HowToPlayTextCrew4,Если знаешь, кто предатель - жми на кнопку.
+HowToPlayTextCrew5,Сообщай о найденных трупах.
+HowToPlayTextCrew6,Капитанский мостик и комната охраны помогут следить за игроками.
+HowToPlayTextImp1,Цель игры предателя: убить всех членов экипажа.
+HowToPlayTextImp2,Смешайся с толпой.
+HowToPlayTextImp3,Прячься в вентиляции.
+HowToPlayTextImp4,Притворяйся полезным.
+HowToPlayTextImp5,Устраивай саботаж и заставь их побегать!
+HowToPlayTextImp6,Закрывай двери и устраивай засады.
+HowToPlayTextImp7,Убивай команду по окончании перезарядки.
+HowToPlayText5,Разговорчики запрещены! Вы же не хотите, чтобы игроки поняли, кто есть кто?\n\nМёртвые игроки не могут говорить до конца игры!\n\nПризраки могут выполнять задания, чтобы помочь команде победить!
+HowToPlayText6,Если кто-то нашёл тело, начинается экстренное собрание.\n\nКонечно, играя с друзьями лично, призраки не могут разговаривать, они ведь в курсе, кто предатель...\n\nПредатели будут пытаться выдать себя за своих. Будь осторожен.
+HowToPlayText7,Если вы всё обсудили, голосуйте, кого выкинуть с корабля большинством голосов.\n\nЕсли нет никакой информации, лучше пропустите голосование.
+HowToPlayText81,Потренируйтесь в режиме тренировочной игры!
+HowToPlayText82,Ну, там, в метеориты пошмалять из гравипушки, или зарезать кого-то, став предателем, дело твоё!
+
+SettingsGeneral,Основное
+SettingsControls,Управление
+SettingsSound,Звук
+SettingsGraphics,Графон
+SettingsData,Дополнительные
+SettingsCensorChat,Фильтровать чат
+SettingsMusic,Музыка
+SettingsSFX,Эффекты
+SettingsOn,Вкл.
+SettingsOff,Выкл.
+SettingsSendTelemetry,Отправить телеметрию
+SettingsControlMode,Режим управления
+SettingsTouchMode,Касанием
+SettingsJoystickMode,Джойстиком
+SettingsKeyboardMode,Мышь+Клавиатура
+SettingsFullscreen,Полноэкранный
+SettingsVSync,VSync
+SettingsResolution,Разрешение
+SettingsApply,Применить
+SettingsPersonalizeAds,Персональная реклама
+SettingsLanguage,Язык
+SettingsJoystickSize,Размер
+SettingsMouseMode,Мышь
+
+MatchMapName,Карта:
+MatchLanguage,Чат:
+MatchImpostors,Предателей:
+MatchMaxPlayers,Максимум игроков:
+Cancel,Отменить
+Confirm,Подтвердить
+
+PlayerColor,Цвет
+PlayerHat,Шляпка
+PlayerSkin,Скины
+PlayerPet,Питомец
+GameSettings,Игра
+GameRecommendedSettings,Рекомендованные настройки
+GameCustomSettings,Пользовательские настройки
+GameMapName,Карта
+GameNumImpostors,# Предателей
+GameNumMeetings,# Экстренных собраний
+GameDiscussTime,Время на обсуждение
+GameVotingTime,Время на голосование
+GamePlayerSpeed,Скорость игрока
+GameCrewLight,Дальность обзора членов экипажа
+GameImpostorLight,Дальность обзора предателя
+GameKillCooldown,Перезарядка убийства
+GameKillDistance,Дистанция убийств
+GameCommonTasks,# Обычных заданий 
+GameLongTasks,# Длинных заданий
+GameShortTasks,# Коротких заданий
+GameEmergencyCooldown,Перерыв между собраниями
+GameSecondsAbbrev,с
+GameConfirmImpostor,Раскрыть роль после изгнания
+GameVisualTasks,Визуальные задания
+GameAnonymousVotes,Anonymous Votes
+GameTaskBarMode,Task Bar Updates
+SettingNormalTaskMode,Always
+SettingMeetingTaskMode,Meetings
+SettingInvisibleTaskMode,Never
+
+Limit,Лимит
+RoomCode,Код комнаты
+LeaveGame,Покинуть игру
+ReturnToGame,Вернуться в игру
+
+LocalHelp,Проблемы с подключением?\n\n● Убедись, что все в одной сети WiFi\n\n● Убедись, что у всех одна версия игры\n\n● Убедись, что WiFi работает\n\n● Пусть другой человек создаст\n\n● Ну перезапустите игру...\n\n● Попробуй перезапустить мобильник...\n\n● Не помогло? Пиши в дискорд!
+OnlineHelp,Как это работает?\n\n● Создав своё лобби, вы увидите код рядом с кнопкой «Start».\n● Отправьте код друзьям для совместной игры.\n● Нажмите на кнопку «Private», если хотите сделать лобби доступным для других игроков.\n● Владелец лобби может банить или кикать игроков, когда доступен чат.\n● Есть вопросы? Напишите нам в Дискорд!\n
+
+EmergencyCount,ЧЛЕН ЭКИПАЖА {0} МОЖЕТ\n\n\n\nРАЗ ОРГАНИЗОВАТЬ СОБРАНИЕ
+EmergencyNotReady,ЭКИПАЖ ДОЛЖЕН ПОДОЖДАТЬ\n\n\n\nДО СЛЕДУЮЩЕГО СОБРАНИЯ
+EmergencyDuringCrisis,ЭКСТРЕННЫЕ СОБРАНИЯ ОТКЛЮЧЕНЫ\nВО ВРЕМЯ ПРОИСШЕСТВИЙ
+EmergencyRequested,СОЗДАН ЗАПРОС НА СОБРАНИЕ\nОЖИДАЙТЕ
+
+AdPolicyTitle,Рекламная политика
+AdPolicyText,«Among Us» использует AdMob рекламу после каждого матча, чтобы наша игра была бесплатной.\n По умолчанию, AdMob собирает данные о твоих предпочтениях, дабы персонифицировать рекламу. AdMob будет использовать cookies,\nданные устройства, и информацию о геолокации. Мы\nне можем контролировать этот процесс, по этому рекомендуем купить пакет «Без рекламы» (2 USD)\n\n,К тому же, если купишь этот пакет, все игроки в твоём лобби \nне будут видеть рекламу! \nЕсли же ты уже купил этот пакет, то нажми на «Восстановить покупки»\nчто получить его снова.
+Accept,Принять
+RemoveAds,Убрать рекламу
+DataPolicyWhat,Какие данные собирают?
+
+WaterPlants,Полейте цветы
+WeatherEta,ОСТ: {0}С
+WeatherComplete,Готово
+RunDiagnostics,Запуск диагностики
+
+SettingShort,Близко
+SettingMedium,Средне
+SettingLong,Далеко
+SamplesPress,Нажмите, чтобы начать
+SamplesAdding,Добавьте реагент
+SamplesSelect,Выберите аномалию
+SamplesThanks,Спасибо!
+SamplesComplete,Тест завершён
+AstDestroyed,Уничтожено: {0}
+TaskTestTitle,ТЕСТИРОВЩИК-2000
+
+BeginDiagnostics,Начать диагностику
+UserLeftGame,{0} покинул игру
+GameStarting,Начинаем через {0}
+
+Tasks,Список
+MedscanRequested,Сканирование запрошено
+MedscanWaitingFor,Ожидайте {0}
+MedscanCompleted,Сканирование завершено!
+MedscanCompleteIn,Сканирование... {0}
+
+StatsTitle,Статистика
+StatsBodiesReported,Тел найдено:\t
+StatsEmergenciesCalled,Кнопка нажата:\t
+StatsTasksCompleted,Заданий выполнено:\t
+StatsAllTasksCompleted,Все задания выполнены:\t
+StatsSabotagesFixed,Исправлено саботажей:\t
+StatsImpostorKills,Убил:\t\t
+StatsTimesMurdered,Был убит:\t
+StatsTimesEjected,Был вышвырнут:\t\t
+StatsCrewmateStreak,Был в команде раз подряд:\t
+StatsGamesImpostor,Был предателем:\t
+StatsGamesCrewmate,Был своим:\t
+StatsGamesStarted,Начал игр:\t
+StatsGamesFinished,Закончил игр:\t
+StatsImpostorVoteWins,Побед голосованием (предатель):\t
+StatsImpostorKillsWins,Убил всех (предатель):\t
+StatsImpostorSabotageWins,Побед саботажем (предатель):\t
+StatsCrewmateVoteWins,Побед голосованием (свой):\t
+StatsCrewmateTaskWins,Побед выполнением всех заданий:\t
+
+MonitorOxygen,Диагностируйте дерево
+StoreArtifacts,Сложите артефакты
+FillCanisters,Наполните канистры
+InsertKeys,Вставьте ключи
+ResetSeismic,Сбросьте сейсмические стабилизаторы
+
+SeismicHoldToStop,Удержите для активации
+SeismicNominal,Сейсмическая активность в норме
+
+ScanBoardingPass,Сканируйте посадочный талон
+FixWeatherNode,Почините погодный узел
+OpenWaterways,Откройте трубопровод
+ReplaceWaterJug,Замените кулер
+RepairDrill,Почините дрель
+AlignTelescope,Выровняйте телескоп
+RecordTemperature,Запишите температуру
+RebootWifi,Перезапустите WiFi
+
+WifiRebootRequired,Требуется перезагрузка
+WifiPleaseWait,Подождите...
+WifiPleaseReturnIn,Пожалуйста, вернитесь через {0}
+WifiPleasePowerOn,Пожалуйста, включите питание
+WifiRebootComplete,Перезагрузка завершена.
+
+Outside,Улица
+Dropship,Посадочная капсула
+Decontamination2,Дезинфекция
+Specimens,Исследовательская
+BoilerRoom,Паровой котёл
+
+GameOverImpostorDead,В обычной игре команда победила бы, ведь предатель умер. Здесь мы просто возродим всех.
+GameOverImpostorKills,Предатель победил, ведь команда не может больше выиграть! А, это тренировочная игра… Возрождаем всех.
+GameOverTaskWin,Задания выполнены и команда победила! Шутка, это же тренировочная игра. Подкинем ещё.
+GameOverSabotage,Саботаж сработал! Предатель великолепен! Да ладно, это же тренировочная игра. Возрождаем всех.

@@ -1,0 +1,391 @@
+fileFormatVersion: 2
+guid: 13a6ac38a6c99ca4cad427a4cf790f47
+timeCreated: 1616614609
+licenseType: Free
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: panel_temp_backgroundCold
+  - first:
+      213: 21300002
+    second: panel_temp_backgroundHot
+  - first:
+      213: 21300004
+    second: panel_temp_degreesSymbol
+  - first:
+      213: 21300006
+    second: panel_temp_button
+  - first:
+      213: 21300008
+    second: panel_temp_degreesSymbolcold
+  - first:
+      213: 21300010
+    second: panel_temp_buttonDown
+  externalObjects: {}
+  usedFileIDs: []
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 12
+  maxTextureSize: 1292
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: panel_temp_backgroundCold
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4
+        width: 644
+        height: 543
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -322, y: 271.5}
+        - {x: 218, y: 271.5}
+        - {x: 230, y: 248.5}
+        - {x: 322, y: 247.5}
+        - {x: 322, y: -120.5}
+        - {x: 231, y: -124.5}
+        - {x: 216, y: -152.5}
+        - {x: 85.99999, y: -155.5}
+        - {x: 85.99999, y: -263.5}
+        - {x: -72.99999, y: -265.5}
+        - {x: -75, y: -271.5}
+        - {x: -125, y: -271.5}
+        - {x: -176, y: -263.5}
+        - {x: -178, y: -154.5}
+        - {x: -322, y: -152.5}
+      physicsShape:
+      - - {x: 217, y: -160.5}
+        - {x: 231, y: -127.5}
+        - {x: 316, y: -119.5}
+        - {x: 322, y: -111.5}
+        - {x: 322, y: 230.5}
+        - {x: 311, y: 246.5}
+        - {x: 212, y: 271.5}
+        - {x: -314, y: 271.5}
+        - {x: -316, y: 270.5}
+        - {x: -322, y: 261.5}
+        - {x: -322, y: -141.5}
+        - {x: -318, y: -148.5}
+        - {x: -302, y: -155.5}
+        - {x: -291, y: -153.5}
+        - {x: -174, y: -263.5}
+        - {x: -133, y: -271.5}
+        - {x: -68, y: -271.5}
+        - {x: -83, y: -264.5}
+        - {x: 89, y: -263.5}
+        - {x: 88, y: -153.5}
+      - - {x: 265, y: -154.5}
+        - {x: 247, y: -178.5}
+        - {x: 247, y: -233.5}
+        - {x: 251, y: -234.5}
+        - {x: 288, y: -234.5}
+        - {x: 322, y: -233.5}
+        - {x: 322, y: -154.5}
+      - - {x: 226, y: 271.5}
+        - {x: 225, y: 268.5}
+        - {x: 225, y: 259.5}
+        - {x: 231, y: 253.5}
+        - {x: 242, y: 253.5}
+        - {x: 247, y: 258.5}
+        - {x: 247, y: 271.5}
+      - - {x: 303, y: 271.5}
+        - {x: 303, y: 259.5}
+        - {x: 309, y: 253.5}
+        - {x: 320, y: 253.5}
+        - {x: 322, y: 255.5}
+        - {x: 322, y: 271.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1b528f4d224545ad89eae6b83b7d22
+      internalID: 21300000
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel_temp_backgroundHot
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 4
+        width: 644
+        height: 543
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -322, y: 271.5}
+        - {x: 218, y: 271.5}
+        - {x: 230, y: 248.5}
+        - {x: 322, y: 247.5}
+        - {x: 322, y: -120.5}
+        - {x: 231, y: -124.5}
+        - {x: 216, y: -152.5}
+        - {x: 85.99999, y: -155.5}
+        - {x: 85.99999, y: -263.5}
+        - {x: -75, y: -265.5}
+        - {x: -75, y: -271.5}
+        - {x: -176, y: -271.5}
+        - {x: -180, y: -152.5}
+        - {x: -322, y: -152.5}
+      physicsShape:
+      - - {x: 88, y: -261.5}
+        - {x: 88, y: -153.5}
+        - {x: 217, y: -160.5}
+        - {x: 231, y: -127.5}
+        - {x: 316, y: -119.5}
+        - {x: 322, y: -111.5}
+        - {x: 322, y: 230.5}
+        - {x: 311, y: 246.5}
+        - {x: 212, y: 271.5}
+        - {x: -314, y: 271.5}
+        - {x: -316, y: 270.5}
+        - {x: -322, y: 261.5}
+        - {x: -322, y: -141.5}
+        - {x: -318, y: -148.5}
+        - {x: -302, y: -155.5}
+        - {x: -291, y: -153.5}
+        - {x: -174, y: -262.5}
+        - {x: -133, y: -271.5}
+        - {x: -78, y: -271.5}
+        - {x: -77, y: -270.5}
+        - {x: -78, y: -267.5}
+        - {x: 85, y: -263.5}
+      - - {x: 285, y: -160.5}
+        - {x: 283, y: -157.5}
+        - {x: 97.99999, y: -157.5}
+        - {x: 88, y: -158.5}
+        - {x: 88, y: -237.5}
+        - {x: 303, y: -237.5}
+        - {x: 304, y: -236.5}
+        - {x: 304, y: -190.5}
+        - {x: 299, y: -176.5}
+      - - {x: -322, y: -233.5}
+        - {x: -256, y: -234.5}
+        - {x: -183, y: -234.5}
+        - {x: -183, y: -180.5}
+        - {x: -184, y: -170.5}
+        - {x: -206, y: -154.5}
+        - {x: -277, y: -154.5}
+        - {x: -322, y: -155.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 613b10f7783541758f196bd2897fb9ea
+      internalID: 21300002
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel_temp_degreesSymbol
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 532
+        width: 16
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: -6.5}
+        - {x: -8, y: 7.5}
+        - {x: 7, y: 7.5}
+        - {x: 8, y: 6.5}
+        - {x: 8, y: -7.5}
+        - {x: -7, y: -7.5}
+      physicsShape:
+      - - {x: -8, y: 7.5}
+        - {x: -8, y: -7.5}
+        - {x: 8, y: -7.5}
+        - {x: 8, y: 7.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d08ae9c15d481dbc9fd27e9df6bb33
+      internalID: 21300004
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel_temp_button
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 40
+        width: 217
+        height: 81
+      alignment: 9
+      pivot: {x: 0.5092166, y: 0.4814815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -108.5, y: -40.5}
+        - {x: -108.5, y: 40.5}
+        - {x: 108.5, y: 40.5}
+        - {x: 108.5, y: -40.5}
+      physicsShape:
+      - - {x: 85.5, y: 40.5}
+        - {x: -93.5, y: 40.5}
+        - {x: -107.5, y: 23.5}
+        - {x: -108.5, y: 9.5}
+        - {x: -108.5, y: -39.5}
+        - {x: 107.5, y: -39.5}
+        - {x: 107.5, y: 17.5}
+        - {x: 106.5, y: 24.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1aab101a5a4061948942e26db55b96
+      internalID: 21300006
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel_temp_degreesSymbolcold
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 532
+        width: 16
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: -6.5}
+        - {x: -8, y: 7.5}
+        - {x: 7, y: 7.5}
+        - {x: 8, y: 6.5}
+        - {x: 8, y: -7.5}
+        - {x: -7, y: -7.5}
+      physicsShape:
+      - - {x: -8, y: 7.5}
+        - {x: -8, y: -7.5}
+        - {x: 8, y: -7.5}
+        - {x: 8, y: 7.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878361c87e22412bab9598486b689ef6
+      internalID: 21300008
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel_temp_buttonDown
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 37
+        width: 217
+        height: 81
+      alignment: 9
+      pivot: {x: 0.5069125, y: 0.4814815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -108.5, y: -40.5}
+        - {x: -108.5, y: 40.5}
+        - {x: 108.5, y: 40.5}
+        - {x: 108.5, y: -40.5}
+      physicsShape:
+      - - {x: 85.50001, y: 40.5}
+        - {x: -93.49999, y: 40.5}
+        - {x: -107.5, y: 23.5}
+        - {x: -108.5, y: 9.5}
+        - {x: -108.5, y: -39.5}
+        - {x: 107.5, y: -39.5}
+        - {x: 107.5, y: 17.5}
+        - {x: 106.5, y: 24.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d630cf709e81404da45e67501a248c00
+      internalID: 21300010
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID:
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag:
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

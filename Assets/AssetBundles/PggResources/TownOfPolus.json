@@ -1,0 +1,78 @@
+{
+  "assetBundleId": 10,
+  "hash": [
+    135,
+    239,
+    214,
+    104,
+    107,
+    22,
+    248,
+    182,
+    231,
+    148,
+    220,
+    202,
+    45,
+    212,
+    82,
+    108
+  ],
+  "assets": [
+    {
+      "type": 0,
+      "path": "Assets/Mods/OfficialAssets/KillButton.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/TownOfPolus/Fix.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/TownOfPolus/Light.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/TownOfPolus/Monitor.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/TownOfPolus/Morph.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/TownOfPolus/Predict.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/TownOfPolus/Sample.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/TownOfPolus/Throw.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/TownOfPolus/ImpostorArrow.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/TownOfPolus/SnitchArrow.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/TownOfPolus/Chameleon.png",
+      "details": null
+    }
+  ]
+}

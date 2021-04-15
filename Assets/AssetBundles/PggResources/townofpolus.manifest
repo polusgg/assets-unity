@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 2047496095
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7e6f92225d5a0dd8101df56f4c7eec79
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c90fc19e2679e5295d10bd00f33cb4c3
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Mods/TownOfPolus/Morph.png
+- Assets/Mods/TownOfPolus/Light.png
+- Assets/Mods/TownOfPolus/Sample.png
+- Assets/Mods/OfficialAssets/KillButton.png
+- Assets/Mods/TownOfPolus/ImpostorArrow.png
+- Assets/Mods/TownOfPolus/Monitor.png
+- Assets/Mods/TownOfPolus/Fix.png
+- Assets/Mods/TownOfPolus/Predict.png
+- Assets/Mods/TownOfPolus/SnitchArrow.png
+- Assets/Mods/TownOfPolus/Chameleon.png
+- Assets/Mods/TownOfPolus/Throw.png
+Dependencies: []

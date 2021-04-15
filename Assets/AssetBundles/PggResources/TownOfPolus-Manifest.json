@@ -1,0 +1,16 @@
+{
+  "baseId": 10,
+  "assets": [
+    "Assets/Mods/OfficialAssets/KillButton.png",
+    "Assets/Mods/TownOfPolus/Fix.png",
+    "Assets/Mods/TownOfPolus/Light.png",
+    "Assets/Mods/TownOfPolus/Monitor.png",
+    "Assets/Mods/TownOfPolus/Morph.png",
+    "Assets/Mods/TownOfPolus/Predict.png",
+    "Assets/Mods/TownOfPolus/Sample.png",
+    "Assets/Mods/TownOfPolus/Throw.png",
+    "Assets/Mods/TownOfPolus/ImpostorArrow.png",
+    "Assets/Mods/TownOfPolus/SnitchArrow.png",
+    "Assets/Mods/TownOfPolus/Chameleon.png"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "assetBundleId": 0,
+  "hash": [
+    89,
+    233,
+    213,
+    30,
+    255,
+    248,
+    198,
+    202,
+    65,
+    244,
+    145,
+    77,
+    27,
+    126,
+    12,
+    197
+  ],
+  "assets": [
+    {
+      "type": 0,
+      "path": "Assets/Mods/HotPotatoBomb/HotPotatoBomb.prefab",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/HotPotatoBomb/mainimage.png",
+      "details": null
+    },
+    {
+      "type": 1,
+      "path": "Assets/Mods/HotPotatoBomb/pass_sound.mp3",
+      "details": {
+        "samples": 20736,
+        "sampleRate": 48000.0
+      }
+    },
+    {
+      "type": 1,
+      "path": "Assets/Mods/HotPotatoBomb/ticking_sound.mp3",
+      "details": {
+        "samples": 705024,
+        "sampleRate": 48000.0
+      }
+    },
+    {
+      "type": 1,
+      "path": "Assets/Mods/C4/throwsound.mp3",
+      "details": {
+        "samples": 17280,
+        "sampleRate": 48000.0
+      }
+    }
+  ]
+}

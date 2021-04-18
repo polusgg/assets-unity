@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 642949993
+CRC: 329274330
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: hotpotatobomb
+      Name: c4mod
       Dependencies: {}
     Info_1:
-      Name: c4mod
+      Name: hotpotatobomb
       Dependencies: {}
     Info_2:
       Name: toonexpolosion

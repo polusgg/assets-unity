@@ -10,7 +10,8 @@ namespace Assets.Editor
     
     public enum AssetType {
         Other = 0,
-        Audio
+        Audio = 1,
+        Hat = 2
     }
     
     public class AssetDecl {

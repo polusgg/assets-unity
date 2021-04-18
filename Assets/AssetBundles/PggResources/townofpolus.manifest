@@ -1,15 +1,17 @@
 ManifestFileVersion: 0
-CRC: 2047496095
+CRC: 3738275688
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 7e6f92225d5a0dd8101df56f4c7eec79
+    Hash: d8526c64c1ae55b7bab42117b8a16002
   TypeTreeHash:
     serializedVersion: 2
-    Hash: c90fc19e2679e5295d10bd00f33cb4c3
+    Hash: 7579feb4afd6aab513e2576ee96e6b63
 HashAppended: 0
 ClassTypes:
 - Class: 28
+  Script: {instanceID: 0}
+- Class: 49
   Script: {instanceID: 0}
 - Class: 213
   Script: {instanceID: 0}
@@ -22,6 +24,7 @@ Assets:
 - Assets/Mods/TownOfPolus/Monitor.png
 - Assets/Mods/TownOfPolus/Fix.png
 - Assets/Mods/TownOfPolus/Predict.png
+- Assets/AssetBundles/PggResources/TownOfPolus-Manifest.json
 - Assets/Mods/TownOfPolus/SnitchArrow.png
 - Assets/Mods/TownOfPolus/Chameleon.png
 - Assets/Mods/TownOfPolus/Throw.png

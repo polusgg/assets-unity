@@ -211,15 +211,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 800174087686282757, guid: 92bbdfa989f6124ff812214a00c31c87,
+    - target: {fileID: 1122151851012522160, guid: 92bbdfa989f6124ff812214a00c31c87,
         type: 3}
-      propertyPath: m_Name
-      value: EmailTextBox
+      propertyPath: m_LocalPosition.x
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1122151850562839569, guid: 92bbdfa989f6124ff812214a00c31c87,
+    - target: {fileID: 1122151851012522160, guid: 92bbdfa989f6124ff812214a00c31c87,
         type: 3}
-      propertyPath: m_Name
-      value: EmailTextBox
+      propertyPath: m_LocalPosition.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122151851012522163, guid: 92bbdfa989f6124ff812214a00c31c87,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2ffd3523b9daedb90a33cf1bb4e5df63,
+        type: 3}
+    - target: {fileID: 1122151851012522163, guid: 92bbdfa989f6124ff812214a00c31c87,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1252064247194055986, guid: 92bbdfa989f6124ff812214a00c31c87,
         type: 3}
@@ -229,12 +240,12 @@ PrefabInstance:
     - target: {fileID: 7863966675776138546, guid: 92bbdfa989f6124ff812214a00c31c87,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5707114
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7863966675776138546, guid: 92bbdfa989f6124ff812214a00c31c87,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.007443538
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7863966675776138546, guid: 92bbdfa989f6124ff812214a00c31c87,
         type: 3}

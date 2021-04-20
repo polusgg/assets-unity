@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 812208344
+CRC: 3582843094
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: b09cffb098fd9cc6c95a099ee5c1ae49
+    Hash: a4053b806815505b042b011065459461
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 0792542f115304f464b4a9f848d6974f
+    Hash: 860809e8a369b9e804c31b3c1326d46f
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -25,8 +25,6 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 61
   Script: {instanceID: 0}
-- Class: 114
-  Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
 - Class: 114
@@ -47,7 +45,7 @@ ClassTypes:
   Script: {instanceID: 0}
 Assets:
 - Assets/Mods/LoginMenu/TopAccount.prefab
+- Assets/Fonts/ComicSansMS3 SDF.asset
 - Assets/Mods/LoginMenu/Toast.prefab
-- Assets/Fonts/AmongUsButton2-Regular SDF.asset
 - Assets/Mods/LoginMenu/PolusggAccountMenu.prefab
 Dependencies: []

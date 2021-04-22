@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1421457082
+CRC: 1947379682
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ae3deba5779934785bd87719eb8a4468
+    Hash: e015e90948c264f7f9d082212bdd4efb
   TypeTreeHash:
     serializedVersion: 2
     Hash: 860809e8a369b9e804c31b3c1326d46f
@@ -44,6 +44,7 @@ ClassTypes:
 - Class: 331
   Script: {instanceID: 0}
 Assets:
+- Assets/Fonts/Inter-SemiBold SDF.asset
 - Assets/Mods/LoginMenu/TopAccount.prefab
 - Assets/Fonts/ComicSansMS3 SDF.asset
 - Assets/Mods/LoginMenu/Toast.prefab

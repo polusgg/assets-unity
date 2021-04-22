@@ -1,14 +1,11 @@
 fileFormatVersion: 2
 guid: bbd5cfbd7f5920f4886e51dfea045787
-timeCreated: 1616614600
-licenseType: Free
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 21300000
     second: Discord-Logo-Color
   externalObjects: {}
-  usedFileIDs: []
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
@@ -84,10 +81,10 @@ TextureImporter:
       name: Discord-Logo-Color
       rect:
         serializedVersion: 2
-        x: 33.07612
-        y: 17
-        width: 179.8477
-        height: 204.9239
+        x: 0
+        y: 0
+        width: 175
+        height: 201
       alignment: 9
       pivot: {x: 0.4972199, y: 0.5026256}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,22 +249,22 @@ TextureImporter:
       spriteID: e7cb83a1ac9047ee9d8596c0128b1c3f
       internalID: 21300000
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID:
+    spriteID: af75c2a4e30d4ef41af4564dc5f82dcb
     internalID: 0
     vertices: []
-    indices:
+    indices: 
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag:
+  spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

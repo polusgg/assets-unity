@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1947379682
+CRC: 1994809759
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: e015e90948c264f7f9d082212bdd4efb
+    Hash: e39be762a0324e1f3e4b4eb2b8dd9ecc
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 860809e8a369b9e804c31b3c1326d46f
+    Hash: 5b5f4bc1b2943a0566e433f6e37afdde
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -25,6 +25,8 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 61
   Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 84a92b25f83d49b9bc132d206b370281, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
 - Class: 114
@@ -49,4 +51,5 @@ Assets:
 - Assets/Fonts/ComicSansMS3 SDF.asset
 - Assets/Mods/LoginMenu/Toast.prefab
 - Assets/Mods/LoginMenu/PolusggAccountMenu.prefab
+- Assets/Mods/LoginMenu/CreditsMenu.prefab
 Dependencies: []

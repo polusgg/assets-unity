@@ -1,0 +1,44 @@
+{"frames": [
+
+{
+	"filename": "2021 Twitter logo - blue.png",
+	"frame": {"x":1,"y":53,"w":50,"h":43},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":3,"w":50,"h":43},
+	"sourceSize": {"w":50,"h":50}
+},
+{
+	"filename": "Discord-Logo-Color.png",
+	"frame": {"x":53,"y":1,"w":46,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":0,"w":46,"h":50},
+	"sourceSize": {"w":50,"h":50}
+},
+{
+	"filename": "FB-f-Logo__blue_50.png",
+	"frame": {"x":1,"y":1,"w":50,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":50},
+	"sourceSize": {"w":50,"h":50}
+},
+{
+	"filename": "SubIcon.png",
+	"frame": {"x":53,"y":53,"w":47,"h":44},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":3,"w":47,"h":44},
+	"sourceSize": {"w":51,"h":51}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "ex2.png",
+	"format": "RGBA8888",
+	"size": {"w":101,"h":98},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:66cda1b773b7a583c5ab335b35201388:ed41278f33d854ba33bf2113164f3ba3:0e042565b9609cad8a2f6ce5c79c0021$"
+}
+}

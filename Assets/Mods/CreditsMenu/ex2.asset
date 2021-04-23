@@ -97,6 +97,12 @@ MonoBehaviour:
     m_Scale: 1
     m_Name: SubIcon
     m_HashCode: 670694223
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 4
+    m_Scale: 1
+    m_Name: ex2
+    m_HashCode: 113967
   m_SpriteGlyphTable:
   - m_Index: 0
     m_Metrics:
@@ -158,5 +164,20 @@ MonoBehaviour:
     m_Scale: 1
     m_AtlasIndex: 0
     sprite: {fileID: 0}
+  - m_Index: 4
+    m_Metrics:
+      m_Width: 101
+      m_Height: 98
+      m_HorizontalBearingX: -50.5
+      m_HorizontalBearingY: 49
+      m_HorizontalAdvance: 101
+    m_GlyphRect:
+      m_X: 0
+      m_Y: 0
+      m_Width: 101
+      m_Height: 98
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: 21300000, guid: 1f5e64eda340f5a49a8ac57f2d20fde4, type: 3}
   spriteInfoList: []
   fallbackSpriteAssets: []

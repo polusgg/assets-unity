@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2628160598
+CRC: 1035363159
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 84e0a9b764617901acfea0f62f148af0
+    Hash: 85750277be266b94a91566389e828ccd
   TypeTreeHash:
     serializedVersion: 2
     Hash: 860809e8a369b9e804c31b3c1326d46f
@@ -45,5 +45,6 @@ ClassTypes:
   Script: {instanceID: 0}
 Assets:
 - Assets/Mods/LoginMenu/TopAccount.prefab
+- Assets/Mods/LoginMenu/LoggedInMenu.prefab
 - Assets/Mods/LoginMenu/PolusggAccountMenu.prefab
 Dependencies: []

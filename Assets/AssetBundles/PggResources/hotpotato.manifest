@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 4250053421
+CRC: 4095926214
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: c323c2bff13c17597f3802dfdc66429d
+    Hash: 621eecf72b24c3810b1a6c2b6b3f4628
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 347ec7a36552b46f25f9453bb45ac87a
+    Hash: c757becb0b660176c65c2902f037d768
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -18,6 +18,8 @@ ClassTypes:
 - Class: 28
   Script: {instanceID: 0}
 - Class: 48
+  Script: {instanceID: 0}
+- Class: 49
   Script: {instanceID: 0}
 - Class: 74
   Script: {instanceID: 0}
@@ -36,5 +38,6 @@ Assets:
 - Assets/Mods/HotPotatoBomb/HotPotatoBomb.prefab
 - Assets/Mods/C4/throwsound.mp3
 - Assets/Mods/HotPotatoBomb/mainimage.png
+- Assets/AssetBundles/PggResources/HotPotato-Manifest.json
 - Assets/Mods/HotPotatoBomb/ticking_sound.mp3
 Dependencies: []

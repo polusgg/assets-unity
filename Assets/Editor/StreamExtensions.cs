@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Security.Cryptography;
 
@@ -5,10 +6,10 @@ namespace Assets.Editor
 {
     public static class StreamExtensions
     {
-        public static byte[] MD5Hash(this Stream stream)
+        public static string SHA256Hash(this Stream stream)
         {
-            var md5 = MD5.Create();
-            return md5.ComputeHash(stream);
+            var sha256hash = SHA256.Create().ComputeHash(stream);
+            return BitConverter.ToString(sha256hash).Replace("-", "");
         }
     }
 }

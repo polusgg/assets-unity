@@ -4,7 +4,7 @@ namespace Assets.Editor
 {
     public class SerializableForNodePolus {
         public uint AssetBundleId;
-        public int[] Hash;
+        public string Hash;
         public AssetDecl[] Assets;
     }
     

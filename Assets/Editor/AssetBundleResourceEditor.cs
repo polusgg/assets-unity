@@ -63,7 +63,7 @@ namespace Assets.Editor {
                     using (var file =
                         File.OpenRead($"Assets/AssetBundles/PggResources/{bundles.GetAllAssetBundles()[0]}"))
                     {
-                        nodepolusSerializable.Hash = file.MD5Hash().Select(x => (int) x).ToArray();
+                        nodepolusSerializable.Hash = file.SHA256Hash();
                     }
 
                     var nodepolusJsonPath = $"Assets/AssetBundles/PggResources/{resource.name}.json";

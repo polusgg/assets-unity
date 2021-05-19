@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 154905737
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f0e09ae0681f0e8f53421c6227d5abac
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f4c3016168042c450e5bf2c25cfeac41
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Mods/CustomPlayerExperiments/Walk.anim
+- Assets/Mods/CustomPlayerExperiments/noshadow.png
+- Assets/Mods/CustomPlayerExperiments/Idle.anim
+- Assets/Mods/CustomPlayerExperiments/noshadowbigass.png
+Dependencies: []

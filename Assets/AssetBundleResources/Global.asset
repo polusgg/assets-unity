@@ -14,13 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BaseId: 0
   Assets:
-  - {fileID: 2800000, guid: 3cbb73cc38e90734d9b296fbc7a6cfca, type: 3}
-  - {fileID: 2800000, guid: 8c5f91380ca790e42b986f0bfc652137, type: 3}
-  - {fileID: 2800000, guid: ade11dd802d569b4abf30a8d88282ea6, type: 3}
-  - {fileID: 2800000, guid: a64e68d6ca967764dafaa5380b16c80b, type: 3}
-  - {fileID: 2800000, guid: 25c2419c863876742a4b1d1e4db37f1e, type: 3}
-  - {fileID: 2800000, guid: 21eddbd64f30d2149bbca4cef1b46b72, type: 3}
-  - {fileID: 2800000, guid: 2ba110b77f79d8f4c9d22a1094cf05c3, type: 3}
-  - {fileID: 2800000, guid: 5460c57ddfdbac349b8abdf0064a53ee, type: 3}
-  - {fileID: 2800000, guid: 4fe3954aa8ef26944ab4a081697ff431, type: 3}
-  - {fileID: 2800000, guid: 0226b6567a3956c4b8c55c30436797fd, type: 3}
+  - {fileID: 21300000, guid: 2626f1538bd89bc4ebb38cf7f7fb25b7, type: 3}

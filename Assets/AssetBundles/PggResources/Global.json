@@ -1,55 +1,10 @@
 {
   "assetBundleId": 0,
-  "hash": "50C533C389DA563316F405DAE9C482239F1A525F3D5D2CE89962D0AFD2DDE8FC",
+  "hash": "B573197BC2C6D702DDF3224A62070926EAF5B17860F23421501D03148905A976",
   "assets": [
     {
       "type": 0,
-      "path": "Assets/Mods/CustomHats/bunny.png",
-      "details": null
-    },
-    {
-      "type": 0,
-      "path": "Assets/Mods/CustomHats/carrot.png",
-      "details": null
-    },
-    {
-      "type": 0,
-      "path": "Assets/Mods/CustomHats/cheesy.png",
-      "details": null
-    },
-    {
-      "type": 0,
-      "path": "Assets/Mods/CustomHats/corpse.png",
-      "details": null
-    },
-    {
-      "type": 0,
-      "path": "Assets/Mods/CustomHats/couve.png",
-      "details": null
-    },
-    {
-      "type": 0,
-      "path": "Assets/Mods/CustomHats/dream.png",
-      "details": null
-    },
-    {
-      "type": 0,
-      "path": "Assets/Mods/CustomHats/eye.png",
-      "details": null
-    },
-    {
-      "type": 0,
-      "path": "Assets/Mods/CustomHats/frenchtoast.png",
-      "details": null
-    },
-    {
-      "type": 0,
-      "path": "Assets/Mods/CustomHats/janet.png",
-      "details": null
-    },
-    {
-      "type": 0,
-      "path": "Assets/Mods/CustomHats/jodi.png",
+      "path": "Assets/Mods/OfficialAssets/KillButton.png",
       "details": null
     }
   ]

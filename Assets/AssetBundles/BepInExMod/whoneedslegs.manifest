@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 154905737
+CRC: 4022793688
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: f0e09ae0681f0e8f53421c6227d5abac
+    Hash: 79d3e019ea2ad3b0491269d706879592
   TypeTreeHash:
     serializedVersion: 2
     Hash: f4c3016168042c450e5bf2c25cfeac41
@@ -18,8 +18,10 @@ ClassTypes:
 - Class: 213
   Script: {instanceID: 0}
 Assets:
-- Assets/Mods/CustomPlayerExperiments/Walk.anim
-- Assets/Mods/CustomPlayerExperiments/noshadow.png
-- Assets/Mods/CustomPlayerExperiments/Idle.anim
-- Assets/Mods/CustomPlayerExperiments/noshadowbigass.png
+- Assets/Mods/CustomPlayers/Sheep/Walk.anim
+- Assets/Mods/CustomPlayers/Sheep/Idle.anim
+- Assets/Mods/CustomPlayers/Blob/Walk.anim
+- Assets/Mods/CustomPlayers/Blob/noshadow.png
+- Assets/Mods/CustomPlayers/Blob/Idle.anim
+- Assets/Mods/CustomPlayers/Blob/noshadowbigass.png
 Dependencies: []

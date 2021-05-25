@@ -1,7 +1,7 @@
 ManifestFileVersion: 0
-CRC: 982822116
+CRC: 986512743
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: global
+      Name: townofpolus
       Dependencies: {}

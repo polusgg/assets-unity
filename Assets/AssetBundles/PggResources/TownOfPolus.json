@@ -1,10 +1,10 @@
 {
   "assetBundleId": 10,
-  "hash": "8A8641FB01270D27EFF0185A4CB1FBE7233B58064DAAF6A3F1C37B1A579EF1DF",
+  "hash": "8201FFCB838DD3ED901D2CB30469565A933836BA704AFE7F30F1FC9A33C9B5C5",
   "assets": [
     {
       "type": 0,
-      "path": "Assets/Mods/OfficialAssets/KillButton.png",
+      "path": "Assets/Mods/TownOfPolus/PhantomButton.png",
       "details": null
     },
     {

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1066173425
+CRC: 1647109728
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 8602b43ff9c4aa7657db304f86e5fcbd
+    Hash: ed39952dcf1ff2a0fe5a55722f2cfb14
   TypeTreeHash:
     serializedVersion: 2
     Hash: 7579feb4afd6aab513e2576ee96e6b63
@@ -19,10 +19,10 @@ Assets:
 - Assets/Mods/TownOfPolus/Morph.png
 - Assets/Mods/TownOfPolus/Light.png
 - Assets/Mods/TownOfPolus/Sample.png
-- Assets/Mods/OfficialAssets/KillButton.png
 - Assets/Mods/TownOfPolus/ImpostorArrow.png
 - Assets/Mods/TownOfPolus/Monitor.png
 - Assets/Mods/TownOfPolus/Fix.png
+- Assets/Mods/TownOfPolus/PhantomButton.png
 - Assets/Mods/TownOfPolus/Predict.png
 - Assets/AssetBundles/PggResources/TownOfPolus-Manifest.json
 - Assets/Mods/TownOfPolus/SnitchArrow.png

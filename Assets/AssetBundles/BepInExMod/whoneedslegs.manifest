@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 4022793688
+CRC: 3997683379
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 79d3e019ea2ad3b0491269d706879592
+    Hash: e9eec7ddca51525fe575277de3b56daf
   TypeTreeHash:
     serializedVersion: 2
     Hash: f4c3016168042c450e5bf2c25cfeac41
@@ -22,6 +22,8 @@ Assets:
 - Assets/Mods/CustomPlayers/Sheep/Idle.anim
 - Assets/Mods/CustomPlayers/Blob/Walk.anim
 - Assets/Mods/CustomPlayers/Blob/noshadow.png
+- Assets/Mods/CustomPlayers/Sheep/EnterVent.anim
 - Assets/Mods/CustomPlayers/Blob/Idle.anim
 - Assets/Mods/CustomPlayers/Blob/noshadowbigass.png
+- Assets/Mods/CustomPlayers/Sheep/ExitVent.anim
 Dependencies: []

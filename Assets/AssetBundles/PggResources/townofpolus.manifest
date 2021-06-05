@@ -1,17 +1,19 @@
 ManifestFileVersion: 0
-CRC: 1647109728
+CRC: 2388662787
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ed39952dcf1ff2a0fe5a55722f2cfb14
+    Hash: 5f27ce80da709a6b3a8de17e5690deef
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 7579feb4afd6aab513e2576ee96e6b63
+    Hash: d9926813dc3022d4a579a209382b1244
 HashAppended: 0
 ClassTypes:
 - Class: 28
   Script: {instanceID: 0}
 - Class: 49
+  Script: {instanceID: 0}
+- Class: 83
   Script: {instanceID: 0}
 - Class: 213
   Script: {instanceID: 0}
@@ -28,4 +30,5 @@ Assets:
 - Assets/Mods/TownOfPolus/SnitchArrow.png
 - Assets/Mods/TownOfPolus/Chameleon.png
 - Assets/Mods/TownOfPolus/Throw.png
+- Assets/Mods/TownOfPolus/JesterSfx.mp3
 Dependencies: []

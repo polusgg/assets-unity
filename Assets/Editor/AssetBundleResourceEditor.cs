@@ -23,13 +23,11 @@ namespace Assets.Editor {
                 if (resource.Assets.Length == 0)
                     return;
 
-                var dedupedResource = new AssetBundleResource
-                {
-                    BaseId = resource.BaseId,
-                    Assets = resource.DistinctAssets.ToArray()
-                };
+                AssetBundleResource dedupedResource = CreateInstance<AssetBundleResource>();
+                dedupedResource.BaseId = resource.BaseId;
+                dedupedResource.Assets = resource.DistinctAssets.ToArray();
 
-                var serialzationOpts = new JsonSerializerSettings
+                JsonSerializerSettings serialzationOpts = new JsonSerializerSettings
                 {
                     ContractResolver = new CamelCasePropertyNamesContractResolver(),
                     Formatting = Formatting.Indented
@@ -38,12 +36,12 @@ namespace Assets.Editor {
 
                 try
                 {
-                    var jsonPath = $"Assets/AssetBundles/PggResources/{resource.name}-Manifest.json";
+                    string jsonPath = $"Assets/AssetBundles/PggResources/{resource.name}-Manifest.json";
                     File.WriteAllText(jsonPath, JsonConvert.SerializeObject(
                         new SerializableResourceForClient(dedupedResource), serialzationOpts
                     ));
 
-                    var bundles = BuildPipeline.BuildAssetBundles("Assets/AssetBundles/PggResources",
+                    AssetBundleManifest bundles = BuildPipeline.BuildAssetBundles("Assets/AssetBundles/PggResources",
                         new[]
                         {
                             new AssetBundleBuild
@@ -58,15 +56,15 @@ namespace Assets.Editor {
                         BuildAssetBundleOptions.None, BuildTarget.StandaloneWindows
                     );
 
-                    var nodepolusSerializable = GenerateSerializableForNodePolus(dedupedResource);
+                    SerializableForNodePolus nodepolusSerializable = GenerateSerializableForNodePolus(dedupedResource);
 
-                    using (var file =
+                    using (FileStream file =
                         File.OpenRead($"Assets/AssetBundles/PggResources/{bundles.GetAllAssetBundles()[0]}"))
                     {
                         nodepolusSerializable.Hash = file.SHA256Hash();
                     }
 
-                    var nodepolusJsonPath = $"Assets/AssetBundles/PggResources/{resource.name}.json";
+                    string nodepolusJsonPath = $"Assets/AssetBundles/PggResources/{resource.name}.json";
                     File.WriteAllText(nodepolusJsonPath,
                         JsonConvert.SerializeObject(nodepolusSerializable, serialzationOpts));
                 }
@@ -81,7 +79,7 @@ namespace Assets.Editor {
 
             if (GUILayout.Button("Load all from folder"))
             {
-                var folder = EditorUtility.OpenFolderPanel("Asset folder", "Assets", null);
+                string folder = EditorUtility.OpenFolderPanel("Asset folder", "Assets", null);
                 if (!string.IsNullOrEmpty(folder))
                 {
                     resource.Assets = Directory.EnumerateFiles(folder)
@@ -96,10 +94,10 @@ namespace Assets.Editor {
 
         public static SerializableForNodePolus GenerateSerializableForNodePolus(AssetBundleResource resource)
         {
-            var serializableResource = new SerializableForNodePolus();
+            SerializableForNodePolus serializableResource = new SerializableForNodePolus();
             serializableResource.AssetBundleId = resource.BaseId;
             serializableResource.Assets = resource.Assets.Select(asset => {
-                var decl = new AssetDecl
+                AssetDecl decl = new AssetDecl
                 {
                     Path = AssetDatabase.GetAssetPath(asset)
                 };

@@ -18,7 +18,7 @@ namespace Assets.Editor.HatCreator
 
             if (GUILayout.Button("Load all from folder"))
             {
-                var folder = EditorUtility.OpenFolderPanel("Asset folder", "Assets", null);
+                string folder = EditorUtility.OpenFolderPanel("Asset folder", "Assets", null);
                 if (!string.IsNullOrEmpty(folder))
                 {
                     targetObj.HatSprites = (Sprite[]) Directory.EnumerateFiles(folder)
@@ -38,9 +38,9 @@ namespace Assets.Editor.HatCreator
                 if (!Directory.Exists(targetObj.AssetPath))
                     Directory.CreateDirectory(targetObj.AssetPath);
                     
-                foreach (var sprite in targetObj.DistinctAssets)
+                foreach (Sprite sprite in targetObj.DistinctAssets)
                 {
-                    var hatBehaviour = CreateInstance<HatBehaviour>();
+                    HatBehaviour hatBehaviour = CreateInstance<HatBehaviour>();
                     hatBehaviour.MainImage = sprite;
                     
                     hatBehaviour.FloorImage = sprite;
@@ -52,7 +52,7 @@ namespace Assets.Editor.HatCreator
                     hatBehaviour.Free = true;
                     hatBehaviour.ChipOffset = new Vector2(0, 0.8f);
 
-                    var uniqueName = AssetDatabase.GenerateUniqueAssetPath(sprite.name);
+                    string uniqueName = AssetDatabase.GenerateUniqueAssetPath(sprite.name);
                     AssetDatabase.CreateAsset(hatBehaviour, $"{targetObj.AssetPath}/{uniqueName}.asset");
                 }
                 

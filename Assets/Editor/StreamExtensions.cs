@@ -8,7 +8,7 @@ namespace Assets.Editor
     {
         public static string SHA256Hash(this Stream stream)
         {
-            var sha256hash = SHA256.Create().ComputeHash(stream);
+            byte[] sha256hash = SHA256.Create().ComputeHash(stream);
             return BitConverter.ToString(sha256hash).Replace("-", "");
         }
     }

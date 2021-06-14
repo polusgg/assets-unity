@@ -1,5 +1,62 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &570578517821355045
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1974830832595933174}
+  - component: {fileID: 3354311755486199390}
+  m_Layer: 0
+  m_Name: BackgroundClickHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1974830832595933174
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570578517821355045}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3608393218843608987}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &3354311755486199390
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570578517821355045}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 50, y: 50}
+  m_EdgeRadius: 0
 --- !u!1 &3473824681345140646
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,11 +163,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3608393218843608988}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children:
   - {fileID: 3608393218929419308}
   - {fileID: 4113288343796930902}
+  - {fileID: 1974830832595933174}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -124,6 +182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3608393218929419308}
   - component: {fileID: 3608393218929419307}
+  - component: {fileID: 3775497914998800061}
   m_Layer: 0
   m_Name: LeftPane
   m_TagString: Untagged
@@ -197,6 +256,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &3775497914998800061
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3608393218929419309}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0052833557, y: 0.012257695}
+  m_SpriteTilingProperty:
+    border: {x: 0.25, y: 0.25, z: 0.25, w: 0.25}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 5, y: 5.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 1
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.9902105, y: 5.200511}
+  m_EdgeRadius: 0
 --- !u!1 &4579738797127134032
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,6 +373,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4113288343796930902}
   - component: {fileID: 493605455896550705}
+  - component: {fileID: 6084404182097683132}
   m_Layer: 0
   m_Name: RightPane
   m_TagString: Untagged
@@ -361,6 +447,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &6084404182097683132
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4862361930265520529}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0052833557, y: 0.012257695}
+  m_SpriteTilingProperty:
+    border: {x: 0.25, y: 0.25, z: 0.25, w: 0.25}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 5, y: 5.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 1
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.9902105, y: 5.200511}
+  m_EdgeRadius: 0
 --- !u!1 &4919472856013042963
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,56 +754,65 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<size=120%>Owners:</size>
+  m_text: '<size=87%><size=110%>Owners:</size>
 
-    Cody Scott <indent=26%>(<sprite index=0>
-    codyphobe#0001)</indent> (<sprite index=2> codyphobe)
+    Cody Scott <indent=26%>(<sprite
+    index=0> codyphobe#0001)</indent> (<sprite index=2> <link="https://twitter.com/codyphobe">codyphobe</link>)
 
-    Rose Hall <indent=26%>(<sprite
-    index=0> Tr4cer#0001)</indent> (<sprite index=2> roobscoob1)
+    Rose
+    Hall <indent=26%>(<sprite index=0> Tr4cer#0001)</indent> (<sprite index=2> <link="https://twitter.com/roobscoob1">roobscoob1</link>)
 
 
-    <size=120%>Core
+    <size=110%>Core
     Developers:</size>
 
     Sanae<indent=26%>(<sprite index=0> Sanae#4092)</indent>
-    (<sprite index=2> Sanae6k)
+    (<sprite index=2> <link="https://twitter.com/Sanae6k">Sanae6k</link>)
 
-    Mark <indent=26%>(<sprite index=0> Cydon#1483)</indent>
+    Mark
+    <indent=26%>(<sprite index=0> Cydon#1483)</indent>
 
-    Saghetti
-    <indent=26%>(<sprite index=0> Saghetti#9735)</indent> (<sprite index=2> Saghetti)
+    Saghetti <indent=26%>(<sprite
+    index=0> Saghetti#9735)</indent> (<sprite index=2> <link="https://twitter.com/Saghetti">Saghetti</link>)
 
 
-    <size=120%>Contributors:</size>
+    <size=110%>Contributors:</size>
 
     Kadez
-    <indent=26%>(<sprite index=0> Kadez#0001)</indent> (<sprite index=2> NotKadez)
+    <indent=26%>(<sprite index=0> Kadez#0001)</indent> (<sprite index=2> <link="https://twitter.com/NotKadez">NotKadez</link>)
 
 
-    <size=120%>Artists:</size>
+    <size=110%>Artists:</size>
 
     Acron
-    <indent=26%>(<sprite index=0> Acron#9311)</indent> (<sprite index=2> acronmd)
+    <indent=26%>(<sprite index=0> Acron#9311)</indent> (<sprite index=2> <link="https://twitter.com/acronmd">acronmd</link>)
 
     Pigoletto
     <indent=26%>(<sprite index=0> Pigoletto#9695)</indent>
 
     Ressnie <indent=26%>(<sprite
-    index=0> Ressnie#2605)</indent> (<sprite index=2> @Ressniee)
+    index=0> Ressnie#2605)</indent> (<sprite index=2> <link="https://twitter.com/Ressniee">Ressniee</link>)
 
     TheLastShaymin
     <indent=26%>(<sprite index=0/> TheLastShaymin#2857)</indent> (<sprite index=2>
-    @thelastshaymin)
+    <link="https://twitter.com/thelastshaymin">thelastshaymin</link>)
 
-    Wong <indent=26%>(<sprite index=0> Wong#5855)</indent>
-    (<sprite index=2> Wongg322)
+    Wong <indent=26%>(<sprite
+    index=0> Wong#5855)</indent> (<sprite index=2> <link="https://twitter.com/Wongg322">Wongg322</link>)
 
 
-    <size=120%>Special Thanks to:</size>
+    <size=110%>Community
+    Manager:</size>
 
-    <sprite
-    index=3> Submarine Team (For use of roles, and code snippets)'
+    SilenceHD <indent=26%>(<sprite index=0> SilenceHD#6669)</indent>
+    (<sprite index=1> <link="https://www.twitch.tv/silencehd">silencehd</link>)
+
+
+    <size=110%>Special
+    Thanks to:</size>
+
+    <sprite index=3> Submarine Team (For use of roles, and
+    code snippets)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1203,7 +1324,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8951436920974689901}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.5, y: -2.5, z: 0}
+  m_LocalPosition: {x: 2.5, y: -2.5, z: -5}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1.5}
   m_Children: []
   m_Father: {fileID: 4701559883382886602}

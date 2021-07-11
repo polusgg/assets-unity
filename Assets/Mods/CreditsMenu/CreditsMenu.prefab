@@ -772,8 +772,8 @@ MonoBehaviour:
     Mark
     <indent=26%>(<sprite index=0> Cydon#1483)</indent>
 
-    Saghetti <indent=26%>(<sprite
-    index=0> Saghetti#9735)</indent> (<sprite index=2> <link="https://twitter.com/Saghetti">Saghetti</link>)
+    Przebot <indent=26%>(<sprite
+    index=0> Przebot#2448)</indent> (<sprite index=2> <link="https://twitter.com/JPrzebot">JPrzebor</link>)
 
 
     <size=110%>Contributors:</size>
@@ -798,7 +798,7 @@ MonoBehaviour:
     <link="https://twitter.com/thelastshaymin">thelastshaymin</link>)
 
     Wong <indent=26%>(<sprite
-    index=0> Wong#5855)</indent> (<sprite index=2> <link="https://twitter.com/Wongg322">Wongg322</link>)
+    index=0> Wong#5829)</indent> (<sprite index=2> <link="https://twitter.com/Wongg322">Wongg322</link>)
 
 
     <size=110%>Community
@@ -811,8 +811,8 @@ MonoBehaviour:
     <size=110%>Special
     Thanks to:</size>
 
-    <sprite index=3> Submarine Team (For use of roles, and
-    code snippets)'
+    <sprite index=3> <link="https://5ubmerged.carrd.co/">Submerged
+    Team</link> (For use of roles, and code snippets)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

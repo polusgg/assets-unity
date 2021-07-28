@@ -1,10 +1,20 @@
 {
   "assetBundleId": 0,
-  "hash": "B573197BC2C6D702DDF3224A62070926EAF5B17860F23421501D03148905A976",
+  "hash": "1DB201128DFDA505A0349FA23D6693E73694DD5335A79A46AA64A26EDE257740",
   "assets": [
     {
       "type": 0,
       "path": "Assets/Mods/OfficialAssets/KillButton.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/OfficialAssets/ModButton.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/OfficialAssets/polusicon.png",
       "details": null
     }
   ]

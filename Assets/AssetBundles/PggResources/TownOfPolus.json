@@ -1,6 +1,6 @@
 {
   "assetBundleId": 10,
-  "hash": "86E7346E1B26DA8815FC41AE7048866CE99AC57D821B35F632512D6725D0F676",
+  "hash": "BBB7DF9EB1C443FD590F78AF9F1E231B3E512C63403107EAD1FB6F7C9C846210",
   "assets": [
     {
       "type": 0,
@@ -54,7 +54,7 @@
     },
     {
       "type": 0,
-      "path": "Assets/Mods/TownOfPolus/Chameleon.png",
+      "path": "Assets/Mods/TownOfPolus/ColorShift.png",
       "details": null
     },
     {
@@ -64,6 +64,26 @@
         "samples": 224640,
         "sampleRate": 44100.0039
       }
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/TownOfPolus/Shoot.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/TownOfPolus/Open.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/TownOfPolus/Close.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/TownOfPolus/None.png",
+      "details": null
     }
   ]
 }

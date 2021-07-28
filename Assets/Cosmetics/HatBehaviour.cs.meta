@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 33a85397cd7f8c75d94da833c4e725d7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - MainImage: {instanceID: 0}
+  - BackImage: {instanceID: 0}
+  - LeftMainImage: {instanceID: 0}
+  - LeftBackImage: {instanceID: 0}
+  - ClimbImage: {instanceID: 0}
+  - FloorImage: {instanceID: 0}
+  - LeftClimbImage: {instanceID: 0}
+  - LeftFloorImage: {instanceID: 0}
+  - AltShader: {fileID: 2100000, guid: aec7ef553ee0ddd439275669e1247ea2, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -11,7 +11,11 @@
     "Assets/Mods/TownOfPolus/Throw.png",
     "Assets/Mods/TownOfPolus/ImpostorArrow.png",
     "Assets/Mods/TownOfPolus/SnitchArrow.png",
-    "Assets/Mods/TownOfPolus/Chameleon.png",
-    "Assets/Mods/TownOfPolus/JesterSfx.mp3"
+    "Assets/Mods/TownOfPolus/ColorShift.png",
+    "Assets/Mods/TownOfPolus/JesterSfx.mp3",
+    "Assets/Mods/TownOfPolus/Shoot.png",
+    "Assets/Mods/TownOfPolus/Open.png",
+    "Assets/Mods/TownOfPolus/Close.png",
+    "Assets/Mods/TownOfPolus/None.png"
   ]
 }

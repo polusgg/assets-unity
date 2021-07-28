@@ -30,7 +30,8 @@ namespace Assets.Editor {
                 JsonSerializerSettings serialzationOpts = new JsonSerializerSettings
                 {
                     ContractResolver = new CamelCasePropertyNamesContractResolver(),
-                    Formatting = Formatting.Indented
+                    Formatting = Formatting.Indented,
+                    
                 };
 
 
@@ -40,6 +41,7 @@ namespace Assets.Editor {
                     File.WriteAllText(jsonPath, JsonConvert.SerializeObject(
                         new SerializableResourceForClient(dedupedResource), serialzationOpts
                     ));
+                    AssetDatabase.ImportAsset(jsonPath);
 
                     AssetBundleManifest bundles = BuildPipeline.BuildAssetBundles("Assets/AssetBundles/PggResources",
                         new[]

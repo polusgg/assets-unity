@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2388662787
+CRC: 2162770326
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5f27ce80da709a6b3a8de17e5690deef
+    Hash: 58e8f0ad1ec97d1c9b96beff64bc10e3
   TypeTreeHash:
     serializedVersion: 2
     Hash: d9926813dc3022d4a579a209382b1244
@@ -23,12 +23,16 @@ Assets:
 - Assets/Mods/TownOfPolus/Sample.png
 - Assets/Mods/TownOfPolus/ImpostorArrow.png
 - Assets/Mods/TownOfPolus/Monitor.png
+- Assets/Mods/TownOfPolus/Open.png
 - Assets/Mods/TownOfPolus/Fix.png
+- Assets/Mods/TownOfPolus/Shoot.png
 - Assets/Mods/TownOfPolus/PhantomButton.png
 - Assets/Mods/TownOfPolus/Predict.png
 - Assets/AssetBundles/PggResources/TownOfPolus-Manifest.json
 - Assets/Mods/TownOfPolus/SnitchArrow.png
-- Assets/Mods/TownOfPolus/Chameleon.png
+- Assets/Mods/TownOfPolus/Close.png
+- Assets/Mods/TownOfPolus/ColorShift.png
 - Assets/Mods/TownOfPolus/Throw.png
 - Assets/Mods/TownOfPolus/JesterSfx.mp3
+- Assets/Mods/TownOfPolus/None.png
 Dependencies: []

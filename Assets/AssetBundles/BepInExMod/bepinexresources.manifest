@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3131799248
+CRC: 178125316
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 4e477aacd1d69a9d83c6e0a10ced8839
+    Hash: 07cf7b92904703917595af6c0d2033ce
   TypeTreeHash:
     serializedVersion: 2
     Hash: 838d60d63c8e32e456ff24910f254795
@@ -46,4 +46,6 @@ Assets:
 - Assets/Fonts/ComicSansMS3 SDF.asset
 - Assets/Mods/Generic UI/Toast.prefab
 - Assets/Mods/CreditsMenu/CreditsMenu.prefab
+- Assets/Mods/Emojis/Emotes.asset
+- Assets/Mods/OfficialAssets/PlayingOnPog.prefab
 Dependencies: []

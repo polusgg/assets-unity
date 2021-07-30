@@ -1,6 +1,6 @@
 {
   "assetBundleId": 0,
-  "hash": "1DB201128DFDA505A0349FA23D6693E73694DD5335A79A46AA64A26EDE257740",
+  "hash": "4B7FDAD6EA65F7AE2FECAF908F076AA3E71E8FFB65B6BA8F6AF907D6409E3FA9",
   "assets": [
     {
       "type": 0,
@@ -15,6 +15,11 @@
     {
       "type": 0,
       "path": "Assets/Mods/OfficialAssets/polusicon.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/OfficialAssets/LFG.png",
       "details": null
     }
   ]

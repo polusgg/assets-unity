@@ -1,6 +1,6 @@
 {
   "assetBundleId": 10,
-  "hash": "BBB7DF9EB1C443FD590F78AF9F1E231B3E512C63403107EAD1FB6F7C9C846210",
+  "hash": "2B4A14405556CA3CAA9A824508A73A076B8F7E86601CC860B551F07A3DFC293F",
   "assets": [
     {
       "type": 0,
@@ -83,6 +83,16 @@
     {
       "type": 0,
       "path": "Assets/Mods/TownOfPolus/None.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/TownOfPolus/Enchant.png",
+      "details": null
+    },
+    {
+      "type": 0,
+      "path": "Assets/Mods/TownOfPolus/Swoop.png",
       "details": null
     }
   ]

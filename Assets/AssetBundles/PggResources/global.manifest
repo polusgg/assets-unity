@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3402445839
+CRC: 1421892467
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 9dc9c670bf36079490bc1ab90c2578c8
+    Hash: 26512b6d8c05780b5ada1f73d406fc14
   TypeTreeHash:
     serializedVersion: 2
     Hash: 7579feb4afd6aab513e2576ee96e6b63
@@ -18,6 +18,7 @@ ClassTypes:
 Assets:
 - Assets/Mods/OfficialAssets/ModButton.png
 - Assets/Mods/OfficialAssets/KillButton.png
+- Assets/Mods/OfficialAssets/LFG.png
 - Assets/AssetBundles/PggResources/Global-Manifest.json
 - Assets/Mods/OfficialAssets/polusicon.png
 Dependencies: []

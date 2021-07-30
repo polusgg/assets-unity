@@ -5,22 +5,17 @@ using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Assets.Editor.HatCreator
-{
+namespace Assets.Editor.HatCreator {
     [CustomEditor(typeof(HatGeneratorObject))]
-    public class HatGeneratorInspector : UnityEditor.Editor
-    {
+    public class HatGeneratorInspector : UnityEditor.Editor {
         private HatGeneratorObject targetObj => (HatGeneratorObject) serializedObject.targetObject;
-        public override void OnInspectorGUI()
-        {
-            base.OnInspectorGUI();
-            
 
-            if (GUILayout.Button("Load all from folder"))
-            {
+        public override void OnInspectorGUI() {
+            base.OnInspectorGUI();
+
+            if (GUILayout.Button("Load all from folder")) {
                 string folder = EditorUtility.OpenFolderPanel("Asset folder", "Assets", null);
-                if (!string.IsNullOrEmpty(folder))
-                {
+                if (!string.IsNullOrEmpty(folder)) {
                     targetObj.HatSprites = (Sprite[]) Directory.EnumerateFiles(folder)
                         .Select(x => x.Substring(x.IndexOf("Assets/", StringComparison.Ordinal)))
                         .Select(AssetDatabase.LoadAssetAtPath<Object>)
@@ -29,20 +24,18 @@ namespace Assets.Editor.HatCreator
                         .ToArray();
                 }
             }
-            
+
             if (GUILayout.Button("Dedupe Assets"))
                 targetObj.HatSprites = targetObj.DistinctAssets.ToArray();
 
-            if (GUILayout.Button("Generate"))
-            {
+            if (GUILayout.Button("Generate")) {
                 if (!Directory.Exists(targetObj.AssetPath))
                     Directory.CreateDirectory(targetObj.AssetPath);
-                    
-                foreach (Sprite sprite in targetObj.DistinctAssets)
-                {
+
+                foreach (Sprite sprite in targetObj.DistinctAssets) {
                     HatBehaviour hatBehaviour = CreateInstance<HatBehaviour>();
                     hatBehaviour.MainImage = sprite;
-                    
+
                     hatBehaviour.FloorImage = sprite;
                     hatBehaviour.ClimbImage = sprite;
 
@@ -55,7 +48,7 @@ namespace Assets.Editor.HatCreator
                     string uniqueName = AssetDatabase.GenerateUniqueAssetPath(sprite.name);
                     AssetDatabase.CreateAsset(hatBehaviour, $"{targetObj.AssetPath}/{uniqueName}.asset");
                 }
-                
+
                 AssetDatabase.SaveAssets();
             }
         }

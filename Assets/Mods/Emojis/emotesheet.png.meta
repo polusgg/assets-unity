@@ -92,6 +92,9 @@ TextureImporter:
   - first:
       213: 3527704152080096132
     second: locksmith
+  - first:
+      213: 497381823321085474
+    second: swooper
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -487,6 +490,27 @@ TextureImporter:
       bones: []
       spriteID: 48b97695c3ce4f030800000000000000
       internalID: 3527704152080096132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swooper
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2261ac0122e07e600800000000000000
+      internalID: 497381823321085474
       vertices: []
       indices: 
       edges: []

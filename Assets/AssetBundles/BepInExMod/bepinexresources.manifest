@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 178125316
+CRC: 4181514007
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 07cf7b92904703917595af6c0d2033ce
+    Hash: efe2e58a482f5f0dbc758180c23ad706
   TypeTreeHash:
     serializedVersion: 2
     Hash: 838d60d63c8e32e456ff24910f254795
@@ -42,10 +42,10 @@ ClassTypes:
 - Class: 224
   Script: {instanceID: 0}
 Assets:
+- Assets/Mods/Emojis/Emotes.asset
 - Assets/Mods/CreditsMenu/crunchu.png
 - Assets/Fonts/ComicSansMS3 SDF.asset
 - Assets/Mods/Generic UI/Toast.prefab
 - Assets/Mods/CreditsMenu/CreditsMenu.prefab
-- Assets/Mods/Emojis/Emotes.asset
 - Assets/Mods/OfficialAssets/PlayingOnPog.prefab
 Dependencies: []

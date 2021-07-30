@@ -12,7 +12,7 @@ MonoImporter:
   - FloorImage: {instanceID: 0}
   - LeftClimbImage: {instanceID: 0}
   - LeftFloorImage: {instanceID: 0}
-  - AltShader: {fileID: 2100000, guid: aec7ef553ee0ddd439275669e1247ea2, type: 2}
+  - AltShader: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

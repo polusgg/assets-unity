@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using Cosmetics;
+using UnityEngine;
 
-public class SkinData {
+public class SkinData : Cosmetic {
     // Token: 0x04000BDB RID: 3035
     public Sprite IdleFrame;
 
@@ -90,6 +91,9 @@ public class SkinData {
 
     // Token: 0x04000BF8 RID: 3064
     public int Order;
+    public override Sprite GetMainSprite() {
+        throw new System.NotImplementedException();
+    }
 }
 
 public class OverlayKillAnimation { }

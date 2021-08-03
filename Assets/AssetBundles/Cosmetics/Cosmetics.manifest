@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 160239317
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: time_dino
+      Dependencies: {}

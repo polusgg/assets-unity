@@ -26,7 +26,19 @@ namespace Assets.Editor {
             }
 
             if (GUILayout.Button("Build")) {
-                Build(resource);
+                const string buildRoot = "Assets/AssetBundles/PggResources";
+                BuildResult result = Build(resource, buildRoot);
+
+                SerializableForNodePolus nodepolusSerializable = GenerateSerializableForNodePolus(result.DedupedResource);
+
+                using (FileStream file =
+                    File.OpenRead($"{buildRoot}/{result.Manifest.GetAllAssetBundles()[0]}")) {
+                    nodepolusSerializable.Hash = file.SHA256Hash();
+                }
+
+                string nodepolusJsonPath = $"{buildRoot}/{resource.name}.json";
+                File.WriteAllText(nodepolusJsonPath,
+                    JsonConvert.SerializeObject(nodepolusSerializable, serializationOpts));
             }
 
             GUILayout.EndHorizontal();
@@ -55,52 +67,54 @@ namespace Assets.Editor {
         }
 
         public static SerializableForNodePolus GenerateSerializableForNodePolus(AssetBundleResource resource) {
-            SerializableForNodePolus serializableResource = new SerializableForNodePolus();
-            serializableResource.AssetBundleId = resource.BaseId;
-            serializableResource.Assets = resource.Assets.Select(asset => {
-                AssetDecl decl = new AssetDecl {
-                    Path = AssetDatabase.GetAssetPath(asset)
-                };
+            SerializableForNodePolus serializableResource = new SerializableForNodePolus {
+                AssetBundleId = resource.BaseId,
+                Assets = resource.Assets.Select(asset => {
+                    AssetDecl decl = new AssetDecl {Path = AssetDatabase.GetAssetPath(asset)};
 
-                if (asset is AudioClip audio) {
-                    decl.Type = AssetType.Audio;
-                    decl.Details = new AudioDetails {
-                        Samples = audio.samples,
-                        SampleRate = audio.samples / audio.length,
-                    };
-                } else {
-                    decl.Type = AssetType.Other;
-                }
+                    if (asset is AudioClip audio) {
+                        decl.Type = AssetType.Audio;
+                        decl.Details = new AudioDetails {Samples = audio.samples, SampleRate = audio.samples / audio.length,};
+                    } else {
+                        decl.Type = AssetType.Other;
+                    }
 
-                return decl;
-            }).ToArray();
+                    return decl;
+                }).ToArray()
+            };
             return serializableResource;
         }
 
-        public static void Build(AssetBundleResource resource) {
-            if (!Directory.Exists("Assets/AssetBundles/PggResources"))
-                Directory.CreateDirectory("Assets/AssetBundles/PggResources");
+        private static JsonSerializerSettings serializationOpts => new JsonSerializerSettings {
+            ContractResolver = new CamelCasePropertyNamesContractResolver(),
+            Formatting = Formatting.Indented,
+        };
 
-            if (resource.Assets.Length == 0)
-                return;
+        public class BuildResult {
+            public AssetBundleManifest Manifest;
+            public AssetBundleResource DedupedResource;
+        }
+
+        public static BuildResult Build(AssetBundleResource resource, string buildRoot) {
+            if (!Directory.Exists(buildRoot))
+                Directory.CreateDirectory(buildRoot);
+
+            if (resource.Assets.Length == 0) {
+                Debug.LogWarning("No resources in the bundle.");
+                return null;
+            }
 
             AssetBundleResource dedupedResource = CreateInstance<AssetBundleResource>();
             dedupedResource.BaseId = resource.BaseId;
             dedupedResource.Assets = resource.DistinctAssets.ToArray();
 
-            JsonSerializerSettings serialzationOpts = new JsonSerializerSettings {
-                ContractResolver = new CamelCasePropertyNamesContractResolver(),
-                Formatting = Formatting.Indented,
-            };
-
             try {
-                string jsonPath = $"Assets/AssetBundles/PggResources/{resource.name}-Manifest.json";
+                string jsonPath = $"{buildRoot}/{resource.name}-Manifest.json";
                 File.WriteAllText(jsonPath, JsonConvert.SerializeObject(
-                    new SerializableResourceForClient(dedupedResource), serialzationOpts
+                    new SerializableResourceForClient(dedupedResource), serializationOpts
                 ));
                 AssetDatabase.ImportAsset(jsonPath);
-
-                AssetBundleManifest bundles = BuildPipeline.BuildAssetBundles("Assets/AssetBundles/PggResources",
+                AssetBundleManifest manifest = BuildPipeline.BuildAssetBundles(buildRoot,
                     new[] {
                         new AssetBundleBuild {
                             assetNames = dedupedResource.Assets.Select(AssetDatabase.GetAssetPath).Append(jsonPath)
@@ -112,20 +126,18 @@ namespace Assets.Editor {
                     },
                     BuildAssetBundleOptions.None, BuildTarget.StandaloneWindows
                 );
+                
+                Debug.Log(manifest);
 
-                SerializableForNodePolus nodepolusSerializable = GenerateSerializableForNodePolus(dedupedResource);
-
-                using (FileStream file =
-                    File.OpenRead($"Assets/AssetBundles/PggResources/{bundles.GetAllAssetBundles()[0]}")) {
-                    nodepolusSerializable.Hash = file.SHA256Hash();
-                }
-
-                string nodepolusJsonPath = $"Assets/AssetBundles/PggResources/{resource.name}.json";
-                File.WriteAllText(nodepolusJsonPath,
-                    JsonConvert.SerializeObject(nodepolusSerializable, serialzationOpts));
+                return new BuildResult {
+                    DedupedResource = dedupedResource,
+                    Manifest = manifest
+                };
             } catch (Exception e) {
                 Debug.LogError($"Error when generating AssetBundleResource: {e.Message}.\n {e.StackTrace}");
             }
+
+            return null;
         }
     }
 }

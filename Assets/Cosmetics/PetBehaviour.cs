@@ -1,10 +1,9 @@
-﻿using PowerTools;
+﻿using Cosmetics;
+using PowerTools;
 using UnityEngine;
 
-public class PetBehaviour : ScriptableObject {
-    // Token: 0x04000BAD RID: 2989
-    private const float SnapDistance = 2f;
-
+[CreateAssetMenu(fileName = "PetBehaviour", menuName = "Create Resource - Pet", order = 0)]
+public class PetBehaviour : Cosmetic {
     // Token: 0x04000BAE RID: 2990
     public bool Free;
 
@@ -64,6 +63,9 @@ public class PetBehaviour : ScriptableObject {
 
     // Token: 0x04000BC5 RID: 3013
     public AnimationClip walkClip;
+    public override Sprite GetMainSprite() {
+        throw new System.NotImplementedException();
+    }
 }
 
 public class PlayerControl { }

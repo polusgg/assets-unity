@@ -59,7 +59,43 @@ namespace Editor.Accounts {
             return null;
         }
 
-        public async Task<GenericCosmeticResponse<uint>> UploadItem(string bundle, CosmeticBundleObject.CosmeticData cosmetic) {
+        public async Task<GenericCosmeticResponse<uint>> UpdateItem(string bundle, bool registered, CosmeticBundleObject.CosmeticData cosmetic) {
+            HttpRequestMessage request = new HttpRequestMessage {
+                RequestUri = new Uri(_client.BaseAddress, $"item/{cosmetic.Name}"),
+                Method = HttpMethod.Put,
+                Content = new StringContent(JsonConvert.SerializeObject(new ItemCreation {
+                    Id = cosmetic.SanitizedName,
+                    Name = cosmetic.Name,
+                    IngameId = cosmetic.Id,
+                    Resource = new Resource {
+                        Path = BundleS3Client.FormatUrl($"{BundleS3Client.BundleLocation}/Cosmetics", bundle, cosmetic.Name),
+                        Id = cosmetic.Id + 1
+                    },
+                    ThumbnailUrl = BundleS3Client.FormatUrl(BundleS3Client.ThumbnailLocation, bundle, Path.GetFileName(AssetDatabase.GetAssetPath(cosmetic.Thumbnail))),
+                    Type = cosmetic.Type,
+                }, new StringEnumConverter(new CapitalCaseNamingStrategy())), Encoding.UTF8, "application/json")
+            };
+            request.Headers.TryAddWithoutValidation("Authorization", $"{AccountMenu.Save.ClientToken}:{AccountMenu.Save.ClientId}");
+
+            Debug.Log($"sugondese {new Uri(_client.BaseAddress, $"item/{cosmetic.Name}")}");
+
+            HttpResponseMessage response = await _client.SendAsync(request);
+            
+            Debug.Log($"Ended request {response.StatusCode}");
+
+            if (response.IsSuccessStatusCode) {
+                return JsonConvert.DeserializeObject<GenericCosmeticResponse<uint>>(
+                    await response.Content.ReadAsStringAsync(),
+                    _settings
+                );
+            }
+
+            Debug.Log(await response.Content.ReadAsStringAsync());
+
+            return null;
+        }
+
+        public async Task<GenericCosmeticResponse<uint>> UploadItem(string bundle, bool registered, CosmeticBundleObject.CosmeticData cosmetic) {
             HttpRequestMessage request = new HttpRequestMessage {
                 RequestUri = new Uri(_client.BaseAddress, $"item/{cosmetic.Name}"),
                 Method = HttpMethod.Put,

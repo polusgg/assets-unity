@@ -1,55 +1,56 @@
 ﻿using Cosmetics;
 using PowerTools;
+using UnityEditor;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "PetBehaviour", menuName = "Create Resource - Pet", order = 0)]
 public class PetBehaviour : Cosmetic {
-    // Token: 0x04000BAE RID: 2990
+    [HideInInspector]
     public bool Free;
 
-    // Token: 0x04000BAF RID: 2991
+    [HideInInspector]
     public bool NotInStore;
 
-    // Token: 0x04000BB0 RID: 2992
+    [HideInInspector]
     public string ProductId = "Hell nah";
 
-    // Token: 0x04000BB1 RID: 2993
+    [HideInInspector]
     public StringNames StoreName;
 
-    // Token: 0x04000BB2 RID: 2994
+    [HideInInspector]
     public uint SteamId = 0;
 
-    // Token: 0x04000BB3 RID: 2995
+    [HideInInspector]
     public string EpicId = null;
 
-    // Token: 0x04000BB4 RID: 2996
+    [HideInInspector]
     public int ItchId = -1;
 
-    // Token: 0x04000BB5 RID: 2997
+    [HideInInspector]
     public string ItchUrl = null;
 
-    // Token: 0x04000BB6 RID: 2998
+    [HideInInspector]
     public string Win10Id = null;
 
-    // Token: 0x04000BB7 RID: 2999
+    [HideInInspector]
     public PlayerControl Source = null;
 
     // Token: 0x04000BBC RID: 3004
     public float YOffset = -0.25f;
 
-    // Token: 0x04000BBD RID: 3005
+    [HideInInspector]
     public SpriteAnim animator;
 
-    // Token: 0x04000BBE RID: 3006
+    [HideInInspector]
     public SpriteRenderer rend;
 
-    // Token: 0x04000BBF RID: 3007
+    [HideInInspector]
     public SpriteRenderer shadowRend;
 
-    // Token: 0x04000BC0 RID: 3008
+    [HideInInspector]
     public Rigidbody2D body;
 
-    // Token: 0x04000BC1 RID: 3009
+    [HideInInspector]
     public Collider2D Collider;
 
     // Token: 0x04000BC2 RID: 3010
@@ -64,7 +65,8 @@ public class PetBehaviour : Cosmetic {
     // Token: 0x04000BC5 RID: 3013
     public AnimationClip walkClip;
     public override Sprite GetMainSprite() {
-        throw new System.NotImplementedException();
+        Debug.Log(AnimationUtility.GetCurveBindings(idleClip)[0].type);
+        return null;
     }
 }
 

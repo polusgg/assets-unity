@@ -136,12 +136,15 @@ namespace Assets.Editor.HatCreator {
                 yield return null;
             if (task.IsFaulted) throw task.Exception;
 
-            task = CosmeticClient.Client.UploadItem(targetObj.BundleName, cosmetic);
+            task = CosmeticClient.Client.UploadItem(targetObj.BundleName, cosmetic.Registered, cosmetic);
             while (!task.IsCompleted)
                 yield return null;
 
             callback?.Invoke();
             if (task.IsFaulted) throw task.Exception;
+
+            cosmetic.Registered = true;
+            cosmetic.
         }
 
         private IEnumerator UploadAll(CosmeticBundleObject cbo) {
@@ -160,6 +163,8 @@ namespace Assets.Editor.HatCreator {
                     yield return null;
                 }
             }
+            
+            
 
             EditorUtility.ClearProgressBar();
         }

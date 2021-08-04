@@ -14,7 +14,7 @@ namespace Editor.Accounts {
         public const string BundleLocation = "https://client-assetbundles.polus.gg";
         public const string ThumbnailLocation = "https://polusgg-cosmetics-assets.nyc3.digitaloceanspaces.com";
 
-        public BundleS3Client(string endpoint) {
+        public BundleS3Client() {
             client = new AmazonS3Client(new BasicAWSCredentials(AccountMenu.Save.S3Key, AccountMenu.Save.S3Secret), new AmazonS3Config {
                 ServiceURL = "https://nyc3.digitaloceanspaces.com"
             });

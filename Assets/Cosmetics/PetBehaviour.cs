@@ -65,7 +65,7 @@ public class PetBehaviour : Cosmetic {
     // Token: 0x04000BC5 RID: 3013
     public AnimationClip walkClip;
     public override Sprite GetMainSprite() {
-        Debug.Log(AnimationUtility.GetCurveBindings(idleClip)[0].type);
+        // Debug.Log(AnimationUtility.GetCurveBindings(idleClip)[0].type);
         return null;
     }
 }

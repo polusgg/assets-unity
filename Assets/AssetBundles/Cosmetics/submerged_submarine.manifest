@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 126472881
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0f5ecaf4eeee56c2e074350d573173cc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ad18e1dc457f645eb91b887d40e878e5
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5cd204e8374449b281db6257da5d82e5, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundles/Cosmetics/Submerged_Submarine-Manifest.json
+- Assets/Mods/BundleCosmetics/Submerged/submarine/SubmarinePet.asset
+Dependencies: []

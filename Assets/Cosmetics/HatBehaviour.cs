@@ -9,14 +9,13 @@ public class HatBehaviour : Cosmetic {
     // Token: 0x04000B52 RID: 2898
     public Sprite BackImage;
 
-    
+
     public Sprite LeftMainImage;
 
     // Token: 0x04000B54 RID: 2900
     public Sprite LeftBackImage;
 
-    [HideInInspector]
-    public string EpicId;
+    [HideInInspector] public string EpicId;
 
     // Token: 0x04000B56 RID: 2902
     public Sprite ClimbImage;
@@ -35,32 +34,24 @@ public class HatBehaviour : Cosmetic {
 
     // Token: 0x04000B5B RID: 2907
     public bool NoBounce;
-    
-    [HideInInspector]
-    public bool NotInStore;
 
-    [HideInInspector]
-    public bool Free;
+    [HideInInspector] public bool NotInStore;
+
+    [HideInInspector] public bool Free;
 
     public Material AltShader;
 
     public Vector2 ChipOffset;
-    
-    [HideInInspector]
-    public int LimitedMonth = 1;
 
+    [HideInInspector] public int LimitedMonth = 1;
 
-    [HideInInspector]
-    public int LimitedYear = 1;
+    [HideInInspector] public int LimitedYear = 1;
 
-    // Token: 0x04000B62 RID: 2914
-    public SkinData RelatedSkin;
+    [HideInInspector] public SkinData RelatedSkin;
 
-    // Token: 0x04000B63 RID: 2915
-    public string StoreName;
+    [HideInInspector] public string StoreName;
 
-    // Token: 0x04000B64 RID: 2916
-    public string ProductId;
+    [HideInInspector] public string ProductId;
 
     // Token: 0x04000B65 RID: 2917
     public int Order;

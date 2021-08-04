@@ -12,13 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
   m_Name: CosmeticBundle
   m_EditorClassIdentifier: 
-  BundleName: 
+  Name: Submerged
   CoverArt: {fileID: 0}
   Color:
     serializedVersion: 2
-    rgba: 0
-  Price: 0
-  ForSale: 0
+    rgba: 4294939648
+  Price: 69.42021
+  ForSale: 1
   Description: 
   Registered: 0
-  Cosmetics: []
+  Cosmetics:
+  - Id: 0
+    Name: Submarine
+    Registered: 0
+    Built: 0
+    Cosmetic: {fileID: 11400000, guid: d7b189fd0ff64d8478178a5f93362de4, type: 2}
+    Type: 1
+    ServerId: 

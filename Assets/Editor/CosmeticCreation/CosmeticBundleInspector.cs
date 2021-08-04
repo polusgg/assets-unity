@@ -65,22 +65,29 @@ namespace Assets.Editor.HatCreator {
                 EditorGUILayout.PrefixLabel("Id");
                 cosmetic.Id = (uint) Math.Abs(EditorGUILayout.IntField((int) cosmetic.Id));
                 EditorGUILayout.EndHorizontal();
+                EditorGUILayout.BeginHorizontal();
+                EditorGUILayout.PrefixLabel("Registered");
+                EditorGUILayout.Toggle(cosmetic.Registered);
+                EditorGUILayout.EndHorizontal();
                 GUILayout.BeginHorizontal();
                 if (!cosmetic.Registered) {
-                    if (GUILayout.Button("Fetch new ID")) {
-                        Coroutines.Add(FetchId(cosmetic));
-                    }
-
-                    if (GUILayout.Button("Register item")) {
-                        EditorUtility.DisplayProgressBar("Building asset bundle", "(your mom slept in)", 0.1f);
-                        UploadSingle(cosmetic, EditorUtility.ClearProgressBar);
-                    }
+                    // if (GUILayout.Button("Fetch new ID")) {
+                    //     Coroutines.Add(FetchId(cosmetic));
+                    // }
+                    //
+                    // if (GUILayout.Button("Register item")) {
+                    //     EditorUtility.DisplayProgressBar("Building asset bundle", "(your mom slept in)", 0.1f);
+                    //     
+                    //     UploadSingle(cosmetic, EditorUtility.ClearProgressBar);
+                    // }
 
                     if (GUILayout.Button("Delete")) {
                         targetObj.Cosmetics = targetObj.Cosmetics.Where((_, j) => i != j).ToArray();
                         i--;
                     }
-                } else { }
+                } else {
+                    
+                }
 
                 GUILayout.EndHorizontal();
                 EditorGUI.indentLevel--;
@@ -115,7 +122,7 @@ namespace Assets.Editor.HatCreator {
                 return;
             }
             AssetBundleResource bundleResource = CreateInstance<AssetBundleResource>();
-            bundleResource.name = $"{targetObj.BundleName}_{cosmetic.Name}";
+            bundleResource.name = $"{targetObj.Name}_{cosmetic.Name}";
             bundleResource.BaseId = cosmetic.Id;
             bundleResource.Assets = new Object[] {cosmetic.Cosmetic};
             AssetBundleResourceEditor.BuildResult buildResult = AssetBundleResourceEditor.Build(bundleResource, bundleRoot);
@@ -126,17 +133,21 @@ namespace Assets.Editor.HatCreator {
 
         private IEnumerator UploadSingle(CosmeticBundleObject.CosmeticData cosmetic, string location, Action callback = null) {
             // EditorUtility.DisplayProgressBar("Uploading your mom", "(she's really really large)", 0.21f);
-            Task task = BundleS3Client.Upload(new BundleS3Client(BundleS3Client.BundleLocation), BundleS3Client.BundleBucket, BundleS3Client.FormatUrl("Cosmetics", targetObj.BundleName, cosmetic.Name), File.OpenRead(location));
+            Task task = BundleS3Client.Upload(new BundleS3Client(),
+                BundleS3Client.BundleBucket, BundleS3Client.FormatUrl("Cosmetics", targetObj.Name, cosmetic.Name), File.OpenRead(location));
             while (!task.IsCompleted)
                 yield return null;
             if (task.IsFaulted) throw task.Exception;
 
-            task = BundleS3Client.Upload(new BundleS3Client(BundleS3Client.ThumbnailLocation), BundleS3Client.ThumbnailBucket, BundleS3Client.FormatName(targetObj.BundleName, Path.GetFileName(AssetDatabase.GetAssetPath(cosmetic.Thumbnail))), File.OpenRead(AssetDatabase.GetAssetPath(cosmetic.Thumbnail)));
+            task = BundleS3Client.Upload(new BundleS3Client(),
+                BundleS3Client.ThumbnailBucket, BundleS3Client.FormatName(targetObj.Name, Path.GetFileName(AssetDatabase.GetAssetPath(cosmetic.Thumbnail))), File.OpenRead(AssetDatabase.GetAssetPath(cosmetic.Thumbnail)));
             while (!task.IsCompleted)
                 yield return null;
             if (task.IsFaulted) throw task.Exception;
 
-            task = CosmeticClient.Client.UploadItem(targetObj.BundleName, cosmetic.Registered, cosmetic);
+            task = cosmetic.Registered 
+                ? CosmeticClient.Client.UpdateItem(targetObj.Name, cosmetic)
+                : CosmeticClient.Client.UploadItem(targetObj.Name, cosmetic);
             while (!task.IsCompleted)
                 yield return null;
 
@@ -144,10 +155,18 @@ namespace Assets.Editor.HatCreator {
             if (task.IsFaulted) throw task.Exception;
 
             cosmetic.Registered = true;
-            cosmetic.
         }
 
         private IEnumerator UploadAll(CosmeticBundleObject cbo) {
+            if (cbo.CoverArt == null) {
+                Debug.LogError("No cover art provided");
+                yield break;
+            }
+
+            if (cbo.Cosmetics.Any(cosmetic => cosmetic.Cosmetic == null)) {
+                Debug.LogError("Not all cosmetics have a hat/pet attached to them");
+                yield break;
+            }
             EditorUtility.DisplayProgressBar("Progress bar", "progress bar :)", 0.0f);
             foreach (CosmeticBundleObject.CosmeticData cosmeticData in cbo.Cosmetics) {
                 if (cosmeticData.Registered)
@@ -155,6 +174,7 @@ namespace Assets.Editor.HatCreator {
                 if (cosmeticData.Id < 10000000) {
                     Task fetch = Fetch(cosmeticData);
                     while (!fetch.IsCompleted) yield return null;
+                    if (fetch.IsFaulted) throw fetch.Exception;
                 }
 
                 bool isDone = false;
@@ -162,9 +182,19 @@ namespace Assets.Editor.HatCreator {
                 while (!isDone) {
                     yield return null;
                 }
-            }
-            
-            
+            }//BundleS3Client.FormatUrl(BundleS3Client.ThumbnailLocation + "/CoverArt", bundle.Name, Path.GetFileName(AssetDatabase.GetAssetPath(bundle.CoverArt)))
+
+            string assetPath = AssetDatabase.GetAssetPath(cbo.CoverArt);
+            Task task = BundleS3Client.Upload(new BundleS3Client(), BundleS3Client.ThumbnailLocation,
+                BundleS3Client.FormatUrl("CoverArt", cbo.Name, Path.GetFileName(assetPath)), File.OpenRead(assetPath));
+            while (!task.IsCompleted) yield return null;
+            if (task.IsFaulted) throw task.Exception;
+
+            task = cbo.Registered ?
+                CosmeticClient.Client.UpdateBundle(cbo) :
+                CosmeticClient.Client.UploadBundle(cbo);
+            while (!task.IsCompleted) yield return null;
+            if (task.IsFaulted) throw task.Exception;
 
             EditorUtility.ClearProgressBar();
         }

@@ -51,11 +51,6 @@ namespace Assets.Editor.HatCreator {
                 if (cosmetic.Name != nameBefore) EditorUtility.SetDirty(targetObj);
                 EditorGUILayout.EndHorizontal();
                 EditorGUILayout.BeginHorizontal();
-                EditorGUILayout.PrefixLabel("Type");
-                CosmeticType typeBefore = cosmetic.Type;
-                cosmetic.Type = (CosmeticType) EditorGUILayout.EnumPopup(typeBefore);
-                EditorGUILayout.EndHorizontal();
-                EditorGUILayout.BeginHorizontal();
                 EditorGUILayout.PrefixLabel("Cosmetic");
                 Cosmetic cosmeticBefore = cosmetic.Cosmetic;
                 cosmetic.Cosmetic = (Cosmetic) EditorGUILayout.ObjectField(cosmetic.Cosmetic, typeof(Cosmetic), false);
@@ -85,18 +80,18 @@ namespace Assets.Editor.HatCreator {
                         targetObj.Cosmetics = targetObj.Cosmetics.Where((_, j) => i != j).ToArray();
                         i--;
                     }
-                } else {
-                    
                 }
 
                 GUILayout.EndHorizontal();
                 EditorGUI.indentLevel--;
             }
 
-            if (GUILayout.Button("Register bundle")) {
+            if (!targetObj.Registered && GUILayout.Button("Register bundle")) {
                 if (targetObj.Cosmetics.Length == 0) {
                     EditorUtility.DisplayDialog("Registration failure", "There are no cosmetics in this bundle", "Ok");
                 } else Coroutines.Add(UploadAll(targetObj));
+            } else if (targetObj.Registered && GUILayout.Button("Unregister Bundle")) {
+                targetObj.Registered = true;
             }
 
             if (Coroutines.Count > 0) {
@@ -121,6 +116,12 @@ namespace Assets.Editor.HatCreator {
                 EditorUtility.ClearProgressBar();
                 return;
             }
+
+            if (cosmetic.Type == CosmeticType.Unknown) {
+                Debug.LogError("Unknown cosmetic type!");
+                EditorUtility.ClearProgressBar();
+                return;
+            }
             AssetBundleResource bundleResource = CreateInstance<AssetBundleResource>();
             bundleResource.name = $"{targetObj.Name}_{cosmetic.Name}";
             bundleResource.BaseId = cosmetic.Id;
@@ -137,12 +138,14 @@ namespace Assets.Editor.HatCreator {
                 BundleS3Client.BundleBucket, BundleS3Client.FormatUrl("Cosmetics", targetObj.Name, cosmetic.Name), File.OpenRead(location));
             while (!task.IsCompleted)
                 yield return null;
+            Debug.Log($"Faulted 1? {task.IsFaulted}");
             if (task.IsFaulted) throw task.Exception;
 
             task = BundleS3Client.Upload(new BundleS3Client(),
                 BundleS3Client.ThumbnailBucket, BundleS3Client.FormatName(targetObj.Name, Path.GetFileName(AssetDatabase.GetAssetPath(cosmetic.Thumbnail))), File.OpenRead(AssetDatabase.GetAssetPath(cosmetic.Thumbnail)));
             while (!task.IsCompleted)
                 yield return null;
+            Debug.Log($"Faulted 2? {task.IsFaulted}");
             if (task.IsFaulted) throw task.Exception;
 
             task = cosmetic.Registered 
@@ -152,23 +155,24 @@ namespace Assets.Editor.HatCreator {
                 yield return null;
 
             callback?.Invoke();
+            Debug.Log($"Faulted 3? {task.IsFaulted}");
             if (task.IsFaulted) throw task.Exception;
 
             cosmetic.Registered = true;
         }
 
-        private IEnumerator UploadAll(CosmeticBundleObject cbo) {
-            if (cbo.CoverArt == null) {
+        private IEnumerator UploadAll(CosmeticBundleObject bundle) {
+            if (bundle.CoverArt == null) {
                 Debug.LogError("No cover art provided");
                 yield break;
             }
 
-            if (cbo.Cosmetics.Any(cosmetic => cosmetic.Cosmetic == null)) {
+            if (bundle.Cosmetics.Any(cosmetic => cosmetic.Cosmetic == null)) {
                 Debug.LogError("Not all cosmetics have a hat/pet attached to them");
                 yield break;
             }
             EditorUtility.DisplayProgressBar("Progress bar", "progress bar :)", 0.0f);
-            foreach (CosmeticBundleObject.CosmeticData cosmeticData in cbo.Cosmetics) {
+            foreach (CosmeticBundleObject.CosmeticData cosmeticData in bundle.Cosmetics) {
                 if (cosmeticData.Registered)
                     continue;
                 if (cosmeticData.Id < 10000000) {
@@ -184,17 +188,18 @@ namespace Assets.Editor.HatCreator {
                 }
             }//BundleS3Client.FormatUrl(BundleS3Client.ThumbnailLocation + "/CoverArt", bundle.Name, Path.GetFileName(AssetDatabase.GetAssetPath(bundle.CoverArt)))
 
-            string assetPath = AssetDatabase.GetAssetPath(cbo.CoverArt);
-            Task task = BundleS3Client.Upload(new BundleS3Client(), BundleS3Client.ThumbnailLocation,
-                BundleS3Client.FormatUrl("CoverArt", cbo.Name, Path.GetFileName(assetPath)), File.OpenRead(assetPath));
+            string assetPath = AssetDatabase.GetAssetPath(bundle.CoverArt);
+            Task task = BundleS3Client.Upload(new BundleS3Client(), BundleS3Client.ThumbnailBucket,
+                BundleS3Client.FormatUrl("CoverArt", bundle.Name, Path.GetFileName(assetPath)), File.OpenRead(assetPath));
             while (!task.IsCompleted) yield return null;
             if (task.IsFaulted) throw task.Exception;
 
-            task = cbo.Registered ?
-                CosmeticClient.Client.UpdateBundle(cbo) :
-                CosmeticClient.Client.UploadBundle(cbo);
+            task = bundle.Registered ?
+                CosmeticClient.Client.UpdateBundle(bundle) :
+                CosmeticClient.Client.UploadBundle(bundle);
             while (!task.IsCompleted) yield return null;
             if (task.IsFaulted) throw task.Exception;
+            bundle.Registered = true;
 
             EditorUtility.ClearProgressBar();
         }

@@ -8,6 +8,7 @@ namespace Assets.Editor.HatCreator {
         Hat,
         Pet,
         Skin,
-        Body
+        Body,
+        Unknown
     }
 }

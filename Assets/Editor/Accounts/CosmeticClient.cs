@@ -69,6 +69,7 @@ namespace Editor.Accounts {
                     Cosmetics = bundle.Cosmetics.Select(b => b.SanitizedName).ToArray(),
                     CoverArt = BundleS3Client.FormatUrl(BundleS3Client.ThumbnailLocation + "/CoverArt", bundle.Name, Path.GetFileName(AssetDatabase.GetAssetPath(bundle.CoverArt))),
                     Color = bundle.Color.ToRgba(),
+                    Author = bundle.Author,
                     Description = bundle.Description,
                     Id = bundle.LowerName,
                     Price = bundle.Price,
@@ -103,6 +104,7 @@ namespace Editor.Accounts {
                     Cosmetics = bundle.Cosmetics.Select(b => b.SanitizedName).ToArray(),
                     CoverArt = BundleS3Client.FormatUrl(BundleS3Client.ThumbnailLocation + "/CoverArt", bundle.Name, Path.GetFileName(AssetDatabase.GetAssetPath(bundle.CoverArt))),
                     Color = bundle.Color.ToRgba(),
+                    Author = bundle.Author,
                     Description = bundle.Description,
                     Id = bundle.LowerName,
                     Price = bundle.Price,
@@ -136,6 +138,7 @@ namespace Editor.Accounts {
                 Method = new HttpMethod("PATCH"),
                 Content = new StringContent(JsonConvert.SerializeObject(new ItemUpdate {
                     Name = cosmetic.Name,
+                    Author = cosmetic.Author,
                     Resource = new Resource {
                         Path = BundleS3Client.FormatUrl($"{BundleS3Client.BundleLocation}/Cosmetics", bundle, cosmetic.Name),
                         Id = cosmetic.Id + 1
@@ -171,6 +174,7 @@ namespace Editor.Accounts {
                 Content = new StringContent(JsonConvert.SerializeObject(new ItemCreation {
                     Id = cosmetic.SanitizedName,
                     Name = cosmetic.Name,
+                    Author = cosmetic.Author,
                     IngameId = cosmetic.Id,
                     Resource = new Resource {
                         Path = BundleS3Client.FormatUrl($"{BundleS3Client.BundleLocation}/Cosmetics", bundle, cosmetic.Name),

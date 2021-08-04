@@ -17,6 +17,7 @@ namespace Assets.Editor.HatCreator {
         public bool ForSale;
         [TextArea]
         public string Description;
+        public string Author;
         [HideInInspector]
         public bool Registered;
         [HideInInspector]
@@ -27,23 +28,31 @@ namespace Assets.Editor.HatCreator {
         public class CosmeticData {
             public uint Id;
             public string Name = "New Cosmetic";
+            public string Author = "";
 
             public Sprite Thumbnail {
                 get {
+                    if (Cosmetic == null) return null;
+
                     switch (Type) {
                         case CosmeticType.Hat: {
-                            return Cosmetic != null ? Cosmetic.GetMainSprite() : null;
+                            return (Sprite) Cosmetic.GetMain();
                         }
                         case CosmeticType.Pet:
-                            EditorCurveBinding[] curve = AnimationUtility.GetObjectReferenceCurveBindings(((PetBehaviour) Cosmetic).idleClip);
+                            AnimationClip clip = (AnimationClip) Cosmetic.GetMain();
+                            EditorCurveBinding[] curve = AnimationUtility.GetObjectReferenceCurveBindings(clip);
                             Debug.Log(curve.Length);
                             foreach (EditorCurveBinding curveBinding in curve) {
                                 if (curveBinding.type != typeof(SpriteRenderer)) continue;
-                                foreach (ObjectReferenceKeyframe ork in AnimationUtility.GetObjectReferenceCurve(((PetBehaviour) Cosmetic).idleClip, curveBinding)) {
-                                    if (ork.value != null) return (Sprite) ork.value;
-                                }
+                                foreach (ObjectReferenceKeyframe ork in AnimationUtility.GetObjectReferenceCurve(clip, curveBinding))
+                                    if (ork.value != null)
+                                        return (Sprite)ork.value;
                             }
                             return null;
+                        case CosmeticType.Skin:
+                            return (Sprite) Cosmetic.GetMain();
+                        case CosmeticType.Body:
+                            throw new Exception("Bodies have no thumb");
                         default:
                             throw new Exception("Unsupported type has no thumbnail handler");
                     }
@@ -51,7 +60,25 @@ namespace Assets.Editor.HatCreator {
             }
             public bool Registered;
             public Cosmetic Cosmetic;
-            public CosmeticType Type = CosmeticType.Hat;
+
+            public CosmeticType Type {
+                get {
+                    switch (Cosmetic.GetType().Name) {
+                        case nameof(HatBehaviour): {
+                            return CosmeticType.Hat;
+                        }
+                        case nameof(PetBehaviour): {
+                            return CosmeticType.Pet;
+                        }
+                        case nameof(SkinData): {
+                            return CosmeticType.Skin;
+                        }
+                        default: {
+                            return CosmeticType.Unknown;
+                        }
+                    }
+                }
+            }
 
             public string SanitizedName => new SnakeCaseNamingStrategy().GetPropertyName(Name, false);
             //ui

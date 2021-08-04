@@ -55,5 +55,5 @@ public class HatBehaviour : Cosmetic {
 
     // Token: 0x04000B65 RID: 2917
     public int Order;
-    public override Sprite GetMainSprite() => MainImage;
+    public override Object GetMain() => MainImage;
 }

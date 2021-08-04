@@ -1,6 +1,7 @@
 ﻿using Cosmetics;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "PetBehaviour", menuName = "Create Resource - Pet", order = 0)]
 public class SkinData : Cosmetic {
     // Token: 0x04000BDB RID: 3035
     public Sprite IdleFrame;
@@ -71,29 +72,27 @@ public class SkinData : Cosmetic {
     // Token: 0x04000BF1 RID: 3057
     public AnimationClip SpawnLeftAnim;
 
-    // Token: 0x04000BF2 RID: 3058
+    [HideInInspector]
     public OverlayKillAnimation[] KillAnims;
 
-    // Token: 0x04000BF3 RID: 3059
+    [HideInInspector]
     public bool NotInStore;
 
-    // Token: 0x04000BF4 RID: 3060
+    [HideInInspector]
     public bool Free;
 
-    // Token: 0x04000BF5 RID: 3061
+    [HideInInspector]
     public HatBehaviour RelatedHat;
 
-    // Token: 0x04000BF6 RID: 3062
+    [HideInInspector]
     public string StoreName;
 
-    // Token: 0x04000BF7 RID: 3063
+    [HideInInspector]
     public string ProductId;
 
-    // Token: 0x04000BF8 RID: 3064
+    [HideInInspector]
     public int Order;
-    public override Sprite GetMainSprite() {
-        throw new System.NotImplementedException();
-    }
+    public override Object GetMain() => IdleFrame;
 }
 
 public class OverlayKillAnimation { }

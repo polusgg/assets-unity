@@ -2,6 +2,6 @@
 
 namespace Cosmetics {
     public abstract class Cosmetic : ScriptableObject {
-        public abstract Sprite GetMainSprite();
+        public abstract Object GetMain();
     }
 }

@@ -20,10 +20,11 @@ MonoBehaviour:
   Price: 1.99
   ForSale: 1
   Description: cum llol
-  Registered: 1
+  Author: 
+  Registered: 0
   Cosmetics:
   - Id: 10000000
     Name: Dino
-    Registered: 1
+    Author: 
+    Registered: 0
     Cosmetic: {fileID: 11400000, guid: 1937245b1de5d19488af7941d632375e, type: 2}
-    Type: 0

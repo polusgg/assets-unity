@@ -2,7 +2,7 @@ using Cosmetics;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "HatBehaviour", menuName = "Create Resource - Hat", order = 0)]
-public class HatBehaviour : Cosmetic {
+public class HatBehaviour : ScriptableObject {
     // Token: 0x04000B51 RID: 2897
     public Sprite MainImage;
 
@@ -55,5 +55,5 @@ public class HatBehaviour : Cosmetic {
 
     // Token: 0x04000B65 RID: 2917
     public int Order;
-    public override Object GetMain() => MainImage;
+    public Object GetMain() => MainImage;
 }

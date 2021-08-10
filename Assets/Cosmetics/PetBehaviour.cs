@@ -1,10 +1,12 @@
-﻿using Cosmetics;
+﻿using System;
+using System.Reflection;
+using Cosmetics;
 using PowerTools;
 using UnityEditor;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
-[CreateAssetMenu(fileName = "PetBehaviour", menuName = "Create Resource - Pet", order = 0)]
-public class PetBehaviour : Cosmetic {
+public class PetBehaviour : MonoBehaviour {
     [HideInInspector]
     public bool Free;
 
@@ -36,21 +38,16 @@ public class PetBehaviour : Cosmetic {
     public PlayerControl Source = null;
 
     // Token: 0x04000BBC RID: 3004
-    public float YOffset = -0.25f;
+    public float YOffset = 0f;
 
-    [HideInInspector]
     public SpriteAnim animator;
 
-    [HideInInspector]
     public SpriteRenderer rend;
 
-    [HideInInspector]
     public SpriteRenderer shadowRend;
 
-    [HideInInspector]
     public Rigidbody2D body;
 
-    [HideInInspector]
     public Collider2D Collider;
 
     // Token: 0x04000BC2 RID: 3010
@@ -64,10 +61,6 @@ public class PetBehaviour : Cosmetic {
 
     // Token: 0x04000BC5 RID: 3013
     public AnimationClip walkClip;
-    public override Object GetMain() {
-        // Debug.Log(AnimationUtility.GetCurveBindings(idleClip)[0].type);
-        return null;
-    }
 }
 
 public class PlayerControl { }

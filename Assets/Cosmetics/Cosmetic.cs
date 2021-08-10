@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 namespace Cosmetics {
-    public abstract class Cosmetic : ScriptableObject {
-        public abstract Object GetMain();
+    public interface Cosmetic {
+        Object GetMain();
     }
 }

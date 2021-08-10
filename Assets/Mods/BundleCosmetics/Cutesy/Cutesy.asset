@@ -27,4 +27,5 @@ MonoBehaviour:
     Name: Poodle
     Author: 
     Registered: 0
-    Cosmetic: {fileID: 11400000, guid: 4451cfcdc24b340488c12413ec3a45de, type: 2}
+    Cosmetic: {fileID: 0}
+    Type: 1

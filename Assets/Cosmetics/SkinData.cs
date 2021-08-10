@@ -1,8 +1,7 @@
 ﻿using Cosmetics;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "PetBehaviour", menuName = "Create Resource - Pet", order = 0)]
-public class SkinData : Cosmetic {
+public class SkinData : ScriptableObject, Cosmetic {
     // Token: 0x04000BDB RID: 3035
     public Sprite IdleFrame;
 
@@ -92,7 +91,7 @@ public class SkinData : Cosmetic {
 
     [HideInInspector]
     public int Order;
-    public override Object GetMain() => IdleFrame;
+    public Object GetMain() => IdleFrame;
 }
 
 public class OverlayKillAnimation { }

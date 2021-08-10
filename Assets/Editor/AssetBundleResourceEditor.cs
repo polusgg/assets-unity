@@ -28,17 +28,6 @@ namespace Assets.Editor {
             if (GUILayout.Button("Build")) {
                 const string buildRoot = "Assets/AssetBundles/PggResources";
                 BuildResult result = Build(resource, buildRoot);
-
-                SerializableForNodePolus nodepolusSerializable = GenerateSerializableForNodePolus(result.DedupedResource);
-
-                using (FileStream file =
-                    File.OpenRead($"{buildRoot}/{result.Manifest.GetAllAssetBundles()[0]}")) {
-                    nodepolusSerializable.Hash = file.SHA256Hash();
-                }
-
-                string nodepolusJsonPath = $"{buildRoot}/{resource.name}.json";
-                File.WriteAllText(nodepolusJsonPath,
-                    JsonConvert.SerializeObject(nodepolusSerializable, serializationOpts));
             }
 
             GUILayout.EndHorizontal();
@@ -93,6 +82,7 @@ namespace Assets.Editor {
         public class BuildResult {
             public AssetBundleManifest Manifest;
             public AssetBundleResource DedupedResource;
+            public string JsonManifest;
         }
 
         public static BuildResult Build(AssetBundleResource resource, string buildRoot) {
@@ -126,12 +116,24 @@ namespace Assets.Editor {
                     },
                     BuildAssetBundleOptions.None, BuildTarget.StandaloneWindows
                 );
+
+                SerializableForNodePolus nodepolusSerializable = GenerateSerializableForNodePolus(dedupedResource);
+
+                using (FileStream file =
+                    File.OpenRead($"{buildRoot}/{manifest.GetAllAssetBundles()[0]}")) {
+                    nodepolusSerializable.Hash = file.SHA256Hash();
+                }
+
+                string nodepolusJsonPath = $"{buildRoot}/{resource.name}.json";
+                File.WriteAllText(nodepolusJsonPath,
+                    JsonConvert.SerializeObject(nodepolusSerializable, serializationOpts));
                 
                 Debug.Log(manifest);
 
                 return new BuildResult {
                     DedupedResource = dedupedResource,
-                    Manifest = manifest
+                    Manifest = manifest,
+                    JsonManifest = nodepolusJsonPath
                 };
             } catch (Exception e) {
                 Debug.LogError($"Error when generating AssetBundleResource: {e.Message}.\n {e.StackTrace}");

@@ -813,7 +813,6 @@ MonoBehaviour:
     Rose
     Hall <indent=26%>(<sprite index=0> Tr4cer#0001)</indent> (<sprite index=2> <link="https://twitter.com/roobscoob1">roobscoob1</link>)
 
-    
 
     <size=110%>Core
     Developers:</size>
@@ -830,14 +829,12 @@ MonoBehaviour:
     Saghetti
     <indent=26%>(<sprite index=0> Saghetti#9735)</indent> (<sprite index=2> <link="https://twitter.com/Saghetti0">Saghetti0</link>)
 
-    
 
     <size=110%>Contributors:</size>
 
     Kadez
     <indent=26%>(<sprite index=0> Kadez#0001)</indent> (<sprite index=2> <link="https://twitter.com/NotKadez">NotKadez</link>)
 
-    
 
     <size=110%>Artists:</size>
 
@@ -845,23 +842,7 @@ MonoBehaviour:
     <indent=26%>(<sprite index=0> Acron#9311)</indent> (<sprite index=2> <link="https://twitter.com/acronmd">acronmd</link>)
 
     Jeira
-    <indent=26%>(<sprite index=0> Jeira#9999)</indent> (<sprite index=2> <link="https://twitter.com/jeira9999">jeira9999</link>)
-
-    
-
-    <size=110%>Community
-    Manager:</size>
-
-    SilenceHD <indent=26%>(<sprite index=0> SilenceHD#6669)</indent>
-    (<sprite index=1> <link="https://www.twitch.tv/silencehd">silencehd</link>)
-
-    
-
-    <size=110%>Special
-    Thanks to:</size>
-
-    <sprite index=3> <link="https://5ubmerged.carrd.co/">Submerged
-    Team</link> (For use of roles, and code snippets)'
+    <indent=26%>(<sprite index=0> Jeira#9999)</indent> (<sprite index=2> <link="https://twitter.com/jeira9999">jeira9999</link>)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

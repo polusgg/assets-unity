@@ -17,13 +17,23 @@ MonoBehaviour:
   DisplayName: Sanae
   S3Key: 3VIP3HQQRJCHRMMHD3G5
   S3Secret: JdNk9njIezJfnDUJLqDeOb0QgC5KBYFf0lNGL3jZIfA
+  DoPersonalToken: eae57bc6df35f18997462da7ff012c3c6709e117dfec0a86b4ed7658079f4f8a
   Perks:
   - lobby.code.custom
   - lobby.size.25
-  - lobby.size.50
-  - lobby.size.100
   - name.color.gold
   - name.color.match
   - player.color.rgb
-  - server.access.dev
   - server.access.beta
+  - mod.kick
+  - mod.ban
+  - lobby.size.50
+  - cosmetic.item.create
+  - cosmetic.item.update
+  - cosmetic.bundle.create
+  - cosmetic.bundle.update
+  - lobby.size.100
+  - server.access.dev
+  - purchase.get.all
+  - purchase.authenticate.all
+  - purchase.update

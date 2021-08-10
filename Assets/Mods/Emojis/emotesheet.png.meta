@@ -95,6 +95,9 @@ TextureImporter:
   - first:
       213: 497381823321085474
     second: swooper
+  - first:
+      213: 1351295077977756603
+    second: partnerAlign
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -511,6 +514,27 @@ TextureImporter:
       bones: []
       spriteID: 2261ac0122e07e600800000000000000
       internalID: 497381823321085474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: partnerAlign
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 191
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb31995c6b3c0c210800000000000000
+      internalID: 1351295077977756603
       vertices: []
       indices: 
       edges: []

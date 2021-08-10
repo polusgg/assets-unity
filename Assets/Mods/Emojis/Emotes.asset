@@ -169,6 +169,12 @@ MonoBehaviour:
     m_Scale: 1
     m_Name: swooper
     m_HashCode: 697697667
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 16
+    m_Scale: 1
+    m_Name: partnerAlign
+    m_HashCode: 213240195
   m_SpriteGlyphTable:
   - m_Index: 0
     m_Metrics:
@@ -424,5 +430,21 @@ MonoBehaviour:
     m_Scale: 1
     m_AtlasIndex: 0
     sprite: {fileID: 497381823321085474, guid: b9deb41502a612b4f84072eb355e8db6, type: 3}
+  - m_Index: 16
+    m_Metrics:
+      m_Width: 64
+      m_Height: 64
+      m_HorizontalBearingX: 0
+      m_HorizontalBearingY: 53
+      m_HorizontalAdvance: 64
+    m_GlyphRect:
+      m_X: 256
+      m_Y: 191
+      m_Width: 64
+      m_Height: 64
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: 1351295077977756603, guid: b9deb41502a612b4f84072eb355e8db6,
+      type: 3}
   spriteInfoList: []
   fallbackSpriteAssets: []

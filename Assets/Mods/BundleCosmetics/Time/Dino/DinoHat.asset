@@ -25,7 +25,7 @@ MonoBehaviour:
   NoBounce: 1
   NotInStore: 0
   Free: 0
-  AltShader: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  AltShader: {fileID: 0}
   ChipOffset: {x: 0, y: 0}
   LimitedMonth: 1
   LimitedYear: 1

@@ -37,7 +37,6 @@ namespace Assets.Editor.HatCreator {
                         case CosmeticType.Pet:
                             AnimationClip clip = (AnimationClip) ((PetCreator) Cosmetic).GetMain();
                             EditorCurveBinding[] curve = AnimationUtility.GetObjectReferenceCurveBindings(clip);
-                            Debug.Log(curve.Length);
                             foreach (EditorCurveBinding curveBinding in curve) {
                                 if (curveBinding.type != typeof(SpriteRenderer)) continue;
                                 foreach (ObjectReferenceKeyframe ork in AnimationUtility.GetObjectReferenceCurve(clip, curveBinding))

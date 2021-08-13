@@ -26,6 +26,7 @@ namespace Editor.Accounts {
         public CosmeticClient() {
             _client = new HttpClient {
                 BaseAddress = new Uri("http://64.201.219.20:2219/v1/")
+                // BaseAddress = new Uri("http://159.203.86.28:2219/v1/")
             };
 
             _client.DefaultRequestHeaders.Accept.Clear();

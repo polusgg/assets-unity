@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2484007327038434046}
   - component: {fileID: 2029885551462401878}
   - component: {fileID: 1782435423487308385}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5439038733587525529}
   - component: {fileID: 8847751947571534307}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 7106497995405572747}
   - component: {fileID: 8933455135329553444}
   - component: {fileID: 5375954047598854841}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BasePet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,7 +252,7 @@ MonoBehaviour:
   ItchId: -1
   ItchUrl: 
   Win10Id: 
-  YOffset: 0
+  YOffset: -0.1
   animator: {fileID: 2029885551462401878}
   rend: {fileID: 1782435423487308385}
   shadowRend: {fileID: 8847751947571534307}
@@ -277,7 +277,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: 34340d816819ae54fa331ecbc3b80914, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1

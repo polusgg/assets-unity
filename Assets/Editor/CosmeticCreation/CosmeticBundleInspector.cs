@@ -117,19 +117,21 @@ namespace Assets.Editor.HatCreator {
             }
         }
 
-        public GameObject CreatePetBehaviour(PetCreator petCreator) {
-            PetBehaviour petBehaviour = Instantiate(AssetDatabase.LoadAssetAtPath<PetBehaviour>("Assets/Mods/BundleCosmetics/BasePet.prefab"));
+        public GameObject CreatePetBehaviour(CosmeticBundleObject.CosmeticData data, out PetBehaviour clone) {
+            clone = Instantiate(AssetDatabase.LoadAssetAtPath<PetBehaviour>("Assets/Mods/BundleCosmetics/BasePet.prefab"));
+            PetCreator petCreator = (PetCreator) data.Cosmetic;
 
-            petBehaviour.YOffset = petCreator.yOffset;
-            petBehaviour.idleClip = petCreator.idleClip;
-            petBehaviour.walkClip = petCreator.walkClip;
-            petBehaviour.sadClip = petCreator.sadClip;
-            petBehaviour.scaredClip = petCreator.scaredClip;
-            petBehaviour.shadowRend.gameObject.SetActive(false);
+            clone.YOffset = petCreator.yOffset;
+            clone.idleClip = petCreator.idleClip;
+            clone.walkClip = petCreator.walkClip;
+            clone.sadClip = petCreator.sadClip;
+            clone.scaredClip = petCreator.scaredClip;
+            clone.rend.sprite = data.Thumbnail;
+            clone.shadowRend.gameObject.SetActive(false);
 
             if (!Directory.Exists($"{bundleRoot}/PetTemp")) Directory.CreateDirectory($"{bundleRoot}/PetTemp");
 
-            GameObject obj = PrefabUtility.SaveAsPrefabAsset(petBehaviour.gameObject, $"{bundleRoot}/PetTemp/{petCreator.name}.prefab");
+            GameObject obj = PrefabUtility.SaveAsPrefabAsset(clone.gameObject, $"{bundleRoot}/PetTemp/{petCreator.name}.prefab");
 
             return obj;
         }
@@ -144,11 +146,12 @@ namespace Assets.Editor.HatCreator {
             AssetBundleResource bundleResource = CreateInstance<AssetBundleResource>();
             bundleResource.name = $"{targetObj.Name}_{cosmetic.Name}";
             bundleResource.BaseId = cosmetic.Id;
-            bundleResource.Assets = new[] { cosmetic.Type == CosmeticType.Pet ? CreatePetBehaviour((PetCreator) cosmetic.Cosmetic) : cosmetic.Cosmetic };
+            PetBehaviour pet = null;
+            bundleResource.Assets = cosmetic.Type == CosmeticType.Pet ? new Object[] { CreatePetBehaviour(cosmetic, out pet) } : new[] { cosmetic.Cosmetic };
             AssetBundleResourceEditor.BuildResult buildResult = AssetBundleResourceEditor.Build(bundleResource, bundleRoot);
             if (cosmetic.Type == CosmeticType.Pet) {
                 AssetDatabase.DeleteAsset($"{bundleRoot}/PetTemp/{cosmetic.Cosmetic.name}.prefab");
-                DestroyImmediate(bundleResource.Assets[0]);
+                DestroyImmediate(pet);
             }
             // EditorUtility.DisplayProgressBar("Uploading your mom", "(she's really really large)", 0.21f);
             Task task = OceanClient.Upload(new OceanClient(),

@@ -55,5 +55,5 @@ public class HatBehaviour : ScriptableObject {
 
     // Token: 0x04000B65 RID: 2917
     public int Order;
-    public Object GetMain() => MainImage;
+    public Object GetMain() => MainImage == null ? BackImage : MainImage;
 }

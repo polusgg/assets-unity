@@ -98,6 +98,24 @@ TextureImporter:
   - first:
       213: 1351295077977756603
     second: partnerAlign
+  - first:
+      213: -8207180526990421234
+    second: mapSkeld
+  - first:
+      213: -929488212440128468
+    second: mapSubmerged
+  - first:
+      213: 2291571861575455116
+    second: mapMira
+  - first:
+      213: -2678809858244740831
+    second: mapPolus
+  - first:
+      213: -8887545808625063453
+    second: morphling
+  - first:
+      213: 7146302845748043656
+    second: mapAirship
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -523,7 +541,133 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 191
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb31995c6b3c0c210800000000000000
+      internalID: 1351295077977756603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapSkeld
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e039b315bcc3a1e80800000000000000
+      internalID: -8207180526990421234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapSubmerged
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24e79a356bc913f0800000000000000
+      internalID: -929488212440128468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapMira
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c815c72877c4dcf10800000000000000
+      internalID: 2291571861575455116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapPolus
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 129f18a70a4f2dad0800000000000000
+      internalID: -2678809858244740831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morphling
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e924efdc2819a480800000000000000
+      internalID: -8887545808625063453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapAirship
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -533,8 +677,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb31995c6b3c0c210800000000000000
-      internalID: 1351295077977756603
+      spriteID: 88fdc225394cc2360800000000000000
+      internalID: 7146302845748043656
       vertices: []
       indices: 
       edges: []

@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 1978864255
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b1f87375c52a801a2807da91df1c6073
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 024a58455a2356efc247acdde1be6505
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 33a85397cd7f8c75d94da833c4e725d7, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Mods/BundleCosmetics/Sports/Basket/BasketHat.asset
+- Assets/AssetBundles/Cosmetics/Sports_Basket-Manifest.json
+Dependencies: []

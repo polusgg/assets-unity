@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 1954330806
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 04a0a9122d92b9ae2e9cac8f48123d94
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5a016a011b5d4e3560d6b8f6268c5f9e
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 33a85397cd7f8c75d94da833c4e725d7, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Mods/BundleCosmetics/Sports/Golf/GolfHat.asset
+- Assets/AssetBundles/Cosmetics/Sports_Golf-Manifest.json
+Dependencies: []

@@ -20,7 +20,7 @@ namespace Editor.Accounts {
         public const string BundleBucket = "polusgg-assetbundles";
         public const string ThumbnailBucket = "polusgg-cosmetics-assets";
         public const string BundleLocation = "https://client-assetbundles.polus.gg";
-        public const string ThumbnailLocation = "https://polusgg-cosmetics-assets.nyc3.digitaloceanspaces.com";
+        public const string ThumbnailLocation = "https://cosmetic.asset.polus.gg";
         public static readonly Uri DOEndpoint = new Uri("https://api.digitalocean.com/v2/cdn/endpoints");
 
         public OceanClient() {

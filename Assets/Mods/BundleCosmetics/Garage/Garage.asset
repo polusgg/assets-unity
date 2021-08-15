@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
-  m_Name: Cutesy
+  m_Name: Garage
   m_EditorClassIdentifier: 
-  Name: Cutesy
-  CoverArt: {fileID: 21300000, guid: 2f4661db6d846a34c8e132f21bda4810, type: 3}
+  Name: Garage
+  CoverArt: {fileID: 21300000, guid: afafe05bd6894e047acae21d59c1f327, type: 3}
   Color:
     serializedVersion: 2
-    rgba: 4293381097
+    rgba: 0
   Price: 9000.01
   ForSale: 0
   Description: 
   Author: plans
   Registered: 1
   Cosmetics:
-  - Id: 10000004
-    Name: Poodle
+  - Id: 10000014
+    Name: Raccoon
     Author: 
     Registered: 1
-    Cosmetic: {fileID: 11400000, guid: d14a967d225a6144da4dcd8b214747be, type: 2}
+    Cosmetic: {fileID: 11400000, guid: 883ea8f5a38dba440b4b34031f2d3358, type: 2}
     Type: 1

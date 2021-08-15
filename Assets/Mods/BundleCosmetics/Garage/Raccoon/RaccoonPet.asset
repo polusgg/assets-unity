@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a0e1f45fc6540038bf4fd3812746746, type: 3}
+  m_Name: RaccoonPet
+  m_EditorClassIdentifier: 
+  yOffset: 0
+  idleClip: {fileID: 7400000, guid: 31331b394340d1e4db4eaa2256081fea, type: 2}
+  walkClip: {fileID: 7400000, guid: 68d0e8d954d46ce498da7823264ae4a0, type: 2}
+  scaredClip: {fileID: 7400000, guid: 22e3806dc7697204cb92655b93f21495, type: 2}
+  sadClip: {fileID: 7400000, guid: 0180e1207ea350c4faba7661f9f7b8d7, type: 2}
+  hasShadow: 1

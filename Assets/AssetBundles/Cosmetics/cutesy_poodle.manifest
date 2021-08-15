@@ -1,0 +1,47 @@
+ManifestFileVersion: 0
+CRC: 1601785538
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b191bdb44b58a8ef914dc666d5ed8400
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 99dbc55c0eea5f613c4e56a475ac9db5
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 50
+  Script: {instanceID: 0}
+- Class: 58
+  Script: {instanceID: 0}
+- Class: 62
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 89a8ca009b14008429f621808bba2086, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5cd204e8374449b281db6257da5d82e5, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundles/Cosmetics/Cutesy_Poodle-Manifest.json
+- Assets/AssetBundles/Cosmetics/PetTemp/PoodlePet.prefab
+Dependencies: []

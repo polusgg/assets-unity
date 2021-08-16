@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Cosmetics;
+using Editor.Accounts;
 using Newtonsoft.Json.Serialization;
 using UnityEditor;
 using UnityEngine;
@@ -17,7 +18,6 @@ namespace Assets.Editor.HatCreator {
         public float Price;
         public bool ForSale;
         [TextArea] public string Description;
-        public string Author;
         [HideInInspector] public bool Registered;
         [HideInInspector] public CosmeticData[] Cosmetics = Array.Empty<CosmeticData>();
         public string SanitizedName => new SnakeCaseNamingStrategy().GetPropertyName(Name.ToLower(), false);

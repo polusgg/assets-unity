@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Reflection;
@@ -68,12 +69,11 @@ namespace Editor.Accounts {
                 Content = new StringContent(JsonConvert.SerializeObject(new BundleUpdate {
                     Name = bundle.Name,
                     Cosmetics = bundle.Cosmetics.Select(b => b.SanitizedName).ToArray(),
-                    CoverArt = OceanClient.FormatUrl(OceanClient.ThumbnailLocation + "/CoverArt", bundle.Name, Path.GetFileName(AssetDatabase.GetAssetPath(bundle.CoverArt))),
+                    CoverArt = OceanClient.FormatUrl(OceanClient.ThumbnailLocation + "/CoverArt", WebUtility.UrlEncode(bundle.Name), WebUtility.UrlEncode(Path.GetFileName(AssetDatabase.GetAssetPath(bundle.CoverArt)))),
                     Color = bundle.Color.ToRgba(),
-                    Author = bundle.Author,
                     Description = bundle.Description,
-                    Price = bundle.Price,
-                    ForSale = bundle.ForSale
+                    Price = int.Parse(bundle.Price.ToString("###.00").Replace(".", "")),
+                    ForSale = bundle.ForSale,
                 }), Encoding.UTF8, "application/json")
             };
             request.Headers.TryAddWithoutValidation("Authorization", $"{AccountMenu.Save.ClientToken}:{AccountMenu.Save.ClientId}");
@@ -102,11 +102,10 @@ namespace Editor.Accounts {
                 Content = new StringContent(JsonConvert.SerializeObject(new BundleCreate {
                     Name = bundle.Name,
                     Cosmetics = bundle.Cosmetics.Select(b => b.SanitizedName).ToArray(),
-                    CoverArt = OceanClient.FormatUrl(OceanClient.ThumbnailLocation + "/CoverArt", bundle.Name, Path.GetFileName(AssetDatabase.GetAssetPath(bundle.CoverArt))),
+                    CoverArt = OceanClient.FormatUrl(OceanClient.ThumbnailLocation + "/CoverArt", WebUtility.UrlEncode(bundle.Name), WebUtility.UrlEncode(Path.GetFileName(AssetDatabase.GetAssetPath(bundle.CoverArt)))),
                     Color = bundle.Color.ToRgba(),
-                    Author = bundle.Author,
                     Description = bundle.Description,
-                    Price = bundle.Price,
+                    Price = int.Parse(bundle.Price.ToString("###.00").Replace(".", "")),
                     ForSale = bundle.ForSale
                 }), Encoding.UTF8, "application/json")
             };
@@ -139,12 +138,13 @@ namespace Editor.Accounts {
                 Content = new StringContent(JsonConvert.SerializeObject(new ItemUpdate {
                     Name = cosmetic.Name,
                     Author = cosmetic.Author,
+                    IngameId = cosmetic.Id,
                     Resource = new Resource {
-                        Path = OceanClient.FormatUrl("Cosmetics", bundle, cosmetic.Name),
+                        Path = OceanClient.FormatUrl("Cosmetics", WebUtility.UrlEncode(bundle), WebUtility.UrlEncode(cosmetic.Name)),
                         Space = OceanClient.BundleLocation,
                         Id = cosmetic.Id + 1
                     },
-                    ThumbnailUrl = OceanClient.FormatUrl(OceanClient.ThumbnailLocation, bundle, Path.GetFileName(AssetDatabase.GetAssetPath(cosmetic.Thumbnail))),
+                    ThumbnailUrl = OceanClient.FormatUrl(OceanClient.ThumbnailLocation, WebUtility.UrlEncode(bundle), WebUtility.UrlEncode(Path.GetFileName(AssetDatabase.GetAssetPath(cosmetic.Thumbnail)))),
                     Type = cosmetic.Type,
                 }, new StringEnumConverter(new CapitalCaseNamingStrategy())), Encoding.UTF8, "application/json")
             };
@@ -177,11 +177,11 @@ namespace Editor.Accounts {
                     Author = cosmetic.Author,
                     IngameId = cosmetic.Id,
                     Resource = new Resource {
-                        Path = OceanClient.FormatUrl("Cosmetics", bundle, cosmetic.Name),
+                        Path = OceanClient.FormatUrl("Cosmetics", WebUtility.UrlEncode(bundle), WebUtility.UrlEncode(cosmetic.Name)),
                         Space = OceanClient.BundleLocation,
                         Id = cosmetic.Id + 1
                     },
-                    ThumbnailUrl = OceanClient.FormatUrl(OceanClient.ThumbnailLocation, bundle, Path.GetFileName(AssetDatabase.GetAssetPath(cosmetic.Thumbnail))),
+                    ThumbnailUrl = OceanClient.FormatUrl(OceanClient.ThumbnailLocation, WebUtility.UrlEncode(bundle), WebUtility.UrlEncode(Path.GetFileName(AssetDatabase.GetAssetPath(cosmetic.Thumbnail)))),
                     Type = cosmetic.Type,
                 }, new StringEnumConverter(new CapitalCaseNamingStrategy())), Encoding.UTF8, "application/json")
             };

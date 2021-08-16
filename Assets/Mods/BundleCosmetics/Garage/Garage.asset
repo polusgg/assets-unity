@@ -20,12 +20,11 @@ MonoBehaviour:
   Price: 9000.01
   ForSale: 0
   Description: 
-  Author: plans
   Registered: 1
   Cosmetics:
   - Id: 10000014
     Name: Raccoon
-    Author: 
+    Author: 70dae216-59ca-43c8-8884-66dc31d1ed5a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 883ea8f5a38dba440b4b34031f2d3358, type: 2}
     Type: 1

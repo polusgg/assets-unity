@@ -14,6 +14,7 @@ namespace Editor.Accounts {
         private ApiClient client = new ApiClient();
         private static SavedAuthModel _save;
 
+        public static bool HasSave => File.Exists(SaveFile) || _save != null;
         public static SavedAuthModel Save {
             get => File.Exists(SaveFile) || _save ? _save = AssetDatabase.LoadAssetAtPath<SavedAuthModel>(SaveFile) : _save;
             set {

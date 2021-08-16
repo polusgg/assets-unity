@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using Amazon.S3.Model;
 using Cosmetics;
@@ -35,10 +36,17 @@ namespace Assets.Editor.HatCreator {
         public override void OnInspectorGUI() {
             base.OnInspectorGUI();
 
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.PrefixLabel("DEBUG: Price for server");
+            EditorGUILayout.IntField(int.Parse(targetObj.Price.ToString("###.00").Replace(".", "")));
+            EditorGUILayout.EndHorizontal();
+
             if (GUILayout.Button("Add slot")) {
                 // targetObj.Cosmetics = targetObj.Cosmetics.Append(CreateInstance<CosmeticBundleObject.CosmeticData>()).ToArray();
                 targetObj.Cosmetics = targetObj.Cosmetics.Append(new CosmeticBundleObject.CosmeticData()).ToArray();
             }
+
+            EditorGUI.BeginChangeCheck();
 
             for (int i = 0; i < targetObj.Cosmetics.Length; i++) {
                 CosmeticBundleObject.CosmeticData cosmetic = targetObj.Cosmetics[i];
@@ -47,9 +55,15 @@ namespace Assets.Editor.HatCreator {
                 EditorGUI.indentLevel++;
                 EditorGUILayout.BeginHorizontal();
                 EditorGUILayout.PrefixLabel("Name");
-                string nameBefore = cosmetic.Name;
+                // string nameBefore = cosmetic.Name;
                 cosmetic.Name = EditorGUILayout.TextField(cosmetic.Name);
-                if (cosmetic.Name != nameBefore) EditorUtility.SetDirty(targetObj);
+                // if (cosmetic.Name != nameBefore) EditorUtility.SetDirty(targetObj);
+                EditorGUILayout.EndHorizontal();
+                EditorGUILayout.BeginHorizontal();
+                EditorGUILayout.PrefixLabel("Author");
+                // string authorBefore = cosmetic.Name;
+                cosmetic.Author = EditorGUILayout.TextField(cosmetic.Author);
+                // if (cosmetic.Author != authorBefore) EditorUtility.SetDirty(targetObj);
                 EditorGUILayout.EndHorizontal();
                 EditorGUILayout.BeginHorizontal();
                 EditorGUILayout.PrefixLabel("Type");
@@ -63,9 +77,9 @@ namespace Assets.Editor.HatCreator {
                 EditorGUILayout.EndHorizontal();
                 EditorGUILayout.BeginHorizontal();
                 EditorGUILayout.PrefixLabel("Cosmetic");
-                Object cosmeticBefore = cosmetic.Cosmetic;
+                // Object cosmeticBefore = cosmetic.Cosmetic;
                 cosmetic.Cosmetic = EditorGUILayout.ObjectField(cosmetic.Cosmetic, cosmetic.TypeType, false);
-                if (cosmetic.Cosmetic != cosmeticBefore) EditorUtility.SetDirty(targetObj);
+                // if (cosmetic.Cosmetic != cosmeticBefore) EditorUtility.SetDirty(targetObj);
                 EditorGUILayout.EndHorizontal();
                 EditorGUILayout.BeginHorizontal();
                 EditorGUILayout.PrefixLabel("Id");
@@ -86,6 +100,8 @@ namespace Assets.Editor.HatCreator {
                 GUILayout.EndHorizontal();
                 EditorGUI.indentLevel--;
             }
+
+            EditorGUI.EndChangeCheck();
 
             bool fullyRegistered = targetObj.Registered && targetObj.Cosmetics.All(cosmetic => cosmetic.Registered);
 
@@ -121,6 +137,7 @@ namespace Assets.Editor.HatCreator {
             clone = Instantiate(AssetDatabase.LoadAssetAtPath<PetBehaviour>("Assets/Mods/BundleCosmetics/BasePet.prefab"));
             PetCreator petCreator = (PetCreator) data.Cosmetic;
 
+            clone.name = $"<temp>{data.Cosmetic.name}";
             clone.YOffset = petCreator.yOffset;
             clone.idleClip = petCreator.idleClip;
             clone.walkClip = petCreator.walkClip;
@@ -151,8 +168,9 @@ namespace Assets.Editor.HatCreator {
             AssetBundleResourceEditor.BuildResult buildResult = AssetBundleResourceEditor.Build(bundleResource, bundleRoot);
             if (cosmetic.Type == CosmeticType.Pet) {
                 AssetDatabase.DeleteAsset($"{bundleRoot}/PetTemp/{cosmetic.Cosmetic.name}.prefab");
-                DestroyImmediate(pet);
+                DestroyImmediate(pet.gameObject);
             }
+
             // EditorUtility.DisplayProgressBar("Uploading your mom", "(she's really really large)", 0.21f);
             Task task = OceanClient.Upload(new OceanClient(),
                 OceanClient.BundleBucket, OceanClient.FormatUrl("Cosmetics", targetObj.Name, cosmetic.Name), File.OpenRead($"{bundleRoot}/{buildResult.Manifest.GetAllAssetBundles()[0]}"));
@@ -199,14 +217,46 @@ namespace Assets.Editor.HatCreator {
             Debug.Log($"registered {cosmetic.Name} {cosmetic.Registered} {targetObj}");
         }
 
+        // grabbed off SO LOL https://stackoverflow.com/a/2571393/13161523
+        public bool TryParseGuid(string value, out Guid result) {
+            try {
+                result = new Guid(value.Replace("-", "")); // needed to cater for wron hyphenation (wow this guy really failed at spelling damn -sanae)
+                return true;
+            } catch {
+                result = Guid.Empty;
+                return false;
+            }
+        }
+
+        public static void ClearLogConsole() {
+            Assembly assembly = Assembly.GetAssembly(typeof(UnityEditor.Editor));
+            Type logEntries = assembly.GetType("UnityEditor.LogEntries");
+            MethodInfo clearConsoleMethod = logEntries.GetMethod("Clear");
+            clearConsoleMethod.Invoke(new object(), null);
+        }
+
         private IEnumerator UploadAll(CosmeticBundleObject bundle) {
+            ClearLogConsole();
+            yield return null;
+
+            if (!AccountMenu.HasSave) {
+                EditorUtility.DisplayDialog("Error", "You are not logged in.", "Ok");
+                EditorWindow.GetWindow<AccountMenu>();
+                yield break;
+            }
+
             if (bundle.CoverArt == null) {
                 EditorUtility.DisplayDialog("Error", "No cover art provided.", "Ok");
                 yield break;
             }
 
             if (bundle.Cosmetics.Any(cosmetic => cosmetic.Cosmetic == null)) {
-                EditorUtility.DisplayDialog("Error", "Not all cosmetics have a hat/pet attached to them", "Ok");
+                EditorUtility.DisplayDialog("Error", $"Not all cosmetics have a hat/pet attached to them\nMissing are {string.Join(", ", bundle.Cosmetics.Where(cosmetic => cosmetic.Cosmetic == null).Select(c => c.Name))}", "Ok");
+                yield break;
+            }
+
+            if (bundle.Cosmetics.Any(cosmetic => !TryParseGuid(cosmetic.Author, out Guid _))) {
+                EditorUtility.DisplayDialog("Error", $"Not all cosmetics have an author uuid attached them\nMissing are {string.Join(", ", bundle.Cosmetics.Where(cosmetic => !TryParseGuid(cosmetic.Author, out Guid _)).Select(c => c.Name))}", "Ok");
                 yield break;
             }
 
@@ -224,7 +274,7 @@ namespace Assets.Editor.HatCreator {
             }
 
             if (!bundle.Cosmetics.All(cosmetic => cosmetic.Registered)) {
-                EditorUtility.DisplayDialog("Error", "Not all cosmetics have been uploaded", "Ok");
+                EditorUtility.DisplayDialog("Error", $"Not all cosmetics have been uploaded\nMissing are {string.Join(", ", bundle.Cosmetics.Where(cosmetic => !cosmetic.Registered).Select(c => c.Name))}", "Ok");
                 yield break;
             }
 

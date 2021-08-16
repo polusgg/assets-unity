@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
-  m_Name: CosmeticBundle
+  m_Name: Submerged
   m_EditorClassIdentifier: 
   Name: Submerged
   CoverArt: {fileID: 21300000, guid: b366eb357c4217d48a729719af563320, type: 3}
@@ -18,20 +18,19 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294939648
   Price: 69.42021
-  ForSale: 1
+  ForSale: 0
   Description: 
-  Author: 
   Registered: 1
   Cosmetics:
   - Id: 10000000
     Name: Submarine
-    Author: 
+    Author: c4239f1c-9131-4cf9-b2da-61f3629047ec
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: d7b189fd0ff64d8478178a5f93362de4, type: 2}
     Type: 1
   - Id: 10000002
     Name: Axolotl
-    Author: 
+    Author: c4239f1c-9131-4cf9-b2da-61f3629047ec
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 577d698273a63d64aa9136fde0134ba3, type: 2}
     Type: 0

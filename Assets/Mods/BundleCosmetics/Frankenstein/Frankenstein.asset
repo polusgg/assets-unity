@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
+  m_Name: Frankenstein
+  m_EditorClassIdentifier: 
+  Name: Frankenstein
+  CoverArt: {fileID: 21300000, guid: f4cf84ef9a96ec74f9b004834ae64a9a, type: 3}
+  Color:
+    serializedVersion: 2
+    rgba: 4942873
+  Price: 3.99
+  ForSale: 0
+  Description: "If you are a horror lover and you like to scare your friends at every
+    opportunity you have, grab this Frankenstein themed bundle and terrorize your
+    lobbies with it!\n\nIncludes:\n\u2022 Brain in a Jar Hat\n\u2022 Facehugger Hat\n\u2022
+    Frankenstein Hat\n\u2022 Parasite Hat"
+  Registered: 0
+  Cosmetics:
+  - Id: 10000018
+    Name: Brain in a Jar
+    Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 443a035ceb492564e99df02286641226, type: 2}
+    Type: 0
+  - Id: 10000020
+    Name: Facehugger
+    Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: b589ddc2955c58c4395c3e61b9745e98, type: 2}
+    Type: 0
+  - Id: 10000022
+    Name: Frankenstein
+    Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: a61e33e13e067a1499592abf80c06c12, type: 2}
+    Type: 0
+  - Id: 10000024
+    Name: Parasite
+    Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
+    Registered: 0
+    Cosmetic: {fileID: 11400000, guid: d926293da1cfd1840a62caabe5880f91, type: 2}
+    Type: 0

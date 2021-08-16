@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 198307992
+CRC: 1183164247
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 3799e1c543617d687485f22a4134b6d2
+    Hash: 0ccfdfa321d030b0dde0cb7d08957897
   TypeTreeHash:
     serializedVersion: 2
     Hash: 024a58455a2356efc247acdde1be6505
@@ -20,6 +20,6 @@ ClassTypes:
 - Class: 213
   Script: {instanceID: 0}
 Assets:
-- Assets/AssetBundles/Cosmetics/Sports_Rugby-Manifest.json
-- Assets/Mods/BundleCosmetics/Sports/Rugby/RugbyHat.asset
+- Assets/AssetBundles/Cosmetics/Frankenstein_Parasite-Manifest.json
+- Assets/Mods/BundleCosmetics/Frankenstein/Parasite/Parasite Hat.asset
 Dependencies: []

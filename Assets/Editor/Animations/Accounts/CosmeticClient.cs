@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -72,7 +73,7 @@ namespace Editor.Accounts {
                     CoverArt = OceanClient.FormatUrl(OceanClient.ThumbnailLocation + "/CoverArt", WebUtility.UrlEncode(bundle.Name), WebUtility.UrlEncode(Path.GetFileName(AssetDatabase.GetAssetPath(bundle.CoverArt)))),
                     Color = bundle.Color.ToRgba(),
                     Description = bundle.Description,
-                    Price = int.Parse(bundle.Price.ToString("###.00").Replace(".", "")),
+                    Price = int.Parse(bundle.Price.ToString("###.00", CultureInfo.InvariantCulture).Replace(".", "")),
                     ForSale = bundle.ForSale,
                 }), Encoding.UTF8, "application/json")
             };
@@ -105,7 +106,7 @@ namespace Editor.Accounts {
                     CoverArt = OceanClient.FormatUrl(OceanClient.ThumbnailLocation + "/CoverArt", WebUtility.UrlEncode(bundle.Name), WebUtility.UrlEncode(Path.GetFileName(AssetDatabase.GetAssetPath(bundle.CoverArt)))),
                     Color = bundle.Color.ToRgba(),
                     Description = bundle.Description,
-                    Price = int.Parse(bundle.Price.ToString("###.00").Replace(".", "")),
+                    Price = int.Parse(bundle.Price.ToString("###.00", CultureInfo.InvariantCulture).Replace(".", "")),
                     ForSale = bundle.ForSale
                 }), Encoding.UTF8, "application/json")
             };

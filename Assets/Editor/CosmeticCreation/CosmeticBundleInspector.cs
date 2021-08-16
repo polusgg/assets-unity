@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -38,7 +39,7 @@ namespace Assets.Editor.HatCreator {
 
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.PrefixLabel("DEBUG: Price for server");
-            EditorGUILayout.IntField(int.Parse(targetObj.Price.ToString("###.00").Replace(".", "")));
+            EditorGUILayout.IntField(int.Parse(targetObj.Price.ToString("###.00", CultureInfo.InvariantCulture).Replace(".", "")));
             EditorGUILayout.EndHorizontal();
 
             if (GUILayout.Button("Add slot")) {

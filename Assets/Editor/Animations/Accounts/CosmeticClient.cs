@@ -27,7 +27,8 @@ namespace Editor.Accounts {
 
         public CosmeticClient() {
             _client = new HttpClient {
-                BaseAddress = new Uri("http://cosmetics.service.polus.gg:2219/v1/")
+                BaseAddress = new Uri("http://sanae6.ca:2219/v1/")
+                // BaseAddress = new Uri("http://cosmetics.service.polus.gg:2219/v1/")
                 // BaseAddress = new Uri("http://159.203.86.28:2219/v1/")
             };
 
@@ -85,14 +86,14 @@ namespace Editor.Accounts {
             
             Debug.Log($"Ended request {response.StatusCode}");
 
+            Debug.Log(await response.Content.ReadAsStringAsync());
+
             if (response.IsSuccessStatusCode) {
                 return JsonConvert.DeserializeObject<GenericCosmeticResponse<uint>>(
                     await response.Content.ReadAsStringAsync(),
                     _settings
                 );
             }
-
-            Debug.Log(await response.Content.ReadAsStringAsync());
 
             return null;
         }

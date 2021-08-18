@@ -43,7 +43,7 @@ namespace Editor.Accounts {
 
         //DONT USE THIS IT LITERALLY DOES NOT WORK LOL
 
-        public static async Task Purge(string[] files, string bucket) {
+        public static async Task Purge(string[] files, string[] buckets) {
             HttpClient client = new HttpClient();
 
             HttpRequestMessage listRequest = new HttpRequestMessage {
@@ -62,27 +62,29 @@ namespace Editor.Accounts {
                 // Debug.Log($"{end.Id} {end.Origin} {end.CustomDomain}");
             // }
 
-            DoListEndpoint.Endpoint point = listObject.Endpoints.First(x => x.Origin.Contains(bucket) || x.CustomDomain.Contains(bucket));
-            // return;
-            HttpRequestMessage purgeRequest = new HttpRequestMessage {
-                Method = HttpMethod.Delete,
-                RequestUri = new Uri(DOEndpoint, $"endpoints/{point.Id}/cache"),
-                Content = new StringContent(JsonConvert.SerializeObject(new DoPurgeEndpoint {
-                    Files = files
-                }))
-            };
+            foreach (string bucket in buckets) {
+                DoListEndpoint.Endpoint point = listObject.Endpoints.First(x => x.Origin.Contains(bucket) || x.CustomDomain.Contains(bucket));
+                // return;
+                HttpRequestMessage purgeRequest = new HttpRequestMessage {
+                    Method = HttpMethod.Delete,
+                    RequestUri = new Uri(DOEndpoint, $"endpoints/{point.Id}/cache"),
+                    Content = new StringContent(JsonConvert.SerializeObject(new DoPurgeEndpoint {
+                        Files = files
+                    }))
+                };
 
-            purgeRequest.Headers.Clear();
-            purgeRequest.Headers.TryAddWithoutValidation("Content-Type", "application/json");
-            purgeRequest.Headers.TryAddWithoutValidation("Authorization", $"Bearer {AccountMenu.Save.DoPersonalToken}");
+                purgeRequest.Headers.Clear();
+                purgeRequest.Headers.TryAddWithoutValidation("Content-Type", "application/json");
+                purgeRequest.Headers.TryAddWithoutValidation("Authorization", $"Bearer {AccountMenu.Save.DoPersonalToken}");
 
-            Debug.Log($"figma balls {purgeRequest.RequestUri}");
+                Debug.Log($"figma balls {purgeRequest.RequestUri}");
 
-            HttpResponseMessage response = await client.SendAsync(purgeRequest);
-            string data = await response.Content.ReadAsStringAsync();
-            if (response.IsSuccessStatusCode)
-                Debug.Log("POGGER");
-            else Debug.LogError($"FUCK {data}");
+                HttpResponseMessage response = await client.SendAsync(purgeRequest);
+                string data = await response.Content.ReadAsStringAsync();
+                if (response.IsSuccessStatusCode)
+                    Debug.Log("POGGER");
+                else Debug.LogError($"FUCK {data}");
+            }
         }
     }
 }

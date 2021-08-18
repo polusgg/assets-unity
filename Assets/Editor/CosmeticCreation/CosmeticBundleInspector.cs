@@ -163,7 +163,7 @@ namespace Assets.Editor.HatCreator {
             clone.walkClip = petCreator.walkClip;
             clone.sadClip = petCreator.sadClip;
             clone.scaredClip = petCreator.scaredClip;
-            clone.ProductId = petCreator.productId;
+            clone.ProductId = petCreator.storeName;
             clone.rend.sprite = data.Thumbnail;
             clone.shadowRend.gameObject.SetActive(false);
 
@@ -360,7 +360,7 @@ namespace Assets.Editor.HatCreator {
 
             bundle.Registered = true;
             Debug.Log("fully registered, now purging");
-            
+
             // foreach (string purge in purgeList) {
             //     Debug.Log($"thing to purge: {purge}");
             // }
@@ -370,7 +370,10 @@ namespace Assets.Editor.HatCreator {
             } else {
                 task = OceanClient.Purge(
                     purgeList.ToArray(),
-                    OceanClient.BundleBucket
+                    new[] {
+                        OceanClient.BundleBucket,
+                        OceanClient.ThumbnailBucket
+                    }
                 );
                 while (!task.IsCompleted) yield return null;
                 if (task.IsFaulted) throw task.Exception;

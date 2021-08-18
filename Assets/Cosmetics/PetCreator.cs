@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Cosmetics {
     [CreateAssetMenu(fileName = "PetBehaviour", menuName = "Create Resource - Pet", order = -1)]
@@ -15,7 +16,7 @@ namespace Cosmetics {
 
         public bool hasShadow;
 
-        [HideInInspector] public string productId;
+        [FormerlySerializedAs("productId")] [HideInInspector] public string storeName;
 
         public Object GetMain() {
             return idleClip;

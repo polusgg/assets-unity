@@ -19,10 +19,9 @@ MonoBehaviour:
     rgba: 4942873
   Price: 3.99
   ForSale: 1
-  Description: "If you are a horror lover and you like to scare your friends at every
+  Description: If you are a horror lover and you like to scare your friends at every
     opportunity you have, grab this Frankenstein themed bundle and terrorize your
-    lobbies with it!\n\nIncludes:\n\u2022 Brain in a Jar Hat\n\u2022 Facehugger Hat\n\u2022
-    Frankenstein Hat\n\u2022 Parasite Hat"
+    lobbies with it!
   Registered: 1
   Cosmetics:
   - Id: 10000018

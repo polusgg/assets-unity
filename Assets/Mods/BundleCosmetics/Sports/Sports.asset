@@ -19,10 +19,8 @@ MonoBehaviour:
     rgba: 25087
   Price: 4.99
   ForSale: 1
-  Description: "Do you like basketball, soccer, rugby, tennis and/or golf? Find a
-    way to express your passion for sports with this bundle!\n\nIncludes:\n\u2022
-    Basketball Hat\n\u2022 Soccer Hat\n\u2022 Rugby Hat\n\u2022 Golf Hat\n\u2022
-    Tennis Hat"
+  Description: Do you like basketball, soccer, rugby, tennis and/or golf? Find a
+    way to express your passion for sports with this bundle!
   Registered: 1
   Cosmetics:
   - Id: 10000006

@@ -74,6 +74,10 @@ namespace Editor.Accounts {
                 GUILayout.Label("S3 Secret", GUILayout.Width(100));
                 _save.S3Secret = GUILayout.PasswordField(_save.S3Secret ?? "", '*');
                 GUILayout.EndHorizontal();
+                GUILayout.BeginHorizontal();
+                GUILayout.Label("DigitalOcean Token", GUILayout.Width(100));
+                _save.DoPersonalToken = GUILayout.TextField(_save.DoPersonalToken ?? "");
+                GUILayout.EndHorizontal();
                 if (GUILayout.Button("Save")) {
                     Save = _save;
                 }

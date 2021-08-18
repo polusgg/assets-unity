@@ -17,7 +17,7 @@ MonoBehaviour:
   Color:
     serializedVersion: 2
     rgba: 1125271
-  Price: 5
+  Price: 4.99
   ForSale: 1
   Description: Pack your bags and travel to Japan. Take this hat bundle with you
     on the trip to accompany you on your journey to the west.
@@ -29,7 +29,7 @@ MonoBehaviour:
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: a3f73cda3138cbe49ad50516a5d72058, type: 2}
     Type: 0
-  - Id: 10000044
+  - Id: 10000052
     Name: Geisha
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1

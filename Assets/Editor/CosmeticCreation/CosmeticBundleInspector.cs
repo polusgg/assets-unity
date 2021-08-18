@@ -287,6 +287,7 @@ namespace Assets.Editor.HatCreator {
             } else {
                 Debug.Log($"{cosmetic.Name} had no conflicts!");
             }
+            EditorUtility.SetDirty(bundle);
         }
 
         private IEnumerator UploadAll(CosmeticBundleObject bundle) {

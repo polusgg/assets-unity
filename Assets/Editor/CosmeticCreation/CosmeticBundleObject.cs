@@ -28,6 +28,20 @@ namespace Assets.Editor.HatCreator {
             public string Name = "New Cosmetic";
             public string Author = "";
 
+            public string CosmeticBundleName {
+                set {
+                    switch (Type) {
+                        case CosmeticType.Hat:
+                            ((HatBehaviour) Cosmetic).ProductId = $"_${value}";
+                            break;
+                        case CosmeticType.Pet:
+                            ((HatBehaviour) Cosmetic).ProductId = $"_${value}";
+                            break;
+                        default:
+                            throw new ArgumentOutOfRangeException();
+                    }
+                }
+            }
             public Sprite Thumbnail {
                 get {
                     if (Cosmetic == null) return null;

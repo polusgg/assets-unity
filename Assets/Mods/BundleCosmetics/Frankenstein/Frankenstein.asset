@@ -23,7 +23,7 @@ MonoBehaviour:
     opportunity you have, grab this Frankenstein themed bundle and terrorize your
     lobbies with it!\n\nIncludes:\n\u2022 Brain in a Jar Hat\n\u2022 Facehugger Hat\n\u2022
     Frankenstein Hat\n\u2022 Parasite Hat"
-  Registered: 0
+  Registered: 1
   Cosmetics:
   - Id: 10000018
     Name: Brain in a Jar
@@ -46,6 +46,6 @@ MonoBehaviour:
   - Id: 10000024
     Name: Parasite
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
-    Registered: 0
+    Registered: 1
     Cosmetic: {fileID: 11400000, guid: d926293da1cfd1840a62caabe5880f91, type: 2}
     Type: 0

@@ -64,6 +64,29 @@ namespace Editor.Accounts {
 
             return null;
         }
+
+        public async Task<GenericCosmeticResponse<bool>> CheckConflicts(ItemCreation itemInfo) {
+            HttpRequestMessage request = new HttpRequestMessage {
+                RequestUri = new Uri(_client.BaseAddress, "item/next"),
+                Method = HttpMethod.Post,
+                Content = new StringContent(JsonConvert.SerializeObject(itemInfo), Encoding.UTF8, "application/json")
+            };
+
+            Debug.Log($"ghandeez nuts fit in yo mouth {new Uri(_client.BaseAddress, "item/next")}");
+
+            HttpResponseMessage response = await _client.SendAsync(request);
+            
+            Debug.Log($"Ended request {response.StatusCode}");
+
+            if (response.IsSuccessStatusCode) {
+                return JsonConvert.DeserializeObject<GenericCosmeticResponse<bool>>(
+                    await response.Content.ReadAsStringAsync(),
+                    _settings
+                );
+            }
+
+            return null;
+        }
         public async Task<GenericCosmeticResponse<uint>> UpdateBundle(CosmeticBundleObject bundle) {
             HttpRequestMessage request = new HttpRequestMessage {
                 RequestUri = new Uri(_client.BaseAddress, $"bundle/{bundle.SanitizedName}"),
@@ -177,7 +200,7 @@ namespace Editor.Accounts {
                 Content = new StringContent(JsonConvert.SerializeObject(new ItemCreation {
                     Name = cosmetic.Name,
                     Author = cosmetic.Author,
-                    IngameId = cosmetic.Id,
+                    InGameId = cosmetic.Id,
                     Resource = new Resource {
                         Path = OceanClient.FormatUrl("Cosmetics", WebUtility.UrlEncode(bundle), WebUtility.UrlEncode(cosmetic.Name)),
                         Space = OceanClient.BundleLocation,

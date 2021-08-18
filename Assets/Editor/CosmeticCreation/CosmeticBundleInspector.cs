@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using Amazon.S3.Model;
 using Cosmetics;
 using Editor.Accounts;
+using Editor.Accounts.Api.Request;
 using Editor.Accounts.Api.Response;
 using Unity.EditorCoroutines.Editor;
 using UnityEditor;
@@ -95,6 +96,10 @@ namespace Assets.Editor.HatCreator {
                     if (GUILayout.Button("Delete")) {
                         targetObj.Cosmetics = targetObj.Cosmetics.Where((_, j) => i != j).ToArray();
                         i--;
+                    }
+                } else {
+                    if (GUILayout.Button("Repair collisions")) {
+                        EditorCoroutineUtility.StartCoroutineOwnerless(Fix(targetObj, cosmetic));
                     }
                 }
 
@@ -189,12 +194,38 @@ namespace Assets.Editor.HatCreator {
             Debug.Log($"Faulted 1.5? {task.IsFaulted}");
             if (task.IsFaulted) throw task.Exception;
 
-            task = OceanClient.Upload(new OceanClient(),
-                OceanClient.ThumbnailBucket, OceanClient.FormatName(targetObj.Name, Path.GetFileName(AssetDatabase.GetAssetPath(cosmetic.Thumbnail))), File.OpenRead(AssetDatabase.GetAssetPath(cosmetic.Thumbnail)));
-            while (!task.IsCompleted)
-                yield return null;
-            Debug.Log($"Faulted 2? {task.IsFaulted}");
-            if (task.IsFaulted) throw task.Exception;
+            switch (cosmetic.Type) {
+                case CosmeticType.Hat:
+                    if (((HatBehaviour)cosmetic.Cosmetic).MainImage != null) {
+                        task = OceanClient.Upload(new OceanClient(),
+                            OceanClient.ThumbnailBucket, OceanClient.FormatUrl(targetObj.Name, cosmetic.Name, "front.png"), File.OpenRead(AssetDatabase.GetAssetPath(((HatBehaviour) cosmetic.Cosmetic).MainImage)));
+                        while (!task.IsCompleted)
+                            yield return null;
+                        Debug.Log($"Faulted 2? {task.IsFaulted}");
+                        if (task.IsFaulted) throw task.Exception;
+                    }
+
+                    if (((HatBehaviour) cosmetic.Cosmetic).BackImage != null) {
+                        task = OceanClient.Upload(new OceanClient(),
+                            OceanClient.ThumbnailBucket, OceanClient.FormatUrl(targetObj.Name, cosmetic.Name, "back.png"), File.OpenRead(AssetDatabase.GetAssetPath(((HatBehaviour) cosmetic.Cosmetic).BackImage)));
+                        while (!task.IsCompleted)
+                            yield return null;
+                        Debug.Log($"Faulted 2? {task.IsFaulted}");
+                        if (task.IsFaulted) throw task.Exception;
+                    }
+
+                    break;
+                case CosmeticType.Pet:
+                    task = OceanClient.Upload(new OceanClient(),
+                        OceanClient.ThumbnailBucket, OceanClient.FormatUrl(targetObj.Name, cosmetic.Name, "pet.png"), File.OpenRead(AssetDatabase.GetAssetPath(cosmetic.Thumbnail)));
+                    while (!task.IsCompleted)
+                        yield return null;
+                    Debug.Log($"Faulted 2? {task.IsFaulted}");
+                    if (task.IsFaulted) throw task.Exception;
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
 
             // task = OceanClient.Purge(new[] {
             //     OceanClient.FormatUrl("Cosmetics", targetObj.Name, cosmetic.Name),
@@ -234,6 +265,28 @@ namespace Assets.Editor.HatCreator {
             Type logEntries = assembly.GetType("UnityEditor.LogEntries");
             MethodInfo clearConsoleMethod = logEntries.GetMethod("Clear");
             clearConsoleMethod.Invoke(new object(), null);
+        }
+
+        private static bool conflicted;
+        private IEnumerator Fix(CosmeticBundleObject bundle, CosmeticBundleObject.CosmeticData cosmetic) {
+            ClearLogConsole();
+
+            Task task = CheckForConflicts(cosmetic);
+            while (!task.IsCompleted) yield return null;
+            if (task.IsFaulted) throw task.Exception;
+            if (conflicted) {
+                Debug.LogWarning($"Fetching new id for {cosmetic.Name}");
+                task = Fetch(cosmetic);
+                while (!task.IsCompleted) yield return null;
+                if (task.IsFaulted) throw task.Exception;
+                task = CosmeticClient.Client.UpdateItem(targetObj.Name, cosmetic);
+                while (!task.IsCompleted)
+                    yield return null;
+                if (task.IsFaulted) throw task.Exception;
+                Debug.Log("Done repairing the cosmetic!");
+            } else {
+                Debug.Log($"{cosmetic.Name} had no conflicts!");
+            }
         }
 
         private IEnumerator UploadAll(CosmeticBundleObject bundle) {
@@ -281,7 +334,7 @@ namespace Assets.Editor.HatCreator {
 
             string assetPath = AssetDatabase.GetAssetPath(bundle.CoverArt);
             Task task = OceanClient.Upload(new OceanClient(), OceanClient.ThumbnailBucket,
-                OceanClient.FormatUrl("CoverArt", bundle.Name, Path.GetFileName(assetPath)), File.OpenRead(assetPath));
+                OceanClient.FormatName("CoverArt", $"{bundle.Name}.png"), File.OpenRead(assetPath));
             while (!task.IsCompleted) yield return null;
             if (task.IsFaulted) throw task.Exception;
 
@@ -300,6 +353,13 @@ namespace Assets.Editor.HatCreator {
             if (genericCosmeticResponse.Ok) {
                 data.Id = genericCosmeticResponse.Data;
             }
+        }
+
+        public static async Task CheckForConflicts(CosmeticBundleObject.CosmeticData data) {
+            GenericCosmeticResponse<bool> genericCosmeticResponse = await CosmeticClient.Client.CheckConflicts(new ItemCreation {
+                InGameId = data.Id,
+            });
+            conflicted = genericCosmeticResponse.Data;
         }
 
         private void OnDisable() {

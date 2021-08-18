@@ -35,7 +35,7 @@ namespace Assets.Editor.HatCreator {
                             ((HatBehaviour) Cosmetic).ProductId = $"_${value}";
                             break;
                         case CosmeticType.Pet:
-                            ((HatBehaviour) Cosmetic).ProductId = $"_${value}";
+                            ((PetCreator) Cosmetic).productId = $"_${value}";
                             break;
                         default:
                             throw new ArgumentOutOfRangeException();

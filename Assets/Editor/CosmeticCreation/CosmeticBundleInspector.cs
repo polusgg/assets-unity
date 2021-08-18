@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Reflection;
 using System.Threading.Tasks;
 using Amazon.S3.Model;
@@ -162,6 +163,7 @@ namespace Assets.Editor.HatCreator {
             clone.walkClip = petCreator.walkClip;
             clone.sadClip = petCreator.sadClip;
             clone.scaredClip = petCreator.scaredClip;
+            clone.ProductId = petCreator.productId;
             clone.rend.sprite = data.Thumbnail;
             clone.shadowRend.gameObject.SetActive(false);
 
@@ -172,7 +174,7 @@ namespace Assets.Editor.HatCreator {
             return obj;
         }
 
-        private IEnumerator UploadSingle(CosmeticBundleObject bundle, CosmeticBundleObject.CosmeticData cosmetic) {
+        private IEnumerator UploadSingle(CosmeticBundleObject bundle, CosmeticBundleObject.CosmeticData cosmetic, List<string> purgeList) {
             if (cosmetic.Thumbnail == null) {
                 Debug.LogError("No thumbnail provided");
                 EditorUtility.ClearProgressBar();
@@ -198,6 +200,7 @@ namespace Assets.Editor.HatCreator {
 
             Debug.Log($"Faulted 1? {task.IsFaulted}");
             if (task.IsFaulted) throw task.Exception;
+            purgeList.Add(OceanClient.FormatName(OceanClient.BundleLocation, OceanClient.FormatUrl("Cosmetics", bundle.Name, cosmetic.Name)));
 
             task = OceanClient.Upload(new OceanClient(),
                 OceanClient.BundleBucket, OceanClient.FormatUrl("Cosmetics", bundle.Name, cosmetic.Name + ".json"), File.OpenRead(buildResult.JsonManifest));
@@ -206,6 +209,7 @@ namespace Assets.Editor.HatCreator {
 
             Debug.Log($"Faulted 1.5? {task.IsFaulted}");
             if (task.IsFaulted) throw task.Exception;
+            purgeList.Add(OceanClient.FormatName(OceanClient.BundleLocation, OceanClient.FormatUrl("Cosmetics", bundle.Name, cosmetic.Name + ".json")));
 
             switch (cosmetic.Type) {
                 case CosmeticType.Hat:
@@ -216,6 +220,7 @@ namespace Assets.Editor.HatCreator {
                             yield return null;
                         Debug.Log($"Faulted 2? {task.IsFaulted}");
                         if (task.IsFaulted) throw task.Exception;
+                        purgeList.Add(OceanClient.FormatName(OceanClient.ThumbnailLocation, OceanClient.FormatUrl(bundle.Name, cosmetic.Name, "front.png")));
                     }
 
                     if (((HatBehaviour) cosmetic.Cosmetic).BackImage != null) {
@@ -225,6 +230,7 @@ namespace Assets.Editor.HatCreator {
                             yield return null;
                         Debug.Log($"Faulted 2? {task.IsFaulted}");
                         if (task.IsFaulted) throw task.Exception;
+                        purgeList.Add(OceanClient.FormatName(OceanClient.ThumbnailLocation, OceanClient.FormatUrl(bundle.Name, cosmetic.Name, "back.png")));
                     }
 
                     break;
@@ -235,19 +241,11 @@ namespace Assets.Editor.HatCreator {
                         yield return null;
                     Debug.Log($"Faulted 2? {task.IsFaulted}");
                     if (task.IsFaulted) throw task.Exception;
+                    purgeList.Add(OceanClient.FormatName(OceanClient.ThumbnailLocation, OceanClient.FormatUrl(bundle.Name, cosmetic.Name, "pet.png")));
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
             }
-
-            // task = OceanClient.Purge(new[] {
-            //     OceanClient.FormatUrl("Cosmetics", bundle.Name, cosmetic.Name),
-            //     OceanClient.FormatUrl("Cosmetics", bundle.Name, cosmetic.Name + ".json"),
-            // }, OceanClient.BundleLocation);
-            // while (!task.IsCompleted)
-            //     yield return null;
-            // Debug.Log($"Faulted 2.5? {task.IsFaulted}");
-            // if (task.IsFaulted) throw task.Exception;
 
             task = cosmetic.Registered
                 ? CosmeticClient.Client.UpdateItem(bundle.Name, cosmetic)
@@ -330,6 +328,7 @@ namespace Assets.Editor.HatCreator {
                 yield break;
             }
 
+            List<string> purgeList = new List<string>();
             EditorUtility.DisplayProgressBar("Progress bar", "progress bar :)", 0.0f);
             foreach (CosmeticBundleObject.CosmeticData cosmeticData in bundle.Cosmetics) {
                 if (!cosmeticData.Registered && cosmeticData.Id < 10000000) {
@@ -339,7 +338,8 @@ namespace Assets.Editor.HatCreator {
                 }
 
                 // IEnumerator upload = UploadSingle(cosmeticData);
-                yield return EditorCoroutineUtility.StartCoroutineOwnerless(UploadSingle(bundle, cosmeticData));
+                cosmeticData.CosmeticBundleName = bundle.Name;
+                yield return EditorCoroutineUtility.StartCoroutineOwnerless(UploadSingle(bundle, cosmeticData, purgeList));
                 lock (lockable) Debug.Log($"sus {cosmeticData.Name} {cosmeticData.Registered}");
             }
 
@@ -359,7 +359,24 @@ namespace Assets.Editor.HatCreator {
             if (task.IsFaulted) throw task.Exception;
 
             bundle.Registered = true;
-            Debug.Log("fully registered");
+            Debug.Log("fully registered, now purging");
+            
+            // foreach (string purge in purgeList) {
+            //     Debug.Log($"thing to purge: {purge}");
+            // }
+
+            if (AccountMenu.HasSave && string.IsNullOrEmpty(AccountMenu.Save.DoPersonalToken)) {
+                Debug.LogWarning("No optional DigitalOcean token, not able to purge!");
+            } else {
+                task = OceanClient.Purge(
+                    purgeList.ToArray(),
+                    OceanClient.BundleBucket
+                );
+                while (!task.IsCompleted) yield return null;
+                if (task.IsFaulted) throw task.Exception;
+
+                Debug.Log("purged, now completed upload!");
+            }
 
             EditorUtility.ClearProgressBar();
         }

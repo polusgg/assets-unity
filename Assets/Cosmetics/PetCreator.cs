@@ -15,6 +15,8 @@ namespace Cosmetics {
 
         public bool hasShadow;
 
+        [HideInInspector] public string productId;
+
         public Object GetMain() {
             return idleClip;
         }

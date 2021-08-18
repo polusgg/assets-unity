@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2827640644
+CRC: 437212622
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 856f0e726debe3fb4830c0ba2535975a
+    Hash: bdfd31bde28452c2c87158e968563615
   TypeTreeHash:
     serializedVersion: 2
     Hash: 99dbc55c0eea5f613c4e56a475ac9db5
@@ -42,6 +42,6 @@ ClassTypes:
 - Class: 213
   Script: {instanceID: 0}
 Assets:
-- Assets/AssetBundles/Cosmetics/Submerged_Submarine-Manifest.json
 - Assets/AssetBundles/Cosmetics/PetTemp/SubmarinePet.prefab
+- Assets/AssetBundles/Cosmetics/Submerged_Submarine-Manifest.json
 Dependencies: []

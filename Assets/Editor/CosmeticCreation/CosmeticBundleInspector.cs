@@ -18,6 +18,7 @@ using Object = UnityEngine.Object;
 
 namespace Assets.Editor.HatCreator {
     [CustomEditor(typeof(CosmeticBundleObject))]
+    [CanEditMultipleObjects]
     public class CosmeticBundleInspector : UnityEditor.Editor {
         private bool loggedIn => AccountMenu.Save != null;
         private CosmeticBundleObject targetObj => (CosmeticBundleObject) serializedObject.targetObject;
@@ -35,86 +36,98 @@ namespace Assets.Editor.HatCreator {
             if (task.IsFaulted) throw task.Exception;
         }
 
+
         public override void OnInspectorGUI() {
             base.OnInspectorGUI();
 
-            EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.PrefixLabel("DEBUG: Price for server");
-            EditorGUILayout.IntField(int.Parse(targetObj.Price.ToString("###.00", CultureInfo.InvariantCulture).Replace(".", "")));
-            EditorGUILayout.EndHorizontal();
-
-            if (GUILayout.Button("Add slot")) {
-                // targetObj.Cosmetics = targetObj.Cosmetics.Append(CreateInstance<CosmeticBundleObject.CosmeticData>()).ToArray();
-                targetObj.Cosmetics = targetObj.Cosmetics.Append(new CosmeticBundleObject.CosmeticData()).ToArray();
-            }
-
-            EditorGUI.BeginChangeCheck();
-
-            for (int i = 0; i < targetObj.Cosmetics.Length; i++) {
-                CosmeticBundleObject.CosmeticData cosmetic = targetObj.Cosmetics[i];
-                cosmetic.foldedOut = EditorGUILayout.Foldout(cosmetic.foldedOut, $"Element {i} ({(string.IsNullOrEmpty(cosmetic.Name) ? "No name" : cosmetic.Name)})");
-                if (!cosmetic.foldedOut) continue;
-                EditorGUI.indentLevel++;
+            if (targets.Length == 1) {
                 EditorGUILayout.BeginHorizontal();
-                EditorGUILayout.PrefixLabel("Name");
-                // string nameBefore = cosmetic.Name;
-                cosmetic.Name = EditorGUILayout.TextField(cosmetic.Name);
-                // if (cosmetic.Name != nameBefore) EditorUtility.SetDirty(targetObj);
+                EditorGUILayout.PrefixLabel("DEBUG: Price for server");
+                EditorGUILayout.IntField(int.Parse(targetObj.Price.ToString("###.00", CultureInfo.InvariantCulture).Replace(".", "")));
                 EditorGUILayout.EndHorizontal();
-                EditorGUILayout.BeginHorizontal();
-                EditorGUILayout.PrefixLabel("Author");
-                // string authorBefore = cosmetic.Name;
-                cosmetic.Author = EditorGUILayout.TextField(cosmetic.Author);
-                // if (cosmetic.Author != authorBefore) EditorUtility.SetDirty(targetObj);
-                EditorGUILayout.EndHorizontal();
-                EditorGUILayout.BeginHorizontal();
-                EditorGUILayout.PrefixLabel("Type");
-                CosmeticType typeBefore = cosmetic.Type;
-                cosmetic.Type = (CosmeticType) EditorGUILayout.EnumPopup(cosmetic.Type);
-                if (cosmetic.Type != typeBefore) {
-                    cosmetic.Cosmetic = null;
-                    EditorUtility.SetDirty(targetObj);
+
+                if (GUILayout.Button("Add slot")) {
+                    // targetObj.Cosmetics = targetObj.Cosmetics.Append(CreateInstance<CosmeticBundleObject.CosmeticData>()).ToArray();
+                    targetObj.Cosmetics = targetObj.Cosmetics.Append(new CosmeticBundleObject.CosmeticData()).ToArray();
                 }
 
-                EditorGUILayout.EndHorizontal();
-                EditorGUILayout.BeginHorizontal();
-                EditorGUILayout.PrefixLabel("Cosmetic");
-                // Object cosmeticBefore = cosmetic.Cosmetic;
-                cosmetic.Cosmetic = EditorGUILayout.ObjectField(cosmetic.Cosmetic, cosmetic.TypeType, false);
-                // if (cosmetic.Cosmetic != cosmeticBefore) EditorUtility.SetDirty(targetObj);
-                EditorGUILayout.EndHorizontal();
-                EditorGUILayout.BeginHorizontal();
-                EditorGUILayout.PrefixLabel("Id");
-                cosmetic.Id = (uint) Math.Abs(EditorGUILayout.IntField((int) cosmetic.Id));
-                EditorGUILayout.EndHorizontal();
-                EditorGUILayout.BeginHorizontal();
-                EditorGUILayout.PrefixLabel("Registered");
-                EditorGUILayout.Toggle(cosmetic.Registered);
-                EditorGUILayout.EndHorizontal();
-                GUILayout.BeginHorizontal();
-                if (!cosmetic.Registered) {
-                    if (GUILayout.Button("Delete")) {
-                        targetObj.Cosmetics = targetObj.Cosmetics.Where((_, j) => i != j).ToArray();
-                        i--;
+                EditorGUI.BeginChangeCheck();
+
+                for (int i = 0; i < targetObj.Cosmetics.Length; i++) {
+                    CosmeticBundleObject.CosmeticData cosmetic = targetObj.Cosmetics[i];
+                    cosmetic.foldedOut = EditorGUILayout.Foldout(cosmetic.foldedOut, $"Element {i} ({(string.IsNullOrEmpty(cosmetic.Name) ? "No name" : cosmetic.Name)})");
+                    if (!cosmetic.foldedOut) continue;
+                    EditorGUI.indentLevel++;
+                    EditorGUILayout.BeginHorizontal();
+                    EditorGUILayout.PrefixLabel("Name");
+                    // string nameBefore = cosmetic.Name;
+                    cosmetic.Name = EditorGUILayout.TextField(cosmetic.Name);
+                    // if (cosmetic.Name != nameBefore) EditorUtility.SetDirty(targetObj);
+                    EditorGUILayout.EndHorizontal();
+                    EditorGUILayout.BeginHorizontal();
+                    EditorGUILayout.PrefixLabel("Author");
+                    // string authorBefore = cosmetic.Name;
+                    cosmetic.Author = EditorGUILayout.TextField(cosmetic.Author);
+                    // if (cosmetic.Author != authorBefore) EditorUtility.SetDirty(targetObj);
+                    EditorGUILayout.EndHorizontal();
+                    EditorGUILayout.BeginHorizontal();
+                    EditorGUILayout.PrefixLabel("Type");
+                    CosmeticType typeBefore = cosmetic.Type;
+                    cosmetic.Type = (CosmeticType) EditorGUILayout.EnumPopup(cosmetic.Type);
+                    if (cosmetic.Type != typeBefore) {
+                        cosmetic.Cosmetic = null;
+                        EditorUtility.SetDirty(targetObj);
                     }
-                } else {
-                    if (GUILayout.Button("Repair collisions")) {
-                        EditorCoroutineUtility.StartCoroutineOwnerless(Fix(targetObj, cosmetic));
+
+                    EditorGUILayout.EndHorizontal();
+                    EditorGUILayout.BeginHorizontal();
+                    EditorGUILayout.PrefixLabel("Cosmetic");
+                    // Object cosmeticBefore = cosmetic.Cosmetic;
+                    cosmetic.Cosmetic = EditorGUILayout.ObjectField(cosmetic.Cosmetic, cosmetic.TypeType, false);
+                    // if (cosmetic.Cosmetic != cosmeticBefore) EditorUtility.SetDirty(targetObj);
+                    EditorGUILayout.EndHorizontal();
+                    EditorGUILayout.BeginHorizontal();
+                    EditorGUILayout.PrefixLabel("Id");
+                    cosmetic.Id = (uint) Math.Abs(EditorGUILayout.IntField((int) cosmetic.Id));
+                    EditorGUILayout.EndHorizontal();
+                    EditorGUILayout.BeginHorizontal();
+                    EditorGUILayout.PrefixLabel("Registered");
+                    EditorGUILayout.Toggle(cosmetic.Registered);
+                    EditorGUILayout.EndHorizontal();
+                    GUILayout.BeginHorizontal();
+                    if (!cosmetic.Registered) {
+                        if (GUILayout.Button("Delete")) {
+                            targetObj.Cosmetics = targetObj.Cosmetics.Where((_, j) => i != j).ToArray();
+                            i--;
+                        }
+                    } else {
+                        if (GUILayout.Button("Repair collisions")) {
+                            EditorCoroutineUtility.StartCoroutineOwnerless(Fix(targetObj, cosmetic));
+                        }
                     }
+
+                    GUILayout.EndHorizontal();
+                    EditorGUI.indentLevel--;
                 }
 
-                GUILayout.EndHorizontal();
-                EditorGUI.indentLevel--;
+                EditorGUI.EndChangeCheck();
             }
-
-            EditorGUI.EndChangeCheck();
 
             bool fullyRegistered = targetObj.Registered && targetObj.Cosmetics.All(cosmetic => cosmetic.Registered);
 
             if (GUILayout.Button(fullyRegistered ? "Update bundle" : "Register bundle")) {
-                if (targetObj.Cosmetics.Length == 0) {
-                    EditorUtility.DisplayDialog("Registration failure", "There are no cosmetics in this bundle", "cog");
-                } else EditorCoroutineUtility.StartCoroutineOwnerless(UploadAll(targetObj));
+                IEnumerator UploadEvery() {
+                    foreach (Object t in targets) {
+                        if (targetObj.Cosmetics.Length == 0) {
+                            EditorUtility.DisplayDialog("Registration failure", $"There are no cosmetics in {((CosmeticBundleObject) t).Name}", "cog");
+                            yield break;
+                        }
+
+                        yield return EditorCoroutineUtility.StartCoroutineOwnerless(UploadAll((CosmeticBundleObject) t));
+                    }
+                }
+
+                EditorCoroutineUtility.StartCoroutineOwnerless(UploadEvery());
             }
 
             GUILayout.Space(100);
@@ -159,7 +172,7 @@ namespace Assets.Editor.HatCreator {
             return obj;
         }
 
-        private IEnumerator UploadSingle(CosmeticBundleObject.CosmeticData cosmetic) {
+        private IEnumerator UploadSingle(CosmeticBundleObject bundle, CosmeticBundleObject.CosmeticData cosmetic) {
             if (cosmetic.Thumbnail == null) {
                 Debug.LogError("No thumbnail provided");
                 EditorUtility.ClearProgressBar();
@@ -167,7 +180,7 @@ namespace Assets.Editor.HatCreator {
             }
 
             AssetBundleResource bundleResource = CreateInstance<AssetBundleResource>();
-            bundleResource.name = $"{targetObj.Name}_{cosmetic.Name}";
+            bundleResource.name = $"{bundle.Name}_{cosmetic.Name}";
             bundleResource.BaseId = cosmetic.Id;
             PetBehaviour pet = null;
             bundleResource.Assets = cosmetic.Type == CosmeticType.Pet ? new Object[] { CreatePetBehaviour(cosmetic, out pet) } : new[] { cosmetic.Cosmetic };
@@ -179,7 +192,7 @@ namespace Assets.Editor.HatCreator {
 
             // EditorUtility.DisplayProgressBar("Uploading your mom", "(she's really really large)", 0.21f);
             Task task = OceanClient.Upload(new OceanClient(),
-                OceanClient.BundleBucket, OceanClient.FormatUrl("Cosmetics", targetObj.Name, cosmetic.Name), File.OpenRead($"{bundleRoot}/{buildResult.Manifest.GetAllAssetBundles()[0]}"));
+                OceanClient.BundleBucket, OceanClient.FormatUrl("Cosmetics", bundle.Name, cosmetic.Name), File.OpenRead($"{bundleRoot}/{buildResult.Manifest.GetAllAssetBundles()[0]}"));
             while (!task.IsCompleted)
                 yield return null;
 
@@ -187,7 +200,7 @@ namespace Assets.Editor.HatCreator {
             if (task.IsFaulted) throw task.Exception;
 
             task = OceanClient.Upload(new OceanClient(),
-                OceanClient.BundleBucket, OceanClient.FormatUrl("Cosmetics", targetObj.Name, cosmetic.Name + ".json"), File.OpenRead(buildResult.JsonManifest));
+                OceanClient.BundleBucket, OceanClient.FormatUrl("Cosmetics", bundle.Name, cosmetic.Name + ".json"), File.OpenRead(buildResult.JsonManifest));
             while (!task.IsCompleted)
                 yield return null;
 
@@ -196,9 +209,9 @@ namespace Assets.Editor.HatCreator {
 
             switch (cosmetic.Type) {
                 case CosmeticType.Hat:
-                    if (((HatBehaviour)cosmetic.Cosmetic).MainImage != null) {
+                    if (((HatBehaviour) cosmetic.Cosmetic).MainImage != null) {
                         task = OceanClient.Upload(new OceanClient(),
-                            OceanClient.ThumbnailBucket, OceanClient.FormatUrl(targetObj.Name, cosmetic.Name, "front.png"), File.OpenRead(AssetDatabase.GetAssetPath(((HatBehaviour) cosmetic.Cosmetic).MainImage)));
+                            OceanClient.ThumbnailBucket, OceanClient.FormatUrl(bundle.Name, cosmetic.Name, "front.png"), File.OpenRead(AssetDatabase.GetAssetPath(((HatBehaviour) cosmetic.Cosmetic).MainImage)));
                         while (!task.IsCompleted)
                             yield return null;
                         Debug.Log($"Faulted 2? {task.IsFaulted}");
@@ -207,7 +220,7 @@ namespace Assets.Editor.HatCreator {
 
                     if (((HatBehaviour) cosmetic.Cosmetic).BackImage != null) {
                         task = OceanClient.Upload(new OceanClient(),
-                            OceanClient.ThumbnailBucket, OceanClient.FormatUrl(targetObj.Name, cosmetic.Name, "back.png"), File.OpenRead(AssetDatabase.GetAssetPath(((HatBehaviour) cosmetic.Cosmetic).BackImage)));
+                            OceanClient.ThumbnailBucket, OceanClient.FormatUrl(bundle.Name, cosmetic.Name, "back.png"), File.OpenRead(AssetDatabase.GetAssetPath(((HatBehaviour) cosmetic.Cosmetic).BackImage)));
                         while (!task.IsCompleted)
                             yield return null;
                         Debug.Log($"Faulted 2? {task.IsFaulted}");
@@ -217,7 +230,7 @@ namespace Assets.Editor.HatCreator {
                     break;
                 case CosmeticType.Pet:
                     task = OceanClient.Upload(new OceanClient(),
-                        OceanClient.ThumbnailBucket, OceanClient.FormatUrl(targetObj.Name, cosmetic.Name, "pet.png"), File.OpenRead(AssetDatabase.GetAssetPath(cosmetic.Thumbnail)));
+                        OceanClient.ThumbnailBucket, OceanClient.FormatUrl(bundle.Name, cosmetic.Name, "pet.png"), File.OpenRead(AssetDatabase.GetAssetPath(cosmetic.Thumbnail)));
                     while (!task.IsCompleted)
                         yield return null;
                     Debug.Log($"Faulted 2? {task.IsFaulted}");
@@ -228,8 +241,8 @@ namespace Assets.Editor.HatCreator {
             }
 
             // task = OceanClient.Purge(new[] {
-            //     OceanClient.FormatUrl("Cosmetics", targetObj.Name, cosmetic.Name),
-            //     OceanClient.FormatUrl("Cosmetics", targetObj.Name, cosmetic.Name + ".json"),
+            //     OceanClient.FormatUrl("Cosmetics", bundle.Name, cosmetic.Name),
+            //     OceanClient.FormatUrl("Cosmetics", bundle.Name, cosmetic.Name + ".json"),
             // }, OceanClient.BundleLocation);
             // while (!task.IsCompleted)
             //     yield return null;
@@ -237,16 +250,16 @@ namespace Assets.Editor.HatCreator {
             // if (task.IsFaulted) throw task.Exception;
 
             task = cosmetic.Registered
-                ? CosmeticClient.Client.UpdateItem(targetObj.Name, cosmetic)
-                : CosmeticClient.Client.UploadItem(targetObj.Name, cosmetic);
+                ? CosmeticClient.Client.UpdateItem(bundle.Name, cosmetic)
+                : CosmeticClient.Client.UploadItem(bundle.Name, cosmetic);
             while (!task.IsCompleted)
                 yield return null;
             Debug.Log($"Faulted 3? {task.IsFaulted}");
             if (task.IsFaulted) throw task.Exception;
 
             cosmetic.Registered = true;
-            EditorUtility.SetDirty(targetObj);
-            Debug.Log($"registered {cosmetic.Name} {cosmetic.Registered} {targetObj}");
+            EditorUtility.SetDirty(bundle);
+            Debug.Log($"registered {cosmetic.Name} {cosmetic.Registered} {bundle}");
         }
 
         // grabbed off SO LOL https://stackoverflow.com/a/2571393/13161523
@@ -268,6 +281,7 @@ namespace Assets.Editor.HatCreator {
         }
 
         private static bool conflicted;
+
         private IEnumerator Fix(CosmeticBundleObject bundle, CosmeticBundleObject.CosmeticData cosmetic) {
             ClearLogConsole();
 
@@ -279,7 +293,7 @@ namespace Assets.Editor.HatCreator {
                 task = Fetch(cosmetic);
                 while (!task.IsCompleted) yield return null;
                 if (task.IsFaulted) throw task.Exception;
-                task = CosmeticClient.Client.UpdateItem(targetObj.Name, cosmetic);
+                task = CosmeticClient.Client.UpdateItem(bundle.Name, cosmetic);
                 while (!task.IsCompleted)
                     yield return null;
                 if (task.IsFaulted) throw task.Exception;
@@ -287,6 +301,7 @@ namespace Assets.Editor.HatCreator {
             } else {
                 Debug.Log($"{cosmetic.Name} had no conflicts!");
             }
+
             EditorUtility.SetDirty(bundle);
         }
 
@@ -324,7 +339,7 @@ namespace Assets.Editor.HatCreator {
                 }
 
                 // IEnumerator upload = UploadSingle(cosmeticData);
-                yield return EditorCoroutineUtility.StartCoroutineOwnerless(UploadSingle(cosmeticData));
+                yield return EditorCoroutineUtility.StartCoroutineOwnerless(UploadSingle(bundle, cosmeticData));
                 lock (lockable) Debug.Log($"sus {cosmeticData.Name} {cosmeticData.Registered}");
             }
 

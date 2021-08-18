@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 327614482
+CRC: 1871981293
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 346e453b2aa6ad5f265629027a80763f
+    Hash: f9bff1bf7f94413bbc216ae5cd7da853
   TypeTreeHash:
     serializedVersion: 2
     Hash: 99dbc55c0eea5f613c4e56a475ac9db5
@@ -42,6 +42,6 @@ ClassTypes:
 - Class: 213
   Script: {instanceID: 0}
 Assets:
-- Assets/AssetBundles/Cosmetics/PetTemp/PoodlePet.prefab
 - Assets/AssetBundles/Cosmetics/Cutesy_Poodle-Manifest.json
+- Assets/AssetBundles/Cosmetics/PetTemp/PoodlePet.prefab
 Dependencies: []

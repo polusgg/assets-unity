@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33a85397cd7f8c75d94da833c4e725d7, type: 3}
+  m_Name: BalloonHat
+  m_EditorClassIdentifier: 
+  MainImage: {fileID: 21300000, guid: 1504fede5d53b264c94661917adc6844, type: 3}
+  BackImage: {fileID: 21300000, guid: a64d596fb9171424cb9a4661d951632f, type: 3}
+  LeftMainImage: {fileID: 0}
+  LeftBackImage: {fileID: 0}
+  EpicId: 
+  ClimbImage: {fileID: 21300000, guid: 75385acc9f16b554dad58ba9a7b91288, type: 3}
+  FloorImage: {fileID: 21300000, guid: b35e17917b3683a4f9d12d7aea70490a, type: 3}
+  LeftClimbImage: {fileID: 0}
+  LeftFloorImage: {fileID: 0}
+  InFront: 1
+  NoBounce: 0
+  NotInStore: 0
+  Free: 0
+  AltShader: {fileID: 0}
+  ChipOffset: {x: 0, y: 0}
+  LimitedMonth: 1
+  LimitedYear: 1
+  RelatedSkin: {fileID: 0}
+  StoreName: 
+  ProductId: 
+  Order: 0

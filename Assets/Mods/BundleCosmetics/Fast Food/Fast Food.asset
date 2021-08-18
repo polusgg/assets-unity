@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
+  m_Name: Fast Food
+  m_EditorClassIdentifier: 
+  Name: Fast Food
+  CoverArt: {fileID: 21300000, guid: 506e3f89b0e30b0408659e3c54502756, type: 3}
+  Color:
+    serializedVersion: 2
+    rgba: 5376436
+  Price: 5
+  ForSale: 1
+  Description: Dying for a quick bite? Go ahead and grab this fast food bundle! High
+    on calories, even higher on style points.
+  Registered: 1
+  Cosmetics:
+  - Id: 10000026
+    Name: Burger
+    Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 47cfb16ac31e8cd4890ca5bfbdb883f4, type: 2}
+    Type: 0
+  - Id: 10000028
+    Name: Donut
+    Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: b348b3f36e88639478b0b6c34dcb6e09, type: 2}
+    Type: 0
+  - Id: 10000030
+    Name: Fries
+    Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 80bd4a88486b80e428c4d1b7683b4704, type: 2}
+    Type: 0
+  - Id: 10000032
+    Name: Ice Cream
+    Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 5e269e57602c3074ca39809f0719bb5e, type: 2}
+    Type: 0
+  - Id: 10000034
+    Name: Pizza
+    Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: bdcacd2fa4e005b45a982369ba28eb83, type: 2}
+    Type: 0

@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 4202076541
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6341cba93e5cd58a73ad354443bacef3
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 024a58455a2356efc247acdde1be6505
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 33a85397cd7f8c75d94da833c4e725d7, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundles/Cosmetics/Clowns_Rednose-Manifest.json
+- Assets/Mods/BundleCosmetics/Clowns/Rednose/RednoseHat.asset
+Dependencies: []

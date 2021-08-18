@@ -334,7 +334,7 @@ namespace Assets.Editor.HatCreator {
 
             string assetPath = AssetDatabase.GetAssetPath(bundle.CoverArt);
             Task task = OceanClient.Upload(new OceanClient(), OceanClient.ThumbnailBucket,
-                OceanClient.FormatName("CoverArt", $"{bundle.Name}.png"), File.OpenRead(assetPath));
+                OceanClient.FormatName(bundle.Name, "cover.png"), File.OpenRead(assetPath));
             while (!task.IsCompleted) yield return null;
             if (task.IsFaulted) throw task.Exception;
 

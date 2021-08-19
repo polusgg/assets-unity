@@ -207,7 +207,7 @@ namespace Editor.Accounts {
                         Space = OceanClient.BundleLocation,
                         Id = cosmetic.Id + 1
                     },
-                    ThumbnailUrl = Uri.EscapeUriString(OceanClient.FormatName(OceanClient.ThumbnailLocation, bundle)),
+                    ThumbnailUrl = Uri.EscapeUriString(OceanClient.FormatUrl(OceanClient.ThumbnailLocation, bundle, cosmetic.Name)),
                     Type = cosmetic.Type,
                 }, new StringEnumConverter(new CapitalCaseNamingStrategy())), Encoding.UTF8, "application/json")
             };

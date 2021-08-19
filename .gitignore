@@ -74,3 +74,6 @@ crashlytics-build.properties
 
 Assets/account_token.asset
 Assets/account_token.asset.meta
+Assets/AssetBundles/Cosmetics
+Assets/AssetBundles/BepInExMod
+Assets/AssetBundles/PggResources

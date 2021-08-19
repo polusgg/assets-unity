@@ -32,10 +32,12 @@ namespace Assets.Editor.HatCreator {
                 set {
                     switch (Type) {
                         case CosmeticType.Hat:
-                            ((HatBehaviour) Cosmetic).StoreName = $"_${value}";
+                            ((HatBehaviour) Cosmetic).StoreName = value;
+                            Debug.Log($"Set store name for hat {Name}");
                             break;
                         case CosmeticType.Pet:
-                            ((PetCreator) Cosmetic).storeName = $"_${value}";
+                            ((PetCreator) Cosmetic).storeName = value;
+                            Debug.Log($"Set store name for pet {Name}");
                             break;
                         default:
                             throw new ArgumentOutOfRangeException();

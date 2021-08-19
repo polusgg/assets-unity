@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
@@ -20,6 +21,9 @@ namespace Editor.Accounts {
         public const string ThumbnailBucket = "polusgg-cosmetics-assets";
         public const string BundleLocation = "https://client-assetbundles.polus.gg";
         public const string ThumbnailLocation = "https://cosmetic.asset.polus.gg";
+        //bypass the cache?
+        // public const string BundleLocation = "https://polusgg-assetbundles.nyc3.digitaloceanspaces.com";
+        // public const string ThumbnailLocation = "https://polusgg-cosmetics-assets.nyc3.digitaloceanspaces.com";
         public static readonly Uri DOEndpoint = new Uri("https://api.digitalocean.com/v2/cdn/endpoints");
 
         public OceanClient() {
@@ -72,6 +76,8 @@ namespace Editor.Accounts {
                         Files = files
                     }))
                 };
+                
+                Debug.Log($"requesting {await purgeRequest.Content.ReadAsStringAsync()}");
 
                 purgeRequest.Headers.Clear();
                 purgeRequest.Headers.TryAddWithoutValidation("Content-Type", "application/json");
@@ -82,7 +88,7 @@ namespace Editor.Accounts {
                 HttpResponseMessage response = await client.SendAsync(purgeRequest);
                 string data = await response.Content.ReadAsStringAsync();
                 if (response.IsSuccessStatusCode)
-                    Debug.Log("POGGER");
+                    Debug.Log($"POGGER {response.StatusCode}");
                 else Debug.LogError($"FUCK {data}");
             }
         }

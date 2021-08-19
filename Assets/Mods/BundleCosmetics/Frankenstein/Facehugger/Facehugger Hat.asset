@@ -26,10 +26,10 @@ MonoBehaviour:
   NotInStore: 0
   Free: 0
   AltShader: {fileID: 0}
-  ChipOffset: {x: 0, y: 0}
+  ChipOffset: {x: 0, y: -0.6}
   LimitedMonth: 1
   LimitedYear: 1
   RelatedSkin: {fileID: 0}
-  StoreName: 
+  StoreName: Frankenstein
   ProductId: 
   Order: 0

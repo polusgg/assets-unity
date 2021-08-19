@@ -181,6 +181,9 @@ namespace Assets.Editor.HatCreator {
                 yield break;
             }
 
+            cosmetic.CosmeticBundleName = bundle.Name; 
+            EditorUtility.SetDirty(cosmetic.Cosmetic);
+            AssetDatabase.SaveAssets();
             AssetBundleResource bundleResource = CreateInstance<AssetBundleResource>();
             bundleResource.name = $"{bundle.Name}_{cosmetic.Name}";
             bundleResource.BaseId = cosmetic.Id;
@@ -200,16 +203,17 @@ namespace Assets.Editor.HatCreator {
 
             Debug.Log($"Faulted 1? {task.IsFaulted}");
             if (task.IsFaulted) throw task.Exception;
-            purgeList.Add(OceanClient.FormatName(OceanClient.BundleLocation, OceanClient.FormatUrl("Cosmetics", bundle.Name, cosmetic.Name)));
+            purgeList.Add(Uri.EscapeUriString(OceanClient.FormatName("Cosmetics", "*")));
+            // purgeList.Add(Uri.EscapeUriString(OceanClient.FormatUrl("Cosmetics", bundle.Name, cosmetic.Name)));
 
             task = OceanClient.Upload(new OceanClient(),
-                OceanClient.BundleBucket, OceanClient.FormatUrl("Cosmetics", bundle.Name, cosmetic.Name + ".json"), File.OpenRead(buildResult.JsonManifest));
+                OceanClient.BundleBucket, (OceanClient.FormatUrl("Cosmetics", bundle.Name, cosmetic.Name + ".json")), File.OpenRead(buildResult.JsonManifest));
             while (!task.IsCompleted)
                 yield return null;
 
             Debug.Log($"Faulted 1.5? {task.IsFaulted}");
             if (task.IsFaulted) throw task.Exception;
-            purgeList.Add(OceanClient.FormatName(OceanClient.BundleLocation, OceanClient.FormatUrl("Cosmetics", bundle.Name, cosmetic.Name + ".json")));
+            // purgeList.Add(Uri.EscapeUriString(OceanClient.FormatUrl("Cosmetics", bundle.Name, cosmetic.Name + ".json")));
 
             switch (cosmetic.Type) {
                 case CosmeticType.Hat:
@@ -220,7 +224,7 @@ namespace Assets.Editor.HatCreator {
                             yield return null;
                         Debug.Log($"Faulted 2? {task.IsFaulted}");
                         if (task.IsFaulted) throw task.Exception;
-                        purgeList.Add(OceanClient.FormatName(OceanClient.ThumbnailLocation, OceanClient.FormatUrl(bundle.Name, cosmetic.Name, "front.png")));
+                        // purgeList.Add(Uri.EscapeUriString(OceanClient.FormatUrl(bundle.Name, cosmetic.Name, "front.png")));
                     }
 
                     if (((HatBehaviour) cosmetic.Cosmetic).BackImage != null) {
@@ -230,7 +234,7 @@ namespace Assets.Editor.HatCreator {
                             yield return null;
                         Debug.Log($"Faulted 2? {task.IsFaulted}");
                         if (task.IsFaulted) throw task.Exception;
-                        purgeList.Add(OceanClient.FormatName(OceanClient.ThumbnailLocation, OceanClient.FormatUrl(bundle.Name, cosmetic.Name, "back.png")));
+                        // purgeList.Add(Uri.EscapeUriString(OceanClient.FormatUrl(bundle.Name, cosmetic.Name, "back.png")));
                     }
 
                     break;
@@ -241,7 +245,7 @@ namespace Assets.Editor.HatCreator {
                         yield return null;
                     Debug.Log($"Faulted 2? {task.IsFaulted}");
                     if (task.IsFaulted) throw task.Exception;
-                    purgeList.Add(OceanClient.FormatName(OceanClient.ThumbnailLocation, OceanClient.FormatUrl(bundle.Name, cosmetic.Name, "pet.png")));
+                    // purgeList.Add(Uri.EscapeUriString(OceanClient.FormatUrl(bundle.Name, cosmetic.Name, "pet.png")));
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -338,7 +342,6 @@ namespace Assets.Editor.HatCreator {
                 }
 
                 // IEnumerator upload = UploadSingle(cosmeticData);
-                cosmeticData.CosmeticBundleName = bundle.Name;
                 yield return EditorCoroutineUtility.StartCoroutineOwnerless(UploadSingle(bundle, cosmeticData, purgeList));
                 lock (lockable) Debug.Log($"sus {cosmeticData.Name} {cosmeticData.Registered}");
             }
@@ -353,6 +356,8 @@ namespace Assets.Editor.HatCreator {
                 OceanClient.FormatName(bundle.Name, "cover.png"), File.OpenRead(assetPath));
             while (!task.IsCompleted) yield return null;
             if (task.IsFaulted) throw task.Exception;
+            
+            purgeList.Add(Uri.EscapeUriString(OceanClient.FormatName(bundle.Name, "*")));
 
             task = bundle.Registered ? CosmeticClient.Client.UpdateBundle(bundle) : CosmeticClient.Client.UploadBundle(bundle);
             while (!task.IsCompleted) yield return null;
@@ -361,9 +366,9 @@ namespace Assets.Editor.HatCreator {
             bundle.Registered = true;
             Debug.Log("fully registered, now purging");
 
-            // foreach (string purge in purgeList) {
-            //     Debug.Log($"thing to purge: {purge}");
-            // }
+            foreach (string purge in purgeList) {
+                Debug.Log($"thing to purge: {purge}");
+            }
 
             if (AccountMenu.HasSave && string.IsNullOrEmpty(AccountMenu.Save.DoPersonalToken)) {
                 Debug.LogWarning("No optional DigitalOcean token, not able to purge!");

@@ -18,3 +18,4 @@ MonoBehaviour:
   scaredClip: {fileID: 7400000, guid: 3e908f1c2b524474394f94184969e87a, type: 2}
   sadClip: {fileID: 7400000, guid: 9e43c1df21ba877449059ddd004dc003, type: 2}
   hasShadow: 1
+  storeName: Cutesy

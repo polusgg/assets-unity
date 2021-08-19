@@ -18,3 +18,4 @@ MonoBehaviour:
   scaredClip: {fileID: 7400000, guid: 22e3806dc7697204cb92655b93f21495, type: 2}
   sadClip: {fileID: 7400000, guid: 0180e1207ea350c4faba7661f9f7b8d7, type: 2}
   hasShadow: 1
+  storeName: Garage

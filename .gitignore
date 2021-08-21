@@ -71,3 +71,9 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 .idea/
+
+Assets/account_token.asset
+Assets/account_token.asset.meta
+Assets/AssetBundles/Cosmetics
+Assets/AssetBundles/BepInExMod
+Assets/AssetBundles/PggResources

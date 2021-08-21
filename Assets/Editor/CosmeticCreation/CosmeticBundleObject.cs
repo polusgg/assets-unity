@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Cosmetics;
+using Editor.Accounts;
 using Newtonsoft.Json.Serialization;
 using UnityEditor;
 using UnityEngine;
@@ -17,7 +18,6 @@ namespace Assets.Editor.HatCreator {
         public float Price;
         public bool ForSale;
         [TextArea] public string Description;
-        public string Author;
         [HideInInspector] public bool Registered;
         [HideInInspector] public CosmeticData[] Cosmetics = Array.Empty<CosmeticData>();
         public string SanitizedName => new SnakeCaseNamingStrategy().GetPropertyName(Name.ToLower(), false);
@@ -28,6 +28,22 @@ namespace Assets.Editor.HatCreator {
             public string Name = "New Cosmetic";
             public string Author = "";
 
+            public string CosmeticBundleName {
+                set {
+                    switch (Type) {
+                        case CosmeticType.Hat:
+                            ((HatBehaviour) Cosmetic).StoreName = value;
+                            Debug.Log($"Set store name for hat {Name}");
+                            break;
+                        case CosmeticType.Pet:
+                            ((PetCreator) Cosmetic).storeName = value;
+                            Debug.Log($"Set store name for pet {Name}");
+                            break;
+                        default:
+                            throw new ArgumentOutOfRangeException();
+                    }
+                }
+            }
             public Sprite Thumbnail {
                 get {
                     if (Cosmetic == null) return null;

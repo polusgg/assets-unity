@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
+  m_Name: Japanese
+  m_EditorClassIdentifier: 
+  Name: Japanese
+  CoverArt: {fileID: 21300000, guid: 269d48dab36a51b4fb60bf2125d33f65, type: 3}
+  Color:
+    serializedVersion: 2
+    rgba: 1125271
+  Price: 4.99
+  ForSale: 1
+  Description: Pack your bags and travel to Japan. Take this hat bundle with you
+    on the trip to accompany you on your journey to the west.
+  Registered: 1
+  Cosmetics:
+  - Id: 10000042
+    Name: Bonsai
+    Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: a3f73cda3138cbe49ad50516a5d72058, type: 2}
+    Type: 0
+  - Id: 10000052
+    Name: Geisha
+    Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 12d118b644cd9ae41aeb601bf8fcae9f, type: 2}
+    Type: 0
+  - Id: 10000046
+    Name: Koi
+    Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 49b2077f533f7304f89768bd2c5b6241, type: 2}
+    Type: 0
+  - Id: 10000048
+    Name: Origami
+    Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 9873a486828645449a2fe339c0f666ba, type: 2}
+    Type: 0
+  - Id: 10000050
+    Name: Sushi
+    Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 1c589a014083aac4d9fa3b7cf1ac0bd3, type: 2}
+    Type: 0

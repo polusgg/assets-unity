@@ -1,7 +1,7 @@
-﻿
-using System;
+﻿using System;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
@@ -21,6 +21,9 @@ namespace Editor.Accounts {
         public const string ThumbnailBucket = "polusgg-cosmetics-assets";
         public const string BundleLocation = "https://client-assetbundles.polus.gg";
         public const string ThumbnailLocation = "https://cosmetic.asset.polus.gg";
+        //bypass the cache?
+        // public const string BundleLocation = "https://polusgg-assetbundles.nyc3.digitaloceanspaces.com";
+        // public const string ThumbnailLocation = "https://polusgg-cosmetics-assets.nyc3.digitaloceanspaces.com";
         public static readonly Uri DOEndpoint = new Uri("https://api.digitalocean.com/v2/cdn/endpoints");
 
         public OceanClient() {
@@ -43,39 +46,51 @@ namespace Editor.Accounts {
         }
 
         //DONT USE THIS IT LITERALLY DOES NOT WORK LOL
-        
-        // public static async Task Purge(string[] files, string endpoint) {
-        //     HttpClient client = new HttpClient();
-        //     
-        //     HttpRequestMessage listRequest = new HttpRequestMessage {
-        //         Method = HttpMethod.Get,
-        //         RequestUri = new Uri(DOEndpoint, "endpoints"),
-        //     };
-        //     
-        //     listRequest.Headers.TryAddWithoutValidation("Content-Type", "application/json");
-        //     listRequest.Headers.TryAddWithoutValidation("Authorization", $"Bearer ${AccountMenu.Save.DoPersonalToken}");
-        //     
-        //     string list = await (await client.SendAsync(listRequest)).Content.ReadAsStringAsync();
-        //     Debug.Log(list);
-        //     
-        //     DoListEndpoint listObject = JsonConvert.DeserializeObject<DoListEndpoint>(list);
-        //     foreach (DoListEndpoint.Endpoint end in listObject.Endpoints) {
-        //         Debug.Log($"{end.Id} {end.Origin} {end.CustomDomain}");
-        //     }
-        //     DoListEndpoint.Endpoint point = listObject.Endpoints.First(x => endpoint.Contains(x.Origin) || endpoint.Contains(x.CustomDomain));
-        //     
-        //     HttpRequestMessage purgeRequest = new HttpRequestMessage {
-        //         Method = HttpMethod.Delete,
-        //         RequestUri = new Uri(DOEndpoint, $"endpoints/${point.Id}/cache"),
-        //         Content = new StringContent(JsonConvert.SerializeObject(new DoPurgeEndpoint {
-        //             Files = files
-        //         }))
-        //     };
-        //     
-        //     purgeRequest.Headers.TryAddWithoutValidation("Content-Type", "application/json");
-        //     purgeRequest.Headers.TryAddWithoutValidation("Authorization", $"Bearer ${AccountMenu.Save.DoPersonalToken}");
-        //     
-        //     await client.SendAsync(purgeRequest);
-        // }
+
+        public static async Task Purge(string[] files, string[] buckets) {
+            HttpClient client = new HttpClient();
+
+            HttpRequestMessage listRequest = new HttpRequestMessage {
+                Method = HttpMethod.Get,
+                RequestUri = new Uri(DOEndpoint, "endpoints"),
+            };
+
+            listRequest.Headers.Clear();
+            listRequest.Headers.TryAddWithoutValidation("Content-Type", "application/json");
+            listRequest.Headers.TryAddWithoutValidation("Authorization", $"Bearer {AccountMenu.Save.DoPersonalToken}");
+
+            string list = await (await client.SendAsync(listRequest)).Content.ReadAsStringAsync();
+
+            DoListEndpoint listObject = JsonConvert.DeserializeObject<DoListEndpoint>(list);
+            // foreach (DoListEndpoint.Endpoint end in listObject.Endpoints) {
+                // Debug.Log($"{end.Id} {end.Origin} {end.CustomDomain}");
+            // }
+
+            foreach (string bucket in buckets) {
+                DoListEndpoint.Endpoint point = listObject.Endpoints.First(x => x.Origin.Contains(bucket) || x.CustomDomain.Contains(bucket));
+                // return;
+                HttpRequestMessage purgeRequest = new HttpRequestMessage {
+                    Method = HttpMethod.Delete,
+                    RequestUri = new Uri(DOEndpoint, $"endpoints/{point.Id}/cache"),
+                    Content = new StringContent(JsonConvert.SerializeObject(new DoPurgeEndpoint {
+                        Files = files
+                    }))
+                };
+                
+                Debug.Log($"requesting {await purgeRequest.Content.ReadAsStringAsync()}");
+
+                purgeRequest.Headers.Clear();
+                purgeRequest.Headers.TryAddWithoutValidation("Content-Type", "application/json");
+                purgeRequest.Headers.TryAddWithoutValidation("Authorization", $"Bearer {AccountMenu.Save.DoPersonalToken}");
+
+                Debug.Log($"figma balls {purgeRequest.RequestUri}");
+
+                HttpResponseMessage response = await client.SendAsync(purgeRequest);
+                string data = await response.Content.ReadAsStringAsync();
+                if (response.IsSuccessStatusCode)
+                    Debug.Log($"POGGER {response.StatusCode}");
+                else Debug.LogError($"FUCK {data}");
+            }
+        }
     }
 }

@@ -14,6 +14,7 @@ namespace Editor.Accounts {
         private ApiClient client = new ApiClient();
         private static SavedAuthModel _save;
 
+        public static bool HasSave => File.Exists(SaveFile) || _save != null;
         public static SavedAuthModel Save {
             get => File.Exists(SaveFile) || _save ? _save = AssetDatabase.LoadAssetAtPath<SavedAuthModel>(SaveFile) : _save;
             set {
@@ -72,6 +73,10 @@ namespace Editor.Accounts {
                 GUILayout.BeginHorizontal();
                 GUILayout.Label("S3 Secret", GUILayout.Width(100));
                 _save.S3Secret = GUILayout.PasswordField(_save.S3Secret ?? "", '*');
+                GUILayout.EndHorizontal();
+                GUILayout.BeginHorizontal();
+                GUILayout.Label("DigitalOcean Token", GUILayout.Width(100));
+                _save.DoPersonalToken = GUILayout.TextField(_save.DoPersonalToken ?? "");
                 GUILayout.EndHorizontal();
                 if (GUILayout.Button("Save")) {
                     Save = _save;

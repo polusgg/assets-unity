@@ -20,12 +20,11 @@ MonoBehaviour:
   Price: 9000.01
   ForSale: 0
   Description: 
-  Author: plans
   Registered: 1
   Cosmetics:
   - Id: 10000004
     Name: Poodle
-    Author: 
+    Author: 70dae216-59ca-43c8-8884-66dc31d1ed5a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: d14a967d225a6144da4dcd8b214747be, type: 2}
     Type: 1

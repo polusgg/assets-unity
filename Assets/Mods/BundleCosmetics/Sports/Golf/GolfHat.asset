@@ -26,10 +26,10 @@ MonoBehaviour:
   NotInStore: 0
   Free: 0
   AltShader: {fileID: 2100000, guid: 8ce561ba342db06409affe04b015161b, type: 2}
-  ChipOffset: {x: 0, y: 0}
+  ChipOffset: {x: -0.2, y: -0.05}
   LimitedMonth: 1
   LimitedYear: 1
   RelatedSkin: {fileID: 0}
-  StoreName: 
+  StoreName: Sports
   ProductId: 
   Order: 0

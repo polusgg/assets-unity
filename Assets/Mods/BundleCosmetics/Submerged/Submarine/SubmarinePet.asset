@@ -18,3 +18,4 @@ MonoBehaviour:
   scaredClip: {fileID: 7400000, guid: 566b9bb6827364f498ce732b9b0620ac, type: 2}
   sadClip: {fileID: 7400000, guid: 566b9bb6827364f498ce732b9b0620ac, type: 2}
   hasShadow: 0
+  storeName: Submerged

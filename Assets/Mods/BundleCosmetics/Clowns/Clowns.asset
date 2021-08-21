@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
+  m_Name: Clowns
+  m_EditorClassIdentifier: 
+  Name: Clowns
+  CoverArt: {fileID: 21300000, guid: f70d5f4b506e6094aa10184036bd1e6e, type: 3}
+  Color:
+    serializedVersion: 2
+    rgba: 15683615
+  Price: 3.99
+  ForSale: 1
+  Description: Do you feel like clowning around? Grab this bundle, put on your red
+    nose and bring out your inner goofball.
+  Registered: 1
+  Cosmetics:
+  - Id: 10000036
+    Name: Jester
+    Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: a40c76bc0d3b3af429e3709accfd9d82, type: 2}
+    Type: 0
+  - Id: 10000038
+    Name: Rainbow
+    Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 8232c86aa7545b94d89e869e28ed1b63, type: 2}
+    Type: 0
+  - Id: 10000040
+    Name: Rednose
+    Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 989b7568c1773494082e7654c7187341, type: 2}
+    Type: 0
+  - Id: 10000044
+    Name: Balloon
+    Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 940725fd0c6443a4a943f431e09a21be, type: 2}
+    Type: 0

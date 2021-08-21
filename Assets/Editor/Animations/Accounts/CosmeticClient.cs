@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Reflection;
@@ -25,7 +27,8 @@ namespace Editor.Accounts {
 
         public CosmeticClient() {
             _client = new HttpClient {
-                BaseAddress = new Uri("http://cosmetics.service.polus.gg:2219/v1/")
+                BaseAddress = new Uri("http://sanae6.ca:2219/v1/")
+                // BaseAddress = new Uri("http://cosmetics.service.polus.gg:2219/v1/")
                 // BaseAddress = new Uri("http://159.203.86.28:2219/v1/")
             };
 
@@ -61,6 +64,29 @@ namespace Editor.Accounts {
 
             return null;
         }
+
+        public async Task<GenericCosmeticResponse<bool>> CheckConflicts(ItemCreation itemInfo) {
+            HttpRequestMessage request = new HttpRequestMessage {
+                RequestUri = new Uri(_client.BaseAddress, "item/next"),
+                Method = HttpMethod.Post,
+                Content = new StringContent(JsonConvert.SerializeObject(itemInfo), Encoding.UTF8, "application/json")
+            };
+
+            Debug.Log($"ghandeez nuts fit in yo mouth {new Uri(_client.BaseAddress, "item/next")}");
+
+            HttpResponseMessage response = await _client.SendAsync(request);
+            
+            Debug.Log($"Ended request {response.StatusCode}");
+
+            if (response.IsSuccessStatusCode) {
+                return JsonConvert.DeserializeObject<GenericCosmeticResponse<bool>>(
+                    await response.Content.ReadAsStringAsync(),
+                    _settings
+                );
+            }
+
+            return null;
+        }
         public async Task<GenericCosmeticResponse<uint>> UpdateBundle(CosmeticBundleObject bundle) {
             HttpRequestMessage request = new HttpRequestMessage {
                 RequestUri = new Uri(_client.BaseAddress, $"bundle/{bundle.SanitizedName}"),
@@ -68,12 +94,11 @@ namespace Editor.Accounts {
                 Content = new StringContent(JsonConvert.SerializeObject(new BundleUpdate {
                     Name = bundle.Name,
                     Cosmetics = bundle.Cosmetics.Select(b => b.SanitizedName).ToArray(),
-                    CoverArt = OceanClient.FormatUrl(OceanClient.ThumbnailLocation + "/CoverArt", bundle.Name, Path.GetFileName(AssetDatabase.GetAssetPath(bundle.CoverArt))),
+                    CoverArt = Uri.EscapeUriString(OceanClient.FormatUrl(OceanClient.ThumbnailLocation, bundle.Name, "cover.png")),
                     Color = bundle.Color.ToRgba(),
-                    Author = bundle.Author,
                     Description = bundle.Description,
-                    Price = bundle.Price,
-                    ForSale = bundle.ForSale
+                    Price = int.Parse(bundle.Price.ToString("###.00", CultureInfo.InvariantCulture).Replace(".", "")),
+                    ForSale = bundle.ForSale,
                 }), Encoding.UTF8, "application/json")
             };
             request.Headers.TryAddWithoutValidation("Authorization", $"{AccountMenu.Save.ClientToken}:{AccountMenu.Save.ClientId}");
@@ -84,14 +109,14 @@ namespace Editor.Accounts {
             
             Debug.Log($"Ended request {response.StatusCode}");
 
+            Debug.Log(await response.Content.ReadAsStringAsync());
+
             if (response.IsSuccessStatusCode) {
                 return JsonConvert.DeserializeObject<GenericCosmeticResponse<uint>>(
                     await response.Content.ReadAsStringAsync(),
                     _settings
                 );
             }
-
-            Debug.Log(await response.Content.ReadAsStringAsync());
 
             return null;
         }
@@ -102,11 +127,10 @@ namespace Editor.Accounts {
                 Content = new StringContent(JsonConvert.SerializeObject(new BundleCreate {
                     Name = bundle.Name,
                     Cosmetics = bundle.Cosmetics.Select(b => b.SanitizedName).ToArray(),
-                    CoverArt = OceanClient.FormatUrl(OceanClient.ThumbnailLocation + "/CoverArt", bundle.Name, Path.GetFileName(AssetDatabase.GetAssetPath(bundle.CoverArt))),
+                    CoverArt = Uri.EscapeUriString(OceanClient.FormatUrl(OceanClient.ThumbnailLocation, bundle.Name, "cover.png")),
                     Color = bundle.Color.ToRgba(),
-                    Author = bundle.Author,
                     Description = bundle.Description,
-                    Price = bundle.Price,
+                    Price = int.Parse(bundle.Price.ToString("###.00", CultureInfo.InvariantCulture).Replace(".", "")),
                     ForSale = bundle.ForSale
                 }), Encoding.UTF8, "application/json")
             };
@@ -139,12 +163,13 @@ namespace Editor.Accounts {
                 Content = new StringContent(JsonConvert.SerializeObject(new ItemUpdate {
                     Name = cosmetic.Name,
                     Author = cosmetic.Author,
+                    IngameId = cosmetic.Id,
                     Resource = new Resource {
-                        Path = OceanClient.FormatUrl("Cosmetics", bundle, cosmetic.Name),
+                        Path = Uri.EscapeUriString(OceanClient.FormatUrl("Cosmetics", bundle, cosmetic.Name)),
                         Space = OceanClient.BundleLocation,
                         Id = cosmetic.Id + 1
                     },
-                    ThumbnailUrl = OceanClient.FormatUrl(OceanClient.ThumbnailLocation, bundle, Path.GetFileName(AssetDatabase.GetAssetPath(cosmetic.Thumbnail))),
+                    ThumbnailUrl = Uri.EscapeUriString(OceanClient.FormatName(OceanClient.ThumbnailLocation, bundle)),
                     Type = cosmetic.Type,
                 }, new StringEnumConverter(new CapitalCaseNamingStrategy())), Encoding.UTF8, "application/json")
             };
@@ -173,15 +198,16 @@ namespace Editor.Accounts {
                 RequestUri = new Uri(_client.BaseAddress, $"item/{cosmetic.SanitizedName}"),
                 Method = HttpMethod.Put,
                 Content = new StringContent(JsonConvert.SerializeObject(new ItemCreation {
+                    Id = cosmetic.SanitizedName,
                     Name = cosmetic.Name,
                     Author = cosmetic.Author,
-                    IngameId = cosmetic.Id,
+                    InGameId = cosmetic.Id,
                     Resource = new Resource {
-                        Path = OceanClient.FormatUrl("Cosmetics", bundle, cosmetic.Name),
+                        Path = Uri.EscapeUriString(OceanClient.FormatUrl("Cosmetics", bundle, cosmetic.Name)),
                         Space = OceanClient.BundleLocation,
                         Id = cosmetic.Id + 1
                     },
-                    ThumbnailUrl = OceanClient.FormatUrl(OceanClient.ThumbnailLocation, bundle, Path.GetFileName(AssetDatabase.GetAssetPath(cosmetic.Thumbnail))),
+                    ThumbnailUrl = Uri.EscapeUriString(OceanClient.FormatUrl(OceanClient.ThumbnailLocation, bundle, cosmetic.Name)),
                     Type = cosmetic.Type,
                 }, new StringEnumConverter(new CapitalCaseNamingStrategy())), Encoding.UTF8, "application/json")
             };

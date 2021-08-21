@@ -23,11 +23,9 @@ public class HatBehaviour : ScriptableObject {
     // Token: 0x04000B57 RID: 2903
     public Sprite FloorImage;
 
-    // Token: 0x04000B58 RID: 2904
-    public Sprite LeftClimbImage;
+    [HideInInspector] public Sprite LeftClimbImage;
 
-    // Token: 0x04000B59 RID: 2905
-    public Sprite LeftFloorImage;
+    [HideInInspector] public Sprite LeftFloorImage;
 
     // Token: 0x04000B5A RID: 2906
     public bool InFront;
@@ -49,11 +47,10 @@ public class HatBehaviour : ScriptableObject {
 
     [HideInInspector] public SkinData RelatedSkin;
 
-    [HideInInspector] public string StoreName;
+    public string StoreName;
 
     [HideInInspector] public string ProductId;
 
-    // Token: 0x04000B65 RID: 2917
-    public int Order;
+    [HideInInspector] public int Order;
     public Object GetMain() => MainImage == null ? BackImage : MainImage;
 }

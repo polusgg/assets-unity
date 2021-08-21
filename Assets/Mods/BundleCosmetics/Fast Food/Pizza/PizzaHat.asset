@@ -21,7 +21,7 @@ MonoBehaviour:
   FloorImage: {fileID: 21300000, guid: ec2a5d45ce7331b4f889a0df16eb2cfc, type: 3}
   LeftClimbImage: {fileID: 0}
   LeftFloorImage: {fileID: 0}
-  InFront: 1
+  InFront: 0
   NoBounce: 1
   NotInStore: 0
   Free: 0

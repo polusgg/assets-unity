@@ -21,7 +21,7 @@ MonoBehaviour:
   FloorImage: {fileID: 0}
   LeftClimbImage: {fileID: 0}
   LeftFloorImage: {fileID: 0}
-  InFront: 1
+  InFront: 0
   NoBounce: 1
   NotInStore: 0
   Free: 1
@@ -29,6 +29,7 @@ MonoBehaviour:
   ChipOffset: {x: 0, y: 1}
   LimitedMonth: 0
   LimitedYear: 0
+  RelatedSkin: {fileID: 0}
   StoreName: 
   ProductId: 
   Order: 0

@@ -28,7 +28,7 @@ public class HatBehaviour : ScriptableObject {
     [HideInInspector] public Sprite LeftFloorImage;
 
     // Token: 0x04000B5A RID: 2906
-    public bool InFront;
+    [HideInInspector] public bool InFront;
 
     // Token: 0x04000B5B RID: 2907
     public bool NoBounce;

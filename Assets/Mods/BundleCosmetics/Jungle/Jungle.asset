@@ -21,35 +21,35 @@ MonoBehaviour:
   ForSale: 1
   Description: Reject humanity, return to monke. Get to the top of the food chain
     with this wild bundle.
-  Registered: 0
+  Registered: 1
   Cosmetics:
-  - Id: 10000000
+  - Id: 10000054
     Name: Hippopotamus
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: de6f9d05ef3885647a5997830a2223b2, type: 2}
     Type: 0
-  - Id: 10000000
+  - Id: 10000056
     Name: Koala
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 9dd22c8763224d44ab1266262b4bb0f5, type: 2}
     Type: 0
-  - Id: 10000000
+  - Id: 10000058
     Name: Lion
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: e38f5daaf9f6742488b015f9873d1cee, type: 2}
     Type: 0
-  - Id: 10000000
+  - Id: 10000060
     Name: Monkey
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: ffb634493b9e36c49b8c8a0ea20107f8, type: 2}
     Type: 0
-  - Id: 10000000
+  - Id: 10000062
     Name: Snake
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
-    Registered: 0
+    Registered: 1
     Cosmetic: {fileID: 11400000, guid: c9938f86fdeb4194babb1eb75c07feba, type: 2}
     Type: 0

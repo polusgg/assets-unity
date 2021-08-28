@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33a85397cd7f8c75d94da833c4e725d7, type: 3}
+  m_Name: HippopotamusHat
+  m_EditorClassIdentifier: 
+  MainImage: {fileID: 21300000, guid: 68e3d8742f687a743ab7256a7bbf9056, type: 3}
+  BackImage: {fileID: 21300000, guid: 4ec187ea697d8c643b328c2dded74d60, type: 3}
+  LeftMainImage: {fileID: 0}
+  LeftBackImage: {fileID: 0}
+  EpicId: 
+  ClimbImage: {fileID: 21300000, guid: 1e02a2f278c4ea14f879c46e9a5ee021, type: 3}
+  FloorImage: {fileID: 21300000, guid: c0ce0c094f08892488c3c5b021bee792, type: 3}
+  LeftClimbImage: {fileID: 0}
+  LeftFloorImage: {fileID: 0}
+  InFront: 0
+  NoBounce: 0
+  NotInStore: 0
+  Free: 0
+  AltShader: {fileID: 0}
+  ChipOffset: {x: 0, y: 0}
+  LimitedMonth: 1
+  LimitedYear: 1
+  RelatedSkin: {fileID: 0}
+  StoreName: Jungle
+  ProductId: 
+  Order: 0

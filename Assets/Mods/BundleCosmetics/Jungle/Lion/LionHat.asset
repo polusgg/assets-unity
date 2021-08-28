@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33a85397cd7f8c75d94da833c4e725d7, type: 3}
+  m_Name: LionHat
+  m_EditorClassIdentifier: 
+  MainImage: {fileID: 21300000, guid: 1ca3dd1adafc5174a82d4322e7b41326, type: 3}
+  BackImage: {fileID: 21300000, guid: 221c7079b97fad448bf1195e969d6a6e, type: 3}
+  LeftMainImage: {fileID: 0}
+  LeftBackImage: {fileID: 0}
+  EpicId: 
+  ClimbImage: {fileID: 21300000, guid: 9b5ec165a005f074da062cdfc5e3a74d, type: 3}
+  FloorImage: {fileID: 21300000, guid: 6876ec63406dd6745811231ca12bd1ff, type: 3}
+  LeftClimbImage: {fileID: 0}
+  LeftFloorImage: {fileID: 0}
+  InFront: 0
+  NoBounce: 1
+  NotInStore: 0
+  Free: 0
+  AltShader: {fileID: 0}
+  ChipOffset: {x: 0, y: 0}
+  LimitedMonth: 1
+  LimitedYear: 1
+  RelatedSkin: {fileID: 0}
+  StoreName: Jungle
+  ProductId: 
+  Order: 0

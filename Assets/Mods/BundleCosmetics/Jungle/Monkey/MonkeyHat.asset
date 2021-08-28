@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33a85397cd7f8c75d94da833c4e725d7, type: 3}
+  m_Name: MonkeyHat
+  m_EditorClassIdentifier: 
+  MainImage: {fileID: 21300000, guid: 6114d7bdf5e57e144b904dab432bbc0d, type: 3}
+  BackImage: {fileID: 21300000, guid: afe1408f5acc5484b8ea148738317fda, type: 3}
+  LeftMainImage: {fileID: 0}
+  LeftBackImage: {fileID: 0}
+  EpicId: 
+  ClimbImage: {fileID: 21300000, guid: b0f8bfbdd21e6dd4fab66e850711bfe7, type: 3}
+  FloorImage: {fileID: 21300000, guid: 721b27edaf2325c4cabc5828dfcc2a70, type: 3}
+  LeftClimbImage: {fileID: 0}
+  LeftFloorImage: {fileID: 0}
+  InFront: 0
+  NoBounce: 0
+  NotInStore: 0
+  Free: 0
+  AltShader: {fileID: 2100000, guid: 8ce561ba342db06409affe04b015161b, type: 2}
+  ChipOffset: {x: 0, y: 0}
+  LimitedMonth: 1
+  LimitedYear: 1
+  RelatedSkin: {fileID: 0}
+  StoreName: Jungle
+  ProductId: 
+  Order: 0

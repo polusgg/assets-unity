@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33a85397cd7f8c75d94da833c4e725d7, type: 3}
-  m_Name: DP2ThugHat
+  m_Name: CatHat
   m_EditorClassIdentifier: 
-  MainImage: {fileID: 21300000, guid: 6847e39e7fb5e844e8d4fc5dbe3c7699, type: 3}
+  MainImage: {fileID: 21300000, guid: 7d10758e8814d724caece15cd7d7da62, type: 3}
   BackImage: {fileID: 0}
   LeftMainImage: {fileID: 0}
   LeftBackImage: {fileID: 0}
   EpicId: 
-  ClimbImage: {fileID: 0}
-  FloorImage: {fileID: 21300000, guid: 6847e39e7fb5e844e8d4fc5dbe3c7699, type: 3}
+  ClimbImage: {fileID: 21300000, guid: 1d07ed24a2ad45342947dad0cf78d864, type: 3}
+  FloorImage: {fileID: 21300000, guid: 89bae4c4b7168044bbfd43e65d0277a5, type: 3}
   LeftClimbImage: {fileID: 0}
   LeftFloorImage: {fileID: 0}
   InFront: 0

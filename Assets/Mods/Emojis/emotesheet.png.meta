@@ -116,6 +116,9 @@ TextureImporter:
   - first:
       213: 7146302845748043656
     second: mapAirship
+  - first:
+      213: -1677414779120706294
+    second: poisoner
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -178,7 +181,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -190,7 +193,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -671,7 +674,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -679,6 +682,27 @@ TextureImporter:
       bones: []
       spriteID: 88fdc225394cc2360800000000000000
       internalID: 7146302845748043656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poisoner
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d158d4520a8b8e0800000000000000
+      internalID: -1677414779120706294
       vertices: []
       indices: 
       edges: []

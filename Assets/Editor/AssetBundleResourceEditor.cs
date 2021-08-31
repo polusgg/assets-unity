@@ -1,10 +1,14 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
+using System.Threading.Tasks;
+using Editor.Accounts;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using Unity.EditorCoroutines.Editor;
 using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
@@ -28,6 +32,8 @@ namespace Assets.Editor {
             if (GUILayout.Button("Build")) {
                 const string buildRoot = "Assets/AssetBundles/PggResources";
                 BuildResult result = Build(resource, buildRoot);
+                EditorUtility.DisplayProgressBar("Uploading to DO lol", "yo mommers", 0.69f);
+                EditorCoroutineUtility.StartCoroutineOwnerless(Upload(resource, result));
             }
 
             GUILayout.EndHorizontal();
@@ -55,15 +61,46 @@ namespace Assets.Editor {
             base.OnInspectorGUI();
         }
 
+        private static IEnumerator Upload(AssetBundleResource resource, BuildResult result) {
+            Exception error = new Exception("unknown exception");
+            OceanClient ocean = new OceanClient();
+            Task client = OceanClient.Upload(ocean, OceanClient.BundleBucket, $"{resource.name}/{resource.name}", File.OpenRead(result.AssetBundleLocation));
+            while (!client.IsCompleted) yield return null;
+            if (client.IsFaulted) {
+                error = client.Exception;
+                goto error;
+            }
+            client = OceanClient.Upload(ocean, OceanClient.BundleBucket, $"{resource.name}/{resource.name}.json", File.OpenRead(result.JsonManifest));
+            while (!client.IsCompleted) yield return null;
+            if (client.IsFaulted) {
+                error = client.Exception;
+                goto error;
+            }
+            client = OceanClient.Purge(new[] {
+                $"{resource.name}/{resource.name}",
+                $"{resource.name}/{resource.name}.json"
+            }, new[] { OceanClient.BundleBucket });
+            while (!client.IsCompleted) yield return null;
+            if (client.IsFaulted) {
+                error = client.Exception;
+                goto error;
+            }
+            goto finished;
+            error:
+            Debug.LogError(error);
+            finished:
+            EditorUtility.ClearProgressBar();
+        }
+
         public static SerializableForNodePolus GenerateSerializableForNodePolus(AssetBundleResource resource) {
             SerializableForNodePolus serializableResource = new SerializableForNodePolus {
                 AssetBundleId = resource.BaseId,
                 Assets = resource.Assets.Select(asset => {
-                    AssetDecl decl = new AssetDecl {Path = AssetDatabase.GetAssetPath(asset)};
+                    AssetDecl decl = new AssetDecl { Path = AssetDatabase.GetAssetPath(asset) };
 
                     if (asset is AudioClip audio) {
                         decl.Type = AssetType.Audio;
-                        decl.Details = new AudioDetails {Samples = audio.samples, SampleRate = audio.samples / audio.length,};
+                        decl.Details = new AudioDetails { Samples = audio.samples, SampleRate = audio.samples / audio.length, };
                     } else {
                         decl.Type = AssetType.Other;
                     }
@@ -83,6 +120,7 @@ namespace Assets.Editor {
             public AssetBundleManifest Manifest;
             public AssetBundleResource DedupedResource;
             public string JsonManifest;
+            public string AssetBundleLocation;
         }
 
         public static BuildResult Build(AssetBundleResource resource, string buildRoot) {
@@ -127,11 +165,12 @@ namespace Assets.Editor {
                 string nodepolusJsonPath = $"{buildRoot}/{resource.name}.json";
                 File.WriteAllText(nodepolusJsonPath,
                     JsonConvert.SerializeObject(nodepolusSerializable, serializationOpts));
-                
+
                 Debug.Log(manifest);
 
                 return new BuildResult {
                     DedupedResource = dedupedResource,
+                    AssetBundleLocation = $"{buildRoot}/{manifest.GetAllAssetBundles()[0]}",
                     Manifest = manifest,
                     JsonManifest = nodepolusJsonPath
                 };

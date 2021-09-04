@@ -22,7 +22,7 @@ MonoBehaviour:
   LeftClimbImage: {fileID: 0}
   LeftFloorImage: {fileID: 0}
   InFront: 0
-  NoBounce: 0
+  NoBounce: 1
   NotInStore: 0
   Free: 0
   AltShader: {fileID: 0}

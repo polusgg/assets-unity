@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a0e1f45fc6540038bf4fd3812746746, type: 3}
   m_Name: PoodlePet
   m_EditorClassIdentifier: 
-  yOffset: 0
+  yOffset: -0.004
   idleClip: {fileID: 7400000, guid: 0e9c05736da118d4396478ca6ce47a16, type: 2}
   walkClip: {fileID: 7400000, guid: 09859d5069d2cfa4f9b7039b00fa6fc4, type: 2}
   scaredClip: {fileID: 7400000, guid: 3e908f1c2b524474394f94184969e87a, type: 2}

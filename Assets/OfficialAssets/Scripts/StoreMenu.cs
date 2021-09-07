@@ -165,7 +165,7 @@ public class StoreMenu : DestroyableSingleton<StoreMenu>//, IStoreListener
 				component.material = new Material(petBehaviour.rend.sharedMaterial);
 				PlayerControl.SetPlayerMaterialColors((int)SaveManager.BodyColor, component);
 				this.PetSlot.Play(petBehaviour.idleClip, 1f);
-				this.ItemName.Text = (string.IsNullOrWhiteSpace(petBehaviour.StoreName) ? petBehaviour.name : petBehaviour.StoreName);
+				// this.ItemName.Text = (string.IsNullOrWhiteSpace(petBehaviour.StoreName) ? petBehaviour.name : petBehaviour.StoreName);
 			}
 			else if (this.CurrentButton.Product is MapBuyable)
 			{

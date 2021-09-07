@@ -73,8 +73,8 @@ namespace Assets.Editor.HatCreator {
                     EditorGUILayout.EndHorizontal();
                     EditorGUILayout.BeginHorizontal();
                     EditorGUILayout.PrefixLabel("Type");
-                    CosmeticType typeBefore = cosmetic.Type;
-                    cosmetic.Type = (CosmeticType) EditorGUILayout.EnumPopup(cosmetic.Type);
+                    PolusCosmeticType typeBefore = cosmetic.Type;
+                    cosmetic.Type = (PolusCosmeticType) EditorGUILayout.EnumPopup(cosmetic.Type);
                     if (cosmetic.Type != typeBefore) {
                         cosmetic.Cosmetic = null;
                         EditorUtility.SetDirty(targetObj);
@@ -133,23 +133,25 @@ namespace Assets.Editor.HatCreator {
 
             GUILayout.Space(100);
 
-            if ((targetObj.Registered || targetObj.Cosmetics.Any(cosmetic => cosmetic.Registered))
-                && GUILayout.Button("DEBUG: Unregister Bundle")
+            if (targets.Any(bundle => ((CosmeticBundleObject)bundle).Registered || ((CosmeticBundleObject)bundle).Cosmetics.Any(cosmetic => cosmetic.Registered))
+                && GUILayout.Button($"DEBUG: Unregister Bundle{(targets.Length > 1 ? "s" : "")}")
                 && EditorUtility.DisplayDialog(
                     "Unregister bundle",
-                    "Are you sure you want to unregister this bundle?\nThis is a debug button and shouldn't be done unless\nrequested as it will mess your bundle up",
-                    "Yes",
-                    "No.",
+                    $"Are you sure you want to unregister {(targets.Length > 1 ? "these bundles" : "this bundle")}?\nThis is a debug button and shouldn't be done unless\n" +
+                    $"requested as it will mess {(targets.Length > 1 ? "up more than one bundle here" : "your bundle up")}",
+                    "Yah",
+                    "no.",
                     DialogOptOutDecisionType.ForThisMachine,
-                    "cosmeticUnregisterDialog"
+                    targets.Length == 1 ? "cosmeticUnregisterDialog" : "cosmeticMultipleUnregisterDialog"
                 )
             ) {
-                targetObj.Registered = false;
-                foreach (CosmeticBundleObject.CosmeticData cosmetic in targetObj.Cosmetics) {
-                    cosmetic.Registered = false;
-                }
+                foreach (Object t in targets) {
+                    CosmeticBundleObject bundle = (CosmeticBundleObject) t;
+                    bundle.Registered = false;
+                    foreach (CosmeticBundleObject.CosmeticData cosmetic in bundle.Cosmetics) cosmetic.Registered = false;
 
-                EditorUtility.SetDirty(targetObj);
+                    EditorUtility.SetDirty(t);
+                }
             }
         }
 
@@ -188,9 +190,9 @@ namespace Assets.Editor.HatCreator {
             bundleResource.name = $"{bundle.Name}_{cosmetic.Name}";
             bundleResource.BaseId = cosmetic.Id;
             PetBehaviour pet = null;
-            bundleResource.Assets = cosmetic.Type == CosmeticType.Pet ? new Object[] { CreatePetBehaviour(cosmetic, out pet) } : new[] { cosmetic.Cosmetic };
+            bundleResource.Assets = cosmetic.Type == PolusCosmeticType.Pet ? new Object[] { CreatePetBehaviour(cosmetic, out pet) } : new[] { cosmetic.Cosmetic };
             AssetBundleResourceEditor.BuildResult buildResult = AssetBundleResourceEditor.Build(bundleResource, bundleRoot);
-            if (cosmetic.Type == CosmeticType.Pet) {
+            if (cosmetic.Type == PolusCosmeticType.Pet) {
                 AssetDatabase.DeleteAsset($"{bundleRoot}/PetTemp/{cosmetic.Cosmetic.name}.prefab");
                 DestroyImmediate(pet.gameObject);
             }
@@ -216,7 +218,7 @@ namespace Assets.Editor.HatCreator {
             // purgeList.Add(Uri.EscapeUriString(OceanClient.FormatUrl("Cosmetics", bundle.Name, cosmetic.Name + ".json")));
 
             switch (cosmetic.Type) {
-                case CosmeticType.Hat:
+                case PolusCosmeticType.Hat:
                     if (((HatBehaviour) cosmetic.Cosmetic).MainImage != null) {
                         task = OceanClient.Upload(new OceanClient(),
                             OceanClient.ThumbnailBucket, OceanClient.FormatUrl(bundle.Name, cosmetic.Name, "front.png"), File.OpenRead(AssetDatabase.GetAssetPath(((HatBehaviour) cosmetic.Cosmetic).MainImage)));
@@ -238,7 +240,7 @@ namespace Assets.Editor.HatCreator {
                     }
 
                     break;
-                case CosmeticType.Pet:
+                case PolusCosmeticType.Pet:
                     task = OceanClient.Upload(new OceanClient(),
                         OceanClient.ThumbnailBucket, OceanClient.FormatUrl(bundle.Name, cosmetic.Name, "pet.png"), File.OpenRead(AssetDatabase.GetAssetPath(cosmetic.Thumbnail)));
                     while (!task.IsCompleted)

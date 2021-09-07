@@ -2,7 +2,7 @@ using Cosmetics;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "HatBehaviour", menuName = "Create Resource - Hat", order = 0)]
-public class HatBehaviour : ScriptableObject {
+public class HatBehaviour : ScriptableObject, IBuyable {
     // Token: 0x04000B51 RID: 2897
     public Sprite MainImage;
 
@@ -53,4 +53,5 @@ public class HatBehaviour : ScriptableObject {
 
     [HideInInspector] public int Order;
     public Object GetMain() => MainImage == null ? BackImage : MainImage;
+    public string ProdId => ProductId;
 }

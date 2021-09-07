@@ -4,7 +4,7 @@ using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
 
 namespace Assets.Editor.HatCreator {
-    public enum CosmeticType {
+    public enum PolusCosmeticType {
         Hat,
         Pet,
         Skin,

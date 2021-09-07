@@ -163,7 +163,7 @@ public class PlayerPhysics : InnerNetObject
 		this.Animator.Time = 0f;
 		this.Skin.SetClimb(down);
 		this.myPlayer.HatRenderer.SetClimbAnim();
-		this.myPlayer.CurrentPet.Visible = false;
+		// this.myPlayer.CurrentPet.Visible = false;
 	}
 
 	// Token: 0x060009EF RID: 2543 RVA: 0x00040A83 File Offset: 0x0003EC83

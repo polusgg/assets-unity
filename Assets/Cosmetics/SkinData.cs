@@ -1,7 +1,7 @@
 ﻿using Cosmetics;
 using UnityEngine;
 
-public class SkinData : ScriptableObject, Cosmetic {
+public class SkinData : ScriptableObject, Cosmetic, IBuyable {
     // Token: 0x04000BDB RID: 3035
     public Sprite IdleFrame;
 
@@ -92,6 +92,5 @@ public class SkinData : ScriptableObject, Cosmetic {
     [HideInInspector]
     public int Order;
     public Object GetMain() => IdleFrame;
+    public string ProdId => ProductId;
 }
-
-public class OverlayKillAnimation { }

@@ -481,7 +481,7 @@ public class PlayerControl : InnerNetObject
 			this.HatRenderer.gameObject.SetActive(value);
 			if (this.CurrentPet)
 			{
-				this.CurrentPet.Visible = value;
+				// this.CurrentPet.Visible = value;
 			}
 			this.nameText.gameObject.SetActive(value);
 		}
@@ -977,7 +977,7 @@ public class PlayerControl : InnerNetObject
 		TempData.LastDeathReason = reason;
 		if (this.CurrentPet)
 		{
-			this.CurrentPet.SetMourning();
+			// this.CurrentPet.SetMourning();
 		}
 		this.Data.IsDead = true;
 		base.gameObject.layer = LayerMask.NameToLayer("Ghost");

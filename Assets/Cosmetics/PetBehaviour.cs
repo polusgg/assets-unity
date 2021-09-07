@@ -6,7 +6,7 @@ using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-public class PetBehaviour : MonoBehaviour {
+public class PetBehaviour : MonoBehaviour, IBuyable {
     [HideInInspector]
     public bool Free;
 
@@ -61,16 +61,5 @@ public class PetBehaviour : MonoBehaviour {
 
     // Token: 0x04000BC5 RID: 3013
     public AnimationClip walkClip;
-}
-
-public class PlayerControl { }
-
-public enum StringNames {
-    Nothing,
-    Why,
-    Would,
-    I,
-    Put,
-    Anything,
-    Here
+    public string ProdId => ProductId;
 }

@@ -12,6 +12,7 @@ using Object = UnityEngine.Object;
 namespace Assets.Editor.HatCreator {
     [CreateAssetMenu(fileName = "CosmeticBundle", menuName = "Create Cosmetic Bundle", order = 1)]
     public class CosmeticBundleObject : ScriptableObject {
+        public GUID uuid;
         [FormerlySerializedAs("BundleName")] public string Name;
         public Sprite CoverArt;
         public Color32 Color;
@@ -20,22 +21,30 @@ namespace Assets.Editor.HatCreator {
         [TextArea] public string Description;
         [HideInInspector] public bool Registered;
         [HideInInspector] public CosmeticData[] Cosmetics = Array.Empty<CosmeticData>();
-        public string SanitizedName => new SnakeCaseNamingStrategy().GetPropertyName(Name.ToLower(), false);
+        public string SanitizedName => uuid.ToString();
+
+        private void OnEnable() {
+            if (uuid.Empty()) uuid = GUID.Generate();
+            foreach (CosmeticData cosmetic in Cosmetics) {
+                if (cosmetic.uuid.Empty()) cosmetic.uuid = GUID.Generate();
+            }
+        }
 
         [Serializable]
         public class CosmeticData {
             public uint Id;
+            public GUID uuid;
             public string Name = "New Cosmetic";
             public string Author = "";
 
             public string CosmeticBundleName {
                 set {
                     switch (Type) {
-                        case CosmeticType.Hat:
+                        case PolusCosmeticType.Hat:
                             ((HatBehaviour) Cosmetic).StoreName = value;
                             Debug.Log($"Set store name for hat {Name}");
                             break;
-                        case CosmeticType.Pet:
+                        case PolusCosmeticType.Pet:
                             ((PetCreator) Cosmetic).storeName = value;
                             Debug.Log($"Set store name for pet {Name}");
                             break;
@@ -48,9 +57,9 @@ namespace Assets.Editor.HatCreator {
                 get {
                     if (Cosmetic == null) return null;
                     switch (Type) {
-                        case CosmeticType.Hat:
+                        case PolusCosmeticType.Hat:
                             return (Sprite) ((HatBehaviour) Cosmetic).GetMain();
-                        case CosmeticType.Pet:
+                        case PolusCosmeticType.Pet:
                             AnimationClip clip = (AnimationClip) ((PetCreator) Cosmetic).GetMain();
                             EditorCurveBinding[] curve = AnimationUtility.GetObjectReferenceCurveBindings(clip);
                             foreach (EditorCurveBinding curveBinding in curve) {
@@ -61,9 +70,9 @@ namespace Assets.Editor.HatCreator {
                             }
 
                             return null;
-                        case CosmeticType.Skin:
+                        case PolusCosmeticType.Skin:
                             return (Sprite) ((SkinData) Cosmetic).GetMain();
-                        case CosmeticType.Body:
+                        case PolusCosmeticType.Body:
                             throw new Exception("Bodies have no thumb");
                         default:
                             throw new Exception("Unsupported type has no thumbnail handler");
@@ -73,16 +82,16 @@ namespace Assets.Editor.HatCreator {
 
             public bool Registered;
             public Object Cosmetic;
-            public CosmeticType Type;
+            public PolusCosmeticType Type;
 
             public Type TypeType {
                 get {
                     switch (Type) {
-                        case CosmeticType.Hat:
+                        case PolusCosmeticType.Hat:
                             return typeof(HatBehaviour);
-                        case CosmeticType.Pet:
+                        case PolusCosmeticType.Pet:
                             return typeof(PetCreator);
-                        case CosmeticType.Skin:
+                        case PolusCosmeticType.Skin:
                             return typeof(SkinData);
                         default:
                             return typeof(bool);
@@ -90,7 +99,8 @@ namespace Assets.Editor.HatCreator {
                 }
             }
 
-            public string SanitizedName => new SnakeCaseNamingStrategy().GetPropertyName(Name.ToLower(), false);
+            public string SanitizedName => uuid.ToString();
+            // public string SanitizedName => new SnakeCaseNamingStrategy().GetPropertyName(Name.ToLower(), false);
 
             //ui
             [NonSerialized] public bool foldedOut;

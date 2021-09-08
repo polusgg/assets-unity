@@ -171,6 +171,7 @@ namespace Editor.Accounts {
                     },
                     ThumbnailUrl = Uri.EscapeUriString(OceanClient.FormatName(OceanClient.ThumbnailLocation, bundle)),
                     Type = cosmetic.Type,
+                    Recurring = false,
                 }, new StringEnumConverter(new CapitalCaseNamingStrategy())), Encoding.UTF8, "application/json")
             };
             request.Headers.TryAddWithoutValidation("Authorization", $"{AccountMenu.Save.ClientToken}:{AccountMenu.Save.ClientId}");
@@ -209,6 +210,7 @@ namespace Editor.Accounts {
                     },
                     ThumbnailUrl = Uri.EscapeUriString(OceanClient.FormatUrl(OceanClient.ThumbnailLocation, bundle, cosmetic.Name)),
                     Type = cosmetic.Type,
+                    Recurring = false,
                 }, new StringEnumConverter(new CapitalCaseNamingStrategy())), Encoding.UTF8, "application/json")
             };
             request.Headers.TryAddWithoutValidation("Authorization", $"{AccountMenu.Save.ClientToken}:{AccountMenu.Save.ClientId}");

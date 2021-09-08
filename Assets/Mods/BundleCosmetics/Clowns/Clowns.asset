@@ -23,25 +23,25 @@ MonoBehaviour:
     nose and bring out your inner goofball.
   Registered: 1
   Cosmetics:
-  - Id: 10000036
+  - Id: 10000010
     Name: Jester
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: a40c76bc0d3b3af429e3709accfd9d82, type: 2}
     Type: 0
-  - Id: 10000038
+  - Id: 10000012
     Name: Rainbow
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 8232c86aa7545b94d89e869e28ed1b63, type: 2}
     Type: 0
-  - Id: 10000040
+  - Id: 10000014
     Name: Rednose
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 989b7568c1773494082e7654c7187341, type: 2}
     Type: 0
-  - Id: 10000044
+  - Id: 10000016
     Name: Balloon
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1

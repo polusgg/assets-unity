@@ -22,13 +22,13 @@ MonoBehaviour:
   Description: 
   Registered: 1
   Cosmetics:
-  - Id: 10000000
+  - Id: 10000046
     Name: Submarine
     Author: c4239f1c-9131-4cf9-b2da-61f3629047ec
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: d7b189fd0ff64d8478178a5f93362de4, type: 2}
     Type: 1
-  - Id: 10000002
+  - Id: 10000048
     Name: Axolotl
     Author: c4239f1c-9131-4cf9-b2da-61f3629047ec
     Registered: 1

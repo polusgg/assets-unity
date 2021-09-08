@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Reflection;
+using System.Text;
 using System.Threading.Tasks;
 using Amazon.S3.Model;
 using Cosmetics;
@@ -148,7 +149,10 @@ namespace Assets.Editor.HatCreator {
                 foreach (Object t in targets) {
                     CosmeticBundleObject bundle = (CosmeticBundleObject) t;
                     bundle.Registered = false;
-                    foreach (CosmeticBundleObject.CosmeticData cosmetic in bundle.Cosmetics) cosmetic.Registered = false;
+                    foreach (CosmeticBundleObject.CosmeticData cosmetic in bundle.Cosmetics) {
+                        cosmetic.Registered = false;
+                        cosmetic.Id = 0;
+                    }
 
                     EditorUtility.SetDirty(t);
                 }
@@ -207,6 +211,11 @@ namespace Assets.Editor.HatCreator {
             if (task.IsFaulted) throw task.Exception;
             purgeList.Add(Uri.EscapeUriString(OceanClient.FormatName("Cosmetics", "*")));
             // purgeList.Add(Uri.EscapeUriString(OceanClient.FormatUrl("Cosmetics", bundle.Name, cosmetic.Name)));
+
+            task = OceanClient.Upload(new OceanClient(),
+                OceanClient.BundleBucket, (OceanClient.FormatUrl("Cosmetics", bundle.Name, cosmetic.Name + ".sha256")), new MemoryStream(Encoding.UTF8.GetBytes(buildResult.Hash)));
+            while (!task.IsCompleted)
+                yield return null;
 
             task = OceanClient.Upload(new OceanClient(),
                 OceanClient.BundleBucket, (OceanClient.FormatUrl("Cosmetics", bundle.Name, cosmetic.Name + ".json")), File.OpenRead(buildResult.JsonManifest));

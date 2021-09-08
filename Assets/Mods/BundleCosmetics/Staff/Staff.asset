@@ -23,13 +23,13 @@ MonoBehaviour:
     skids at #bot-commands!
   Registered: 1
   Cosmetics:
-  - Id: 10000064
+  - Id: 10000042
     Name: DP2 Thug Real
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 7d9d5cae92adc6d4a80b83dcacde6c5f, type: 2}
     Type: 0
-  - Id: 10000066
+  - Id: 10000044
     Name: Sanae Weird
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
     Registered: 1

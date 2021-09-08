@@ -35,7 +35,7 @@ namespace Editor.Accounts {
         public static string FormatName(string bundle, string cosmetic) => $"{bundle}/{cosmetic}";
         public static string FormatUrl(string endpoint, string bundle, string cosmetic) => $"{endpoint}/{FormatName(bundle, cosmetic)}";
 
-        public static async Task Upload(OceanClient client, string bucket, string location, FileStream stream) {
+        public static async Task Upload(OceanClient client, string bucket, string location, Stream stream) {
             PutObjectResponse por = await client.client.PutObjectAsync(new PutObjectRequest {
                 BucketName = bucket,
                 Key = location,

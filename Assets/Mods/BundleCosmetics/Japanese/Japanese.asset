@@ -23,31 +23,31 @@ MonoBehaviour:
     on the trip to accompany you on your journey to the East.
   Registered: 1
   Cosmetics:
-  - Id: 10000042
+  - Id: 10000018
     Name: Bonsai
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: a3f73cda3138cbe49ad50516a5d72058, type: 2}
     Type: 0
-  - Id: 10000052
+  - Id: 10000020
     Name: Geisha
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 12d118b644cd9ae41aeb601bf8fcae9f, type: 2}
     Type: 0
-  - Id: 10000046
+  - Id: 10000022
     Name: Koi
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 49b2077f533f7304f89768bd2c5b6241, type: 2}
     Type: 0
-  - Id: 10000048
+  - Id: 10000024
     Name: Origami
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 9873a486828645449a2fe339c0f666ba, type: 2}
     Type: 0
-  - Id: 10000050
+  - Id: 10000026
     Name: Sushi
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1

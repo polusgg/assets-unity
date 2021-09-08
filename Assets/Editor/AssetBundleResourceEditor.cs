@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
+using System.Text;
 using System.Threading.Tasks;
 using Editor.Accounts;
 using Newtonsoft.Json;
@@ -76,9 +77,18 @@ namespace Assets.Editor {
                 error = client.Exception;
                 goto error;
             }
+
+            byte[] hash = Encoding.UTF8.GetBytes(result.Hash);
+            client = OceanClient.Upload(ocean, OceanClient.BundleBucket, $"{resource.name}/{resource.name}.sha256", new MemoryStream(hash));
+            while (!client.IsCompleted) yield return null;
+            if (client.IsFaulted) {
+                error = client.Exception;
+                goto error;
+            }
             client = OceanClient.Purge(new[] {
                 $"{resource.name}/{resource.name}",
-                $"{resource.name}/{resource.name}.json"
+                $"{resource.name}/{resource.name}.json",
+                $"{resource.name}/{resource.name}.sha256"
             }, new[] { OceanClient.BundleBucket });
             while (!client.IsCompleted) yield return null;
             if (client.IsFaulted) {
@@ -121,6 +131,7 @@ namespace Assets.Editor {
             public AssetBundleResource DedupedResource;
             public string JsonManifest;
             public string AssetBundleLocation;
+            public string Hash;
         }
 
         public static BuildResult Build(AssetBundleResource resource, string buildRoot) {
@@ -171,6 +182,7 @@ namespace Assets.Editor {
                 return new BuildResult {
                     DedupedResource = dedupedResource,
                     AssetBundleLocation = $"{buildRoot}/{manifest.GetAllAssetBundles()[0]}",
+                    Hash = nodepolusSerializable.Hash,
                     Manifest = manifest,
                     JsonManifest = nodepolusJsonPath
                 };

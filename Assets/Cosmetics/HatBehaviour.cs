@@ -1,5 +1,6 @@
 using Cosmetics;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu(fileName = "HatBehaviour", menuName = "Create Resource - Hat", order = 0)]
 public class HatBehaviour : ScriptableObject, IBuyable {
@@ -23,12 +24,12 @@ public class HatBehaviour : ScriptableObject, IBuyable {
     // Token: 0x04000B57 RID: 2903
     public Sprite FloorImage;
 
-    [HideInInspector] public Sprite LeftClimbImage;
+    [FormerlySerializedAs("LeftClimbImage")] public Sprite SecondaryFrontImage;
 
-    [HideInInspector] public Sprite LeftFloorImage;
+    [FormerlySerializedAs("LeftFloorImage")] public Sprite SecondaryFloorImage;
 
     // Token: 0x04000B5A RID: 2906
-    [HideInInspector] public bool InFront;
+    public bool InFront;
 
     // Token: 0x04000B5B RID: 2907
     public bool NoBounce;

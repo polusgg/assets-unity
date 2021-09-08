@@ -23,31 +23,31 @@ MonoBehaviour:
     with this wild bundle.
   Registered: 1
   Cosmetics:
-  - Id: 10000054
+  - Id: 10000000
     Name: Hippopotamus
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: de6f9d05ef3885647a5997830a2223b2, type: 2}
     Type: 0
-  - Id: 10000056
+  - Id: 10000002
     Name: Koala
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 9dd22c8763224d44ab1266262b4bb0f5, type: 2}
     Type: 0
-  - Id: 10000058
+  - Id: 10000004
     Name: Lion
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: e38f5daaf9f6742488b015f9873d1cee, type: 2}
     Type: 0
-  - Id: 10000060
+  - Id: 10000006
     Name: Monkey
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: ffb634493b9e36c49b8c8a0ea20107f8, type: 2}
     Type: 0
-  - Id: 10000062
+  - Id: 10000008
     Name: Snake
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
     Registered: 1

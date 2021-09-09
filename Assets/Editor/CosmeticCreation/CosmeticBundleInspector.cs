@@ -120,6 +120,7 @@ namespace Assets.Editor.HatCreator {
             if (GUILayout.Button(fullyRegistered ? "Update bundle" : "Register bundle")) {
                 IEnumerator UploadEvery() {
                     foreach (Object t in targets) {
+                        ((CosmeticBundleObject) t).Setup();
                         if (targetObj.Cosmetics.Length == 0) {
                             EditorUtility.DisplayDialog("Registration failure", $"There are no cosmetics in {((CosmeticBundleObject) t).Name}", "cog");
                             yield break;
@@ -148,10 +149,13 @@ namespace Assets.Editor.HatCreator {
             ) {
                 foreach (Object t in targets) {
                     CosmeticBundleObject bundle = (CosmeticBundleObject) t;
+                    bundle.Setup();
                     bundle.Registered = false;
+                    bundle.uuid = "";
                     foreach (CosmeticBundleObject.CosmeticData cosmetic in bundle.Cosmetics) {
                         cosmetic.Registered = false;
                         cosmetic.Id = 0;
+                        cosmetic.uuid = "";
                     }
 
                     EditorUtility.SetDirty(t);

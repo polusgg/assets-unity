@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
   m_Name: Fast Food
   m_EditorClassIdentifier: 
+  uuid: da7a144c61634b23a7de3d81ff422620
   Name: Fast Food
   CoverArt: {fileID: 21300000, guid: 506e3f89b0e30b0408659e3c54502756, type: 3}
   Color:
@@ -23,31 +24,36 @@ MonoBehaviour:
     on calories, even higher on style points.
   Registered: 1
   Cosmetics:
-  - Id: 10000050
+  - Id: 10000068
+    uuid: 4a762285c47a4f399857ca21eba80e54
     Name: Burger
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 47cfb16ac31e8cd4890ca5bfbdb883f4, type: 2}
     Type: 0
-  - Id: 10000052
+  - Id: 10000070
+    uuid: 779d210ed65b46f0bbc5d2f23ad0e4ac
     Name: Donut
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: b348b3f36e88639478b0b6c34dcb6e09, type: 2}
     Type: 0
-  - Id: 10000054
+  - Id: 10000072
+    uuid: 66d44a6e5b4744d884b483722cf72503
     Name: Fries
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 80bd4a88486b80e428c4d1b7683b4704, type: 2}
     Type: 0
-  - Id: 10000056
+  - Id: 10000074
+    uuid: 60252002f77048c9b0f1cdd9f3183f63
     Name: Ice Cream
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 5e269e57602c3074ca39809f0719bb5e, type: 2}
     Type: 0
-  - Id: 10000058
+  - Id: 10000076
+    uuid: 40827fe1300640e8939929636e93b444
     Name: Pizza
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1

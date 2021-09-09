@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
   m_Name: Cutesy
   m_EditorClassIdentifier: 
+  uuid: 629767635dc644b084e240e3e83898f1
   Name: Cutesy
   CoverArt: {fileID: 21300000, guid: 2f4661db6d846a34c8e132f21bda4810, type: 3}
   Color:
@@ -22,7 +23,8 @@ MonoBehaviour:
   Description: 
   Registered: 1
   Cosmetics:
-  - Id: 10000040
+  - Id: 10000052
+    uuid: 70a3bd06c76347cbbaf01791672a1fd0
     Name: Poodle
     Author: 70dae216-59ca-43c8-8884-66dc31d1ed5a
     Registered: 1

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
   m_Name: Japanese
   m_EditorClassIdentifier: 
+  uuid: 4afb9a2a66724dbb8d1b15fb5d3265e2
   Name: Japanese
   CoverArt: {fileID: 21300000, guid: 269d48dab36a51b4fb60bf2125d33f65, type: 3}
   Color:
@@ -23,31 +24,36 @@ MonoBehaviour:
     on the trip to accompany you on your journey to the East.
   Registered: 1
   Cosmetics:
-  - Id: 10000018
+  - Id: 10000030
+    uuid: 24eb759af3164510ac09768f582ba28a
     Name: Bonsai
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: a3f73cda3138cbe49ad50516a5d72058, type: 2}
     Type: 0
-  - Id: 10000020
+  - Id: 10000032
+    uuid: 34a3b7db2ebb4d75b54cbcd16bcbd4d8
     Name: Geisha
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 12d118b644cd9ae41aeb601bf8fcae9f, type: 2}
     Type: 0
-  - Id: 10000022
+  - Id: 10000034
+    uuid: 46b346da1687471382990ec2c6353cd8
     Name: Koi
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 49b2077f533f7304f89768bd2c5b6241, type: 2}
     Type: 0
-  - Id: 10000024
+  - Id: 10000036
+    uuid: 0cd80d2409ce4ab29e31b9323fb14323
     Name: Origami
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 9873a486828645449a2fe339c0f666ba, type: 2}
     Type: 0
-  - Id: 10000026
+  - Id: 10000038
+    uuid: 33c71a89e19e475b91f7c5bdef15447c
     Name: Sushi
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1

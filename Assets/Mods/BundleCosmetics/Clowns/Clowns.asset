@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
   m_Name: Clowns
   m_EditorClassIdentifier: 
+  uuid: bb17b3bea5d14166ac74d0cc5143fde4
   Name: Clowns
   CoverArt: {fileID: 21300000, guid: f70d5f4b506e6094aa10184036bd1e6e, type: 3}
   Color:
@@ -23,25 +24,29 @@ MonoBehaviour:
     nose and bring out your inner goofball.
   Registered: 1
   Cosmetics:
-  - Id: 10000010
+  - Id: 10000018
+    uuid: 2041a7394afa458daad1585ca462c9c8
     Name: Jester
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: a40c76bc0d3b3af429e3709accfd9d82, type: 2}
     Type: 0
-  - Id: 10000012
+  - Id: 10000020
+    uuid: 2b513e387ea944a4881ba77c3af63e5c
     Name: Rainbow
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 8232c86aa7545b94d89e869e28ed1b63, type: 2}
     Type: 0
-  - Id: 10000014
+  - Id: 10000022
+    uuid: fc2f2469420747549ac2b349bdb4f59b
     Name: Rednose
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 989b7568c1773494082e7654c7187341, type: 2}
     Type: 0
-  - Id: 10000016
+  - Id: 10000024
+    uuid: 658f64cf63c84bf1a0995ea819126f6b
     Name: Balloon
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
     Registered: 1

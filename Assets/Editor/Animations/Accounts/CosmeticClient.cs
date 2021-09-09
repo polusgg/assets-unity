@@ -30,6 +30,7 @@ namespace Editor.Accounts {
                 BaseAddress = new Uri("http://sanae6.ca:2219/v1/")
                 // BaseAddress = new Uri("http://cosmetics.service.polus.gg:2219/v1/")
                 // BaseAddress = new Uri("http://159.203.86.28:2219/v1/")
+                // BaseAddress = new Uri("http://127.0.0.1:2219/v1/")
             };
 
             _client.DefaultRequestHeaders.Accept.Clear();
@@ -99,6 +100,7 @@ namespace Editor.Accounts {
                     Description = bundle.Description,
                     Price = int.Parse(bundle.Price.ToString("###.00", CultureInfo.InvariantCulture).Replace(".", "")),
                     ForSale = bundle.ForSale,
+                    Recurring = false,
                 }), Encoding.UTF8, "application/json")
             };
             request.Headers.TryAddWithoutValidation("Authorization", $"{AccountMenu.Save.ClientToken}:{AccountMenu.Save.ClientId}");
@@ -131,7 +133,8 @@ namespace Editor.Accounts {
                     Color = bundle.Color.ToRgba(),
                     Description = bundle.Description,
                     Price = int.Parse(bundle.Price.ToString("###.00", CultureInfo.InvariantCulture).Replace(".", "")),
-                    ForSale = bundle.ForSale
+                    ForSale = bundle.ForSale,
+                    Recurring = false,
                 }), Encoding.UTF8, "application/json")
             };
             
@@ -171,7 +174,6 @@ namespace Editor.Accounts {
                     },
                     ThumbnailUrl = Uri.EscapeUriString(OceanClient.FormatName(OceanClient.ThumbnailLocation, bundle)),
                     Type = cosmetic.Type,
-                    Recurring = false,
                 }, new StringEnumConverter(new CapitalCaseNamingStrategy())), Encoding.UTF8, "application/json")
             };
             request.Headers.TryAddWithoutValidation("Authorization", $"{AccountMenu.Save.ClientToken}:{AccountMenu.Save.ClientId}");
@@ -210,7 +212,6 @@ namespace Editor.Accounts {
                     },
                     ThumbnailUrl = Uri.EscapeUriString(OceanClient.FormatUrl(OceanClient.ThumbnailLocation, bundle, cosmetic.Name)),
                     Type = cosmetic.Type,
-                    Recurring = false,
                 }, new StringEnumConverter(new CapitalCaseNamingStrategy())), Encoding.UTF8, "application/json")
             };
             request.Headers.TryAddWithoutValidation("Authorization", $"{AccountMenu.Save.ClientToken}:{AccountMenu.Save.ClientId}");

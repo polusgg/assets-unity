@@ -19,14 +19,14 @@ MonoBehaviour:
   EpicId: 
   ClimbImage: {fileID: 21300000, guid: 15097c641ffde244b95ad2f8bd2d6de2, type: 3}
   FloorImage: {fileID: 21300000, guid: bdbadef02b8265b4ebe1eeb76dff8635, type: 3}
-  SecondaryFrontImage: {fileID: 0}
-  SecondaryFloorImage: {fileID: 0}
+  LeftClimbImage: {fileID: 0}
+  LeftFloorImage: {fileID: 0}
   InFront: 0
   NoBounce: 0
   NotInStore: 0
   Free: 0
   AltShader: {fileID: 0}
-  ChipOffset: {x: 0, y: 0}
+  ChipOffset: {x: -0.05, y: 0}
   LimitedMonth: 1
   LimitedYear: 1
   RelatedSkin: {fileID: 0}

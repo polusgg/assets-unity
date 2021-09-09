@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
   m_Name: Staff
   m_EditorClassIdentifier: 
+  uuid: 9783c29e6b864dafb2982f1908334cb1
   Name: Staff
   CoverArt: {fileID: 21300000, guid: b4921641705597b49b3a608615a66cd8, type: 3}
   Color:
@@ -23,13 +24,15 @@ MonoBehaviour:
     skids at #bot-commands!
   Registered: 1
   Cosmetics:
-  - Id: 10000042
+  - Id: 10000054
+    uuid: 05414b256be94eeba23c4b9c7f902304
     Name: DP2 Thug Real
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 7d9d5cae92adc6d4a80b83dcacde6c5f, type: 2}
     Type: 0
-  - Id: 10000044
+  - Id: 10000056
+    uuid: a8c9e0c33f4f4696a4e55364b355f9e0
     Name: Sanae Weird
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
     Registered: 1

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
   m_Name: Sports
   m_EditorClassIdentifier: 
+  uuid: f39098bffee645e48985865ff077614c
   Name: Sports
   CoverArt: {fileID: 21300000, guid: e9902ae6e0b110c449bdefcafdefb1ce, type: 3}
   Color:
@@ -23,31 +24,36 @@ MonoBehaviour:
     Find a way to express your passion for sports with this bundle!
   Registered: 1
   Cosmetics:
-  - Id: 10000028
+  - Id: 10000040
+    uuid: 3cace76bfa084886b9aad8853185ffc3
     Name: Basketball
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: dca3fbdb8fe0a14459146dd063f60391, type: 2}
     Type: 0
-  - Id: 10000030
+  - Id: 10000042
+    uuid: d2a8fb69cd694bc0af10a3d7b9b583e9
     Name: Golf
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: b1d89cd5945c92a44af3c97c85b4193e, type: 2}
     Type: 0
-  - Id: 10000032
+  - Id: 10000044
+    uuid: e548aca9f99f4c25adefd3779ff01752
     Name: American Football
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: b10c3b75cadb75c41ab46e3cec4858fe, type: 2}
     Type: 0
-  - Id: 10000034
+  - Id: 10000046
+    uuid: 63c9f61d655f40edad4b1f1e2172d95c
     Name: Soccer
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: a7b315a625352de4884cd51fe8af31f0, type: 2}
     Type: 0
-  - Id: 10000036
+  - Id: 10000048
+    uuid: 80501c3e859f462fa83753153aad27f0
     Name: Tennis
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
     Registered: 1

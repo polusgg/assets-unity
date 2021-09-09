@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
   m_Name: Frankenstein
   m_EditorClassIdentifier: 
+  uuid: 7f76ad920d264ece8048a411d88339c0
   Name: Frankenstein
   CoverArt: {fileID: 21300000, guid: f4cf84ef9a96ec74f9b004834ae64a9a, type: 3}
   Color:
@@ -24,25 +25,29 @@ MonoBehaviour:
     lobbies with it!
   Registered: 0
   Cosmetics:
-  - Id: 10000060
+  - Id: 10000078
+    uuid: 7ceecb3beac4466a86155296a66dca82
     Name: Brain in a Jar
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 443a035ceb492564e99df02286641226, type: 2}
     Type: 0
-  - Id: 10000062
+  - Id: 10000080
+    uuid: 2203a90748b94c01880d59784a65394e
     Name: Facehugger
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: b589ddc2955c58c4395c3e61b9745e98, type: 2}
     Type: 0
-  - Id: 10000064
+  - Id: 10000082
+    uuid: 2b532ad95d6144b08b6b57f2ce91805b
     Name: Frankenstein
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: a61e33e13e067a1499592abf80c06c12, type: 2}
     Type: 0
-  - Id: 10000066
+  - Id: 10000084
+    uuid: ec12db8d713d4228bc12218c89d19321
     Name: Parasite
     Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
     Registered: 0

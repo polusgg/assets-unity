@@ -24,9 +24,9 @@ public class HatBehaviour : ScriptableObject, IBuyable {
     // Token: 0x04000B57 RID: 2903
     public Sprite FloorImage;
 
-    [FormerlySerializedAs("LeftClimbImage")] public Sprite SecondaryFrontImage;
+    public Sprite LeftClimbImage;
 
-    [FormerlySerializedAs("LeftFloorImage")] public Sprite SecondaryFloorImage;
+    public Sprite LeftFloorImage;
 
     // Token: 0x04000B5A RID: 2906
     public bool InFront;

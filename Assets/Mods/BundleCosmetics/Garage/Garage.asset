@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
   m_Name: Garage
   m_EditorClassIdentifier: 
+  uuid: f51ebe51fdd7410f882b0bd9dd77c27c
   Name: Garage
   CoverArt: {fileID: 21300000, guid: afafe05bd6894e047acae21d59c1f327, type: 3}
   Color:
@@ -22,7 +23,8 @@ MonoBehaviour:
   Description: 
   Registered: 1
   Cosmetics:
-  - Id: 10000038
+  - Id: 10000050
+    uuid: 82804d0355cd40efa9446b30c5ab1516
     Name: Raccoon
     Author: 70dae216-59ca-43c8-8884-66dc31d1ed5a
     Registered: 1

@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
   m_Name: Time
   m_EditorClassIdentifier: 
+  uuid: e5204d4a295f491a95300ac742fbc39f
   Name: the
-  CoverArt: {fileID: 0}
+  CoverArt: {fileID: 21300000, guid: b8313f5da9383d84cafc37cfaac45a6b, type: 3}
   Color:
     serializedVersion: 2
     rgba: 4281431085

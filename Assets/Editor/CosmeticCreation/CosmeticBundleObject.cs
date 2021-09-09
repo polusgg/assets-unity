@@ -12,7 +12,7 @@ using Object = UnityEngine.Object;
 namespace Assets.Editor.HatCreator {
     [CreateAssetMenu(fileName = "CosmeticBundle", menuName = "Create Cosmetic Bundle", order = 1)]
     public class CosmeticBundleObject : ScriptableObject {
-        public GUID uuid;
+        [HideInInspector] public string uuid;
         [FormerlySerializedAs("BundleName")] public string Name;
         public Sprite CoverArt;
         public Color32 Color;
@@ -21,19 +21,19 @@ namespace Assets.Editor.HatCreator {
         [TextArea] public string Description;
         [HideInInspector] public bool Registered;
         [HideInInspector] public CosmeticData[] Cosmetics = Array.Empty<CosmeticData>();
-        public string SanitizedName => uuid.ToString();
+        public string SanitizedName => uuid;
 
-        private void OnEnable() {
-            if (uuid.Empty()) uuid = GUID.Generate();
+        public void Setup() {
+            if (string.IsNullOrEmpty(uuid)) uuid = Guid.NewGuid().ToString("N");
             foreach (CosmeticData cosmetic in Cosmetics) {
-                if (cosmetic.uuid.Empty()) cosmetic.uuid = GUID.Generate();
+                if (string.IsNullOrEmpty(cosmetic.uuid)) cosmetic.uuid = Guid.NewGuid().ToString("N");
             }
         }
 
         [Serializable]
         public class CosmeticData {
             public uint Id;
-            public GUID uuid;
+            public string uuid;
             public string Name = "New Cosmetic";
             public string Author = "";
 
@@ -99,7 +99,7 @@ namespace Assets.Editor.HatCreator {
                 }
             }
 
-            public string SanitizedName => uuid.ToString();
+            public string SanitizedName => uuid;
             // public string SanitizedName => new SnakeCaseNamingStrategy().GetPropertyName(Name.ToLower(), false);
 
             //ui

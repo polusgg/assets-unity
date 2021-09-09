@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
   m_Name: Pink Picnic
   m_EditorClassIdentifier: 
+  uuid: fa3f8aee5a19426bb85ee6d00c3c57e3
   Name: Pink Picnic
   CoverArt: {fileID: 21300000, guid: f0d81cbf82333bf4597710a82accb2e1, type: 3}
   Color:
@@ -19,36 +20,41 @@ MonoBehaviour:
     rgba: 9204211
   Price: 4.99
   ForSale: 1
-  Description: lorem ipsum placeholder lol
-  Registered: 0
+  Description: lorem ipsum placeholder lmao
+  Registered: 1
   Cosmetics:
-  - Id: 10000068
+  - Id: 10000008
+    uuid: a6ab6305fd4a4ec197346fb13294f0cb
     Name: Basket
     Author: 70dae216-59ca-43c8-8884-66dc31d1ed5a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 2fb1775f4e437b0459aaafbfe5407a5a, type: 2}
     Type: 0
-  - Id: 10000070
+  - Id: 10000010
+    uuid: 7bb51054f1664da3933db67118396b12
     Name: Bonnet
     Author: 70dae216-59ca-43c8-8884-66dc31d1ed5a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 68568b8fdfd6fe84c96079b033efac14, type: 2}
     Type: 0
-  - Id: 10000072
+  - Id: 10000012
+    uuid: a64753177c4a439c9256a99e926cc092
     Name: Obnoxiously Large Bow
     Author: 70dae216-59ca-43c8-8884-66dc31d1ed5a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 188a02d29270ed849b5430592e128ec7, type: 2}
     Type: 0
-  - Id: 10000074
+  - Id: 10000014
+    uuid: f19b71e4613845f9a4ae3ebf3e833362
     Name: Frills
     Author: 70dae216-59ca-43c8-8884-66dc31d1ed5a
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 398d3af6ec2307042a38f3e68c81feae, type: 2}
     Type: 0
-  - Id: 10000076
+  - Id: 10000016
+    uuid: 1f456eb384c64e3fad888d53fb4a364e
     Name: Sunhat
     Author: 70dae216-59ca-43c8-8884-66dc31d1ed5a
-    Registered: 0
+    Registered: 1
     Cosmetic: {fileID: 11400000, guid: a7eeec5e01723b84ebcc04a721ec28f7, type: 2}
     Type: 0

@@ -43,10 +43,10 @@ MonoBehaviour:
   - Id: 10000074
     Name: Frills
     Author: 70dae216-59ca-43c8-8884-66dc31d1ed5a
-    Registered: 0
+    Registered: 1
     Cosmetic: {fileID: 11400000, guid: 398d3af6ec2307042a38f3e68c81feae, type: 2}
     Type: 0
-  - Id: 0
+  - Id: 10000076
     Name: Sunhat
     Author: 70dae216-59ca-43c8-8884-66dc31d1ed5a
     Registered: 0

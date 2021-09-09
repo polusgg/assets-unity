@@ -12,24 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33a85397cd7f8c75d94da833c4e725d7, type: 3}
   m_Name: BonnetHat
   m_EditorClassIdentifier: 
-  MainImage: {fileID: 0}
-  BackImage: {fileID: 0}
+  MainImage: {fileID: 21300000, guid: 57eddfa50a99e9e45b2e1abbdf32026c, type: 3}
+  BackImage: {fileID: 21300000, guid: 66406415a16b9fb4fb838995fd5ae244, type: 3}
   LeftMainImage: {fileID: 0}
   LeftBackImage: {fileID: 0}
   EpicId: 
-  ClimbImage: {fileID: 0}
-  FloorImage: {fileID: 0}
-  LeftClimbImage: {fileID: 0}
-  LeftFloorImage: {fileID: 0}
+  ClimbImage: {fileID: 21300000, guid: 33bd1f0120253b94b8bf7884bb042bd9, type: 3}
+  FloorImage: {fileID: 21300000, guid: 50a6949f2626c63458ad31dc5957f384, type: 3}
+  SecondaryFrontImage: {fileID: 21300000, guid: 12bfe1ef4ca1acf4e899fff693528a0e,
+    type: 3}
+  SecondaryFloorImage: {fileID: 21300000, guid: c0702b74f9e8f7a4281a41cf4c952633,
+    type: 3}
   InFront: 0
   NoBounce: 0
   NotInStore: 0
   Free: 0
-  AltShader: {fileID: 0}
+  AltShader: {fileID: 2100000, guid: 8ce561ba342db06409affe04b015161b, type: 2}
   ChipOffset: {x: 0, y: 0}
   LimitedMonth: 1
   LimitedYear: 1
   RelatedSkin: {fileID: 0}
-  StoreName: 
+  StoreName: Pink Picnic
   ProductId: 
   Order: 0

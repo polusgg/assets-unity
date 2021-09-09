@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33a85397cd7f8c75d94da833c4e725d7, type: 3}
-  m_Name: HatBehaviour
+  m_Name: FrillsHat
   m_EditorClassIdentifier: 
-  MainImage: {fileID: 0}
+  MainImage: {fileID: 21300000, guid: 3fc38079ab0832847af9ae3d73dbeebc, type: 3}
   BackImage: {fileID: 0}
   LeftMainImage: {fileID: 0}
   LeftBackImage: {fileID: 0}
   EpicId: 
-  ClimbImage: {fileID: 0}
-  FloorImage: {fileID: 0}
-  LeftClimbImage: {fileID: 0}
-  LeftFloorImage: {fileID: 0}
+  ClimbImage: {fileID: 21300000, guid: 15097c641ffde244b95ad2f8bd2d6de2, type: 3}
+  FloorImage: {fileID: 21300000, guid: bdbadef02b8265b4ebe1eeb76dff8635, type: 3}
+  SecondaryFrontImage: {fileID: 0}
+  SecondaryFloorImage: {fileID: 0}
   InFront: 0
   NoBounce: 0
   NotInStore: 0
@@ -30,6 +30,6 @@ MonoBehaviour:
   LimitedMonth: 1
   LimitedYear: 1
   RelatedSkin: {fileID: 0}
-  StoreName: 
+  StoreName: Pink Picnic
   ProductId: 
   Order: 0

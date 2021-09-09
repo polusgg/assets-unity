@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33a85397cd7f8c75d94da833c4e725d7, type: 3}
-  m_Name: HatBehaviour
+  m_Name: SunhatHat
   m_EditorClassIdentifier: 
-  MainImage: {fileID: 0}
-  BackImage: {fileID: 0}
+  MainImage: {fileID: 21300000, guid: 06308c8f5ded7fc46aa5d8370086d4d6, type: 3}
+  BackImage: {fileID: 21300000, guid: fd8b77fe6723a494591929f8f3d107fd, type: 3}
   LeftMainImage: {fileID: 0}
   LeftBackImage: {fileID: 0}
   EpicId: 
-  ClimbImage: {fileID: 0}
-  FloorImage: {fileID: 0}
-  LeftClimbImage: {fileID: 0}
-  LeftFloorImage: {fileID: 0}
+  ClimbImage: {fileID: 21300000, guid: c17e738e4fe3293438192279f25f9cb3, type: 3}
+  FloorImage: {fileID: 21300000, guid: 788aff3a55b0e4b48a9936ccb90ff298, type: 3}
+  SecondaryFrontImage: {fileID: 0}
+  SecondaryFloorImage: {fileID: 0}
   InFront: 0
   NoBounce: 0
   NotInStore: 0

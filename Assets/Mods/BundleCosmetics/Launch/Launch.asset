@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
-  m_Name: Free Launch
+  m_Name: Launch
   m_EditorClassIdentifier: 
   uuid: 36c4cc0cfbc9449fabcf4ba441cb377a
   Name: Launch
@@ -56,6 +56,6 @@ MonoBehaviour:
     uuid: 60ad2d887e5745d6b5175cb1cc1e014e
     Name: Turtle
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
-    Registered: 0
+    Registered: 1
     Cosmetic: {fileID: 11400000, guid: 7a254ec626b294f4fa3f255037a2185d, type: 2}
     Type: 0

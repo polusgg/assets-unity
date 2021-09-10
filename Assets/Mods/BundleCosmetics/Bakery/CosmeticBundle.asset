@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
+  m_Name: CosmeticBundle
+  m_EditorClassIdentifier: 
+  uuid: 985037a40c7f4f2f88ae60683df74663
+  Name: Bakery
+  CoverArt: {fileID: 21300000, guid: 3d9999427a6034e49b26ef3dca5642cf, type: 3}
+  Color:
+    serializedVersion: 2
+    rgba: 6737151
+  Price: 4.99
+  ForSale: 1
+  Description: In the mood for savoring something sweet? Or do you feel like having
+    a salty snack? If you grab this bundle, you're in for a nice treat!
+  Registered: 1
+  Cosmetics:
+  - Id: 10000086
+    uuid: 9f2ba8f740a74383ae35cde5683178cc
+    Name: Cake
+    Author: 70621d64-cfe3-42b7-b0c8-ca9c4d59acc7
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 18bb2babc9ff6ed43a9dc6eff68049e9, type: 2}
+    Type: 0
+  - Id: 10000088
+    uuid: 8e54f68e4d2343cda78516e05eb651e3
+    Name: CinnamonBun
+    Author: 70621d64-cfe3-42b7-b0c8-ca9c4d59acc7
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: ede296e94c3aaea49a11c5c7fb908ee4, type: 2}
+    Type: 0
+  - Id: 10000090
+    uuid: 64e0ddca71224c16b13ae7b927db8a4d
+    Name: Cookies
+    Author: 70621d64-cfe3-42b7-b0c8-ca9c4d59acc7
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: a377d4259723c4a419fa495eb6118b03, type: 2}
+    Type: 0
+  - Id: 10000092
+    uuid: c834c73b981041b5adf29d86f4b440bb
+    Name: Croissant
+    Author: 70621d64-cfe3-42b7-b0c8-ca9c4d59acc7
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 30339c6a5fd9a504dab232bb0544a009, type: 2}
+    Type: 0
+  - Id: 10000094
+    uuid: ed8fca745e15448da4d8827d0e4eedc6
+    Name: Pretzel
+    Author: 70621d64-cfe3-42b7-b0c8-ca9c4d59acc7
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 8cc34422b61dc8f4089b35a50a79cb26, type: 2}
+    Type: 0

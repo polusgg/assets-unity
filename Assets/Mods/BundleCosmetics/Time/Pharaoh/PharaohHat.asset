@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33a85397cd7f8c75d94da833c4e725d7, type: 3}
-  m_Name: AxolotlHat
+  m_Name: PharaohHat
   m_EditorClassIdentifier: 
-  MainImage: {fileID: 21300000, guid: c9a9b72ead1d965468053184f07bb361, type: 3}
-  BackImage: {fileID: 0}
+  MainImage: {fileID: 21300000, guid: 41ca25a5bed2e5b4a9e5cc66c1edb651, type: 3}
+  BackImage: {fileID: 21300000, guid: d4c5cedab9487dd4d8abf74ca591f3af, type: 3}
   LeftMainImage: {fileID: 0}
   LeftBackImage: {fileID: 0}
   EpicId: 
   ClimbImage: {fileID: 0}
-  FloorImage: {fileID: 21300000, guid: 3ab8ea5120efea045a760a3792f3fb7b, type: 3}
+  FloorImage: {fileID: 21300000, guid: 17a0beb3adc8bf34897c7a46a2b438db, type: 3}
   LeftClimbImage: {fileID: 0}
   LeftFloorImage: {fileID: 0}
   InFront: 0
@@ -30,6 +30,6 @@ MonoBehaviour:
   LimitedMonth: 1
   LimitedYear: 1
   RelatedSkin: {fileID: 0}
-  StoreName: Submerged
+  StoreName: Time
   ProductId: 
   Order: 0

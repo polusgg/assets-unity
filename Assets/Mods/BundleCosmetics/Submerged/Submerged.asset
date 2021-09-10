@@ -12,28 +12,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
   m_Name: Submerged
   m_EditorClassIdentifier: 
-  uuid: d444fe1a7577431790498ad3b80264bd
+  uuid: 25057c7b3eef4816a54f553b10ef3d79
   Name: Submerged
-  CoverArt: {fileID: 21300000, guid: b366eb357c4217d48a729719af563320, type: 3}
+  CoverArt: {fileID: 21300000, guid: 7407a21d448264340aff600621db8a55, type: 3}
   Color:
     serializedVersion: 2
-    rgba: 4294939648
-  Price: 69.42021
+    rgba: 4294466600
+  Price: 7.99
   ForSale: 1
-  Description: 
-  Registered: 1
+  Description: Dive into a world of fun with this deep sea bundle based off of the
+    Submerged map!
+  Registered: 0
   Cosmetics:
-  - Id: 10000004
-    uuid: 11c87801b4034ed9afa68aff384010f3
+  - Id: 10000124
+    uuid: 8422acecbc37476e975ea769db1fba4d
     Name: Submarine
     Author: c4239f1c-9131-4cf9-b2da-61f3629047ec
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: d7b189fd0ff64d8478178a5f93362de4, type: 2}
     Type: 1
-  - Id: 10000006
-    uuid: 3cb1e35f00cc4d8f9e16779156c00177
+  - Id: 10000126
+    uuid: bb82d7f3ed104aed8968e6bc110a3356
     Name: Axolotl
     Author: c4239f1c-9131-4cf9-b2da-61f3629047ec
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 577d698273a63d64aa9136fde0134ba3, type: 2}
+    Type: 0
+  - Id: 10000128
+    uuid: 26d0b0f29245448ca16250b852945088
+    Name: Buoy Ring
+    Author: c4239f1c-9131-4cf9-b2da-61f3629047ec
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: a6ec65a23289c1b49a0d7e6809176508, type: 2}
+    Type: 0
+  - Id: 10000130
+    uuid: e535feef231d438eb9ff00bb9cee6c90
+    Name: Diving Helm
+    Author: c4239f1c-9131-4cf9-b2da-61f3629047ec
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 5ee552044e455fb4eb29b5f004d9e20a, type: 2}
+    Type: 0
+  - Id: 10000132
+    uuid: de06dc0544b94c449162a784c7a4874b
+    Name: Shark
+    Author: c4239f1c-9131-4cf9-b2da-61f3629047ec
+    Registered: 0
+    Cosmetic: {fileID: 11400000, guid: 7090c1c9282e35842bcd6dd59016ba60, type: 2}
     Type: 0

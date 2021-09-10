@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33a85397cd7f8c75d94da833c4e725d7, type: 3}
-  m_Name: AxolotlHat
+  m_Name: BuoyHat
   m_EditorClassIdentifier: 
-  MainImage: {fileID: 21300000, guid: c9a9b72ead1d965468053184f07bb361, type: 3}
+  MainImage: {fileID: 21300000, guid: e15c4974c1830d74fb2d155303142dd3, type: 3}
   BackImage: {fileID: 0}
   LeftMainImage: {fileID: 0}
   LeftBackImage: {fileID: 0}
   EpicId: 
   ClimbImage: {fileID: 0}
-  FloorImage: {fileID: 21300000, guid: 3ab8ea5120efea045a760a3792f3fb7b, type: 3}
+  FloorImage: {fileID: 21300000, guid: 4a2d0a870c2cd8c43911292c8ca97cf5, type: 3}
   LeftClimbImage: {fileID: 0}
   LeftFloorImage: {fileID: 0}
   InFront: 0

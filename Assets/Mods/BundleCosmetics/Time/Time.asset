@@ -13,13 +13,49 @@ MonoBehaviour:
   m_Name: Time
   m_EditorClassIdentifier: 
   uuid: e5204d4a295f491a95300ac742fbc39f
-  Name: the
-  CoverArt: {fileID: 21300000, guid: b8313f5da9383d84cafc37cfaac45a6b, type: 3}
+  Name: Time
+  CoverArt: {fileID: 21300000, guid: 4c11bff292b755f4d94f03ffe762bf23, type: 3}
   Color:
     serializedVersion: 2
-    rgba: 4281431085
-  Price: 0
-  ForSale: 0
-  Description: description goes here
-  Registered: 0
-  Cosmetics: []
+    rgba: 4294924544
+  Price: 4.99
+  ForSale: 1
+  Description: Get a blast from the past with hats taken all throughout time in the
+    Time bundle!
+  Registered: 1
+  Cosmetics:
+  - Id: 10000114
+    uuid: 707178b145a246da99ecd8ab0c07d349
+    Name: Dino
+    Author: c4239f1c-9131-4cf9-b2da-61f3629047ec
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 1937245b1de5d19488af7941d632375e, type: 2}
+    Type: 0
+  - Id: 10000116
+    uuid: 8061f9619784409cbafc5c9b9db50486
+    Name: Greek Wreath
+    Author: c4239f1c-9131-4cf9-b2da-61f3629047ec
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 4e657a049a5aeca41b57f23aef6e402b, type: 2}
+    Type: 0
+  - Id: 10000118
+    uuid: c1fefd36d86e4daf931de960db5bf36e
+    Name: Pharaoh
+    Author: c4239f1c-9131-4cf9-b2da-61f3629047ec
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 58d698c53182ded47babaac4adede134, type: 2}
+    Type: 0
+  - Id: 10000120
+    uuid: b67472a8695549df9cb80b7bac812a64
+    Name: Roman Helm
+    Author: c4239f1c-9131-4cf9-b2da-61f3629047ec
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 8b7296e6f7f455240bb87c17b3a7bec2, type: 2}
+    Type: 0
+  - Id: 10000122
+    uuid: 3115f5be80284415b18b84bc7167d833
+    Name: Steampunk Tophat
+    Author: c4239f1c-9131-4cf9-b2da-61f3629047ec
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 30f47e70f112c124a9543c574a8beb80, type: 2}
+    Type: 0

@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33a85397cd7f8c75d94da833c4e725d7, type: 3}
-  m_Name: DogHat
+  m_Name: PrisonerHat
   m_EditorClassIdentifier: 
-  MainImage: {fileID: 21300000, guid: 9e85d8fd35ef55645b70aac4d1d4c73f, type: 3}
-  BackImage: {fileID: 21300000, guid: 15105a91915baa741843dfcdabe4f9a9, type: 3}
+  MainImage: {fileID: 21300000, guid: cae60019885379542804b6029d74671c, type: 3}
+  BackImage: {fileID: 0}
   LeftMainImage: {fileID: 0}
   LeftBackImage: {fileID: 0}
   EpicId: 
-  ClimbImage: {fileID: 21300000, guid: fb67457e7ce70e747906d8a0001366c7, type: 3}
-  FloorImage: {fileID: 21300000, guid: 4e037c132b617f741b7cf8288d446970, type: 3}
+  ClimbImage: {fileID: 21300000, guid: 1016f4274bb0d20449dd717b83479f2c, type: 3}
+  FloorImage: {fileID: 21300000, guid: faf00402e32c6114cb8004637a5a459d, type: 3}
   LeftClimbImage: {fileID: 0}
   LeftFloorImage: {fileID: 0}
   InFront: 0
@@ -30,6 +30,6 @@ MonoBehaviour:
   LimitedMonth: 1
   LimitedYear: 1
   RelatedSkin: {fileID: 0}
-  StoreName: Free
+  StoreName: Launch
   ProductId: 
   Order: 0

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uuid: 9783c29e6b864dafb2982f1908334cb1
   Name: Staff
-  CoverArt: {fileID: 21300000, guid: b4921641705597b49b3a608615a66cd8, type: 3}
+  CoverArt: {fileID: 21300000, guid: 9dbf9c4b06f8d3348933c71fcbb5d75b, type: 3}
   Color:
     serializedVersion: 2
     rgba: 16711920

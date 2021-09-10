@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
+  m_Name: Free Launch
+  m_EditorClassIdentifier: 
+  uuid: 36c4cc0cfbc9449fabcf4ba441cb377a
+  Name: Launch
+  CoverArt: {fileID: 21300000, guid: 2d2cc0a6a340b3742855c84e24e77fa9, type: 3}
+  Color:
+    serializedVersion: 2
+    rgba: 4283265667
+  Price: 0
+  ForSale: 0
+  Description: Freebies! Grab this bundle for FREE with an ever-growing list of various
+    and distinct hats.
+  Registered: 1
+  Cosmetics:
+  - Id: 10000026
+    uuid: 1c26591ddadf485da5fe15457b7fa12a
+    Name: Sleepy Cat
+    Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 1b564d9625dddac43888c9e065f73bad, type: 2}
+    Type: 0
+  - Id: 10000028
+    uuid: 3900cb195c944fa2b0395c4e81f2a0ff
+    Name: Dog
+    Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 646998960bb4c5d458a883ffe8b5d8c8, type: 2}
+    Type: 0
+  - Id: 10000096
+    uuid: ccc383e255fc4a65b366113a4daffa60
+    Name: Apple & Arrow
+    Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: f03949d41435f47459447108782578a1, type: 2}
+    Type: 0
+  - Id: 10000098
+    uuid: 9d50849394314f00b6d4946c1af83a25
+    Name: Prisoner
+    Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 2ed3ed883e14cc14cbf4747ba12ed878, type: 2}
+    Type: 0
+  - Id: 10000100
+    uuid: 60ad2d887e5745d6b5175cb1cc1e014e
+    Name: Turtle
+    Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
+    Registered: 0
+    Cosmetic: {fileID: 11400000, guid: 7a254ec626b294f4fa3f255037a2185d, type: 2}
+    Type: 0

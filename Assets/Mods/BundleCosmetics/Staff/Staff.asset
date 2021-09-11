@@ -38,3 +38,17 @@ MonoBehaviour:
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 06472ad454faa044686b2e798905260e, type: 2}
     Type: 0
+  - Id: 10000134
+    uuid: 076c00676ca640b8b52500999af7324b
+    Name: Sussy Meal
+    Author: c4239f1c-9131-4cf9-b2da-61f3629047ec
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: c2597bbe6679fcf46b9ab1833225ae6b, type: 2}
+    Type: 0
+  - Id: 10000136
+    uuid: 9f18bf1a1fe8422a9ac90c56de1891a8
+    Name: Basil
+    Author: c4239f1c-9131-4cf9-b2da-61f3629047ec
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 0d750fcb4cb556a44860db6428701b80, type: 2}
+    Type: 0

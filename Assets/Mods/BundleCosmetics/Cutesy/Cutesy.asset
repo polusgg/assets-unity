@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uuid: 629767635dc644b084e240e3e83898f1
   Name: Cutesy
-  CoverArt: {fileID: 21300000, guid: 2f4661db6d846a34c8e132f21bda4810, type: 3}
+  CoverArt: {fileID: 21300000, guid: dc867868bcc0b98439f956ec4234574e, type: 3}
   Color:
     serializedVersion: 2
     rgba: 4293381097
-  Price: 9000.01
-  ForSale: 0
-  Description: 
+  Price: 6.99
+  ForSale: 1
+  Description: Have fun and look cute while you do it with this comfy bundle!
   Registered: 1
   Cosmetics:
   - Id: 10000052
@@ -30,3 +30,38 @@ MonoBehaviour:
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: d14a967d225a6144da4dcd8b214747be, type: 2}
     Type: 1
+  - Id: 10000138
+    uuid: 091d0ed49e0e4c4f88c0c158f4ee2bc1
+    Name: Blond Wig Bow
+    Author: c4239f1c-9131-4cf9-b2da-61f3629047ec
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 1c1ca7e4667e21a4baa4e70f9db71739, type: 2}
+    Type: 0
+  - Id: 10000140
+    uuid: 840112e61508472796d829ad8eebbf32
+    Name: Bunny Ears
+    Author: c4239f1c-9131-4cf9-b2da-61f3629047ec
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 9b0c739500bc80543975f9665ad3c2db, type: 2}
+    Type: 0
+  - Id: 10000142
+    uuid: 3f9f228fcc19422b8bf094501b7d8dd3
+    Name: Cat Ear Headphones
+    Author: c4239f1c-9131-4cf9-b2da-61f3629047ec
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 20d75631dd4c59f408f15ed02a1bccd3, type: 2}
+    Type: 0
+  - Id: 10000144
+    uuid: ecefbb61547f45878398015c0254dcc9
+    Name: Fluffy Muffs
+    Author: c4239f1c-9131-4cf9-b2da-61f3629047ec
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: f0a70efd87bc42d4cb4eb9402fbd22c5, type: 2}
+    Type: 0
+  - Id: 10000146
+    uuid: 3702cd6bb89d4021b869fe5eeec70e63
+    Name: Purple Scarf
+    Author: c4239f1c-9131-4cf9-b2da-61f3629047ec
+    Registered: 0
+    Cosmetic: {fileID: 11400000, guid: 9a789e3625946ad4bafcc28b604eda69, type: 2}
+    Type: 0

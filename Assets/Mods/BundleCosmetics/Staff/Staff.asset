@@ -52,3 +52,10 @@ MonoBehaviour:
     Registered: 1
     Cosmetic: {fileID: 11400000, guid: 0d750fcb4cb556a44860db6428701b80, type: 2}
     Type: 0
+  - Id: 10000148
+    uuid: 9342bc927ede49af85e6f4745c682993
+    Name: Bee
+    Author: 5c33ad72-a7ef-4259-8d1d-5bca0cfb45d9
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 9707ce172f496f14d917e9ff0f4a3486, type: 2}
+    Type: 1

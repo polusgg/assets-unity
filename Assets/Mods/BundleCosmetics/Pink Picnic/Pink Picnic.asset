@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uuid: fa3f8aee5a19426bb85ee6d00c3c57e3
   Name: Pink Picnic
-  CoverArt: {fileID: 21300000, guid: f0d81cbf82333bf4597710a82accb2e1, type: 3}
+  CoverArt: {fileID: 21300000, guid: 8edc4bfb6f30ec64e93a342bdda40589, type: 3}
   Color:
     serializedVersion: 2
     rgba: 9204211
   Price: 4.99
   ForSale: 1
-  Description: lorem ipsum placeholder lmao
+  Description: Enjoy a stroll in the park with this lovely pink bundle. Get your
+    friends and enjoy snacks, sun, and fun!
   Registered: 1
   Cosmetics:
   - Id: 10000008

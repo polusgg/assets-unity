@@ -19,7 +19,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4283265667
   Price: 0
-  ForSale: 0
+  ForSale: 1
   Description: Freebies! Grab this bundle for FREE with an ever-growing list of various
     and distinct hats.
   Registered: 1

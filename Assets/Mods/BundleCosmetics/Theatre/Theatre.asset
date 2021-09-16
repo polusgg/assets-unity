@@ -14,18 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uuid: 
   Name: Theatre
-  CoverArt: {fileID: 0}
+  CoverArt: {fileID: 21300000, guid: 8c6c81850830e2a418994ed71e0f2abe, type: 3}
   Color:
     serializedVersion: 2
     rgba: 12342903
-  Price: 5.99
+  Price: 3.99
   ForSale: 0
-  Description: 
+  Description: Prepare for your most deadly magnum opus with this theatre themed
+    bundle, whether through magic, musical number, and more!
   Registered: 0
   Cosmetics:
   - Id: 0
     uuid: 
-    Name: Magician Top Hat
+    Name: Magician
     Author: Neptune
     Registered: 0
     Cosmetic: {fileID: 11400000, guid: 6eb72c23af8bddf42a7cb927d1fa7d0e, type: 2}
@@ -39,7 +40,7 @@ MonoBehaviour:
     Type: 0
   - Id: 0
     uuid: 
-    Name: Comedydrama Mask
+    Name: Comedydrama
     Author: 
     Registered: 0
     Cosmetic: {fileID: 0}

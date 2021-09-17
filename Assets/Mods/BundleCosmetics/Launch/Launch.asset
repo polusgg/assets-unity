@@ -63,6 +63,6 @@ MonoBehaviour:
     uuid: 27dc5a6d88834d75add5cefc0792b4e9
     Name: Soda
     Author: 70621d64-cfe3-42b7-b0c8-ca9c4d59acc7
-    Registered: 0
+    Registered: 1
     Cosmetic: {fileID: 11400000, guid: ec015d9ae923e3443ba2eb25649f2b2d, type: 2}
     Type: 0

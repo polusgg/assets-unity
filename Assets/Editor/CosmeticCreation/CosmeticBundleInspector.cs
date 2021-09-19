@@ -97,12 +97,32 @@ namespace Assets.Editor.HatCreator {
                     EditorGUILayout.Toggle(cosmetic.Registered);
                     EditorGUILayout.EndHorizontal();
                     GUILayout.BeginHorizontal();
-                    if (!cosmetic.Registered) {
-                        if (GUILayout.Button("Delete")) {
-                            targetObj.Cosmetics = targetObj.Cosmetics.Where((_, j) => i != j).ToArray();
-                            i--;
-                        }
-                    } else {
+
+                    if (GUILayout.Button("Delete") &&
+                        EditorUtility.DisplayDialog(
+                            $"Delete {cosmetic.Name}",
+                            $"Delete {cosmetic.Name} from the {targetObj.Name} bundle?",
+                            "Sure babe",
+                            "what no wtf"
+                        ) &&
+                        EditorUtility.DisplayDialog(
+                            $"Delete {cosmetic.Name}",
+                            $"Are you sure",
+                            "Yeah lol",
+                            "Nvm"
+                        ) &&
+                        EditorUtility.DisplayDialog(
+                            $"Deletarune {cosmetic.Name}",
+                            $"No cap???",
+                            "🚫🧢 (yiss)",
+                            "🧢 (na)"
+                        )
+                    ) {
+                        targetObj.Cosmetics = targetObj.Cosmetics.Where((_, j) => i != j).ToArray();
+                        i--;
+                    }
+
+                    if (cosmetic.Registered) {
                         if (GUILayout.Button("Repair collisions")) {
                             EditorCoroutineUtility.StartCoroutineOwnerless(Fix(targetObj, cosmetic));
                         }
@@ -135,7 +155,7 @@ namespace Assets.Editor.HatCreator {
 
             GUILayout.Space(100);
 
-            if (targets.Any(bundle => ((CosmeticBundleObject)bundle).Registered || ((CosmeticBundleObject)bundle).Cosmetics.Any(cosmetic => cosmetic.Registered))
+            if (targets.Any(bundle => ((CosmeticBundleObject) bundle).Registered || ((CosmeticBundleObject) bundle).Cosmetics.Any(cosmetic => cosmetic.Registered))
                 && GUILayout.Button($"DEBUG: Unregister Bundle{(targets.Length > 1 ? "s" : "")}")
                 && EditorUtility.DisplayDialog(
                     "Unregister bundle",
@@ -191,7 +211,7 @@ namespace Assets.Editor.HatCreator {
                 yield break;
             }
 
-            cosmetic.CosmeticBundleName = bundle.Name; 
+            cosmetic.CosmeticBundleName = bundle.Name;
             EditorUtility.SetDirty(cosmetic.Cosmetic);
             AssetDatabase.SaveAssets();
             AssetBundleResource bundleResource = CreateInstance<AssetBundleResource>();
@@ -371,7 +391,7 @@ namespace Assets.Editor.HatCreator {
                 OceanClient.FormatName(bundle.Name, "cover.png"), File.OpenRead(assetPath));
             while (!task.IsCompleted) yield return null;
             if (task.IsFaulted) throw task.Exception;
-            
+
             purgeList.Add(Uri.EscapeUriString(OceanClient.FormatName(bundle.Name, "*")));
 
             task = bundle.Registered ? CosmeticClient.Client.UpdateBundle(bundle) : CosmeticClient.Client.UploadBundle(bundle);

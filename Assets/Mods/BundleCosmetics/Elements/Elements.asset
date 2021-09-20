@@ -13,13 +13,41 @@ MonoBehaviour:
   m_Name: Elements
   m_EditorClassIdentifier: 
   uuid: 
-  Name: 
+  Name: Elements
   CoverArt: {fileID: 0}
   Color:
     serializedVersion: 2
-    rgba: 0
-  Price: 0
+    rgba: 3854725
+  Price: 3.99
   ForSale: 0
-  Description: 
+  Description: Don the four classical elements in style with this hot and cool bundle!
   Registered: 0
-  Cosmetics: []
+  Cosmetics:
+  - Id: 0
+    uuid: 
+    Name: Air
+    Author: Neptune
+    Registered: 0
+    Cosmetic: {fileID: 11400000, guid: b1e1f3013204e814da3d176b7519ec3f, type: 2}
+    Type: 0
+  - Id: 0
+    uuid: 
+    Name: Earth
+    Author: Neptune
+    Registered: 0
+    Cosmetic: {fileID: 11400000, guid: c72a894da5aebb342a7e47264c87ae0c, type: 2}
+    Type: 0
+  - Id: 0
+    uuid: 
+    Name: Fire
+    Author: Neptune
+    Registered: 0
+    Cosmetic: {fileID: 11400000, guid: 85dfd913cf42540499c2ac0e0bdf70b9, type: 2}
+    Type: 0
+  - Id: 0
+    uuid: 
+    Name: Water
+    Author: Neptune
+    Registered: 0
+    Cosmetic: {fileID: 11400000, guid: 73535f9c33d1dc4459adca8fc65860c3, type: 2}
+    Type: 0

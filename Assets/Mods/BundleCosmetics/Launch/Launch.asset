@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uuid: 36c4cc0cfbc9449fabcf4ba441cb377a
   Name: Launch
-  CoverArt: {fileID: 21300000, guid: 2d2cc0a6a340b3742855c84e24e77fa9, type: 3}
+  CoverArt: {fileID: 21300000, guid: 331686a80355c1a46aafcb06d81ad3af, type: 3}
   Color:
     serializedVersion: 2
     rgba: 4283265667

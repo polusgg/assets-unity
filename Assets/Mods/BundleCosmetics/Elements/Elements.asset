@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uuid: 
   Name: Elements
-  CoverArt: {fileID: 0}
+  CoverArt: {fileID: 21300000, guid: c56ee9a0bdea5194d815a066f5ee4dd7, type: 3}
   Color:
     serializedVersion: 2
     rgba: 3854725

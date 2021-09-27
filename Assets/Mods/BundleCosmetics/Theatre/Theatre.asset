@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
   m_Name: Theatre
   m_EditorClassIdentifier: 
-  uuid: 
+  uuid: 593fdba2d3fd4970aec87d3b5b437d45
   Name: Theatre
   CoverArt: {fileID: 21300000, guid: 68da6c4806b56524899ec86268bec9c2, type: 3}
   Color:
@@ -24,31 +24,31 @@ MonoBehaviour:
     bundle, whether through magic, musical number, and more!
   Registered: 0
   Cosmetics:
-  - Id: 0
-    uuid: 
+  - Id: 10000152
+    uuid: 21082823b0e446a79705e6d655d05f96
     Name: Magician
     Author: 'd9cde231-b552-45b0-869a-c5f7ff5da8fb '
-    Registered: 0
+    Registered: 1
     Cosmetic: {fileID: 11400000, guid: 6eb72c23af8bddf42a7cb927d1fa7d0e, type: 2}
     Type: 0
-  - Id: 0
-    uuid: 
+  - Id: 10000154
+    uuid: 4ebb337ffbbb4423baceef46cac778c0
     Name: Mime
     Author: 'd9cde231-b552-45b0-869a-c5f7ff5da8fb '
-    Registered: 0
-    Cosmetic: {fileID: 0}
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 7619f6dc39eea0040a3d8025b53f0313, type: 2}
     Type: 0
-  - Id: 0
-    uuid: 
+  - Id: 10000156
+    uuid: 717dc43064d64828bd2a0c63ea30c5d9
     Name: Comedydrama
     Author: 'd9cde231-b552-45b0-869a-c5f7ff5da8fb '
-    Registered: 0
-    Cosmetic: {fileID: 0}
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: 572b1b0997d2e9e4099565e661ec94ba, type: 2}
     Type: 0
-  - Id: 0
-    uuid: 
+  - Id: 10000158
+    uuid: 0b5514e9da524743baa215e9ed56d386
     Name: Music Notes
     Author: 'd9cde231-b552-45b0-869a-c5f7ff5da8fb '
     Registered: 0
-    Cosmetic: {fileID: 0}
+    Cosmetic: {fileID: 11400000, guid: d5e825272563eab4d95904b2b31c4189, type: 2}
     Type: 0

@@ -22,7 +22,7 @@ MonoBehaviour:
   ForSale: 0
   Description: Prepare for your most deadly magnum opus with this theatre themed
     bundle, whether through magic, musical number, and more!
-  Registered: 0
+  Registered: 1
   Cosmetics:
   - Id: 10000152
     uuid: 21082823b0e446a79705e6d655d05f96
@@ -49,6 +49,6 @@ MonoBehaviour:
     uuid: 0b5514e9da524743baa215e9ed56d386
     Name: Music Notes
     Author: 'd9cde231-b552-45b0-869a-c5f7ff5da8fb '
-    Registered: 0
+    Registered: 1
     Cosmetic: {fileID: 11400000, guid: d5e825272563eab4d95904b2b31c4189, type: 2}
     Type: 0

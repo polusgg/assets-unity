@@ -21,7 +21,7 @@ MonoBehaviour:
   Price: 3.99
   ForSale: 0
   Description: Don the four classical elements in style with this hot and cool bundle!
-  Registered: 0
+  Registered: 1
   Cosmetics:
   - Id: 10000160
     uuid: 36ae711938654221b0de50e15884d8b3
@@ -48,6 +48,6 @@ MonoBehaviour:
     uuid: 2b5d87c231e3477a8cfbf22ace14d44a
     Name: Water
     Author: 'd9cde231-b552-45b0-869a-c5f7ff5da8fb '
-    Registered: 0
+    Registered: 1
     Cosmetic: {fileID: 11400000, guid: 73535f9c33d1dc4459adca8fc65860c3, type: 2}
     Type: 0

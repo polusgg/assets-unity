@@ -22,40 +22,40 @@ MonoBehaviour:
   ForSale: 1
   Description: Let the creepy crawlies take over and go bug your fellow crewmates
     with this bug bundle!
-  Registered: 0
+  Registered: 1
   Cosmetics:
-  - Id: 0
+  - Id: 10000178
     uuid: f5d605170c704eada17a1d3a1f310cdc
     Name: Butterfly
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
-    Registered: 0
+    Registered: 1
     Cosmetic: {fileID: 11400000, guid: 951b8a5e6563e9a4a82bcc71ca98d391, type: 2}
     Type: 0
-  - Id: 0
+  - Id: 10000180
     uuid: f9554043194946b5ba111c330dc8613d
     Name: Caterpillar
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
-    Registered: 0
+    Registered: 1
     Cosmetic: {fileID: 11400000, guid: c050adbfac3b89a42941422d0888b355, type: 2}
     Type: 0
-  - Id: 0
+  - Id: 10000182
     uuid: 5153d78107f74b55a9edfb62b1c17976
     Name: Ladybug
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
-    Registered: 0
+    Registered: 1
     Cosmetic: {fileID: 11400000, guid: a0ef19c5a69d00f42b3236b2c10662e7, type: 2}
     Type: 0
-  - Id: 0
+  - Id: 10000184
     uuid: faf150118d04482596f9c4db094ff02d
     Name: Spider
     Author: 8caac978-8b5b-4f87-a94d-59dfbc3f870a
-    Registered: 0
+    Registered: 1
     Cosmetic: {fileID: 11400000, guid: 10ade86869657c94d81c35785b44681a, type: 2}
     Type: 0
-  - Id: 0
+  - Id: 10000186
     uuid: 306f78e5e50c4b47ac14f1a94fa4c94a
     Name: Bee
     Author: 70dae216-59ca-43c8-8884-66dc31d1ed5a
-    Registered: 0
-    Cosmetic: {fileID: 0}
+    Registered: 1
+    Cosmetic: {fileID: 11400000, guid: b7fd6660d5e56f14eb65d4eab5e43346, type: 2}
     Type: 1

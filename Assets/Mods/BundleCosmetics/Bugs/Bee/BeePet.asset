@@ -18,4 +18,4 @@ MonoBehaviour:
   scaredClip: {fileID: 7400000, guid: b3dac2d6caa9f0b45b571a01e41ee1c8, type: 2}
   sadClip: {fileID: 7400000, guid: fae1d150618d16e419329a5acc2c4122, type: 2}
   hasShadow: 0
-  storeName: 
+  storeName: Bugs

@@ -10,50 +10,50 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
-  m_Name: CosmeticBundle
+  m_Name: Autumn
   m_EditorClassIdentifier: 
-  uuid: 
+  uuid: 43d76bc178e34983ae461a277f5a4a92
   Name: Autumn
   CoverArt: {fileID: 21300000, guid: 331686a80355c1a46aafcb06d81ad3af, type: 3}
   Color:
     serializedVersion: 2
     rgba: 33279
   Price: 4.99
-  ForSale: 0
+  ForSale: 1
   Description: Season's greetings! If you like sweater weather, you will fall in
     love with this cool bundle!
   Registered: 0
   Cosmetics:
-  - Id: 0
-    uuid: 
+  - Id: 10000168
+    uuid: a4c87567f82547ea93a93743a3cdc27b
     Name: Acorn
     Author: 70621d64-cfe3-42b7-b0c8-ca9c4d59acc7
-    Registered: 0
+    Registered: 1
     Cosmetic: {fileID: 11400000, guid: 5b4e6e13ee1259544a94a710a44032d0, type: 2}
     Type: 0
-  - Id: 0
-    uuid: 
+  - Id: 10000170
+    uuid: bebe291c2b9b4740bfd39e57e1175a51
     Name: Leaves
     Author: 70621d64-cfe3-42b7-b0c8-ca9c4d59acc7
-    Registered: 0
+    Registered: 1
     Cosmetic: {fileID: 11400000, guid: b4d33250aa16944458633ed2440ce648, type: 2}
     Type: 0
-  - Id: 0
-    uuid: 
+  - Id: 10000172
+    uuid: 1a001e6776154c1f868dc2c1dfde378c
     Name: Log
     Author: 70621d64-cfe3-42b7-b0c8-ca9c4d59acc7
-    Registered: 0
+    Registered: 1
     Cosmetic: {fileID: 11400000, guid: 4540290cd8d7e584d9caf96eafcaac01, type: 2}
     Type: 0
-  - Id: 0
-    uuid: 
+  - Id: 10000174
+    uuid: 03a78fea8530446ea790f0a08916a1c8
     Name: Mushroom
     Author: 70621d64-cfe3-42b7-b0c8-ca9c4d59acc7
-    Registered: 0
+    Registered: 1
     Cosmetic: {fileID: 11400000, guid: dbfe067dd005706498551a7dcaf00e65, type: 2}
     Type: 0
-  - Id: 0
-    uuid: 
+  - Id: 10000176
+    uuid: 7c5fad857f3e497da3a240b1ad3c6f88
     Name: Pumpkin
     Author: 70621d64-cfe3-42b7-b0c8-ca9c4d59acc7
     Registered: 0

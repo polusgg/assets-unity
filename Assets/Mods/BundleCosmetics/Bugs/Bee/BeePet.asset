@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: BeePet
   m_EditorClassIdentifier: 
   yOffset: 0
-  idleClip: {fileID: 0}
-  walkClip: {fileID: 0}
-  scaredClip: {fileID: 0}
-  sadClip: {fileID: 0}
+  idleClip: {fileID: 7400000, guid: 8e81af0306977244e98d5416d0d4660c, type: 2}
+  walkClip: {fileID: 7400000, guid: 6954ab436acdc4148b391b16e5c86872, type: 2}
+  scaredClip: {fileID: 7400000, guid: b3dac2d6caa9f0b45b571a01e41ee1c8, type: 2}
+  sadClip: {fileID: 7400000, guid: fae1d150618d16e419329a5acc2c4122, type: 2}
   hasShadow: 0
   storeName: 

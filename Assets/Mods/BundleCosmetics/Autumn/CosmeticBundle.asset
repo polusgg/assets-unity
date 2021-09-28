@@ -20,6 +20,42 @@ MonoBehaviour:
     rgba: 33279
   Price: 4.99
   ForSale: 0
-  Description: 
+  Description: Season's greetings! If you like sweater weather, you will fall in
+    love with this cool bundle!
   Registered: 0
-  Cosmetics: []
+  Cosmetics:
+  - Id: 0
+    uuid: 
+    Name: Acorn
+    Author: 70621d64-cfe3-42b7-b0c8-ca9c4d59acc7
+    Registered: 0
+    Cosmetic: {fileID: 11400000, guid: 5b4e6e13ee1259544a94a710a44032d0, type: 2}
+    Type: 0
+  - Id: 0
+    uuid: 
+    Name: Leaves
+    Author: 70621d64-cfe3-42b7-b0c8-ca9c4d59acc7
+    Registered: 0
+    Cosmetic: {fileID: 11400000, guid: b4d33250aa16944458633ed2440ce648, type: 2}
+    Type: 0
+  - Id: 0
+    uuid: 
+    Name: Log
+    Author: 70621d64-cfe3-42b7-b0c8-ca9c4d59acc7
+    Registered: 0
+    Cosmetic: {fileID: 11400000, guid: 4540290cd8d7e584d9caf96eafcaac01, type: 2}
+    Type: 0
+  - Id: 0
+    uuid: 
+    Name: Mushroom
+    Author: 70621d64-cfe3-42b7-b0c8-ca9c4d59acc7
+    Registered: 0
+    Cosmetic: {fileID: 11400000, guid: dbfe067dd005706498551a7dcaf00e65, type: 2}
+    Type: 0
+  - Id: 0
+    uuid: 
+    Name: Pumpkin
+    Author: 70621d64-cfe3-42b7-b0c8-ca9c4d59acc7
+    Registered: 0
+    Cosmetic: {fileID: 11400000, guid: 299fbbdcb37587a48b3ef2b8c022c753, type: 2}
+    Type: 0

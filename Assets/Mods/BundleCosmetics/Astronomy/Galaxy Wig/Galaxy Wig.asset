@@ -12,24 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33a85397cd7f8c75d94da833c4e725d7, type: 3}
   m_Name: Galaxy Wig
   m_EditorClassIdentifier: 
-  MainImage: {fileID: 0}
+  MainImage: {fileID: 21300000, guid: ff1c33bf7ef6db140ad402245f4f1a30, type: 3}
   BackImage: {fileID: 0}
-  LeftMainImage: {fileID: 0}
+  LeftMainImage: {fileID: 21300000, guid: e43fac77d6c7461458187696b6f905a2, type: 3}
   LeftBackImage: {fileID: 0}
   EpicId: 
-  ClimbImage: {fileID: 0}
-  FloorImage: {fileID: 0}
-  LeftClimbImage: {fileID: 0}
-  LeftFloorImage: {fileID: 0}
-  InFront: 0
-  NoBounce: 0
+  ClimbImage: {fileID: 21300000, guid: 4b073a2c93e5f7d4ea896e5058c54ba1, type: 3}
+  FloorImage: {fileID: 21300000, guid: bc4f74894033cf54abe9ed506c4eeb11, type: 3}
+  LeftClimbImage: {fileID: 21300000, guid: 34e3dc33cfc7a3c45955a3bd91a31a8c, type: 3}
+  LeftFloorImage: {fileID: 21300000, guid: 5e9dd899112382a408b7e5d40251099c, type: 3}
+  InFront: 1
+  NoBounce: 1
   NotInStore: 0
   Free: 0
-  AltShader: {fileID: 0}
+  AltShader: {fileID: 2100000, guid: 8ce561ba342db06409affe04b015161b, type: 2}
   ChipOffset: {x: 0, y: 0}
   LimitedMonth: 1
   LimitedYear: 1
   RelatedSkin: {fileID: 0}
-  StoreName: 
+  StoreName: Galaxy Wig
   ProductId: 
   Order: 0

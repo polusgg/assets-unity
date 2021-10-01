@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33a85397cd7f8c75d94da833c4e725d7, type: 3}
   m_Name: Dreaming Aries
   m_EditorClassIdentifier: 
-  MainImage: {fileID: 0}
+  MainImage: {fileID: 21300000, guid: af8316d7fcae0cb42a260f93349f3233, type: 3}
   BackImage: {fileID: 0}
   LeftMainImage: {fileID: 0}
   LeftBackImage: {fileID: 0}
   EpicId: 
-  ClimbImage: {fileID: 0}
-  FloorImage: {fileID: 0}
+  ClimbImage: {fileID: 21300000, guid: b7f30a4ddfeb56846ab3a6da23f60b1a, type: 3}
+  FloorImage: {fileID: 21300000, guid: 4d7f7b1a8cb28ec43a70290e9dad7625, type: 3}
   LeftClimbImage: {fileID: 0}
   LeftFloorImage: {fileID: 0}
   InFront: 0
@@ -30,6 +30,6 @@ MonoBehaviour:
   LimitedMonth: 1
   LimitedYear: 1
   RelatedSkin: {fileID: 0}
-  StoreName: 
+  StoreName: Dreaming Aries
   ProductId: 
   Order: 0

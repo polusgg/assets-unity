@@ -13,13 +13,41 @@ MonoBehaviour:
   m_Name: CosmeticBundle
   m_EditorClassIdentifier: 
   uuid: 
-  Name: 
+  Name: Astronomy
   CoverArt: {fileID: 0}
   Color:
     serializedVersion: 2
-    rgba: 0
-  Price: 0
+    rgba: 5708585
+  Price: 3.99
   ForSale: 0
   Description: 
   Registered: 0
-  Cosmetics: []
+  Cosmetics:
+  - Id: 0
+    uuid: 
+    Name: Shooting Star
+    Author: 
+    Registered: 0
+    Cosmetic: {fileID: 11400000, guid: 5e8dab8f35b12ef41aa0801901b478c1, type: 2}
+    Type: 0
+  - Id: 0
+    uuid: 
+    Name: Nightsky
+    Author: 
+    Registered: 0
+    Cosmetic: {fileID: 11400000, guid: b9b82e0ae75172d4b985329d2a273798, type: 2}
+    Type: 0
+  - Id: 0
+    uuid: 
+    Name: Galaxy Wig
+    Author: 
+    Registered: 0
+    Cosmetic: {fileID: 11400000, guid: 8220b1cd572c9e04b80145414d3487de, type: 2}
+    Type: 0
+  - Id: 0
+    uuid: 
+    Name: Dreaming Aries
+    Author: 
+    Registered: 0
+    Cosmetic: {fileID: 11400000, guid: bb5cc4ecab77f3347b457e854fbb6fb9, type: 2}
+    Type: 0

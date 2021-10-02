@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33a85397cd7f8c75d94da833c4e725d7, type: 3}
-  m_Name: Dreaming Aries
+  m_Name: DreamingAriesHat
   m_EditorClassIdentifier: 
   MainImage: {fileID: 21300000, guid: af8316d7fcae0cb42a260f93349f3233, type: 3}
   BackImage: {fileID: 0}

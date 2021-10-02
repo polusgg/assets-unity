@@ -13,13 +13,49 @@ MonoBehaviour:
   m_Name: Cryptids
   m_EditorClassIdentifier: 
   uuid: 
-  Name: 
+  Name: Cryptids
   CoverArt: {fileID: 0}
   Color:
     serializedVersion: 2
-    rgba: 0
-  Price: 0
+    rgba: 1245239
+  Price: 4.99
   ForSale: 0
-  Description: 
+  Description: Become an elusive entity of urban legend with this spooky array of
+    cosmetics!
   Registered: 0
-  Cosmetics: []
+  Cosmetics:
+  - Id: 0
+    uuid: 
+    Name: Mothman
+    Author: d9cde231-b552-45b0-869a-c5f7ff5da8fb
+    Registered: 0
+    Cosmetic: {fileID: 11400000, guid: 7031f4c3879392e408274278db001540, type: 2}
+    Type: 0
+  - Id: 0
+    uuid: 
+    Name: Jersey Devil
+    Author: d9cde231-b552-45b0-869a-c5f7ff5da8fb
+    Registered: 0
+    Cosmetic: {fileID: 11400000, guid: 28da77b3c1845f649901cb1a361e65e5, type: 2}
+    Type: 0
+  - Id: 0
+    uuid: 
+    Name: Chupacabra
+    Author: d9cde231-b552-45b0-869a-c5f7ff5da8fb
+    Registered: 0
+    Cosmetic: {fileID: 11400000, guid: bf91ae095844cab4b96cc49d61f4934a, type: 2}
+    Type: 0
+  - Id: 0
+    uuid: 
+    Name: Nessie
+    Author: d9cde231-b552-45b0-869a-c5f7ff5da8fb
+    Registered: 0
+    Cosmetic: {fileID: 11400000, guid: b3e79e438377d514bbbaf93be49310f6, type: 2}
+    Type: 0
+  - Id: 0
+    uuid: 
+    Name: Flatwoods Monster
+    Author: d9cde231-b552-45b0-869a-c5f7ff5da8fb
+    Registered: 0
+    Cosmetic: {fileID: 11400000, guid: 7676f1bed09b0f34e900c7275bf84b01, type: 2}
+    Type: 0

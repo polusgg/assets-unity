@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33a85397cd7f8c75d94da833c4e725d7, type: 3}
   m_Name: Jersey Devil
   m_EditorClassIdentifier: 
-  MainImage: {fileID: 0}
-  BackImage: {fileID: 0}
+  MainImage: {fileID: 21300000, guid: 9f543b6ecb90b314090b750e2446261b, type: 3}
+  BackImage: {fileID: 21300000, guid: 267950190cf5ea049872c32cae3fd9b2, type: 3}
   LeftMainImage: {fileID: 0}
   LeftBackImage: {fileID: 0}
   EpicId: 
-  ClimbImage: {fileID: 0}
-  FloorImage: {fileID: 0}
+  ClimbImage: {fileID: 21300000, guid: ab6c9d732377226429d53e0a6d804e14, type: 3}
+  FloorImage: {fileID: 21300000, guid: e54c9f14ee929c34fa7fc4bc573f727a, type: 3}
   LeftClimbImage: {fileID: 0}
   LeftFloorImage: {fileID: 0}
-  InFront: 0
-  NoBounce: 0
+  InFront: 1
+  NoBounce: 1
   NotInStore: 0
   Free: 0
   AltShader: {fileID: 0}
@@ -30,6 +30,6 @@ MonoBehaviour:
   LimitedMonth: 1
   LimitedYear: 1
   RelatedSkin: {fileID: 0}
-  StoreName: 
+  StoreName: Cryptids
   ProductId: 
   Order: 0

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uuid: 
   Name: Astronomy
-  CoverArt: {fileID: 0}
+  CoverArt: {fileID: 21300000, guid: d8e2c6d3dabd8e84b8380be66078aa89, type: 3}
   Color:
     serializedVersion: 2
     rgba: 5708585

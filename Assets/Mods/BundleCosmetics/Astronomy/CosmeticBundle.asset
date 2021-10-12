@@ -22,7 +22,7 @@ MonoBehaviour:
   ForSale: 0
   Description: Put on this stellar and colorful collection of space themed hats with
     this bundle.
-  Registered: 0
+  Registered: 1
   Cosmetics:
   - Id: 10000194
     uuid: 3b89fe98186a499c8b772ca7257e91cd
@@ -49,6 +49,6 @@ MonoBehaviour:
     uuid: 88630fcfbf254e839299d9b11767e8e6
     Name: Dreaming Aries
     Author: 'd9cde231-b552-45b0-869a-c5f7ff5da8fb '
-    Registered: 0
+    Registered: 1
     Cosmetic: {fileID: 11400000, guid: bb5cc4ecab77f3347b457e854fbb6fb9, type: 2}
     Type: 0

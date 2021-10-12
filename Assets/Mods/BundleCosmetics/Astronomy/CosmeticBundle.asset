@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b878d823b747c9b8d68ad6c23b9fdf, type: 3}
   m_Name: CosmeticBundle
   m_EditorClassIdentifier: 
-  uuid: 
+  uuid: a8159d1333a446c78dfef5490af0fb3b
   Name: Astronomy
   CoverArt: {fileID: 21300000, guid: d8e2c6d3dabd8e84b8380be66078aa89, type: 3}
   Color:
@@ -24,29 +24,29 @@ MonoBehaviour:
     this bundle.
   Registered: 0
   Cosmetics:
-  - Id: 0
-    uuid: 
+  - Id: 10000194
+    uuid: 3b89fe98186a499c8b772ca7257e91cd
     Name: Shooting Star
     Author: 'd9cde231-b552-45b0-869a-c5f7ff5da8fb '
-    Registered: 0
+    Registered: 1
     Cosmetic: {fileID: 11400000, guid: 5e8dab8f35b12ef41aa0801901b478c1, type: 2}
     Type: 0
-  - Id: 0
-    uuid: 
+  - Id: 10000196
+    uuid: 5f7c20c21836457fb2cdf37b75147987
     Name: Nightsky
     Author: 'd9cde231-b552-45b0-869a-c5f7ff5da8fb '
-    Registered: 0
+    Registered: 1
     Cosmetic: {fileID: 11400000, guid: b9b82e0ae75172d4b985329d2a273798, type: 2}
     Type: 0
-  - Id: 0
-    uuid: 
+  - Id: 10000198
+    uuid: 78a3525fee414a45b5b49076770828ce
     Name: Galaxy Wig
     Author: 'd9cde231-b552-45b0-869a-c5f7ff5da8fb '
-    Registered: 0
+    Registered: 1
     Cosmetic: {fileID: 11400000, guid: 8220b1cd572c9e04b80145414d3487de, type: 2}
     Type: 0
-  - Id: 0
-    uuid: 
+  - Id: 10000200
+    uuid: 88630fcfbf254e839299d9b11767e8e6
     Name: Dreaming Aries
     Author: 'd9cde231-b552-45b0-869a-c5f7ff5da8fb '
     Registered: 0
